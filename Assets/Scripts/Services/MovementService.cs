@@ -2,22 +2,17 @@ using UnityEngine;
 
 public class MovementService : MonoBehaviour, IMovementService
 {
-
-    [Header("Settings")]
-    [SerializeField] private float speed = 8f;
-    [SerializeField] private float jumpForce = 12f;
-
-    public void Move(Rigidbody2D rb, float direction)
+    public void Move(Rigidbody2D rb, float direction, float speed)
     {
         if (rb == null) return;
 
         rb.linearVelocityX = direction * speed;
     }
 
-    public void Jump(Rigidbody2D rb)
+    public void Jump(Rigidbody2D rb, float force)
     {
         if (rb == null) return;
 
-        rb.linearVelocityY = jumpForce;
+        rb.linearVelocityY = force;
     }
 }

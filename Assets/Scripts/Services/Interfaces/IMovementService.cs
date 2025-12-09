@@ -2,7 +2,7 @@
 
 public interface IMovementService
 {
-    void Move(Rigidbody2D rb, float direction);
+    void Move(Rigidbody2D rb, float direction, float speed);
 
-    void Jump(Rigidbody2D rb);
+    void Jump(Rigidbody2D rb, float force);
 }
