@@ -1,36 +1,13 @@
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : AEntitie
 {
-    public bool IsOnGround { get; private set; }
-    public Rigidbody2D Rigidbody { get; private set; }
+    private Rigidbody2D _rigidBody;
+    public Rigidbody2D Rigidbody => _rigidBody;
 
     private void Start()
     {
-        Rigidbody = GetComponent<Rigidbody2D>();
+        _rigidBody = GetComponent<Rigidbody2D>();
 
-    }
-
-    private void Update()
-    {
-        Debug.Log(IsOnGround);
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            Debug.Log("OnCollisionEnter2D");
-            IsOnGround = true;
-        }
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            Debug.Log("OnCollisionExit2D");
-            IsOnGround = false;
-        }
     }
 }

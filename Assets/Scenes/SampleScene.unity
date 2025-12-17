@@ -1411,7 +1411,7 @@ MonoBehaviour:
   _inputService: {fileID: 853908781}
   _movementService: {fileID: 819289234}
   _speed: 4
-  _jumpForce: 4
+  _jumpForce: 5
   _accelerationMultiplier: 1.5
   _decelerationMultiplier: 0.5
 --- !u!1660057539 &9223372036854775807
