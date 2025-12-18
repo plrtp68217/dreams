@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public abstract class AEntitie : MonoBehaviour
+public abstract class AEntity : MonoBehaviour
 {
     public bool IsOnGround { get; private set; }
 

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Player : AEntitie
+public class Player : AEntity
 {
     private Rigidbody2D _rigidBody;
     public Rigidbody2D Rigidbody => _rigidBody;
@@ -8,6 +8,5 @@ public class Player : AEntitie
     private void Start()
     {
         _rigidBody = GetComponent<Rigidbody2D>();
-
     }
 }
