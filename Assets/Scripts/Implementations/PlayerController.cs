@@ -3,6 +3,7 @@
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private Player _player;
+
     [SerializeField] private InputService _inputService;
     [SerializeField] private MovementService _movementService;
 
@@ -26,11 +27,20 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        _movementService.Move(
-            _player.Rigidbody, 
-            _inputService.Direction,
-            _speed * SpeedMultiplier
-        );
+
+        if (_inputService.Direction != 0)
+        {
+            _player.SpriteRenderer.flipX = _inputService.Direction < 0;
+        }
+
+        if (_player.IsOnGround)
+        {
+            _movementService.Move(
+                    _player.Rigidbody,
+                    _inputService.Direction,
+                    _speed * SpeedMultiplier
+                );
+        }
 
         if (_inputService.SpaceIsPressed && _player.IsOnGround)
         {

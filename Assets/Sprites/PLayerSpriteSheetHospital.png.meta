@@ -1,0 +1,1094 @@
+fileFormatVersion: 2
+guid: 32687d3a0ab08ed488248eba7e14b44d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2106180913470085719
+    second: PLayerSpriteSheetHospital_0
+  - first:
+      213: -6493899943055083529
+    second: PLayerSpriteSheetHospital_1
+  - first:
+      213: 3098940961114504158
+    second: PLayerSpriteSheetHospital_2
+  - first:
+      213: 3516180602921013446
+    second: PLayerSpriteSheetHospital_3
+  - first:
+      213: -3273374892008101741
+    second: PLayerSpriteSheetHospital_4
+  - first:
+      213: -2362867755615637237
+    second: PLayerSpriteSheetHospital_5
+  - first:
+      213: 4335019839585022437
+    second: PLayerSpriteSheetHospital_6
+  - first:
+      213: -4405958556127622377
+    second: PLayerSpriteSheetHospital_7
+  - first:
+      213: 3029145891417896747
+    second: PLayerSpriteSheetHospital_8
+  - first:
+      213: -7251459064826949559
+    second: PLayerSpriteSheetHospital_9
+  - first:
+      213: -7280012845722530153
+    second: PLayerSpriteSheetHospital_10
+  - first:
+      213: 8345118160669711105
+    second: PLayerSpriteSheetHospital_11
+  - first:
+      213: -4993194818700213197
+    second: PLayerSpriteSheetHospital_12
+  - first:
+      213: 5065047912846449164
+    second: PLayerSpriteSheetHospital_13
+  - first:
+      213: -6238082401901817974
+    second: PLayerSpriteSheetHospital_14
+  - first:
+      213: 2975335028198751463
+    second: PLayerSpriteSheetHospital_15
+  - first:
+      213: 654567487580968631
+    second: PLayerSpriteSheetHospital_16
+  - first:
+      213: -1599947337882834533
+    second: PLayerSpriteSheetHospital_17
+  - first:
+      213: 7997377454891826400
+    second: PLayerSpriteSheetHospital_18
+  - first:
+      213: 936166403942115032
+    second: PLayerSpriteSheetHospital_19
+  - first:
+      213: -2825717875901111334
+    second: PLayerSpriteSheetHospital_20
+  - first:
+      213: 7145106458036969222
+    second: PLayerSpriteSheetHospital_21
+  - first:
+      213: -1802005506719932973
+    second: PLayerSpriteSheetHospital_22
+  - first:
+      213: -6780220623546025701
+    second: PLayerSpriteSheetHospital_23
+  - first:
+      213: -6159067916668218567
+    second: PLayerSpriteSheetHospital_24
+  - first:
+      213: 1331096680562372622
+    second: PLayerSpriteSheetHospital_25
+  - first:
+      213: -2382619914091005657
+    second: PLayerSpriteSheetHospital_26
+  - first:
+      213: 7115404762552403814
+    second: PLayerSpriteSheetHospital_27
+  - first:
+      213: 4809202950968717367
+    second: PLayerSpriteSheetHospital_28
+  - first:
+      213: -6568292234830631726
+    second: PLayerSpriteSheetHospital_29
+  - first:
+      213: 5147739839250495385
+    second: PLayerSpriteSheetHospital_30
+  - first:
+      213: 3487123430058463553
+    second: PLayerSpriteSheetHospital_31
+  - first:
+      213: 2160518101899357588
+    second: PLayerSpriteSheetHospital_32
+  - first:
+      213: -6141027366791113812
+    second: PLayerSpriteSheetHospital_33
+  - first:
+      213: -4189959984639072738
+    second: PLayerSpriteSheetHospital_34
+  - first:
+      213: -8512953854219053395
+    second: PLayerSpriteSheetHospital_35
+  - first:
+      213: 9119605867858827683
+    second: PLayerSpriteSheetHospital_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 560
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75a971cb168aa3d10800000000000000
+      internalID: 2106180913470085719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 560
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f7b54f686801e5a0800000000000000
+      internalID: -6493899943055083529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 560
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edb332f9266a10b20800000000000000
+      internalID: 3098940961114504158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_3
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 560
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c0d93bf0abfbc030800000000000000
+      internalID: 3516180602921013446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 560
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 398ac29f0e2a292d0800000000000000
+      internalID: -3273374892008101741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_5
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 560
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b013e479b48653fd0800000000000000
+      internalID: -2362867755615637237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_6
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 560
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e17cb08395192c30800000000000000
+      internalID: 4335019839585022437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_7
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 560
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71b8be67904ead2c0800000000000000
+      internalID: -4405958556127622377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b273cce9320b90a20800000000000000
+      internalID: 3029145891417896747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_9
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 480
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94014b18664ad5b90800000000000000
+      internalID: -7251459064826949559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 480
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79e8d6253e238fa90800000000000000
+      internalID: -7280012845722530153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_11
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 480
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10b1167b0c0dfc370800000000000000
+      internalID: 8345118160669711105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_12
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 480
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3348d0974cb94bab0800000000000000
+      internalID: -4993194818700213197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_13
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 480
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0adb8fad3aaa4640800000000000000
+      internalID: 5065047912846449164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_14
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 480
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8fc6033b11ed69a0800000000000000
+      internalID: -6238082401901817974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_15
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 480
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ec3093b1738a4920800000000000000
+      internalID: 2975335028198751463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b698c279ad751900800000000000000
+      internalID: 654567487580968631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_17
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 400
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9969228f58dbc9e0800000000000000
+      internalID: -1599947337882834533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_18
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 400
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ec7b8d5c646cfe60800000000000000
+      internalID: 7997377454891826400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_19
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 400
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d6ef95626eedfc00800000000000000
+      internalID: 936166403942115032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad3617b209809c8d0800000000000000
+      internalID: -2825717875901111334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_21
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 320
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60f94a99774882360800000000000000
+      internalID: 7145106458036969222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dd19a00a8dfdf6e0800000000000000
+      internalID: -1802005506719932973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_23
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 240
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b19f2ca1441d7e1a0800000000000000
+      internalID: -6780220623546025701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_24
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 240
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9335c77ac58968aa0800000000000000
+      internalID: -6159067916668218567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e003f96e061097210800000000000000
+      internalID: 1331096680562372622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_26
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 160
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72975d1dfcb3feed0800000000000000
+      internalID: -2382619914091005657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6670f09beeefeb260800000000000000
+      internalID: 7115404762552403814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_28
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73030498a98bdb240800000000000000
+      internalID: 4809202950968717367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dca6f1430db8d4a0800000000000000
+      internalID: -6568292234830631726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_30
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 997f6a22c12707740800000000000000
+      internalID: 5147739839250495385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_31
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1419398b840c46030800000000000000
+      internalID: 3487123430058463553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_32
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49d238a44c3bbfd10800000000000000
+      internalID: 2160518101899357588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_33
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca3967e7520b6caa0800000000000000
+      internalID: -6141027366791113812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_34
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e16ac74e7954ad5c0800000000000000
+      internalID: -4189959984639072738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_35
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da61bf9b299ebd980800000000000000
+      internalID: -8512953854219053395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLayerSpriteSheetHospital_36
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a91b4518395f8e70800000000000000
+      internalID: 9119605867858827683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0eaa6017e5bd40140915072ae896fe52
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":80.0,"y":80.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      PLayerSpriteSheetHospital_0: 2106180913470085719
+      PLayerSpriteSheetHospital_1: -6493899943055083529
+      PLayerSpriteSheetHospital_10: -7280012845722530153
+      PLayerSpriteSheetHospital_11: 8345118160669711105
+      PLayerSpriteSheetHospital_12: -4993194818700213197
+      PLayerSpriteSheetHospital_13: 5065047912846449164
+      PLayerSpriteSheetHospital_14: -6238082401901817974
+      PLayerSpriteSheetHospital_15: 2975335028198751463
+      PLayerSpriteSheetHospital_16: 654567487580968631
+      PLayerSpriteSheetHospital_17: -1599947337882834533
+      PLayerSpriteSheetHospital_18: 7997377454891826400
+      PLayerSpriteSheetHospital_19: 936166403942115032
+      PLayerSpriteSheetHospital_2: 3098940961114504158
+      PLayerSpriteSheetHospital_20: -2825717875901111334
+      PLayerSpriteSheetHospital_21: 7145106458036969222
+      PLayerSpriteSheetHospital_22: -1802005506719932973
+      PLayerSpriteSheetHospital_23: -6780220623546025701
+      PLayerSpriteSheetHospital_24: -6159067916668218567
+      PLayerSpriteSheetHospital_25: 1331096680562372622
+      PLayerSpriteSheetHospital_26: -2382619914091005657
+      PLayerSpriteSheetHospital_27: 7115404762552403814
+      PLayerSpriteSheetHospital_28: 4809202950968717367
+      PLayerSpriteSheetHospital_29: -6568292234830631726
+      PLayerSpriteSheetHospital_3: 3516180602921013446
+      PLayerSpriteSheetHospital_30: 5147739839250495385
+      PLayerSpriteSheetHospital_31: 3487123430058463553
+      PLayerSpriteSheetHospital_32: 2160518101899357588
+      PLayerSpriteSheetHospital_33: -6141027366791113812
+      PLayerSpriteSheetHospital_34: -4189959984639072738
+      PLayerSpriteSheetHospital_35: -8512953854219053395
+      PLayerSpriteSheetHospital_36: 9119605867858827683
+      PLayerSpriteSheetHospital_4: -3273374892008101741
+      PLayerSpriteSheetHospital_5: -2362867755615637237
+      PLayerSpriteSheetHospital_6: 4335019839585022437
+      PLayerSpriteSheetHospital_7: -4405958556127622377
+      PLayerSpriteSheetHospital_8: 3029145891417896747
+      PLayerSpriteSheetHospital_9: -7251459064826949559
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
