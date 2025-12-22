@@ -11,30 +11,6 @@ public class AnimatorController : MonoBehaviour
     public Animator Animator { get; private set; }
     public InputService InputService => _inputService;
 
-    public void Update()
-    {
-        if (_states.ContainsKey(_currentState))
-            _states[_currentState].Update();
-    }
-
-    private void Start()
-    {
-        Animator = GetComponent<Animator>();
-        InitializeStates();
-        ChangeState(AnimatorStateType.Idle);
-    }
-
-    void InitializeStates()
-    {
-        _states = new Dictionary<AnimatorStateType, IAnimatorState>
-        {
-            { AnimatorStateType.Idle, new IdleState(this) },
-            { AnimatorStateType.Walking, new WalkingState(this) },
-            { AnimatorStateType.Jumping, new JumpState(this) },
-            { AnimatorStateType.Crouching, new CrouchingState(this) },
-        };
-    }
-
     public void ChangeState(AnimatorStateType newState)
     {
         if (_states.ContainsKey(_currentState))
@@ -45,4 +21,28 @@ public class AnimatorController : MonoBehaviour
         if (_states.ContainsKey(newState))
             _states[newState].Enter();
     }
-}a
+
+    public void Update()
+    {
+        if (_states.ContainsKey(_currentState))
+            _states[_currentState].Update();
+    }
+    
+    private void Start()
+    {
+        Animator = GetComponent<Animator>();
+        InitializeStates();
+        ChangeState(AnimatorStateType.Idle);
+    }
+
+    private void InitializeStates()
+    {
+        _states = new Dictionary<AnimatorStateType, IAnimatorState>
+        {
+            { AnimatorStateType.Idle, new IdleState(this) },
+            { AnimatorStateType.Walking, new WalkingState(this) },
+            { AnimatorStateType.Jumping, new JumpState(this) },
+            { AnimatorStateType.Crouching, new CrouchingState(this) },
+        };
+    }
+}
