@@ -1013,7 +1013,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ece070b51364d03449a5ae9293f7c44c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AnimatorController
+  m_EditorClassIdentifier: Assembly-CSharp::AnimatorController2
   _inputService: {fileID: 853908781}
   _animator: {fileID: 858534451}
   _rigidbody: {fileID: 858534448}
@@ -1403,7 +1403,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.45, y: -0.901, z: 3}
-  m_LocalScale: {x: 51.8, y: 1, z: 1}
+  m_LocalScale: {x: 54.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 339234705}

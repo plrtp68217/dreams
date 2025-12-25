@@ -1,48 +1,65 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class AnimatorController : MonoBehaviour
 {
     [SerializeField] private InputService _inputService;
+    [SerializeField] private Animator _animator;
+    [SerializeField] private Rigidbody2D _rigidbody;
 
-    private AnimatorStateType _currentState;
-    private Dictionary<AnimatorStateType, IAnimatorState> _states;
+    private AEntity _entity;
+    private bool _wasOnGround = true;
 
-    public Animator Animator { get; private set; }
-    public InputService InputService => _inputService;
+    public bool VelocityXIsZero => Mathf.Abs(_rigidbody.linearVelocityX) <= 0.01f;
 
-    public void ChangeState(AnimatorStateType newState)
+    private void Start()
     {
-        if (_states.ContainsKey(_currentState))
-            _states[_currentState].Exit();
-
-        _currentState = newState;
-
-        if (_states.ContainsKey(newState))
-            _states[newState].Enter();
+        _entity = GetComponent<AEntity>();
     }
 
     public void Update()
     {
-        if (_states.ContainsKey(_currentState))
-            _states[_currentState].Update();
-    }
-    
-    private void Start()
-    {
-        Animator = GetComponent<Animator>();
-        InitializeStates();
-        ChangeState(AnimatorStateType.Idle);
+        HandleMove();
+        HandleJump();
+        HandleCrouching();
     }
 
-    private void InitializeStates()
+    private void HandleMove()
     {
-        _states = new Dictionary<AnimatorStateType, IAnimatorState>
+        if (VelocityXIsZero)
         {
-            { AnimatorStateType.Idle, new IdleState(this) },
-            { AnimatorStateType.Walking, new WalkingState(this) },
-            { AnimatorStateType.Jumping, new JumpState(this) },
-            { AnimatorStateType.Crouching, new CrouchingState(this) },
-        };
+            _animator.SetBool("isWalking", false);
+        }
+        else
+        {
+            _animator.SetBool("isWalking", true);
+        }
+    }
+
+    private void HandleJump()
+    {
+        if (_wasOnGround && !_entity.IsOnGround)
+        {
+            _animator.SetTrigger("Jump");
+        }
+
+        _wasOnGround = _entity.IsOnGround;
+    }
+
+    private void HandleCrouching()
+    {
+        if (VelocityXIsZero)
+        {
+            _animator.SetBool("isCrouching", false);
+            return;
+        }
+
+        if (_inputService.ControlIsHolding)
+        {
+            _animator.SetBool("isCrouching", true);
+        }
+        else
+        {
+            _animator.SetBool("isCrouching", false);
+        }
     }
 }
