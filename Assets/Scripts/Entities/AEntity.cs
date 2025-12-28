@@ -8,7 +8,6 @@ public abstract class AEntity : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            Debug.Log("OnCollisionEnter2D");
             IsOnGround = true;
         }
     }
@@ -17,7 +16,6 @@ public abstract class AEntity : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            Debug.Log("OnCollisionExit2D");
             IsOnGround = false;
         }
     }

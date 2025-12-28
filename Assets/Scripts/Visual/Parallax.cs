@@ -19,7 +19,7 @@ public class Parallax : MonoBehaviour
         _startZ = transform.localPosition.z;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         Vector2 newPosition = _startPosition + Travel * ParallaxFactor;
         transform.position = new Vector3(newPosition.x, transform.position.y, _startZ); 
