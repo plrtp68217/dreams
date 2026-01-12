@@ -1,19 +1,19 @@
-using System;
 using UnityEngine;
 
-public class DialogTrigger : MonoBehaviour
+public class JoinTrigger : MonoBehaviour
 {
     [TextArea(3, 10)]
     [SerializeField] private string _text;
+    [SerializeField] private Dialog _dialog;
 
-    public static event Action<string> ActionDialogEnter;
-    public static event Action ActionDialogExit;
+    private bool _isShowed = false;
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.CompareTag("Player"))
+        if (collider.CompareTag("Player") && _isShowed == false)
         {
-            ActionDialogEnter?.Invoke(_text);
+            _dialog.Enable(_text);
+            _isShowed = true;
         }
     }
 
@@ -21,7 +21,7 @@ public class DialogTrigger : MonoBehaviour
     {
         if (collider.CompareTag("Player"))
         {
-            ActionDialogExit?.Invoke();
+            _dialog.Disable();
         }
     }
-} 
+}

@@ -3,33 +3,20 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-public class DialogManager : MonoBehaviour
+public class DialogCanvas : Dialog
 {
     [SerializeField] private Image _image;
     [SerializeField] private TextMeshProUGUI _textMeshPro;
 
     [SerializeField] private float fadeTime = 1f;
 
-    private void OnEnable()
-    {
-        DialogTrigger.ActionDialogEnter += OnDialogEnter;
-        DialogTrigger.ActionDialogExit += OnDialogExit;
-
-    }
-
-    private void OnDisable()
-    {
-        DialogTrigger.ActionDialogEnter -= OnDialogEnter;
-        DialogTrigger.ActionDialogExit -= OnDialogExit;
-    }
-
-    private void OnDialogEnter(string text)
+    public override void Enable(string text)
     {
         _textMeshPro.text = text;
         StartCoroutine(Fade(1f));
     }
 
-    private void OnDialogExit()
+    public override void Disable()
     {
         StartCoroutine(Fade(0f));
     }
