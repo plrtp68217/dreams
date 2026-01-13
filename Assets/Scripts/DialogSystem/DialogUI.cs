@@ -1,19 +1,27 @@
-﻿using System.Collections;
-using UnityEngine;
-using TMPro;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class DialogUI : Dialog
 {
-    [SerializeField] private TextMeshProUGUI _textMeshPro;
+    [SerializeField] private float fadeTime = 1f;
+
+    private Image[] _images;
 
     public override void Enable(string text)
     {
-        _textMeshPro.text = text;
+        _images = GetComponentsInChildren<Image>();
+
+        foreach (Image image in _images)
+        {
+            StartCoroutine(TransitionUtils.FadeGraphic(image, fadeTime, 1f));
+        }
     }
 
     public override void Disable()
     {
-
+        foreach (Image image in _images)
+        {
+            StartCoroutine(TransitionUtils.FadeGraphic(image, fadeTime, 0f));
+        }
     }
 }

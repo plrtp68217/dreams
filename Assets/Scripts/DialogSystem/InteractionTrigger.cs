@@ -5,6 +5,7 @@ public class InteractionTrigger : MonoBehaviour
 {
     [TextArea(3, 10)]
     [SerializeField] private string _text;
+
     [SerializeField] private Dialog _dialog;
     [SerializeField] private Animator _animator;
 
@@ -25,11 +26,7 @@ public class InteractionTrigger : MonoBehaviour
 
     private IEnumerator DisableDialog()
     {
-        _isEntered = false;
-
         yield return new WaitForSeconds(_delayTime);
-
-        _isEntered = true;
 
         _dialog.Disable();
     }

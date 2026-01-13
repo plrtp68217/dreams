@@ -6,14 +6,11 @@ public class JoinTrigger : MonoBehaviour
     [SerializeField] private string _text;
     [SerializeField] private Dialog _dialog;
 
-    private bool _isShowed = false;
-
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.CompareTag("Player") && _isShowed == false)
+        if (collider.CompareTag("Player"))
         {
             _dialog.Enable(_text);
-            _isShowed = true;
         }
     }
 
