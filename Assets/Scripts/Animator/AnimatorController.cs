@@ -16,7 +16,7 @@ public class AnimatorController : MonoBehaviour
         _entity = GetComponent<AEntity>();
     }
 
-    public void Update()
+    private void Update()
     {
         HandleMove();
         HandleJump();
