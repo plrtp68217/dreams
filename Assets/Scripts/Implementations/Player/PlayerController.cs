@@ -27,8 +27,6 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(_player.IsOnGround);
-
         if (_inputService.Direction != 0)
         {
             _player.SpriteRenderer.flipX = _inputService.Direction < 0;
