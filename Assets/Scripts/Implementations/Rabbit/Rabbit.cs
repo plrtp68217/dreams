@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 public enum RabbitState
 {
@@ -20,7 +19,7 @@ public class Rabbit : AEntity
     private float _currentDirection = 1f;
     private float _elapsedTime = 0f;
 
-    private RabbitState _currentState = RabbitState.Chasing;
+    private RabbitState _currentState = RabbitState.Patrolling;
 
     public Rigidbody2D Rigidbody { get; private set; }
     public SpriteRenderer SpriteRenderer { get; private set; }
@@ -28,6 +27,11 @@ public class Rabbit : AEntity
     public void Jump()
     {
         _movementService.Jump(Rigidbody, _jumpForce);
+    }
+
+    public void SetState(RabbitState state)
+    {
+        _currentState = state;
     }
 
     private void Start()
