@@ -71,6 +71,7 @@ public class Rabbit : AEntity
     private void Chasing()
     {
         _currentDirection = 1f;
+        HandleFlip();
         Move(_chasingSpeed);
     }
 
@@ -82,8 +83,7 @@ public class Rabbit : AEntity
     private void HandleFlip()
     {
         Vector3 scale = transform.localScale;
-        scale.x *= _currentDirection;
+        scale.x = Mathf.Abs(scale.x) * _currentDirection;
         transform.localScale = scale;
     }
-
 }
