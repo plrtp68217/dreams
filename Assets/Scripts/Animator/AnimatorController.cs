@@ -25,19 +25,19 @@ public class AnimatorController : MonoBehaviour
 
     private void HandleMove()
     {
-        if (VelocityXIsZero)
+        if (_inputService.Direction != 0)
         {
-            _animator.SetBool("isWalking", false);
+            _animator.SetBool("isWalking", true);
         }
         else
         {
-            _animator.SetBool("isWalking", true);
+            _animator.SetBool("isWalking", false);
         }
     }
 
     private void HandleJump()
     {
-        if (_wasOnGround && !_entity.IsOnGround)
+        if (_wasOnGround && _inputService.SpaceIsPressed)
         {
             _animator.SetTrigger("Jump");
         }
