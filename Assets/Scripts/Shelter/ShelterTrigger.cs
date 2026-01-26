@@ -13,8 +13,6 @@ public class ShelterTrigger : MonoBehaviour
         {
             _enteredSpriteRenderer = collider.gameObject.GetComponent<SpriteRenderer>();
 
-            Debug.Log(_enteredSpriteRenderer);
-
             if (_enteredSpriteRenderer == null) return;
 
             _spriteService.FadeSprite(_enteredSpriteRenderer, FadeDirection.Out, _fadeDuration);
@@ -24,7 +22,6 @@ public class ShelterTrigger : MonoBehaviour
     {
         if (collider.CompareTag("Player"))
         {
-            Debug.Log("exit");
             _spriteService.FadeSprite(_enteredSpriteRenderer, FadeDirection.In, _fadeDuration);
         }
     }
