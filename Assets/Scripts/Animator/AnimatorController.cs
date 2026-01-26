@@ -9,8 +9,6 @@ public class AnimatorController : MonoBehaviour
     private AEntity _entity;
     private bool _wasOnGround = true;
 
-    public bool VelocityXIsZero => Mathf.Abs(_rigidbody.linearVelocityX) <= 0.01f;
-
     private void Start()
     {
         _entity = GetComponent<AEntity>();
@@ -47,7 +45,7 @@ public class AnimatorController : MonoBehaviour
 
     private void HandleCrouching()
     {
-        if (VelocityXIsZero)
+        if (_inputService.Direction == 0)
         {
             _animator.SetBool("isCrouching", false);
             return;
