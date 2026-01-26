@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MovementService : MonoBehaviour, IMovementService
+public class MovementService : MonoBehaviour
 {
     public void Move(Rigidbody2D rb, float direction, float speed)
     {

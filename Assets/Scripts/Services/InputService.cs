@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class InputService : MonoBehaviour, IInputService
+public class InputService : MonoBehaviour
 {
     public float Direction { get; private set; }
     public bool SpaceIsPressed { get; private set; }
