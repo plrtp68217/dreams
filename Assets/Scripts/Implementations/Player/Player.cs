@@ -2,12 +2,10 @@ using UnityEngine;
 
 public class Player : AEntity
 {
-    public Rigidbody2D Rigidbody { get; private set; }
-    public SpriteRenderer SpriteRenderer { get; private set; }
-
     [SerializeField] private LayerMask _layerMask;
 
-    private readonly float _checkDistance = .5f;
+    public Rigidbody2D Rigidbody { get; private set; }
+    public SpriteRenderer SpriteRenderer { get; private set; }
 
     private void Start()
     {
@@ -33,4 +31,5 @@ public class Player : AEntity
 
         IsOnGround = hit.collider != null;
     }
+
 }

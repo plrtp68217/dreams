@@ -39,7 +39,6 @@ public class SpriteService : MonoBehaviour
         while (elapsedTime < duration)
         {
             elapsedTime += Time.deltaTime;
-
             float t  = elapsedTime / duration;
 
             spriteRenderer.color = Color.Lerp(startColor, targetColor, t);
