@@ -21,6 +21,8 @@ public class Parallax : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (_subject == null) return;
+
         Vector2 newPosition = _startPosition + Travel * ParallaxFactor;
         transform.position = new Vector3(newPosition.x, transform.position.y, _startZ); 
     }

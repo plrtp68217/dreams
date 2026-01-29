@@ -27,6 +27,8 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        if (_player.IsAlive == false) return;
+
         if (_inputService.Direction != 0)
         {
             _player.SpriteRenderer.flipX = _inputService.Direction < 0;
