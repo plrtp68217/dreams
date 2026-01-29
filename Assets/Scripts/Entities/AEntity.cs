@@ -6,6 +6,8 @@ public abstract class AEntity : MonoBehaviour, IDamageable
 {
     private Animator _animator;
 
+    public event Action OnDied;
+
     public bool IsOnGround { get; protected set; }
     public bool IsInShelter { get; protected set; }
     public bool IsAlive { get; protected set; } = true;
@@ -30,10 +32,9 @@ public abstract class AEntity : MonoBehaviour, IDamageable
         if (IsAlive)
         {
             //_animator.SetTrigger("die");
-
             Destroy(gameObject);
-
             IsAlive = false;
+            OnDied?.Invoke();
         }
     }
 
