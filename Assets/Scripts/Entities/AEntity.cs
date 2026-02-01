@@ -1,12 +1,13 @@
 ﻿using System;
 using UnityEngine;
-using UnityEngine.Splines;
 
 public abstract class AEntity : MonoBehaviour, IDamageable
 {
-    private Animator _animator;
-
     public event Action OnDied;
+
+    public Rigidbody2D Rigidbody { get; protected set; }
+    public SpriteRenderer SpriteRenderer { get; protected set; }
+    public Animator Animator { get; protected set; }
 
     public bool IsOnGround { get; protected set; }
     public bool IsInShelter { get; protected set; }
@@ -14,12 +15,9 @@ public abstract class AEntity : MonoBehaviour, IDamageable
 
     private void Start()
     {
-        TryGetComponent<Animator>(out _animator);
-    }
-
-    private void Update()
-    {
-        Debug.Log(IsAlive);
+        Rigidbody = GetComponent<Rigidbody2D>();
+        SpriteRenderer = GetComponent<SpriteRenderer>();
+        Animator = GetComponent<Animator>();
     }
 
     public void ChangeShelterStatus(bool inShelter)
@@ -31,15 +29,17 @@ public abstract class AEntity : MonoBehaviour, IDamageable
     {
         if (IsAlive)
         {
-            //_animator.SetTrigger("die");
-            Destroy(gameObject);
-            IsAlive = false;
+            SetAlive(false);
+            SetVisibility(false);
+
             OnDied?.Invoke();
         }
     }
 
     public virtual void TakeDamage(float damage)
     {
-        //_animator.SetTrigger("damage");
     }
+
+    public void SetAlive(bool alive) => IsAlive = alive;
+    public void SetVisibility(bool isVisible) => SpriteRenderer.enabled = isVisible;
 }

@@ -2,16 +2,8 @@ using UnityEngine;
 
 public class Player : AEntity
 {
+    [Header("Слой, по которому ходит Игрок")]
     [SerializeField] private LayerMask _layerMask;
-
-    public Rigidbody2D Rigidbody { get; private set; }
-    public SpriteRenderer SpriteRenderer { get; private set; }
-
-    private void Start()
-    {
-        Rigidbody = GetComponent<Rigidbody2D>();
-        SpriteRenderer = GetComponent<SpriteRenderer>();
-    }
 
     private void FixedUpdate()
     {

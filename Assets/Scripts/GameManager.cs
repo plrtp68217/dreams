@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
@@ -16,13 +17,28 @@ public class GameManager : MonoBehaviour
         _player.OnDied -= HandlePlayerDeath;
     }
 
-
     private void HandlePlayerDeath()
     {
-        _player = _checkpointService.RespawnPlayer();
+        StartCoroutine(HandlePlayerDeathCoroutine());
+    }
 
-        if (_player == null) return;
+    private IEnumerator HandlePlayerDeathCoroutine()
+    {
+        yield return new WaitForSeconds(3f);
+
+        RespawnPlayer();
 
         _cameraController.ChangeFollowTarget(_player.transform);
+    }
+
+    private void RespawnPlayer()
+    {
+        if (_checkpointService.CheckpointsCount == 0) return;
+
+        var lastCheckpoint = _checkpointService.GetLastCheckpoint();
+
+        _player.transform.position = lastCheckpoint.position;
+        _player.SetAlive(true);
+        _player.SetVisibility(true);
     }
 }

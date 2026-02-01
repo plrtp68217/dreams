@@ -21,9 +21,6 @@ public class Rabbit : AEntity
 
     private RabbitState _currentState = RabbitState.Patrolling;
 
-    public Rigidbody2D Rigidbody { get; private set; }
-    public SpriteRenderer SpriteRenderer { get; private set; }
-
     public void Jump()
     {
         _movementService.Jump(Rigidbody, _jumpForce);
@@ -32,12 +29,6 @@ public class Rabbit : AEntity
     public void SetState(RabbitState state)
     {
         _currentState = state;
-    }
-
-    private void Start()
-    {
-        Rigidbody = GetComponent<Rigidbody2D>();
-        SpriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
