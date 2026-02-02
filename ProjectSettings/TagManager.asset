@@ -16,7 +16,7 @@ TagManager:
   - Water
   - UI
   - Damageable
-  - 
+  - Spoting
   - 
   - 
   - 
@@ -44,6 +44,18 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2894022997
+    locked: 0
+  - name: Objects
+    uniqueID: 2441666731
+    locked: 0
+  - name: Characters
+    uniqueID: 2047744745
+    locked: 0
+  - name: UI
+    uniqueID: 203540845
     locked: 0
   m_RenderingLayers:
   - Default

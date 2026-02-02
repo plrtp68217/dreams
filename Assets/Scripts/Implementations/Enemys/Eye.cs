@@ -23,6 +23,7 @@ public class Eye : AEntity
     [SerializeField] private float _lineWidth = 0.1f;
     [SerializeField] private float _lineOffsetY;
 
+
     private LineRenderer _lineRenderer;
     private float _currentAngle;
     private float _timer;
@@ -51,7 +52,7 @@ public class Eye : AEntity
 
     private void FixedUpdate()
     {
-        DrawLaser();
+        //DrawLaser();
 
         _raycastTimer -= Time.deltaTime;
 
@@ -73,7 +74,7 @@ public class Eye : AEntity
         _lineRenderer.positionCount = 2;
         _lineRenderer.startWidth = _lineWidth;
         _lineRenderer.endWidth = _lineWidth;
-        _lineRenderer.material = new Material(Shader.Find("Sprites/Default"));
+        _lineRenderer.material = new Material(Shader.Find("Unlit/Color"));
         _lineRenderer.startColor = _lineColor;
         _lineRenderer.endColor = _lineColor;
 
