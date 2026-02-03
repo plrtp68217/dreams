@@ -9,18 +9,15 @@ public class TestEye : AEntity
     [SerializeField] private float _rayCastLength = 10f;
 
     [Header("Variation Settings")]
-    [SerializeField] private float speedVariation = 0.3f;
-    [SerializeField] private float phaseOffsetRange = 2f;
+    [SerializeField] private float speedVariation = 0.4f;
 
     private readonly float _swingSpeed = 1f;
     private readonly float _swingAngle = 45f;
     private float _mySwingSpeed;
 
-    private readonly float _startAngle = 0f;
     private float _currentAngle;
 
     private float _timer;
-    private float _phaseOffset;
 
     private Vector3 _raycastDirection;
     private float _raycastTimer;
@@ -29,8 +26,6 @@ public class TestEye : AEntity
 
     private void Start()
     {
-        _timer = _phaseOffset;
-
         _contactFilter = new()
         {
             useTriggers = false,
@@ -41,16 +36,15 @@ public class TestEye : AEntity
         _hitBuffer = new RaycastHit2D[maxTargets];
 
         _mySwingSpeed = _swingSpeed * Random.Range(1f - speedVariation, 1f + speedVariation);
-        _phaseOffset = Random.Range(0f, phaseOffsetRange * Mathf.PI);
     }
 
     private void FixedUpdate()
     {
         _timer += Time.deltaTime * _mySwingSpeed;
-        _currentAngle = _startAngle + Mathf.Sin(_timer) * _swingAngle;
+
+        _currentAngle = Mathf.Sin(_timer) * _swingAngle;
 
         Quaternion rotation = Quaternion.Euler(0, 0, _currentAngle);
-
         gameObject.transform.rotation = rotation;
 
         _raycastDirection = rotation * Vector3.down;
@@ -58,12 +52,12 @@ public class TestEye : AEntity
 
         if (_raycastTimer <= 0f)
         {
-            PerformOptimizedRaycast();
+            PerformRaycast();
             _raycastTimer = raycastFrequency;
         }
     }
 
-    void PerformOptimizedRaycast()
+    private void PerformRaycast()
     {
         Vector2 startPoint = transform.position;
         Vector2 direction = _raycastDirection;
