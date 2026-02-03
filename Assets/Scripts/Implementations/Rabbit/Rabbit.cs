@@ -4,6 +4,7 @@ public enum RabbitState
 {
     Patrolling,
     Chasing,
+    MovingRight,
 }
 
 public class Rabbit : AEntity
@@ -15,6 +16,8 @@ public class Rabbit : AEntity
 
     [SerializeField] private float _chasingSpeed;
     [SerializeField] private float _jumpForce;
+
+    [SerializeField] private float _defaultSpeed;
 
     private float _currentDirection = 1f;
     private float _elapsedTime = 0f;
@@ -31,6 +34,11 @@ public class Rabbit : AEntity
         _currentState = state;
     }
 
+    public override void Die()
+    {
+        Destroy(gameObject);
+    }
+
     private void Update()
     {
         if (_currentState == RabbitState.Patrolling)
@@ -41,6 +49,12 @@ public class Rabbit : AEntity
         {
             Chasing();
         }
+        else if (_currentState == RabbitState.MovingRight)
+        {
+            MovingRight();
+        }
+
+        HandleFlip();
     }
 
     private void Patrolling()
@@ -52,8 +66,6 @@ public class Rabbit : AEntity
             _elapsedTime = 0f;
 
             _currentDirection *= -1f;
-
-            HandleFlip();
         }
 
         Move(_patrollingSpeed);
@@ -62,8 +74,13 @@ public class Rabbit : AEntity
     private void Chasing()
     {
         _currentDirection = 1f;
-        HandleFlip();
         Move(_chasingSpeed);
+    }
+
+    private void MovingRight()
+    {
+        _currentDirection = 1f;
+        Move(_defaultSpeed);
     }
 
     private void Move(float speed)
