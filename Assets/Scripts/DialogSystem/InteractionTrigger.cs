@@ -42,7 +42,7 @@ public class InteractionTrigger : MonoBehaviour
         if (_inputService.EIsPressed && _isEntered)
         {
             _dialog.Enable(_text);
-            _animator.SetTrigger("Reach");
+            _animator.SetTrigger(AnimatorTrigger.Reach.ToString());
 
             _coroutine = StartCoroutine(DisableDialog());
         }

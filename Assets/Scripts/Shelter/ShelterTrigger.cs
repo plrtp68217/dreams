@@ -28,7 +28,7 @@ public class ShelterTrigger : MonoBehaviour
 
     private void HandleTriggerInside(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.TryGetComponent(out Player _))
         {
             _spriteRenderer = _entity.SpriteRenderer;
 
@@ -42,7 +42,7 @@ public class ShelterTrigger : MonoBehaviour
 
     private void HandleTriggerOutside(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.TryGetComponent(out Player _))
         {
             if (_entity.IsInShelter == false) return;
 

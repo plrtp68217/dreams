@@ -28,11 +28,11 @@ public class AnimatorController : MonoBehaviour
         if (_inputService.Direction != 0 && 
             _inputService.ControlIsHolding == false)
         {
-            _animator.SetBool("isWalking", true);
+            _animator.SetBool(AnimatorBool.IsWalking.ToString(), true);
         }
         else
         {
-            _animator.SetBool("isWalking", false);
+            _animator.SetBool(AnimatorBool.IsWalking.ToString(), false);
         }
     }
 
@@ -42,11 +42,11 @@ public class AnimatorController : MonoBehaviour
             _inputService.ControlIsHolding == false &&
             _inputService.ShiftIsHolding == true)
         {
-            _animator.SetBool("isRunning", true);
+            _animator.SetBool(AnimatorBool.IsRunning.ToString(), true);
         }
         else
         {
-            _animator.SetBool("isRunning", false);
+            _animator.SetBool(AnimatorBool.IsRunning.ToString(), false);
         }
     }
 
@@ -55,11 +55,11 @@ public class AnimatorController : MonoBehaviour
         if (_inputService.Direction != 0 && 
             _inputService.ControlIsHolding == true)
         {
-            _animator.SetBool("isCrouching", true);
+            _animator.SetBool(AnimatorBool.IsCrouching.ToString(), true);
         }
         else
         {
-            _animator.SetBool("isCrouching", false);
+            _animator.SetBool(AnimatorBool.IsCrouching.ToString(), false);
         }
     }
 
@@ -68,11 +68,11 @@ public class AnimatorController : MonoBehaviour
         if (_inputService.Direction == 0 && 
             _inputService.ControlIsHolding == true)
         {
-            _animator.SetBool("isSitting", true);
+            _animator.SetBool(AnimatorBool.IsSitting.ToString(), true);
         }
         else
         {
-            _animator.SetBool("isSitting", false);
+            _animator.SetBool(AnimatorBool.IsSitting.ToString(), false);
         }
     }
 
@@ -80,7 +80,7 @@ public class AnimatorController : MonoBehaviour
     {
         if (_wasOnGround && _inputService.SpaceIsPressed)
         {
-            _animator.SetTrigger("Jump");
+            _animator.SetTrigger(AnimatorTrigger.Jump.ToString());
         }
 
         _wasOnGround = _entity.IsOnGround;

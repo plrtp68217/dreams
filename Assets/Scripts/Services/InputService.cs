@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class InputService : MonoBehaviour
 {
+    public const string Horizontal = "Horizontal";
+
     public float Direction { get; private set; }
     public bool SpaceIsPressed { get; private set; }
     public bool EIsPressed { get; private set; }
@@ -10,7 +12,7 @@ public class InputService : MonoBehaviour
 
     private void Update()
     {
-        Direction = Input.GetAxis("Horizontal");
+        Direction = Input.GetAxis(Horizontal);
 
         SpaceIsPressed = Input.GetButton(KeyCode.Space.ToString());
         EIsPressed = Input.GetButton(KeyCode.E.ToString());
