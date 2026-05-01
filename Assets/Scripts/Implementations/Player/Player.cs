@@ -23,5 +23,4 @@ public class Player : AEntity
 
         IsOnGround = hit.collider != null;
     }
-
 }

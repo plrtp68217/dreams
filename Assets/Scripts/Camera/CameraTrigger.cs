@@ -9,15 +9,21 @@ public class CameraTrigger : MonoBehaviour
 
     [SerializeField] private float _delayDuration;
 
+    private WaitForSeconds _waiter;
+    private Coroutine _coroutine;
+
     private bool _isActivated = false;
 
-    private Coroutine _coroutine;
+    private void Awake()
+    {
+        _waiter = new WaitForSeconds(_delayDuration);
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (_isActivated == true) return;
 
-        if (other.CompareTag("Player"))
+        if (other.TryGetComponent(out Player _))
         {
             _coroutine = StartCoroutine(ChangeFollowTarget());
             _isActivated = true;
@@ -36,7 +42,7 @@ public class CameraTrigger : MonoBehaviour
     private IEnumerator ChangeFollowTarget()
     {
         _cameraController.ChangeFollowTarget(_newTarget);
-        yield return new WaitForSeconds(_delayDuration);
+        yield return _waiter;
         _cameraController.ChangeFollowTarget(_oldTarget);
     }
 }

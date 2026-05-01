@@ -1,20 +1,29 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class PlayerDeathHandler : MonoBehaviour
 {
     [SerializeField] private CheckpointService _checkpointService;
     [SerializeField] private CameraController _cameraController;
     [SerializeField] private Player _player;
 
+    [SerializeField] private float _deathDelay = 3f;
+
+    private WaitForSeconds _waiter;
+
+    private void Awake()
+    {
+        _waiter = new WaitForSeconds(_deathDelay);
+    }
+
     private void OnEnable()
     {
-        _player.OnDied += HandlePlayerDeath;
+        _player.Died += HandlePlayerDeath;
     }
 
     private void OnDisable()
     {
-        _player.OnDied -= HandlePlayerDeath;
+        _player.Died -= HandlePlayerDeath;
     }
 
     private void HandlePlayerDeath()
@@ -24,7 +33,7 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator HandlePlayerDeathCoroutine()
     {
-        yield return new WaitForSeconds(3f);
+        yield return _waiter;
 
         RespawnPlayer();
 

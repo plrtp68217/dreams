@@ -10,7 +10,7 @@ public class CheckpointTrigger : MonoBehaviour
     {
         if (_isAdded == true) return;
 
-        if (other.CompareTag("Player"))
+        if (other.TryGetComponent(out Player _))
         {
             _checkpointService.AddCheckpoint(transform);
 

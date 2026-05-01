@@ -2,4 +2,5 @@
 {
     Player,
     Rabbit,
+    Obstacle,
 }

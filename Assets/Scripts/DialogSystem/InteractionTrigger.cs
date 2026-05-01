@@ -8,17 +8,22 @@ public class InteractionTrigger : MonoBehaviour
 
     [SerializeField] private Dialog _dialog;
     [SerializeField] private Animator _animator;
-
     [SerializeField] private InputService _inputService;
 
-    private bool _isEntered = false;
     private readonly float _delayTime = 5f;
 
+    private bool _isEntered = false;
     private Coroutine _coroutine;
+    private WaitForSeconds _waiter;
+
+    private void Awake()
+    {
+        _waiter = new WaitForSeconds(_delayTime);
+    }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.CompareTag("Player"))
+        if (collider.TryGetComponent(out Player _))
         {
             _isEntered = true;
         }
@@ -26,7 +31,7 @@ public class InteractionTrigger : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collider)
     {
-        if (collider.CompareTag("Player"))
+        if (collider.TryGetComponent(out Player _))
         {
             _isEntered = false;
         }
@@ -54,7 +59,7 @@ public class InteractionTrigger : MonoBehaviour
 
     private IEnumerator DisableDialog()
     {
-        yield return new WaitForSeconds(_delayTime);
+        yield return _waiter;
 
         _dialog.Disable();
     }

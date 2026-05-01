@@ -8,7 +8,7 @@ public class JoinTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.CompareTag("Player"))
+        if (collider.TryGetComponent(out Player _))
         {
             _dialog.Enable(_text);
         }
@@ -16,7 +16,7 @@ public class JoinTrigger : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collider)
     {
-        if (collider.CompareTag("Player"))
+        if (collider.TryGetComponent(out Player _))
         {
             _dialog.Disable();
         }

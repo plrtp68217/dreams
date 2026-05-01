@@ -3,7 +3,7 @@ using UnityEngine;
 
 public abstract class AEntity : MonoBehaviour, IDamageable
 {
-    public event Action OnDied;
+    public event Action Died;
 
     public Rigidbody2D Rigidbody { get; protected set; }
     public SpriteRenderer SpriteRenderer { get; protected set; }
@@ -32,14 +32,22 @@ public abstract class AEntity : MonoBehaviour, IDamageable
             SetAlive(false);
             SetVisibility(false);
 
-            OnDied?.Invoke();
+            Died?.Invoke();
         }
     }
 
-    public virtual void TakeDamage(float damage)
+    public virtual void TakeDamage(float damage) { }
+
+    public void SetAlive(bool alive)
     {
+        IsAlive = alive;
     }
 
-    public void SetAlive(bool alive) => IsAlive = alive;
-    public void SetVisibility(bool isVisible) => SpriteRenderer.enabled = isVisible;
+    public void SetVisibility(bool isVisible)
+    {
+        if (SpriteRenderer != null)
+        {
+            SpriteRenderer.enabled = isVisible;
+        }
+    }
 }

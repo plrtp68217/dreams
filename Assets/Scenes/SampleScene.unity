@@ -4559,6 +4559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RabbitSensor
   _rabbit: {fileID: 145615720}
+  _triggerTag: 2
 --- !u!61 &1134296586
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10237,6 +10238,7 @@ MonoBehaviour:
   _checkpointService: {fileID: 1231177069}
   _cameraController: {fileID: 543682623}
   _player: {fileID: 858534450}
+  _deathDelay: 3
 --- !u!4 &2085052620
 Transform:
   m_ObjectHideFlags: 0
