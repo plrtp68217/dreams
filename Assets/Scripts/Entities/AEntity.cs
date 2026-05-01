@@ -29,8 +29,6 @@ public abstract class AEntity : MonoBehaviour, IDamageable
     {
         if (IsAlive)
         {
-            Debug.Log("УМИРАЮЮЮЮ.");
-
             SetAlive(false);
             SetVisibility(false);
 

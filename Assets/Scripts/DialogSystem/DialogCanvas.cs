@@ -10,17 +10,35 @@ public class DialogCanvas : Dialog
 
     [SerializeField] private float fadeTime = 1f;
 
+    private Coroutine _textCoroutine;
+    private Coroutine _imageCoroutine;
+
+    private void OnDisable()
+    {
+        if (_textCoroutine != null)
+        {
+            StopCoroutine(_textCoroutine);
+            _textCoroutine = null;
+        }
+
+        if (_imageCoroutine != null)
+        {
+            StopCoroutine(_imageCoroutine);
+            _imageCoroutine = null;
+        }
+    }
+
     public override void Enable(string text)
     {
         _textMeshPro.text = text;
 
-        StartCoroutine(TransitionUtils.FadeGraphic(_image, fadeTime, 1f));
-        StartCoroutine(TransitionUtils.FadeGraphic(_textMeshPro, fadeTime, 1f));
+        _textCoroutine = StartCoroutine(TransitionUtils.FadeGraphic(_image, fadeTime, 1f));
+        _imageCoroutine = StartCoroutine(TransitionUtils.FadeGraphic(_textMeshPro, fadeTime, 1f));
     }
 
     public override void Disable()
     {
-        StartCoroutine(TransitionUtils.FadeGraphic(_image, fadeTime, 0f));
-        StartCoroutine(TransitionUtils.FadeGraphic(_textMeshPro, fadeTime, 0f));
+        _textCoroutine = StartCoroutine(TransitionUtils.FadeGraphic(_image, fadeTime, 0f));
+        _imageCoroutine = StartCoroutine(TransitionUtils.FadeGraphic(_textMeshPro, fadeTime, 0f));
     }
 }

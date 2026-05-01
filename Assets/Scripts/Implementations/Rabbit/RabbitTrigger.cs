@@ -10,6 +10,7 @@ public class RabbitTrigger : MonoBehaviour
     [SerializeField] private CustomTag _actor;
 
     private bool _isActivated = false;
+    private Coroutine _coroutine;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -17,9 +18,17 @@ public class RabbitTrigger : MonoBehaviour
         
         if (other.CompareTag(_actor.ToString()))
         {
-            Debug.Log(CustomTag.Rabbit.ToString());
-            StartCoroutine(ChangeState());
+            _coroutine = StartCoroutine(ChangeState());
             _isActivated = true;
+        }
+    }
+
+    private void OnDisable()
+    {
+        if (_coroutine != null)
+        {
+            StopCoroutine(_coroutine);
+            _coroutine = null;
         }
     }
 

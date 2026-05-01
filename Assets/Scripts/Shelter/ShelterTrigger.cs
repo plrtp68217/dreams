@@ -30,7 +30,7 @@ public class ShelterTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            _spriteRenderer = _entity.GetComponent<SpriteRenderer>();
+            _spriteRenderer = _entity.SpriteRenderer;
 
             if (_spriteRenderer == null) return;
 
@@ -45,6 +45,8 @@ public class ShelterTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             if (_entity.IsInShelter == false) return;
+
+            if (_spriteRenderer == null) return;
 
             _entity.ChangeShelterStatus(false);
 

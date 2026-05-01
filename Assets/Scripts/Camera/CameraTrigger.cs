@@ -11,14 +11,25 @@ public class CameraTrigger : MonoBehaviour
 
     private bool _isActivated = false;
 
+    private Coroutine _coroutine;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (_isActivated == true) return;
 
         if (other.CompareTag("Player"))
         {
-            StartCoroutine(ChangeFollowTarget());
+            _coroutine = StartCoroutine(ChangeFollowTarget());
             _isActivated = true;
+        }
+    }
+
+    private void OnDisable()
+    {
+        if (_coroutine != null)
+        {
+            StopCoroutine(_coroutine);
+            _coroutine = null;
         }
     }
 

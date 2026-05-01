@@ -19,8 +19,19 @@ public class PlayerController : MonoBehaviour
     {
         get
         {
-            if (_inputService.ShiftIsHolding) return _accelerationMultiplier;
-            if (_inputService.ControlIsHolding) return _decelerationMultiplier;
+            if(_inputService.ShiftIsHolding && _inputService.ControlIsHolding)
+            {
+                return _decelerationMultiplier;
+            }
+            else if (_inputService.ShiftIsHolding)
+            {
+                return _accelerationMultiplier;
+            }
+            else if (_inputService.ControlIsHolding)
+            {
+                return _decelerationMultiplier;
+            }
+
             return defaultMultiplier;
         }
     }

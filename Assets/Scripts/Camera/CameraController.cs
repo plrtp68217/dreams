@@ -7,20 +7,30 @@ public class CameraController : MonoBehaviour
     [SerializeField] private CinemachineCamera _camera;
     [SerializeField] private float transitionDuration = 1f;
 
-    private Coroutine _transitionCoroutine;
+    private Coroutine _coroutine;
+
+    private void OnDisable()
+    {
+        if (_coroutine != null)
+        {
+            StopCoroutine(_coroutine);
+            _coroutine = null;
+        }
+    }
 
     public void ChangeFollowTarget(Transform target, bool smoothTransition = true)
     {
         if (target == null) return;
 
-        if (_transitionCoroutine != null)
+        if (_coroutine != null)
         {
-            StopCoroutine(_transitionCoroutine);
+            StopCoroutine(_coroutine);
+            _coroutine = null;
         }
 
         if (smoothTransition)
         {
-            _transitionCoroutine = StartCoroutine(SmoothTransition(target));
+            _coroutine = StartCoroutine(SmoothTransition(target));
         }
         else
         {

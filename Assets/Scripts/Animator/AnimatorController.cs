@@ -17,6 +17,7 @@ public class AnimatorController : MonoBehaviour
     private void Update()
     {
         HandleMove();
+        HandleRunning();
         HandleCrouching();
         HandleSitting();
         HandleJump();
@@ -24,7 +25,8 @@ public class AnimatorController : MonoBehaviour
 
     private void HandleMove()
     {
-        if (_inputService.Direction != 0 && _inputService.ControlIsHolding == false)
+        if (_inputService.Direction != 0 && 
+            _inputService.ControlIsHolding == false)
         {
             _animator.SetBool("isWalking", true);
         }
@@ -34,9 +36,24 @@ public class AnimatorController : MonoBehaviour
         }
     }
 
+    private void HandleRunning()
+    {
+        if (_inputService.Direction != 0 && 
+            _inputService.ControlIsHolding == false &&
+            _inputService.ShiftIsHolding == true)
+        {
+            _animator.SetBool("isRunning", true);
+        }
+        else
+        {
+            _animator.SetBool("isRunning", false);
+        }
+    }
+
     private void HandleCrouching()
     {
-        if (_inputService.Direction != 0 && _inputService.ControlIsHolding == true)
+        if (_inputService.Direction != 0 && 
+            _inputService.ControlIsHolding == true)
         {
             _animator.SetBool("isCrouching", true);
         }
@@ -48,7 +65,8 @@ public class AnimatorController : MonoBehaviour
 
     private void HandleSitting()
     {
-        if (_inputService.Direction == 0 && _inputService.ControlIsHolding == true)
+        if (_inputService.Direction == 0 && 
+            _inputService.ControlIsHolding == true)
         {
             _animator.SetBool("isSitting", true);
         }
@@ -67,6 +85,4 @@ public class AnimatorController : MonoBehaviour
 
         _wasOnGround = _entity.IsOnGround;
     }
-
-
 }

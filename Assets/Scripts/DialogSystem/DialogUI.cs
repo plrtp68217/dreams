@@ -7,13 +7,24 @@ public class DialogUI : Dialog
 
     private Image[] _images;
 
+    private Coroutine _coroutine;
+
+    private void OnDisable()
+    {
+        if (_coroutine != null)
+        {
+            StopCoroutine(_coroutine);
+            _coroutine = null;
+        }
+    }
+
     public override void Enable(string text)
     {
         _images = GetComponentsInChildren<Image>();
 
         foreach (Image image in _images)
         {
-            StartCoroutine(TransitionUtils.FadeGraphic(image, fadeTime, 1f));
+            _coroutine = StartCoroutine(TransitionUtils.FadeGraphic(image, fadeTime, 1f));
         }
     }
 
@@ -21,7 +32,7 @@ public class DialogUI : Dialog
     {
         foreach (Image image in _images)
         {
-            StartCoroutine(TransitionUtils.FadeGraphic(image, fadeTime, 0f));
+            _coroutine = StartCoroutine(TransitionUtils.FadeGraphic(image, fadeTime, 0f));
         }
     }
 }

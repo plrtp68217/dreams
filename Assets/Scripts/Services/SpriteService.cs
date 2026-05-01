@@ -8,16 +8,16 @@ public class SpriteService : MonoBehaviour
     private Color _minColorValue = new(0.5f, 0.5f, 0.5f, 1f);
     private Color _maxColorValue = new(1f, 1f, 1f, 1f);
 
-    private Coroutine _currentFadeCoroutine;
+    private Coroutine _fadeCoroutine;
 
     public void FadeSprite(SpriteRenderer spriteRenderer, FadeDirection direction, float duration)
     {
-        if (_currentFadeCoroutine != null)
+        if (_fadeCoroutine != null)
         {
-            StopCoroutine(_currentFadeCoroutine);
+            StopCoroutine(_fadeCoroutine);
         }
 
-        _currentFadeCoroutine = StartCoroutine(FadeSpriteRoutine(spriteRenderer, direction, duration));
+        _fadeCoroutine = StartCoroutine(FadeSpriteRoutine(spriteRenderer, direction, duration));
     }
 
     private IEnumerator FadeSpriteRoutine(SpriteRenderer spriteRenderer, FadeDirection direction, float duration)
@@ -46,6 +46,6 @@ public class SpriteService : MonoBehaviour
             yield return null;
         }
 
-        _currentFadeCoroutine = null;
+        _fadeCoroutine = null;
     }
 }

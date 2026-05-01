@@ -1,12 +1,5 @@
 ﻿using UnityEngine;
 
-public enum RabbitState
-{
-    Patrolling,
-    Chasing,
-    MovingRight,
-}
-
 public class Rabbit : AEntity
 {
     [SerializeField] private MovementService _movementService;
