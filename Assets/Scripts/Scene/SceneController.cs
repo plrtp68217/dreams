@@ -1,6 +1,7 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Scer : MonoBehaviour
+public class SceneController : MonoBehaviour
 {
     public void ExitGame()
     {
@@ -9,5 +10,10 @@ public class Scer : MonoBehaviour
         #else
             Application.Quit();
         #endif
+    }
+
+    public void StartScene(int sceneId)
+    {
+        SceneManager.LoadScene(sceneId);
     }
 }
