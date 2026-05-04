@@ -5,19 +5,24 @@ public class InputService : MonoBehaviour
     public const string Horizontal = "Horizontal";
 
     public float Direction { get; private set; }
-    public bool SpaceIsPressed { get; private set; }
     public bool EIsPressed { get; private set; }
+    public bool SpaceIsHolding { get; private set; }
     public bool ShiftIsHolding { get; private set; }
     public bool ControlIsHolding { get; private set; }
 
+    /*
+     Input.GetKeyDown - один раз при нажатии
+     Input.GetKey     - каждый кадр пока зажато
+     Input.GetKeyUp   - один раз при отпускании
+     */
     private void Update()
     {
         Direction = Input.GetAxis(Horizontal);
 
-        SpaceIsPressed = Input.GetButton(KeyCode.Space.ToString());
-        EIsPressed = Input.GetButton(KeyCode.E.ToString());
+        EIsPressed = Input.GetKeyDown(KeyCode.E);
 
-        ShiftIsHolding = Input.GetButton(KeyCode.LeftShift.ToString());
-        ControlIsHolding = Input.GetButton(KeyCode.LeftControl.ToString());
+        SpaceIsHolding = Input.GetKey(KeyCode.Space);
+        ShiftIsHolding = Input.GetKey(KeyCode.LeftShift);
+        ControlIsHolding = Input.GetKey(KeyCode.LeftControl);
     }
 }

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _accelerationMultiplier = 2f;
     [SerializeField] private float _decelerationMultiplier = 0.5f;
 
-    private readonly float defaultMultiplier = 1.0f;
+    private readonly float _defaultMultiplier = 1.0f;
 
     public float SpeedMultiplier
     {
@@ -32,7 +33,7 @@ public class PlayerController : MonoBehaviour
                 return _decelerationMultiplier;
             }
 
-            return defaultMultiplier;
+            return _defaultMultiplier;
         }
     }
 
@@ -54,7 +55,7 @@ public class PlayerController : MonoBehaviour
                 );
         }
 
-        if (_inputService.SpaceIsPressed && _player.IsOnGround)
+        if (_inputService.SpaceIsHolding && _player.IsOnGround)
         {
             _movementService.Jump(_player.Rigidbody, _jumpForce);
         }

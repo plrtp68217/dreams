@@ -25,7 +25,7 @@ public class CameraTrigger : MonoBehaviour
 
         if (other.TryGetComponent(out Player _))
         {
-            _coroutine = StartCoroutine(ChangeFollowTarget());
+            _coroutine = StartCoroutine(ChangeFollowTargetByTime());
             _isActivated = true;
         }
     }
@@ -39,7 +39,7 @@ public class CameraTrigger : MonoBehaviour
         }
     }
 
-    private IEnumerator ChangeFollowTarget()
+    private IEnumerator ChangeFollowTargetByTime()
     {
         _cameraController.ChangeFollowTarget(_newTarget);
         yield return _waiter;

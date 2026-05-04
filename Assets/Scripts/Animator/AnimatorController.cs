@@ -78,7 +78,7 @@ public class AnimatorController : MonoBehaviour
 
     private void HandleJump()
     {
-        if (_wasOnGround && _inputService.SpaceIsPressed)
+        if (_wasOnGround && _inputService.SpaceIsHolding)
         {
             _animator.SetTrigger(AnimatorTrigger.Jump.ToString());
         }

@@ -3,25 +3,25 @@ using UnityEngine.EventSystems;
 
 public class ButtonHoverSound : MonoBehaviour, IPointerEnterHandler
 {
-    [SerializeField] private AudioClip hoverClip;
-    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip _hoverClip;
+    [SerializeField] private AudioSource _audioSource;
 
-    [SerializeField][Range(0f, 1f)] private float volume = 0.5f;
+    [SerializeField][Range(0f, 1f)] private float _volume = 0.5f;
 
     private void Awake()
     {
-        if (audioSource != null)
+        if (_audioSource != null)
         {
-            audioSource.playOnAwake = false;
-            audioSource.loop = false;
+            _audioSource.playOnAwake = false;
+            _audioSource.loop = false;
         }
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        if (hoverClip != null && audioSource != null)
+        if (_hoverClip != null && _audioSource != null)
         {
-            audioSource.PlayOneShot(hoverClip, volume);
+            _audioSource.PlayOneShot(_hoverClip, _volume);
         }
     }
 }
