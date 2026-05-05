@@ -22,6 +22,11 @@ public class AudioController : MonoBehaviour
 
     public void SetVolume(float volume)
     {
+        if (_audioSource == null)
+        {
+            return;
+        }
+
         _audioSource.volume = Mathf.Clamp01(volume);
     }
 }

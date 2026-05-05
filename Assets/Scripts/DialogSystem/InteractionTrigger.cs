@@ -10,10 +10,6 @@ public class InteractionTrigger : MonoBehaviour
     [SerializeField] private Animator _animator;
     [SerializeField] private InputService _inputService;
 
-    [SerializeField] private AudioSource _audioSource;
-    [SerializeField] private AudioClip _interactionClip;
-    [SerializeField][Range(0f, 1f)] private float _volume = 0.5f;
-
     private readonly float _delayTime = 5f;
 
     private bool _isEntered = false;
@@ -49,8 +45,6 @@ public class InteractionTrigger : MonoBehaviour
             _dialog.Enable(_text);
 
             _animator.SetTrigger(AnimatorTrigger.Reach.ToString());
-
-            _audioSource.PlayOneShot(_interactionClip, _volume);
 
             _coroutine = StartCoroutine(DisableDialog());
 
