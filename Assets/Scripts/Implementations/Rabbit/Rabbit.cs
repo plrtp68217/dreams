@@ -3,6 +3,7 @@
 public class Rabbit : AEntity
 {
     [SerializeField] private MovementService _movementService;
+    [SerializeField] private Animator _animator;
 
     [SerializeField] private float _patrollingSpeed;
     [SerializeField] private float _patrollingFacingTime;

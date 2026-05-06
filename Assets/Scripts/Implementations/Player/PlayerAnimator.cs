@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class AnimatorController : MonoBehaviour
+public class PlayerAnimator : MonoBehaviour
 {
     [SerializeField] private InputService _inputService;
     [SerializeField] private Animator _animator;
