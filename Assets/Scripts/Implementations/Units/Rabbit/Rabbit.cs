@@ -3,7 +3,7 @@
 public class Rabbit : AEntity
 {
     [SerializeField] private MovementService _movementService;
-    [SerializeField] private Animator _animator;
+    [SerializeField] private UnitAnimatorController _unitAnimatorController;
 
     [SerializeField] private float _patrollingSpeed;
     [SerializeField] private float _patrollingFacingTime;
@@ -17,21 +17,6 @@ public class Rabbit : AEntity
     private float _elapsedTime = 0f;
 
     private RabbitState _currentState = RabbitState.Patrolling;
-
-    public void Jump()
-    {
-        _movementService.Jump(Rigidbody, _jumpForce);
-    }
-
-    public void SetState(RabbitState state)
-    {
-        _currentState = state;
-    }
-
-    public override void Die()
-    {
-        Destroy(gameObject);
-    }
 
     private void Update()
     {
@@ -49,6 +34,31 @@ public class Rabbit : AEntity
         }
 
         HandleFlip();
+    }
+
+    public void SetState(RabbitState state)
+    {
+        if (state == RabbitState.Chasing)
+        {
+            _unitAnimatorController.SetRunning(true);
+        }
+        else
+        {
+            _unitAnimatorController.SetRunning(false);
+        }
+
+        _currentState = state;
+    }
+
+    public void Jump()
+    {
+        _movementService.Jump(Rigidbody, _jumpForce);
+        _unitAnimatorController.SetJumping();
+    }
+
+    public override void Die()
+    {
+        Destroy(gameObject);
     }
 
     private void Patrolling()

@@ -405,13 +405,14 @@ GameObject:
   m_Component:
   - component: {fileID: 145615724}
   - component: {fileID: 145615720}
-  - component: {fileID: 145615723}
+  - component: {fileID: 145615727}
   - component: {fileID: 145615726}
+  - component: {fileID: 145615723}
   - component: {fileID: 145615722}
   - component: {fileID: 145615725}
   m_Layer: 6
   m_Name: Rabbit
-  m_TagString: Rabbit
+  m_TagString: Unit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -429,7 +430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Rabbit
   _movementService: {fileID: 819289234}
-  _animator: {fileID: 0}
+  _unitAnimatorController: {fileID: 145615727}
   _patrollingSpeed: 0.2
   _patrollingFacingTime: 4
   _chasingSpeed: 1.46
@@ -570,7 +571,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.07540088}
+  m_Offset: {x: -0.016643398, y: -0.07540088}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -580,7 +581,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.23, y: 0.17140956}
+  m_Size: {x: 0.21890424, y: 0.17140956}
   m_EdgeRadius: 0
 --- !u!95 &145615726
 Animator:
@@ -604,6 +605,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &145615727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145615719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b2b606e88702f14fb1c99dcd9fe2242, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UnitAnimatorController
+  _entityAnimator: {fileID: 145615726}
 --- !u!1 &152164582
 GameObject:
   m_ObjectHideFlags: 0
@@ -1368,7 +1382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RabbitTrigger
   _rabbit: {fileID: 145615720}
-  _state: 2
+  _state: 3
   _reactionDelay: 0
   _actor: 0
 --- !u!1 &276359092
@@ -3032,7 +3046,7 @@ Camera:
   far clip plane: 50
   field of view: 22.619677
   orthographic: 1
-  orthographic size: 0.8
+  orthographic size: 0.9
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -8868,7 +8882,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RabbitTrigger
   _rabbit: {fileID: 145615720}
-  _state: 0
+  _state: 1
   _reactionDelay: 0
   _actor: 1
 --- !u!1 &1773716007
@@ -9581,7 +9595,7 @@ Transform:
   m_GameObject: {fileID: 1867038063}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.6, y: -0.26, z: 0}
+  m_LocalPosition: {x: 1.821, y: -0.238, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9857,7 +9871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RabbitTrigger
   _rabbit: {fileID: 145615720}
-  _state: 1
+  _state: 2
   _reactionDelay: 3
   _actor: 0
 --- !u!1 &1931680351

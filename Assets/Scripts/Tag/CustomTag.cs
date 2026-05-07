@@ -1,6 +1,6 @@
 ﻿public enum CustomTag
 {
     Player,
-    Rabbit,
+    Unit,
     Obstacle,
 }

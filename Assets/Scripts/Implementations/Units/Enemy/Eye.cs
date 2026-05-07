@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class TestEye : AEntity
+public class Eye : AEntity
 {
     [Header("Raycast Settings")]
     [SerializeField] private LayerMask damageableLayers;
@@ -24,7 +24,7 @@ public class TestEye : AEntity
     private RaycastHit2D[] _hitBuffer;
     private ContactFilter2D _contactFilter;
 
-    private void Start()
+    private void Awake()
     {
         _contactFilter = new()
         {
@@ -40,14 +40,28 @@ public class TestEye : AEntity
 
     private void FixedUpdate()
     {
-        _timer += Time.deltaTime * _mySwingSpeed;
+        UpdateTimer();
+        UpdateSwingRotation();
+        UpdateRaycast();
+    }
 
+    private void UpdateTimer()
+    {
+        _timer += Time.deltaTime * _mySwingSpeed;
+    }
+
+    private void UpdateSwingRotation()
+    {
         _currentAngle = Mathf.Sin(_timer) * _swingAngle;
 
         Quaternion rotation = Quaternion.Euler(0, 0, _currentAngle);
         gameObject.transform.rotation = rotation;
 
         _raycastDirection = rotation * Vector3.down;
+    }
+
+    private void UpdateRaycast()
+    {
         _raycastTimer -= Time.deltaTime;
 
         if (_raycastTimer <= 0f)

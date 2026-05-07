@@ -7,7 +7,7 @@ TagManager:
   - Ground
   - Wall
   - Obstacle
-  - Rabbit
+  - Unit
   layers:
   - Default
   - TransparentFX
