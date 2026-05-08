@@ -11,13 +11,16 @@ public class Eye : AEntity
     [Header("Variation Settings")]
     [SerializeField] private float speedVariation = 0.4f;
 
+    [SerializeField] private Transform _aimTarget;
+
     private readonly float _swingSpeed = 1f;
     private readonly float _swingAngle = 45f;
-    private float _mySwingSpeed;
 
+     private float _mySwingSpeed;
     private float _currentAngle;
+    private float _swingTimer;
 
-    private float _timer;
+    private EyeState _eyeState = EyeState.Swing;
 
     private Vector3 _raycastDirection;
     private float _raycastTimer;
@@ -40,19 +43,45 @@ public class Eye : AEntity
 
     private void FixedUpdate()
     {
-        UpdateTimer();
-        UpdateSwingRotation();
-        UpdateRaycast();
+        if (_eyeState == EyeState.Swing)
+        {
+            UpdateSwingRotation();
+        }
+        else if (_eyeState == EyeState.Aim)
+        {
+            UpdateAimRotation();
+        }
+
+        //UpdateRaycast();
     }
 
-    private void UpdateTimer()
+    public void SetState(EyeState state)
     {
-        _timer += Time.deltaTime * _mySwingSpeed;
+        _eyeState = state;
+    }
+
+    private void UpdateAimRotation()
+    {
+        if (_aimTarget == null)
+        {
+            _eyeState = EyeState.Swing;
+            return;
+        }
+
+        Vector3 directionToTarget = (_aimTarget.transform.position - transform.position).normalized;
+
+        float angleToTarget = Vector3.SignedAngle(-transform.up, directionToTarget, transform.forward);
+
+        float lerpedAngle = Mathf.Lerp(Vector3.down.z, angleToTarget, 1);
+
+        transform.Rotate(Vector3.forward, lerpedAngle);
     }
 
     private void UpdateSwingRotation()
     {
-        _currentAngle = Mathf.Sin(_timer) * _swingAngle;
+        _swingTimer += Time.deltaTime * _mySwingSpeed;
+
+        _currentAngle = Mathf.Sin(_swingTimer) * _swingAngle;
 
         Quaternion rotation = Quaternion.Euler(0, 0, _currentAngle);
         gameObject.transform.rotation = rotation;
