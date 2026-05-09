@@ -2582,9 +2582,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e629780a0dd409c4aa639cbed9cadf46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonHoverSound
-  hoverClip: {fileID: 8300000, guid: 8b8d1f79c30888f4b8a2ae19b69fc78c, type: 3}
-  audioSource: {fileID: 1371887708}
-  volume: 0.5
+  _hoverClip: {fileID: 8300000, guid: 8b8d1f79c30888f4b8a2ae19b69fc78c, type: 3}
+  _audioSource: {fileID: 1371887708}
+  _volume: 0.5
 --- !u!1 &1763888669
 GameObject:
   m_ObjectHideFlags: 0
@@ -3080,9 +3080,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e629780a0dd409c4aa639cbed9cadf46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonHoverSound
-  hoverClip: {fileID: 8300000, guid: 5da43451815b0e041b20347ead7bbaa0, type: 3}
-  audioSource: {fileID: 1371887708}
-  volume: 0.5
+  _hoverClip: {fileID: 8300000, guid: 5da43451815b0e041b20347ead7bbaa0, type: 3}
+  _audioSource: {fileID: 1371887708}
+  _volume: 0.5
 --- !u!1 &1978820640
 GameObject:
   m_ObjectHideFlags: 0

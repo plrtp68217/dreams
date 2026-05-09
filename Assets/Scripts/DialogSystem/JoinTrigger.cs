@@ -6,8 +6,9 @@ public class JoinTrigger : MonoBehaviour
     [TextArea(3, 10)]
     [SerializeField] private string _text;
     [SerializeField] private Dialog _dialog;
-    [SerializeField] private float _delay = 3f;
 
+    [SerializeField] private bool _disableWithDelay = false;
+    [SerializeField] private float _delay = 3f;
 
     private bool _isDialogActive = false;
     private WaitForSeconds _waiter;
@@ -26,7 +27,20 @@ public class JoinTrigger : MonoBehaviour
 
             _dialog.Enable(_text);
 
-            _coroutine = StartCoroutine(DisableDialog());
+            if (_disableWithDelay == true)
+            {
+                _coroutine = StartCoroutine(DisableDialogWithDelay());
+            }
+
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collider)
+    {
+        if (collider.TryGetComponent(out Player _) && _disableWithDelay == false)
+        {
+            _dialog.Disable();
+            _isDialogActive = false;
         }
     }
 
@@ -40,7 +54,7 @@ public class JoinTrigger : MonoBehaviour
     }
 
 
-    private IEnumerator DisableDialog()
+    private IEnumerator DisableDialogWithDelay()
     {
         yield return _waiter;
 
