@@ -1,31 +1,27 @@
-﻿using UnityEngine;
+using UnityEngine;
 
-public class Eye : AEntity
+public class Eye : MonoBehaviour
 {
-    [Header("Raycast Settings")]
     [SerializeField] private LayerMask damageableLayers;
     [SerializeField] private float raycastFrequency = 0.1f;
     [SerializeField] private int maxTargets = 5;
     [SerializeField] private float _rayCastLength = 10f;
 
-    [Header("Variation Settings")]
-    [SerializeField] private float speedVariation = 0.4f;
-
     [SerializeField] private Transform _aimTarget;
-
-    private readonly float _swingSpeed = 1f;
-    private readonly float _swingAngle = 45f;
-
-     private float _mySwingSpeed;
-    private float _currentAngle;
-    private float _swingTimer;
 
     private EyeState _eyeState = EyeState.Swing;
 
-    private Vector3 _raycastDirection;
-    private float _raycastTimer;
+    private float _currentAngle = 0f;
+
+    private float _swingAngleDeviation = 45f;
+    private float _swingTimer = 0f;
+    private float _swingSpeed;
+
     private RaycastHit2D[] _hitBuffer;
     private ContactFilter2D _contactFilter;
+
+    public Vector3 DirectionToTarget => _aimTarget.transform.position - transform.position;
+    public Vector3 RaycastDirection => -transform.up;
 
     private void Awake()
     {
@@ -38,21 +34,21 @@ public class Eye : AEntity
 
         _hitBuffer = new RaycastHit2D[maxTargets];
 
-        _mySwingSpeed = _swingSpeed * Random.Range(1f - speedVariation, 1f + speedVariation);
+        _swingSpeed = 1f + Random.Range(1f - 0.4f, 1f + 0.4f);
     }
 
     private void FixedUpdate()
     {
         if (_eyeState == EyeState.Swing)
         {
-            UpdateSwingRotation();
+            Swing();
         }
         else if (_eyeState == EyeState.Aim)
         {
-            UpdateAimRotation();
+            Aim();
         }
 
-        //UpdateRaycast();
+        PerformRaycast();
     }
 
     public void SetState(EyeState state)
@@ -60,54 +56,44 @@ public class Eye : AEntity
         _eyeState = state;
     }
 
-    private void UpdateAimRotation()
+    public void ResetState()
     {
-        if (_aimTarget == null)
-        {
-            _eyeState = EyeState.Swing;
-            return;
-        }
-
-        Vector3 directionToTarget = (_aimTarget.transform.position - transform.position).normalized;
-
-        float angleToTarget = Vector3.SignedAngle(-transform.up, directionToTarget, transform.forward);
-
-        float lerpedAngle = Mathf.Lerp(Vector3.down.z, angleToTarget, 1);
-
-        transform.Rotate(Vector3.forward, lerpedAngle);
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.identity, Time.deltaTime / 3);
     }
 
-    private void UpdateSwingRotation()
+    private void Aim()
     {
-        _swingTimer += Time.deltaTime * _mySwingSpeed;
-
-        _currentAngle = Mathf.Sin(_swingTimer) * _swingAngle;
-
-        Quaternion rotation = Quaternion.Euler(0, 0, _currentAngle);
-        gameObject.transform.rotation = rotation;
-
-        _raycastDirection = rotation * Vector3.down;
+        float rotationSmoothTime = 0.3f;
+        Vector3 directionToTarget = _aimTarget.transform.position - transform.position;
+        Quaternion targetRotation = Quaternion.FromToRotation(-transform.up, directionToTarget) * transform.rotation;
+        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime / rotationSmoothTime);
     }
 
-    private void UpdateRaycast()
+    private void Swing()
     {
-        _raycastTimer -= Time.deltaTime;
+        _swingTimer += Time.deltaTime * _swingSpeed;
+        _currentAngle = Mathf.Sin(_swingTimer) * _swingAngleDeviation;
+        var rotation = Quaternion.Euler(0f, 0f, _currentAngle);
+        transform.rotation = rotation;
+    }
 
-        if (_raycastTimer <= 0f)
-        {
-            PerformRaycast();
-            _raycastTimer = raycastFrequency;
-        }
+    private void SwingWithDebug()
+    {
+        Swing();
+
+        Debug.DrawRay(transform.position, -transform.up * _rayCastLength, Color.red);
+
+        Debug.DrawRay(
+            transform.position,
+            _aimTarget.position - transform.position,
+            Color.red);
     }
 
     private void PerformRaycast()
     {
-        Vector2 startPoint = transform.position;
-        Vector2 direction = _raycastDirection;
-
         int hitCount = Physics2D.Raycast(
-            startPoint,
-            direction,
+            transform.position,
+            RaycastDirection,
             _contactFilter,
             _hitBuffer,
             _rayCastLength
@@ -121,11 +107,12 @@ public class Eye : AEntity
 
     private void HandleHit(RaycastHit2D hit)
     {
-        hit.collider.TryGetComponent(out AEntity damageable);
-
-        if (damageable != null && damageable.IsInShelter == false)
+        if (hit.collider.TryGetComponent(out AEntity damageable))
         {
-            damageable.Die();
+            if (damageable.IsInShelter == false)
+            {
+                damageable.Die();
+            }
         }
     }
 }
