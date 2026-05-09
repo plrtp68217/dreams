@@ -51,11 +51,11 @@ TagManager:
   - name: Objects
     uniqueID: 2441666731
     locked: 0
-  - name: Tree
-    uniqueID: 2718617595
-    locked: 0
   - name: Characters
     uniqueID: 2047744745
+    locked: 0
+  - name: Particles
+    uniqueID: 2718617595
     locked: 0
   - name: UI
     uniqueID: 203540845
