@@ -1666,6 +1666,7 @@ GameObject:
   - component: {fileID: 352697593}
   - component: {fileID: 352697595}
   - component: {fileID: 352697594}
+  - component: {fileID: 352697596}
   m_Layer: 0
   m_Name: EyeBoss
   m_TagString: Untagged
@@ -1769,6 +1770,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &352697596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352697592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49272511ae3e5b646b2d08c58afefdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StartAnimationAtRandomFrame
 --- !u!1 &375314706
 GameObject:
   m_ObjectHideFlags: 0
@@ -16195,6 +16208,7 @@ GameObject:
   - component: {fileID: 1548495279}
   - component: {fileID: 1548495281}
   - component: {fileID: 1548495280}
+  - component: {fileID: 1548495282}
   m_Layer: 0
   m_Name: EyeBoss
   m_TagString: Untagged
@@ -16298,6 +16312,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1548495282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548495278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49272511ae3e5b646b2d08c58afefdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StartAnimationAtRandomFrame
 --- !u!1 &1555015516
 GameObject:
   m_ObjectHideFlags: 0
@@ -16309,6 +16335,7 @@ GameObject:
   - component: {fileID: 1555015519}
   - component: {fileID: 1555015518}
   - component: {fileID: 1555015517}
+  - component: {fileID: 1555015520}
   m_Layer: 0
   m_Name: EyeBoss
   m_TagString: Untagged
@@ -16412,6 +16439,18 @@ Transform:
   - {fileID: 321734846}
   m_Father: {fileID: 1420707667}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1555015520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555015516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49272511ae3e5b646b2d08c58afefdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StartAnimationAtRandomFrame
 --- !u!1 &1599902353
 GameObject:
   m_ObjectHideFlags: 0
