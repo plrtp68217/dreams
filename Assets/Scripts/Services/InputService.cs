@@ -47,6 +47,27 @@ public class InputService : MonoBehaviour
             _blockCoroutine = null;
         }
     }
+    public void Block()
+    {
+        if (_blockCoroutine != null)
+        {
+            StopCoroutine(_blockCoroutine);
+            _blockCoroutine = null;
+        }
+
+        isBlocked = true;
+    }
+
+    public void Unblock()
+    {
+        if (_blockCoroutine != null)
+        {
+            StopCoroutine(_blockCoroutine);
+            _blockCoroutine = null;
+        }
+
+        isBlocked = false;
+    }
 
     public void BlockWithDelay(float delay)
     {

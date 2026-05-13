@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class PlayerDeathHandler : MonoBehaviour
 {
+    [SerializeField] private InputService _inputService;
     [SerializeField] private CheckpointService _checkpointService;
     [SerializeField] private CameraController _cameraController;
     [SerializeField] private Player _player;
@@ -10,6 +11,7 @@ public class PlayerDeathHandler : MonoBehaviour
     [SerializeField] private float _deathDelay = 3f;
 
     private WaitForSeconds _waiter;
+    private Coroutine _deathCoroutine;
 
     private void Awake()
     {
@@ -24,20 +26,30 @@ public class PlayerDeathHandler : MonoBehaviour
     private void OnDisable()
     {
         _player.Died -= HandlePlayerDeath;
+
+        if (_deathCoroutine != null)
+        {
+            StopCoroutine(_deathCoroutine);
+            _deathCoroutine = null;
+        }
     }
 
-    private void HandlePlayerDeath()
-    {
-        StartCoroutine(HandlePlayerDeathCoroutine());
-    }
+        private void HandlePlayerDeath()
+        {
+            _deathCoroutine = StartCoroutine(HandlePlayerDeathCoroutine());
+        }
 
     private IEnumerator HandlePlayerDeathCoroutine()
     {
+        _inputService.Block();
+
         yield return _waiter;
 
         RespawnPlayer();
 
         _cameraController.ChangeFollowTarget(_player.transform);
+
+        _inputService.Unblock();
     }
 
     private void RespawnPlayer()
