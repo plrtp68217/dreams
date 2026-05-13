@@ -1,8 +1,13 @@
+using System;
+using System.Collections;
 using UnityEngine;
 
 public class InputService : MonoBehaviour
 {
     public const string Horizontal = "Horizontal";
+
+    private bool isBlocked = false;
+    private Coroutine _blockCoroutine;
 
     public float Direction { get; private set; }
     public bool EIsPressed { get; private set; }
@@ -17,12 +22,41 @@ public class InputService : MonoBehaviour
      */
     private void Update()
     {
+        if (isBlocked == true)
+        {
+            Direction = 0;
+            EIsPressed = false;
+            SpaceIsHolding = false;
+            ShiftIsHolding = false;
+            ControlIsHolding = false;
+            return;
+        }
+
         Direction = Input.GetAxis(Horizontal);
-
         EIsPressed = Input.GetKeyDown(KeyCode.E);
-
         SpaceIsHolding = Input.GetKey(KeyCode.Space);
         ShiftIsHolding = Input.GetKey(KeyCode.LeftShift);
         ControlIsHolding = Input.GetKey(KeyCode.LeftControl);
+    }
+
+    private void OnDisable()
+    {
+        if (_blockCoroutine != null)
+        {
+            StopCoroutine(_blockCoroutine);
+            _blockCoroutine = null;
+        }
+    }
+
+    public void BlockWithDelay(float delay)
+    {
+        _blockCoroutine = StartCoroutine(BLockWithDelayCoroutine(delay));
+    }
+
+    private IEnumerator BLockWithDelayCoroutine(float delay)
+    {
+        isBlocked = true;
+        yield return new WaitForSeconds(delay);
+        isBlocked = false;
     }
 }

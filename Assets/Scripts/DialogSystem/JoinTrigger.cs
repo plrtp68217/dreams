@@ -3,12 +3,15 @@ using UnityEngine;
 
 public class JoinTrigger : MonoBehaviour
 {
+    [SerializeField] private InputService _inputService;
+    [SerializeField] private bool _blockInput = false;
+    [SerializeField] private float _blockDelay = 3f;
+
     [TextArea(3, 10)]
     [SerializeField] private string _text;
     [SerializeField] private Dialog _dialog;
-
     [SerializeField] private bool _disableWithDelay = false;
-    [SerializeField] private float _delay = 3f;
+    [SerializeField] private float _disableDelay = 3f;
 
     private bool _isDialogActive = false;
     private WaitForSeconds _waiter;
@@ -16,7 +19,7 @@ public class JoinTrigger : MonoBehaviour
 
     private void Awake()
     {
-        _waiter = new WaitForSeconds(_delay);
+        _waiter = new WaitForSeconds(_disableDelay);
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
@@ -27,11 +30,15 @@ public class JoinTrigger : MonoBehaviour
 
             _dialog.Enable(_text);
 
+            if (_blockInput == true)
+            {
+                _inputService.BlockWithDelay(_blockDelay);
+            }
+
             if (_disableWithDelay == true)
             {
                 _coroutine = StartCoroutine(DisableDialogWithDelay());
             }
-
         }
     }
 

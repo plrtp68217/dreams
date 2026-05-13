@@ -3,6 +3,10 @@ using System.Collections;
 
 public class CameraTrigger : MonoBehaviour
 {
+    [SerializeField] private InputService _inputService;
+    [SerializeField] private bool _blockInput = false;
+    [SerializeField] private float _blockDelay = 3f;
+
     [SerializeField] private Transform _oldTarget;
     [SerializeField] private Transform _newTarget;
     [SerializeField] private CameraController _cameraController;
@@ -27,6 +31,11 @@ public class CameraTrigger : MonoBehaviour
         {
             _coroutine = StartCoroutine(ChangeFollowTargetByTime());
             _isActivated = true;
+
+            if (_blockInput == true)
+            {
+                _inputService.BlockWithDelay(_blockDelay);
+            }
         }
     }
 
