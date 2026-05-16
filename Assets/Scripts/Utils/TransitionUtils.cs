@@ -24,4 +24,19 @@ public static class TransitionUtils
         finalColor.a = targetAlpha;
         graphic.color = finalColor;
     }
+
+    public static IEnumerator FadeAudio(AudioSource audioSource, float fadeTime, float targetVolume)
+    {
+        float startVolume = audioSource.volume;
+        float elapsedTime = 0f;
+
+        while (elapsedTime < fadeTime)
+        {
+            elapsedTime += Time.deltaTime;
+            audioSource.volume = Mathf.Lerp(startVolume, targetVolume, elapsedTime / fadeTime);
+            yield return null;
+        }
+
+        audioSource.volume = targetVolume;
+    }
 }
