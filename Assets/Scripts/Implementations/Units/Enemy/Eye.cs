@@ -3,7 +3,6 @@ using UnityEngine;
 public class Eye : MonoBehaviour
 {
     [SerializeField] private LayerMask damageableLayers;
-    [SerializeField] private float raycastFrequency = 0.1f;
     [SerializeField] private int maxTargets = 5;
     [SerializeField] private float _rayCastLength = 10f;
 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0c00e8f3fd9894840889a6ca07504b86
+guid: 0215e1b238640094281a5d4ad696944a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3158870121778603343
-    second: ShelterType1_0
+      213: 2308337673230575904
+    second: ShelterType1 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ShelterType1_0
+      name: ShelterType1 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 569
-        height: 528
+        width: 560
+        height: 520
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f45653ca3af86db20800000000000000
-      internalID: 3158870121778603343
+      spriteID: 0296f8a32ecd80020800000000000000
+      internalID: 2308337673230575904
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ShelterType1_0: 3158870121778603343
+      ShelterType1 1_0: 2308337673230575904
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
