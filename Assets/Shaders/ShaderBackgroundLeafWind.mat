@@ -55,8 +55,8 @@ Material:
     m_Ints: []
     m_Floats:
     - _WindHeightPower: 1
-    - _WindSpeed: 8.53
-    - _WindStrength: -0.05
+    - _WindSpeed: 10.15
+    - _WindStrength: 0.1
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1

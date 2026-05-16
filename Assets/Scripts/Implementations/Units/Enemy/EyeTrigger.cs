@@ -18,7 +18,7 @@ public class EyeTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //if (_isEntered) return;
+        if (_isEntered) return;
 
         if (collision.CompareTag(CustomTag.Unit.ToString()))
         {
