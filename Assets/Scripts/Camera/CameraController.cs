@@ -7,6 +7,7 @@ public class CameraController : MonoBehaviour
     [SerializeField] private CinemachineCamera _camera;
     [SerializeField] private float transitionDuration = 1f;
 
+    private GameObject _tempTarget;
     private Coroutine _coroutine;
 
     private void OnDisable()
@@ -48,12 +49,12 @@ public class CameraController : MonoBehaviour
             yield break;
         }
 
-        GameObject tempTarget = new("CameraTempTarget");
-        tempTarget.transform.position = oldTarget.position;
-        _camera.Follow = tempTarget.transform;
+        _tempTarget = new("CameraTempTarget");
+        _tempTarget.transform.position = oldTarget.position;
+        _camera.Follow = _tempTarget.transform;
 
         float elapsedTime = 0f;
-        Vector3 startPosition = tempTarget.transform.position;
+        Vector3 startPosition = _tempTarget.transform.position;
 
         while (elapsedTime < transitionDuration)
         {
@@ -61,13 +62,13 @@ public class CameraController : MonoBehaviour
             float t = elapsedTime / transitionDuration;
 
             float smoothT = Mathf.SmoothStep(0f, 1f, t);
-            tempTarget.transform.position = Vector3.Lerp(startPosition, target.position, smoothT);
+            _tempTarget.transform.position = Vector3.Lerp(startPosition, target.position, smoothT);
 
             yield return null;
         }
 
         _camera.Follow = target;
 
-        Destroy(tempTarget);
+        Destroy(_tempTarget);
     }
 }

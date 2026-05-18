@@ -20,12 +20,12 @@ public class PlayerDeathHandler : MonoBehaviour
 
     private void OnEnable()
     {
-        _player.Died += HandlePlayerDeath;
+        _player.Died += OnDied;
     }
 
     private void OnDisable()
     {
-        _player.Died -= HandlePlayerDeath;
+        _player.Died -= OnDied;
 
         if (_deathCoroutine != null)
         {
@@ -34,20 +34,18 @@ public class PlayerDeathHandler : MonoBehaviour
         }
     }
 
-        private void HandlePlayerDeath()
-        {
-            _deathCoroutine = StartCoroutine(HandlePlayerDeathCoroutine());
-        }
+    private void OnDied()
+    {
+        _deathCoroutine = StartCoroutine(OnDiedRoutine());
+    }
 
-    private IEnumerator HandlePlayerDeathCoroutine()
+    private IEnumerator OnDiedRoutine()
     {
         _inputService.Block();
 
         yield return _waiter;
 
         RespawnPlayer();
-
-        _cameraController.ChangeFollowTarget(_player.transform);
 
         _inputService.Unblock();
     }
@@ -57,8 +55,9 @@ public class PlayerDeathHandler : MonoBehaviour
         if (_checkpointService.CheckpointsCount == 0) return;
 
         var lastCheckpoint = _checkpointService.GetLastCheckpoint();
-
         _player.transform.position = lastCheckpoint.position;
+
+        _player.StartInvincibility();
         _player.SetAlive(true);
         _player.SetVisibility(true);
     }

@@ -9,5 +9,5 @@ public class CheckpointService : MonoBehaviour
 
     public void AddCheckpoint (Transform checkpoint) => _checkpoints.Add(checkpoint);
 
-    public Transform GetLastCheckpoint() => _checkpoints[^1];
+    public Transform GetLastCheckpoint() => _checkpoints[CheckpointsCount - 1];
 }

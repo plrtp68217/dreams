@@ -55,11 +55,6 @@ public class Eye : MonoBehaviour
         _eyeState = state;
     }
 
-    public void ResetState()
-    {
-        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.identity, Time.deltaTime / 3);
-    }
-
     private void Aim()
     {
         float rotationSmoothTime = 0.3f;
@@ -108,7 +103,7 @@ public class Eye : MonoBehaviour
     {
         if (hit.collider.TryGetComponent(out AEntity damageable))
         {
-            if (damageable.IsInShelter == false)
+            if (damageable.IsInShelter == false && damageable.IsAlive == true)
             {
                 damageable.Die();
             }
