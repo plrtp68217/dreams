@@ -20,7 +20,7 @@ public class EyeTrigger : MonoBehaviour
     {
         if (_isEntered) return;
 
-        if (collision.CompareTag(CustomTag.Unit.ToString()))
+        if (collision.CompareTag(_targetTag.ToString()))
         {
             _eye.SetState(EyeState.Aim);
 

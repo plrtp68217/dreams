@@ -43,6 +43,11 @@ public class CameraController : MonoBehaviour
     {
         Transform oldTarget = _camera.Follow;
 
+        if (target == null)
+        {
+            yield break;
+        }
+
         if (oldTarget == null)
         {
             _camera.Follow = target;
