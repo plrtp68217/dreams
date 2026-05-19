@@ -10,9 +10,11 @@ public class SpriteService : MonoBehaviour
 
     private Coroutine _fadeCoroutine;
 
+    public bool CoroutineIsInProgress => _fadeCoroutine != null;
+
     public void FadeSprite(SpriteRenderer spriteRenderer, FadeDirection direction, float duration)
     {
-        if (_fadeCoroutine != null)
+        if (CoroutineIsInProgress)
         {
             StopCoroutine(_fadeCoroutine);
         }

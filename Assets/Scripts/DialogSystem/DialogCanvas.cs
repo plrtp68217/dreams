@@ -1,44 +1,30 @@
-using System.Collections;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
 public class DialogCanvas : Dialog
 {
-    [SerializeField] private Image _image;
-    [SerializeField] private TextMeshProUGUI _textMeshPro;
+    [SerializeField] private GraphicService _graphicService;
 
-    [SerializeField] private float fadeTime = 1f;
+    [SerializeField] private Image[] _images;
+    [SerializeField] private TextMeshProUGUI[] _textsMeshPro;
 
-    private Coroutine _textCoroutine;
-    private Coroutine _imageCoroutine;
-
-    private void OnDisable()
-    {
-        if (_textCoroutine != null)
-        {
-            StopCoroutine(_textCoroutine);
-            _textCoroutine = null;
-        }
-
-        if (_imageCoroutine != null)
-        {
-            StopCoroutine(_imageCoroutine);
-            _imageCoroutine = null;
-        }
-    }
+    [SerializeField] private int _editableTextIndex = 0;
 
     public override void Enable(string text)
     {
-        _textMeshPro.text = text;
+        if (_textsMeshPro.Length > 0)
+        {
+            _textsMeshPro[_editableTextIndex].text = text;
+        }
 
-        _textCoroutine = StartCoroutine(TransitionUtils.FadeGraphic(_image, fadeTime, 1f));
-        _imageCoroutine = StartCoroutine(TransitionUtils.FadeGraphic(_textMeshPro, fadeTime, 1f));
+        _graphicService.FadeGraphic(_images, 1f);
+        _graphicService.FadeGraphic(_textsMeshPro, 1f);
     }
 
     public override void Disable()
     {
-        _textCoroutine = StartCoroutine(TransitionUtils.FadeGraphic(_image, fadeTime, 0f));
-        _imageCoroutine = StartCoroutine(TransitionUtils.FadeGraphic(_textMeshPro, fadeTime, 0f));
+        _graphicService.FadeGraphic(_images, 0f);
+        _graphicService.FadeGraphic(_textsMeshPro, 0f);
     }
 }

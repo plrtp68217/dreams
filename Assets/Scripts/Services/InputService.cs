@@ -22,21 +22,20 @@ public class InputService : MonoBehaviour
      */
     private void Update()
     {
-        if (isBlocked == true)
-        {
-            Direction = 0;
-            EIsPressed = false;
-            SpaceIsHolding = false;
-            ShiftIsHolding = false;
-            ControlIsHolding = false;
-            return;
-        }
-
         Direction = Input.GetAxis(Horizontal);
         EIsPressed = Input.GetKeyDown(KeyCode.E);
         SpaceIsHolding = Input.GetKey(KeyCode.Space);
         ShiftIsHolding = Input.GetKey(KeyCode.LeftShift);
         ControlIsHolding = Input.GetKey(KeyCode.LeftControl);
+
+        if (isBlocked == true)
+        {
+            Direction = 0;
+            //EIsPressed = false;
+            SpaceIsHolding = false;
+            //ShiftIsHolding = false;
+            //ControlIsHolding = false;
+        }
     }
 
     private void OnDisable()
