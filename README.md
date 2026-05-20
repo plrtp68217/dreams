@@ -5,6 +5,9 @@
   - Умирает
 2. ЗАЯЦ
   - Умирает
+3. УКРЫТИЯ
+  -  Открытие
+  -  Закрытие
 
 ### ЗВУКИ
 - Ева умирает
@@ -18,7 +21,7 @@
 - Дрожание камеры при нахождении возле глаза
 
 ### UI
-- На время показа диалога отображать внизу уменьшающуюся линию, которавя показывает длительность показа диалогового окна.
+- На время показа DialogCanvas отображать внизу уменьшающуюся линию, которавя показывает длительность показа диалогового окна.
 
 ---
 
@@ -37,7 +40,86 @@
 
 ### ИНТЕРФЕЙС
 
-- Когда Ева умирает, DialogUi над ней остается
+- Когда Ева умирает, DialogUi над ней остается. Его в этот момент нужно отключать.
+```csharp
+/*
+В компоненте Player добавить поле, которое хранит _activeDialog,
+который сейчас включен у игрока.
+Сделать публичные методы (SetActiveDialog, ResetActiveDialog, ActiveDialog), 
+которые изменяют это поле и возращают его.
+
+В триггерах, которые включают Dialog у игрока (ShelterTrigger, JoinTriger), 
+устанавливать активный у игрока.
+
+Во время смерти скрывать _activeDialog, а потом этот 
+Dialog удалять из поля игрока (_activeDialog = null).
+*/
+
+class Player : AEntity 
+{
+	private Dialog _activeDialog;
+	
+	private event Action Died;
+	
+	public Dialog ActiveDialog => _activeDialog;
+	
+	public void SetActiveDialog(Dialog dialog)
+	{
+		_activeDialog = dialog
+	}
+	
+	public void ResetActiveDialog()
+	{
+		_activeDialog = null;
+	}
+}
+
+class JoinTrigger: MonoBehaviour
+{
+	[SerializeField] private Dialog _dialog;
+	
+	private void OnTriggerEnter2D(Collider2D collider) 
+	{
+		if (collider.TryGetComponent(out Player player)) 
+		{
+			_dialog.Enable();
+			player.SetActiveDialog(_dialog);
+		}
+	}
+	
+	private void OnTriggerExit2D(Collider2D collider) 
+	{
+		if (collider.TryGetComponent(out Player player)) 
+		{
+			_dialog.Disable();
+			player.ResetActiveDialog();
+		}
+	}
+}
+
+class PLayerDeathHandler: MonoBehaviour 
+{
+	[SerializeField] private Player _player;
+	[SerializrField] private GraphicService _graphicService;
+	
+	private void OnEnable() 
+	{
+		_player.Died += OnDied;
+	}
+	
+	private void OnDisable() 
+	{
+		_player.Died -= OnDied;
+	}
+	
+	private OnDied() 
+	{
+		_player.SpriteRenderer.enabled = false;
+		_graphicService.FadeGraphic(_player.ActiveDialog, 0f);
+		player.ResetActiveDialog();
+	}
+}
+```
 
 ---
 
