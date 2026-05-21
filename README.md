@@ -130,7 +130,48 @@ class PLayerDeathHandler: MonoBehaviour
 - Убрать звук появления диалогового окна.
 - Добавить звук бормотания при появлении диалогового окна.
 - Звук осмотра — для каждого предмета свой.
-- Диалоговое окно появляется только один раз, после повторного входа в триггерную зону не запускать диалог.
+- Сделать флаг, запускать ли диалог после повторного входа
+  Сделать флаг, блокировать ли временно управление или нет
+```csharp
+class JoinTrigger: MonoBehaviour 
+{
+	[SerializeField] private Dialog _dialog;
+	[SerializeField] private string _dialogText;
+	
+	[SerializeField] private InputService _inputService;
+	[SerializeField] private bool _blockInput;
+	[SerializeField] private float _blockDelay = 3f;
+	
+	private bool _isVisited = false;
+	
+	private void OnTriggerEnter2D(Collider2D collider) 
+	{
+		if (_isVisited) return;
+	
+		if (collider.TryGetComponent(out Player _)) 
+		{
+			_dialog.Enable(_dialogText);
+			
+			if (_blockInput) 
+			{
+				_inputService.BlockWithDelay();
+			}
+		}
+	}
+	
+	private void OnTriggerExit2D(Collider2D collider) 
+	{
+		if (_isVisited) return;
+		
+		if (collider.TryGetComponent(out Player _)) 
+		{
+			_dialog.Disable()
+		}
+		
+		_isVisited = true;
+	}
+}
+```
 
 ### ИНТЕРФЕЙС И УПРАВЛЕНИЕ
 
@@ -168,10 +209,109 @@ class PLayerDeathHandler: MonoBehaviour
 */
 ```
 
-### ВЗАИМОДЕЙСТВИЕ С ЗАПИСКАМИ
+### ВЗАИМОДЕЙСТВИЕ С ИНТЕРАКТИВНЫМИ ЭЛЕМЕНТАМИ
 
 - Если читаешь записку, сделать так, чтобы она закрывалась на `E`, а не выключалась сама.
 - Если читаешь записку, отключать управление персонажем.
+Сейчас логика появления DialogUI для взаимодействия и включения DialogCanvas:
+
+```text
+    Вход в зону
+         │
+         ├──────────────────────────┐
+         │                          │
+         ▼                          ▼
+┌─────────────────┐      ┌───────────────────┐
+│  JoinTrigger    │      │ InteractionTrigger│
+│  → DialogUI     │      │  → отслеживает E  │
+│  (подсказка)    │      └────────┬──────────┘
+└─────────────────┘               │
+                                  ▼
+                         ┌─────────────────┐
+                         │ Нажата E?       │
+                         └────────┬────────┘
+                                  │ Да
+                                  ▼
+                         ┌─────────────────┐
+                         │ DialogCanvas    │
+                         │   (открыт)      │
+                         └─────────────────┘
+```
+
+Нужно сделать, чтобы InteractionTrigger сам отображал DialogUi при входе в триггерную зону,
+а после взаимодействия с `E` отображал DialogCanvas.
+
+**InteractionTrigger: Делам, чтобы он отвечал за DialogUi и DialogCanvas:**
+
+```csharp
+class InteractionTrigger: Monobehaviour 
+{
+	[SerializeField] private InputService _inputService;
+	[SerializeField] private Dialog _dialogUI;
+	[SerializeField] private Dialog _dialogCanvas;
+	[SerializeField] private string _canvasText;
+	
+	private bool _canvasIsActivated = false;
+	
+	private void OnTriggerEnter2D(Collider2D collider) 
+	{
+		if (collider.TryGetComponent(out Player player)) 
+		{
+			player.SetActiveDialog(_dialogUI);
+			_dialogUI.Enable();
+		}
+	}
+	
+	private void OnTriggerStay(Collider2D collider) 
+	{
+		/*
+		DialogCanvas - отображает изображения, которые закреплены за камерой.
+		DialogUI     - отображает изображения, которые закреплены за игроком.
+		 
+		Если игрок нажал на E, отобразить DialogCanvas, скрыть DialogUI.
+		Если игрок нажал на Е еще раз, то закрыть DialogCanvas, отобразить DialogUI.
+		*/
+		
+		if (_inputService.EIsPressed) 
+		{
+			if (_canvasIsActivated) 
+			{
+				_dialogUI.Enable();
+				_dialogCanvas.Disable();
+				_canvasIsActivated = false;
+				_inputService.UnBlock();
+			}
+			else 
+			{
+				_dialogUI.Disable();
+				_dialogCanvas.Enable(_canvasText);
+				_canvasIsActivated = true;
+				_inputService.Block();
+			}
+		}
+	}
+	
+	private void OnTriggerExit2D(Collider2D collider) 
+	{
+		if (collider.TryGetComponent(out Player _)) 
+		{
+			player.ResetActiveDialog();
+			_dialogUI.Disable();
+		}
+	}
+}
+
+/*
+Предложние на перспективу.
+Если в игре будут реализовываться диалоги между персонажами,
+то мы будем забивать массив из текстов, и DialogCanvas для каждого персонажа.
+Тоесть, общается два персонажа, загружаем 2 DialogCanvas, массив текстов, смотря
+сколько они будут разговаривать.
+Справа снизу каждого DialogCanvas будет текст:
+	- Если следующая реплика есть : нажмите E, чтобы продолжить.
+	- Если реплика последняя      : нажмите E, чтобы закрыть.
+*/
+```
 
 ### ГЕЙМПЛЕЙНЫЕ НАСТРОЙКИ
 
