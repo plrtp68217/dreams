@@ -13,10 +13,11 @@ public class ShelterTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.TryGetComponent(out Player _))
+        if (collider.TryGetComponent(out Player player))
         {
             _isEntered = true;
             _ctrlDialog.Enable();
+            player.SetActiveDialog(_ctrlDialog);
         }
     }
 
@@ -53,10 +54,11 @@ public class ShelterTrigger : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collider)
     {
-        if (collider.TryGetComponent(out Player _))
+        if (collider.TryGetComponent(out Player player))
         {
             _isEntered = false;
             _ctrlDialog.Disable();
+            player.ResetActiveDialog();
         }
     }
 }

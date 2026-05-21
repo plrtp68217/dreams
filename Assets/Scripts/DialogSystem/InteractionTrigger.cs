@@ -1,71 +1,57 @@
-using System.Collections;
 using UnityEngine;
 
 public class InteractionTrigger : MonoBehaviour
 {
     [TextArea(3, 10)]
-    [SerializeField] private string _text;
+    [SerializeField] private string _dialogText;
+    [SerializeField] private Dialog _dialogCanvas;
+    [SerializeField] private Dialog _dialogUI;
 
-    [SerializeField] private Dialog _dialog;
     [SerializeField] private Animator _animator;
     [SerializeField] private InputService _inputService;
 
-    private readonly float _delayTime = 5f;
-
     private bool _isEntered = false;
-    private bool _isDialogActive = false;
-    private Coroutine _coroutine;
-    private WaitForSeconds _waiter;
-
-    private void Awake()
-    {
-        _waiter = new WaitForSeconds(_delayTime);
-    }
+    private bool _canvasIsActivated = false;
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.TryGetComponent(out Player _))
+        if (collider.TryGetComponent(out Player player))
         {
             _isEntered = true;
+            _dialogUI.Enable();
+            player.SetActiveDialog(_dialogUI);
         }
     }
 
     private void OnTriggerExit2D(Collider2D collider)
     {
-        if (collider.TryGetComponent(out Player _))
+        if (collider.TryGetComponent(out Player player))
         {
             _isEntered = false;
+            _dialogUI.Disable();
+            player.ResetActiveDialog();
         }
     }
 
     private void Update()
     {
-        if (_inputService.EIsPressed && _isEntered && _isDialogActive == false)
+        if (_inputService.EIsPressed && _isEntered)
         {
-            _dialog.Enable(_text);
-
-            _animator.SetTrigger(AnimatorTrigger.Reach.ToString());
-
-            _coroutine = StartCoroutine(DisableDialog());
-
-            _isDialogActive = true;
+            if (_canvasIsActivated)
+            {
+                _dialogUI.Enable();
+                _dialogCanvas.Disable();
+                _canvasIsActivated = false;
+                _inputService.Unblock();
+            }
+            else
+            {
+                _animator.SetTrigger(AnimatorTrigger.Reach.ToString());
+                _dialogUI.Disable();
+                _dialogCanvas.Enable(_dialogText);
+                _canvasIsActivated = true;
+                _inputService.Block();
+            }
         }
-    }
-
-    private void OnDisable()
-    {
-        if (_coroutine != null)
-        {
-            StopCoroutine(_coroutine);
-            _coroutine = null;
-        }
-    }
-
-    private IEnumerator DisableDialog()
-    {
-        yield return _waiter;
-
-        _dialog.Disable();
-        _isDialogActive = false;
     }
 }

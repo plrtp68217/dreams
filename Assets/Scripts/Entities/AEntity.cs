@@ -14,9 +14,9 @@ public abstract class AEntity : MonoBehaviour, IDamageable
     private readonly float _invincibilityTime = 0.5f;
 
     public bool IsOnGround { get; protected set; }
-    public bool IsInShelter { get; protected set; }
     public bool IsAlive { get; protected set; } = true;
-    public bool IsInvincible {get; protected set; } = false;
+    public bool IsInShelter { get; protected set; }
+    public bool IsInvincible { get; protected set; } = false;
 
     private void Start()
     {

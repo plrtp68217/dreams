@@ -43,6 +43,12 @@ public class PlayerDeathHandler : MonoBehaviour
     {
         _inputService.Block();
 
+        if (_player.ActiveDialog != null)
+        {
+            _player.ActiveDialog.Disable();
+            _player.ResetActiveDialog();
+        }
+
         yield return _waiter;
 
         RespawnPlayer();

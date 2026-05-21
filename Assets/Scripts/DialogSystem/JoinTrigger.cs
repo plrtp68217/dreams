@@ -8,64 +8,37 @@ public class JoinTrigger : MonoBehaviour
     [SerializeField] private float _blockDelay = 3f;
 
     [TextArea(3, 10)]
-    [SerializeField] private string _text;
+    [SerializeField] private string _dialogText;
     [SerializeField] private Dialog _dialog;
-    [SerializeField] private bool _disableWithDelay = false;
-    [SerializeField] private float _disableDelay = 3f;
 
-    private bool _isDialogActive = false;
-    private WaitForSeconds _waiter;
-    private Coroutine _coroutine;
-
-    private void Awake()
-    {
-        _waiter = new WaitForSeconds(_disableDelay);
-    }
+    private bool _isVisited = false;
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.TryGetComponent(out Player _) && _isDialogActive == false)
+        if (_isVisited) return;
+
+        if (collider.TryGetComponent(out Player player))
         {
-            _isDialogActive = true;
+            _dialog.Enable(_dialogText);
+            player.SetActiveDialog(_dialog);
 
-            _dialog.Enable(_text);
-
-            if (_blockInput == true)
+            if (_blockInput)
             {
                 _inputService.BlockWithDelay(_blockDelay);
-            }
-
-            if (_disableWithDelay == true)
-            {
-                _coroutine = StartCoroutine(DisableDialogWithDelay());
             }
         }
     }
 
     private void OnTriggerExit2D(Collider2D collider)
     {
-        if (collider.TryGetComponent(out Player _) && _disableWithDelay == false)
+        if (_isVisited) return;
+
+        if (collider.TryGetComponent(out Player player))
         {
             _dialog.Disable();
-            _isDialogActive = false;
+            player.ResetActiveDialog();
         }
-    }
 
-    private void OnDisable()
-    {
-        if (_coroutine != null)
-        {
-            StopCoroutine(_coroutine);
-            _coroutine = null;
-        }
-    }
-
-
-    private IEnumerator DisableDialogWithDelay()
-    {
-        yield return _waiter;
-
-        _dialog.Disable();
-        _isDialogActive = false;
+        _isVisited = true;
     }
 }
