@@ -301,7 +301,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &113849136
 RectTransform:
   m_ObjectHideFlags: 0
@@ -742,7 +742,7 @@ Transform:
   m_GameObject: {fileID: 193057567}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.863903, y: 0.13457316, z: -7}
+  m_LocalPosition: {x: -9.193903, y: 0.13457316, z: -7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3727,7 +3727,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 1.9813557, y: 0.3419871}
+  m_Offset: {x: 1.9963872, y: 0.3419871}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3737,7 +3737,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.0202065, y: 0.94674057}
+  m_Size: {x: 2.0502682, y: 0.94674057}
   m_EdgeRadius: 0
 --- !u!114 &792577104
 MonoBehaviour:
@@ -3753,7 +3753,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::JoinTrigger
   _inputService: {fileID: 853908781}
   _blockInput: 1
-  _blockDelay: 3
+  _blockDelay: 1
   _dialogText: 
   _dialog: {fileID: 123551418}
 --- !u!114 &792577105
@@ -4161,8 +4161,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -1853300565
-  m_SortingLayer: 4
+  m_SortingLayerID: 1297155433
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MeshDistribution: 0
@@ -5033,7 +5033,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 100
+      scalar: 300
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -10338,7 +10338,7 @@ ParticleSystem:
         m_RotationOrder: 4
     randomizeRotationDirection: 0
     gravitySource: 0
-    maxNumParticles: 1000
+    maxNumParticles: 2000
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -10406,7 +10406,7 @@ ParticleSystem:
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 53.8, y: 1, z: 1}
+    m_Scale: {x: 49.84, y: 1, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -10604,7 +10604,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 200
+      scalar: 400
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -11230,7 +11230,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       scalar: 2
-      minScalar: 0
+      minScalar: 2.6
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -11283,7 +11283,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       scalar: -2.82
-      minScalar: -8
+      minScalar: -3.666
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -14499,7 +14499,7 @@ Transform:
   m_GameObject: {fileID: 1153316641}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.66, y: 4.79, z: 0}
+  m_LocalPosition: {x: 4.28, y: 5.17, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18127,7 +18127,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1400944299
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 9552981f2a05dcb4ca055e5d6e3b6aec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -18690,7 +18690,7 @@ Transform:
   m_GameObject: {fileID: 1912344561}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.821, y: -0.238, z: 0}
+  m_LocalPosition: {x: 1.671, y: -0.238, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19537,7 +19537,7 @@ PrefabInstance:
       objectReference: {fileID: 161999134}
     - target: {fileID: 6414799628579953498, guid: 7d6f7168e5af5924f8f3797a5bb1ae1a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.3
+      value: -13.63
       objectReference: {fileID: 0}
     - target: {fileID: 6414799628579953498, guid: 7d6f7168e5af5924f8f3797a5bb1ae1a, type: 3}
       propertyPath: m_LocalPosition.y

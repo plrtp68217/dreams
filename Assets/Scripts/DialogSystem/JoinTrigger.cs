@@ -37,8 +37,8 @@ public class JoinTrigger : MonoBehaviour
         {
             _dialog.Disable();
             player.ResetActiveDialog();
+            _isVisited = true;
         }
 
-        _isVisited = true;
     }
 }
