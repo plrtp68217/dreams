@@ -11,7 +11,7 @@ public class InputService : MonoBehaviour
 
     public float Direction { get; private set; }
     public bool EIsPressed { get; private set; }
-    public bool SpaceIsHolding { get; private set; }
+    public bool SpaceIsPressed { get; private set; }
     public bool ShiftIsHolding { get; private set; }
     public bool ControlIsHolding { get; private set; }
 
@@ -23,18 +23,17 @@ public class InputService : MonoBehaviour
     private void Update()
     {
         Direction = Input.GetAxis(Horizontal);
+
         EIsPressed = Input.GetKeyDown(KeyCode.E);
-        SpaceIsHolding = Input.GetKey(KeyCode.Space);
+        SpaceIsPressed = Input.GetKeyDown(KeyCode.Space);
+
         ShiftIsHolding = Input.GetKey(KeyCode.LeftShift);
         ControlIsHolding = Input.GetKey(KeyCode.LeftControl);
 
         if (isBlocked == true)
         {
             Direction = 0;
-            //EIsPressed = false;
-            SpaceIsHolding = false;
-            //ShiftIsHolding = false;
-            //ControlIsHolding = false;
+            SpaceIsPressed = false;
         }
     }
 

@@ -44,15 +44,15 @@ public class PlayerController : MonoBehaviour
         if (_inputService.Direction != 0)
         {
             _player.SpriteRenderer.flipX = _inputService.Direction < 0;
+
+            _movementService.Move(
+                    _player.Rigidbody,
+                    _inputService.Direction,
+                    _speed * SpeedMultiplier
+                );
         }
 
-        _movementService.Move(
-                _player.Rigidbody,
-                _inputService.Direction,
-                _speed * SpeedMultiplier
-            );
-
-        if (_inputService.SpaceIsHolding && _player.IsOnGround)
+        if (_inputService.SpaceIsPressed && _player.IsOnGround)
         {
             _movementService.Jump(_player.Rigidbody, _jumpForce);
         }

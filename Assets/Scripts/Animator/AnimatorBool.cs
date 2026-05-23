@@ -4,4 +4,5 @@
     IsCrouching,
     IsSitting,
     IsRunning,
+    IsOnGround,
 }
