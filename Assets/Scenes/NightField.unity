@@ -742,7 +742,7 @@ Transform:
   m_GameObject: {fileID: 193057567}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.9360974, y: 0.13457316, z: -7}
+  m_LocalPosition: {x: -9.413902, y: 0.13457316, z: -7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -878,7 +878,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.05733794, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -888,7 +888,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4.9, y: 4.11}
+  m_Size: {x: 2.9505258, y: 4.11}
   m_EdgeRadius: 0
 --- !u!114 &267918355
 MonoBehaviour:
@@ -1152,8 +1152,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7677530545a83374db2e738966555f1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JoinTrigger
+  _player: {fileID: 858534450}
   _inputService: {fileID: 853908781}
-  _blockInput: 1
+  _disableWithKey: 1
+  _blockInputWidthDelay: 0
   _blockDelay: 3
   _dialogText: "\u0417\u0434\u0435\u0441\u044C \u0431\u0443\u0434\u0435\u0442 \u0432\u0430\u0448\u0430
     \u0440\u0435\u043A\u043B\u0430\u043C\u0430"
@@ -2471,7 +2473,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.9361062, y: 0.41610008, z: -7}
+  m_LocalPosition: {x: -8.771502, y: 0.41610008, z: -7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3164,7 +3166,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.045877993, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3174,7 +3176,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4.9, y: 4.11}
+  m_Size: {x: 2.92759, y: 4.11}
   m_EdgeRadius: 0
 --- !u!114 &603106171
 MonoBehaviour:
@@ -3751,8 +3753,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7677530545a83374db2e738966555f1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JoinTrigger
+  _player: {fileID: 858534450}
   _inputService: {fileID: 853908781}
-  _blockInput: 1
+  _disableWithKey: 0
+  _blockInputWidthDelay: 1
   _blockDelay: 1
   _dialogText: 
   _dialog: {fileID: 123551418}
@@ -9058,8 +9062,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7677530545a83374db2e738966555f1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JoinTrigger
+  _player: {fileID: 858534450}
   _inputService: {fileID: 853908781}
-  _blockInput: 1
+  _disableWithKey: 1
+  _blockInputWidthDelay: 0
   _blockDelay: 3
   _dialogText: "\u0417\u0434\u0435\u0441\u044C \u0431\u0443\u0434\u0435\u0442 \u0432\u0430\u0448\u0430
     \u0440\u0435\u043A\u043B\u0430\u043C\u0430"
@@ -9278,7 +9284,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.011463106, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -9288,7 +9294,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 5.7, y: 5.2}
+  m_Size: {x: 3.1542187, y: 5.2}
   m_EdgeRadius: 0
 --- !u!114 &1044656868
 MonoBehaviour:
@@ -14878,7 +14884,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.036803424, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -14888,7 +14894,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 5.6, y: 5.2}
+  m_Size: {x: 3.4651165, y: 5.2}
   m_EdgeRadius: 0
 --- !u!114 &1200385415
 MonoBehaviour:
@@ -15247,7 +15253,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0573408, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -15257,7 +15263,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 5.7, y: 5.2}
+  m_Size: {x: 3.1542187, y: 5.2}
   m_EdgeRadius: 0
 --- !u!114 &1246254574
 MonoBehaviour:
@@ -16790,8 +16796,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7677530545a83374db2e738966555f1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JoinTrigger
+  _player: {fileID: 858534450}
   _inputService: {fileID: 853908781}
-  _blockInput: 1
+  _disableWithKey: 0
+  _blockInputWidthDelay: 1
   _blockDelay: 1.2
   _dialogText: 
   _dialog: {fileID: 1613595947}
@@ -18576,7 +18584,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.10321313, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -18586,7 +18594,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 5.6, y: 5.2}
+  m_Size: {x: 3.1000857, y: 5.2}
   m_EdgeRadius: 0
 --- !u!114 &1905504680
 MonoBehaviour:
@@ -19541,7 +19549,7 @@ PrefabInstance:
       objectReference: {fileID: 161999134}
     - target: {fileID: 6414799628579953498, guid: 7d6f7168e5af5924f8f3797a5bb1ae1a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.5
+      value: -13.85
       objectReference: {fileID: 0}
     - target: {fileID: 6414799628579953498, guid: 7d6f7168e5af5924f8f3797a5bb1ae1a, type: 3}
       propertyPath: m_LocalPosition.y

@@ -63,6 +63,11 @@ public class CameraController : MonoBehaviour
 
         while (elapsedTime < transitionDuration)
         {
+            if (target == null)
+            {
+                break;
+            }
+
             elapsedTime += Time.deltaTime;
             float t = elapsedTime / transitionDuration;
 
