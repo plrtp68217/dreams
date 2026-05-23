@@ -1787,7 +1787,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.74
   m_Color: {r: 1, g: 0.2509804, b: 0.2509804, a: 1}
-  m_Intensity: 0.6
+  m_Intensity: 3.06
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 0000000055497face91a0e7aabe08891112dd3fd6905514d
@@ -3831,7 +3831,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.74
   m_Color: {r: 1, g: 0.25, b: 0.25, a: 1}
-  m_Intensity: 0.6
+  m_Intensity: 3.06
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 0000000055497face91a0e7aabe08891112dd3fd6905514d
@@ -16800,7 +16800,7 @@ MonoBehaviour:
   _inputService: {fileID: 853908781}
   _disableWithKey: 0
   _blockInputWidthDelay: 1
-  _blockDelay: 1.2
+  _blockDelay: 1.25
   _dialogText: 
   _dialog: {fileID: 1613595947}
 --- !u!61 &1483657412
@@ -19327,7 +19327,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.74
   m_Color: {r: 1, g: 0.2509804, b: 0.2509804, a: 1}
-  m_Intensity: 0.6
+  m_Intensity: 3.06
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 0000000055497face91a0e7aabe08891112dd3fd6905514d

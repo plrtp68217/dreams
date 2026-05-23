@@ -7,8 +7,12 @@ public class JoinTrigger : MonoBehaviour
 
     [SerializeField] private InputService _inputService;
 
-    [Header("Выбираем одно из двух: _disableWithKey или _blockInputWidthDelay")]
+    [Header("Выбираем одно из двух:")]
+
+    [Header("Используется для отображения Canvas")]
     [SerializeField] private bool _disableWithKey = false;
+
+    [Header("Используется для отображения UI над игроком")]
     [SerializeField] private bool _blockInputWidthDelay = false;
     [SerializeField] private float _blockDelay = 3f;
 
