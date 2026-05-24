@@ -1182,9 +1182,8 @@ MonoBehaviour:
   _disableWithKey: 1
   _blockInputWidthDelay: 0
   _blockDelay: 3
-  _dialogText: "\u0417\u0434\u0435\u0441\u044C \u0431\u0443\u0434\u0435\u0442 \u0432\u0430\u0448\u0430
-    \u0440\u0435\u043A\u043B\u0430\u043C\u0430"
   _dialog: {fileID: 1109048377}
+  _dialogId: night_field_eva_1
 --- !u!114 &276359097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1424,6 +1423,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49272511ae3e5b646b2d08c58afefdf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StartAnimationAtRandomFrame
+--- !u!1 &357547393
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 357547394}
+  m_Layer: 0
+  m_Name: DIALOG_SYSTEM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &357547394
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357547393}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.89431, y: -1.10032, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 577248304}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &359199917
 GameObject:
   m_ObjectHideFlags: 0
@@ -2986,6 +3017,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 566723765}
   m_CullTransparentMesh: 1
+--- !u!1 &577248303
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 577248304}
+  - component: {fileID: 577248305}
+  m_Layer: 0
+  m_Name: LocalizedDialogueSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &577248304
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577248303}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 357547394}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &577248305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577248303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c82778ee067ba814f819c90b561518f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedDialogueSystem
 --- !u!1 &594625319
 GameObject:
   m_ObjectHideFlags: 0
@@ -3782,8 +3857,8 @@ MonoBehaviour:
   _disableWithKey: 0
   _blockInputWidthDelay: 1
   _blockDelay: 1
-  _dialogText: 
   _dialog: {fileID: 123551418}
+  _dialogId: 
 --- !u!1 &818773738
 GameObject:
   m_ObjectHideFlags: 0
@@ -9069,9 +9144,8 @@ MonoBehaviour:
   _disableWithKey: 1
   _blockInputWidthDelay: 0
   _blockDelay: 3
-  _dialogText: "\u0417\u0434\u0435\u0441\u044C \u0431\u0443\u0434\u0435\u0442 \u0432\u0430\u0448\u0430
-    \u0440\u0435\u043A\u043B\u0430\u043C\u0430"
   _dialog: {fileID: 1109048377}
+  _dialogId: night_field_eva_3
 --- !u!114 &920318863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16494,8 +16568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e0582d54e2a55644be37334a6caf283, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogTrigger
-  _dialogText: "\u0417\u0434\u0435\u0441\u044C \u0431\u0443\u0434\u0435\u0442 \u0432\u0430\u0448\u0430
-    \u0440\u0435\u043A\u043B\u0430\u043C\u0430"
+  _dialogId: night_field_note
   _dialogCanvas: {fileID: 768836068}
   _dialogUI: {fileID: 1137533468}
   _animator: {fileID: 858534451}
@@ -16757,8 +16830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e0582d54e2a55644be37334a6caf283, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogTrigger
-  _dialogText: "\u0417\u0434\u0435\u0441\u044C \u0431\u0443\u0434\u0435\u0442 \u0432\u0430\u0448\u0430
-    \u0440\u0435\u043A\u043B\u0430\u043C\u0430"
+  _dialogId: night_field_eva_2
   _dialogCanvas: {fileID: 1109048377}
   _dialogUI: {fileID: 1137533468}
   _animator: {fileID: 858534451}
@@ -16932,8 +17004,8 @@ MonoBehaviour:
   _disableWithKey: 0
   _blockInputWidthDelay: 1
   _blockDelay: 1.25
-  _dialogText: 
   _dialog: {fileID: 1613595947}
+  _dialogId: 
 --- !u!61 &1483657412
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19830,6 +19902,7 @@ SceneRoots:
   - {fileID: 1201229297}
   - {fileID: 1365444638}
   - {fileID: 677655750}
+  - {fileID: 357547394}
   - {fileID: 571608951605764348}
   - {fileID: 145615724}
   - {fileID: 1420707667}

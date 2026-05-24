@@ -1,0 +1,24 @@
+{
+  "dialogues": [
+    {
+      "id": "night_field_eva_1",
+      "russian": "могу ходить но тело не мое",
+      "english": "english1"
+    },
+    {
+      "id": "night_field_eva_2",
+      "russian": "ждала",
+      "english": "english2"
+    },
+    {
+      "id": "night_field_note",
+      "russian": "записка текст.",
+      "english": "english3"
+    },
+    {
+      "id": "night_field_eva_3",
+      "russian": "он ищет",
+      "english": "english4"
+    }
+  ]
+}

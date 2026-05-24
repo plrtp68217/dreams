@@ -2,8 +2,7 @@ using UnityEngine;
 
 public class InteractionTrigger : MonoBehaviour
 {
-    [TextArea(3, 10)]
-    [SerializeField] private string _dialogText;
+    [SerializeField] private string _dialogId;
     [SerializeField] private Dialog _dialogCanvas;
     [SerializeField] private Dialog _dialogUI;
 
@@ -12,6 +11,13 @@ public class InteractionTrigger : MonoBehaviour
 
     private bool _isEntered = false;
     private bool _canvasIsActivated = false;
+
+    private string _dialogText;
+
+    private void Start()
+    {
+        _dialogText = LocalizedDialogueSystem.Instance.GetDialogueText(_dialogId);
+    }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {

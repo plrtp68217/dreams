@@ -16,12 +16,18 @@ public class JoinTrigger : MonoBehaviour
     [SerializeField] private bool _blockInputWidthDelay = false;
     [SerializeField] private float _blockDelay = 3f;
 
-    [TextArea(3, 10)]
-    [SerializeField] private string _dialogText;
     [SerializeField] private Dialog _dialog;
+    [SerializeField] private string _dialogId;
 
     private bool _isEntered = false;
     private bool _isVisited = false;
+
+    private string _dialogText;
+
+    private void Start()
+    {
+        _dialogText = LocalizedDialogueSystem.Instance.GetDialogueText(_dialogId);
+    }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
@@ -30,9 +36,9 @@ public class JoinTrigger : MonoBehaviour
         if (collider.TryGetComponent(out Player player))
         {
             _isEntered = true;
-
             _dialog.Enable(_dialogText);
             player.SetActiveDialog(_dialog);
+
 
             if (_disableWithKey)
             {
