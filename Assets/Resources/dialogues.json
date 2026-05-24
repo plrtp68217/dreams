@@ -2,23 +2,23 @@
   "dialogues": [
     {
       "id": "night_field_eva_1",
-      "russian": "могу ходить но тело не мое",
-      "english": "english1"
+      "russian": "Я могу двигаться, хотя тело как будто не мое...",
+      "english": "I can move, but my body doesn't feel like mine..."
     },
     {
       "id": "night_field_eva_2",
-      "russian": "ждала",
-      "english": "english2"
+      "russian": "Здесь я кого-то ждала, но никто не пришел",
+      "english": "I was waiting for someone, but no one came."
     },
     {
       "id": "night_field_note",
-      "russian": "записка текст.",
-      "english": "english3"
+      "russian": "Ты ждала не человека. Ты ждала знак, что это все еще ты. Но вместо знака - пустота. Тело помнит дорогу домой, даже если разум сдался. Доверься тому, что умеет врать: страху. Он приведет тебя к выходу, потому что он единственное , что они не могут отнять.",
+      "english": "You weren't waiting for a person. You were waiting for a sign that it was still you. But instead of a sign, there was nothing. Your body remembers the way home, even if your mind has given up. Trust the one thing that can lie: fear. It will lead you to the exit, because it's the only thing they can't take away from you."
     },
     {
       "id": "night_field_eva_3",
-      "russian": "он ищет",
-      "english": "english4"
+      "russian": "Он ищет, нужно пробраться незаметно...",
+      "english": "He's looking for a way to sneak in..."
     }
   ]
 }
