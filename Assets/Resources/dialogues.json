@@ -6,6 +6,11 @@
       "english": "Play"
     },
     {
+      "id": "menu_button_options",
+      "russian": "Настройки",
+      "english": "Options"
+    },
+    {
       "id": "menu_button_exit",
       "russian": "Выйти",
       "english": "Exit"
