@@ -1,6 +1,36 @@
 {
   "dialogues": [
     {
+      "id": "menu_button_play",
+      "russian": "Играть",
+      "english": "Play"
+    },
+    {
+      "id": "menu_button_exit",
+      "russian": "Выйти",
+      "english": "Exit"
+    },
+    {
+      "id": "game_name",
+      "russian": "DREAMS",
+      "english": "DREAMS"
+    },
+    {
+      "id": "authors",
+      "russian": "НАД ПРОЕКТОМ РАБОТАЛИ\n\nПрограммирование, Дизайн, Музыка\nСергей Морозов\n\nАнимация\nСергей Морозов\nРуслан Алешин\nАндрей Саитов\n\nСюжет, Локации\nАндрей Саитов\n\nГенеральный продюсер\nАндрей Саитов",
+      "english": "WORKED ON THE PROJECT\n\nProgramming, Design, Music\nSergey Morozov\n\nAnimation\nSergey Morozov\nRuslan Aleshyn\nAndrey Saitov\n\nStory, Locations\nAndrey Saitov\n\nExecutive Producer\nAndrey Saitov"
+    },
+    {
+      "id": "copyright",
+      "russian": "© 2026 SCL. ВСЕ ПРАВА ЗАЩИЩЕНЫ.",
+      "english": "© 2026 SCL. ALL RIGHTS RESERVED."
+    },
+    {
+      "id": "to_be_continued",
+      "russian": "ПРОДОЛЖЕНИЕ СЛЕДУЕТ...",
+      "english": "TO BE CONTINUED..."
+    },
+    {
       "id": "night_field_eva_1",
       "russian": "Я могу двигаться, хотя тело как будто не мое...",
       "english": "I can move, but my body doesn't feel like mine..."

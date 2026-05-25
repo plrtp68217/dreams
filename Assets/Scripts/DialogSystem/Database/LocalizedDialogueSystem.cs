@@ -9,12 +9,20 @@ public class LocalizedDialogueSystem : MonoBehaviour
 
     public static LocalizedDialogueSystem Instance { get; private set; }
 
-    public static Language CurrentLanguage = Language.Russian;
+    public static Language CurrentLanguage = Language.English;
 
     private void Awake()
     {
-        Instance = this;
-        LoadDialogues();
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+            LoadDialogues();
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     public string GetDialogueText(string id)
@@ -22,7 +30,7 @@ public class LocalizedDialogueSystem : MonoBehaviour
         return _dialogues.ContainsKey(id) ? _dialogues[id] : "[Missing Dialogue]";
     }
 
-    private void LoadDialogues()
+    public void LoadDialogues()
     {
         TextAsset jsonFile = Resources.Load<TextAsset>("dialogues");
 
