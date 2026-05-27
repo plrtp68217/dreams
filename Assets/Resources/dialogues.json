@@ -2,18 +2,23 @@
   "dialogues": [
     {
       "id": "menu_button_play",
-      "russian": "Играть",
-      "english": "Play"
+      "russian": "ИГРАТЬ",
+      "english": "PLAY"
     },
     {
       "id": "menu_button_options",
-      "russian": "Настройки",
-      "english": "Options"
+      "russian": "НАСТРОЙКИ",
+      "english": "OPTIONS"
     },
     {
       "id": "menu_button_exit",
-      "russian": "Выйти",
-      "english": "Exit"
+      "russian": "ВЫХОД",
+      "english": "EXIT"
+    },
+    {
+      "id": "menu_language",
+      "russian": "Язык",
+      "english": "Language"
     },
     {
       "id": "game_name",

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public enum Language { Russian, English }
@@ -9,7 +10,9 @@ public class LocalizedDialogueSystem : MonoBehaviour
 
     public static LocalizedDialogueSystem Instance { get; private set; }
 
-    public static Language CurrentLanguage = Language.English;
+    public static Language CurrentLanguage = Language.Russian;
+
+    public static event Action LanguageChanged;
 
     private void Awake()
     {
@@ -23,6 +26,13 @@ public class LocalizedDialogueSystem : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    public void SetLanguage(Language language)
+    {
+        CurrentLanguage = language;
+        LoadDialogues();
+        LanguageChanged?.Invoke();
     }
 
     public string GetDialogueText(string id)
