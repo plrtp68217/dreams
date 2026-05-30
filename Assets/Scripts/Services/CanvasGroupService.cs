@@ -18,10 +18,6 @@ public class CanvasGroupService : MonoBehaviour
         }
     }
 
-    public void Open()
-    {
-    }
-
     public void Open(CanvasGroup canvasGroup, float delay = 0.5f)
     {
         if (isActivated) return;

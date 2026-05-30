@@ -26,6 +26,11 @@
       "english": "DREAMS"
     },
     {
+      "id": "ingame_button_menu",
+      "russian": "Меню",
+      "english": "Menu"
+    },
+    {
       "id": "authors",
       "russian": "НАД ПРОЕКТОМ РАБОТАЛИ\n\nПрограммирование, Дизайн, Музыка\nСергей Морозов\n\nАнимация\nСергей Морозов\nРуслан Алешин\nАндрей Саитов\n\nСюжет, Локации\nАндрей Саитов\n\nГенеральный продюсер\nАндрей Саитов",
       "english": "WORKED ON THE PROJECT\n\nProgramming, Design, Music\nSergey Morozov\n\nAnimation\nSergey Morozov\nRuslan Aleshyn\nAndrey Saitov\n\nStory, Locations\nAndrey Saitov\n\nExecutive Producer\nAndrey Saitov"

@@ -12,6 +12,7 @@ public class InputService : MonoBehaviour
     public float Direction { get; private set; }
     public bool EIsPressed { get; private set; }
     public bool SpaceIsPressed { get; private set; }
+    public bool EscapeIsPressed { get; private set; }
     public bool ShiftIsHolding { get; private set; }
     public bool ControlIsHolding { get; private set; }
 
@@ -26,6 +27,7 @@ public class InputService : MonoBehaviour
 
         EIsPressed = Input.GetKeyDown(KeyCode.E);
         SpaceIsPressed = Input.GetKeyDown(KeyCode.Space);
+        EscapeIsPressed = Input.GetKeyDown(KeyCode.Escape);
 
         ShiftIsHolding = Input.GetKey(KeyCode.LeftShift);
         ControlIsHolding = Input.GetKey(KeyCode.LeftControl);

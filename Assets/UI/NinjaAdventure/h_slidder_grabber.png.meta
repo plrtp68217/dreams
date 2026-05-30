@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 11491913cea3cc045a4b031b3a41687f
+guid: 27c4ad3f77bacd949a18da208920ea77
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3330556178697155695
-    second: checked_0
+      213: 7716372281208020315
+    second: h_slidder_grabber_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: checked_0
+      name: h_slidder_grabber_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 13
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 19b06403dcc77c1d0800000000000000
-      internalID: -3330556178697155695
+      spriteID: b5d1318e4bf061b60800000000000000
+      internalID: 7716372281208020315
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      checked_0: -3330556178697155695
+      h_slidder_grabber_0: 7716372281208020315
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

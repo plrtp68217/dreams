@@ -11,6 +11,8 @@ public class GraphicService : MonoBehaviour
 
     public void FadeGraphic(Graphic[] graphic, float targetAlpha)
     {
+        if (this == null || gameObject == null) return;
+
         foreach (Graphic graphicItem in graphic)
         {
             if (_activeFades.TryGetValue(graphicItem, out Coroutine existingCoroutine))
