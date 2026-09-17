@@ -7,13 +7,14 @@ public class ButtonChangeLanguage : MonoBehaviour
     [SerializeField] private Sprite _spriteUnchecked;
 
     // true для Русского, false для English
-    private bool _buttonState = true;
+    private bool _buttonState = LocalizedDialogueSystem.CurrentLanguage == Language.Russian;
     private Image _image;
 
 
     private void Start()
     {
         _image = GetComponent<Image>();
+        _image.sprite = _buttonState ? _spriteUnchecked : _spriteChecked;
     }
 
     public void ChangeLanguage()
