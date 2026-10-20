@@ -64,6 +64,21 @@
       "id": "night_field_eva_3",
       "russian": "Он ищет, нужно пробраться незаметно...",
       "english": "He's looking for a way to sneak in..."
+    },
+    {
+      "id": "fastfood_faceless_man_1",
+      "russian": "Мне, пожалуйста, комбо. Только без прошлого.",
+      "english": "A combo, please. Just hold the past."
+    },
+    {
+      "id": "fastfood_faceless_man_2",
+      "russian": "Я бы сам поискал, но без лица меня не узнают даже камеры.",
+      "english": "I'd look for it myself, but without a face even the cameras don't recognize me."
+    },
+    {
+      "id": "fastfood_order_faceless_man",
+      "russian": "<b>ЗАКАЗ №1</b>\n\n- Бургер без булки\n- Картошка без соли\n- Напиток без вкуса\n- Игрушка без лица",
+      "english": "<b>ORDER #1</b>\n\n- Burger without a bun\n- Fries without salt\n- Drink without taste\n- Toy without a face"
     }
   ]
 }
