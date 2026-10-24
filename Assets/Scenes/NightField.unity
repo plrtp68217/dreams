@@ -19003,6 +19003,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5896015584293468792, guid: 7d6f7168e5af5924f8f3797a5bb1ae1a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 900462161389753578, guid: 663cc2e7bed51624b9ec981d7de8dc5b, type: 3}
+    - target: {fileID: 5896015584293468792, guid: 7d6f7168e5af5924f8f3797a5bb1ae1a, type: 3}
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
@@ -19110,6 +19114,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6841524371343897581, guid: 7d6f7168e5af5924f8f3797a5bb1ae1a, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 80fc2231114ad9d46bda09ec3a417d3c, type: 2}
     - target: {fileID: 7036990405979583845, guid: 7d6f7168e5af5924f8f3797a5bb1ae1a, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -19280,6 +19288,10 @@ PrefabInstance:
       propertyPath: BoundingShape2D
       value: 
       objectReference: {fileID: 520193488}
+    - target: {fileID: 5333117703980177002, guid: 573b4c0ddbccc8840be9032339990593, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6795038381184575251, guid: 87a2e5cc95d8fe5408a81f353ee571aa, type: 3}
     - target: {fileID: 6078613734440665322, guid: 573b4c0ddbccc8840be9032339990593, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.4773
