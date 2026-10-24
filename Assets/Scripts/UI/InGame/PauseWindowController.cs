@@ -16,6 +16,9 @@ public class PauseWindowController: MonoBehaviour
     private void Start()
     {
         _textMeshProMenu.text = LocalizedDialogueSystem.Instance.GetDialogueText(_menuTextId);
+
+        // В игре курсор нужен только в паузе
+        Cursor.visible = false;
     }
 
     private void Update()
@@ -41,6 +44,7 @@ public class PauseWindowController: MonoBehaviour
     public void OpenWindow()
     {
         _canvasGroupService.Open(_pauseCanvasGroup);
+        Cursor.visible = true;
 
         // Пауза могла открыться во время катсцены, когда ввод уже заблокирован
         _wasBlocked = _inputService.IsBlocked;
@@ -50,6 +54,7 @@ public class PauseWindowController: MonoBehaviour
     public void CloseWindow()
     {
         _canvasGroupService.Close(_pauseCanvasGroup);
+        Cursor.visible = false;
 
         if (_wasBlocked == false)
         {
