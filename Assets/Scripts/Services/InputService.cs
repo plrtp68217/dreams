@@ -9,6 +9,8 @@ public class InputService : MonoBehaviour
     private bool isBlocked = false;
     private Coroutine _blockCoroutine;
 
+    public bool IsBlocked => isBlocked;
+
     public float Direction { get; private set; }
     public bool EIsPressed { get; private set; }
     public bool SpaceIsPressed { get; private set; }
