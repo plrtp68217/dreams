@@ -6,6 +6,9 @@ public class TillTrigger : MonoBehaviour
     [SerializeField] private Player _player;
     [SerializeField] private InputService _inputService;
     [SerializeField] private Dialog _dialogUI;
+
+    [Tooltip("Необязательно: кто подходит к кассе до посетителя")]
+    [SerializeField] private NpcVisit _briefing;
     [SerializeField] private GuestOrderSequence _orderSequence;
 
     [Header("Место кассира за стойкой")]
@@ -72,6 +75,12 @@ public class TillTrigger : MonoBehaviour
         _inputService.Block();
 
         yield return StepBehindCounter();
+
+        if (_briefing != null)
+        {
+            yield return _briefing.Play();
+        }
+
         yield return _orderSequence.Play();
 
         // Подсказка: E — выйти из кассы

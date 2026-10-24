@@ -79,6 +79,31 @@
       "id": "fastfood_order_faceless_man",
       "russian": "<b>ЗАКАЗ №1</b>\n\n- Бургер без булки\n- Картошка без соли\n- Напиток без вкуса\n- Игрушка без лица",
       "english": "<b>ORDER #1</b>\n\n- Burger without a bun\n- Fries without salt\n- Drink without taste\n- Toy without a face"
+    },
+    {
+      "id": "fastfood_dream_title",
+      "russian": "ЕВА. Стажёр. Испытуемая. Счастливый сотрудник месяца.",
+      "english": "EVA. Intern. Test subject. Happy employee of the month."
+    },
+    {
+      "id": "fastfood_admin_wake_1",
+      "russian": "Ева, вы проснулись? Смена уже началась.",
+      "english": "Eva, are you awake? Your shift has already started."
+    },
+    {
+      "id": "fastfood_admin_wake_2",
+      "russian": "Пройдите налево и встаньте за кассу. Я подойду и объясню, что делать дальше.",
+      "english": "Go to the left and take your place at the till. I'll come over and explain what to do next."
+    },
+    {
+      "id": "fastfood_admin_briefing_1",
+      "russian": "Добро пожаловать на смену. Здесь всё просто: гости делают заказ, вы их обслуживаете.",
+      "english": "Welcome to your shift. It's simple here: guests place an order, you serve them."
+    },
+    {
+      "id": "fastfood_admin_briefing_2",
+      "russian": "Главное — не ошибаться. У нас ведь свободный выбор: бургер, картошка или последствия.",
+      "english": "The main thing is not to make mistakes. After all, we have free choice here: a burger, fries, or consequences."
     }
   ]
 }

@@ -1,34 +1,31 @@
 fileFormatVersion: 2
-guid: 45fe333f701c33548b141615028a1479
+guid: 0877f5ba78f3d0944a8ca9bc5251c8af
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5996583320280141619
-    second: FacelessManIdle_0
+      213: -5244361293867945423
+    second: FacelessManFastFoodWalking_0
   - first:
-      213: 2201991650941097944
-    second: FacelessManIdle_1
+      213: 1269455487764532403
+    second: FacelessManFastFoodWalking_1
   - first:
-      213: -4661355672637325876
-    second: FacelessManIdle_2
+      213: 1333760006612991421
+    second: FacelessManFastFoodWalking_2
   - first:
-      213: 7675618396790779398
-    second: FacelessManIdle_3
+      213: 1772079066191172059
+    second: FacelessManFastFoodWalking_3
   - first:
-      213: 844507219283358735
-    second: FacelessManIdle_4
+      213: -7862912180908125741
+    second: FacelessManFastFoodWalking_4
   - first:
-      213: 7778303163551204014
-    second: FacelessManIdle_5
+      213: -5314632758424821926
+    second: FacelessManFastFoodWalking_5
   - first:
-      213: -6081850307731990303
-    second: FacelessManIdle_6
+      213: 4132793616945443969
+    second: FacelessManFastFoodWalking_6
   - first:
-      213: 8199538789399476741
-    second: FacelessManIdle_7
-  - first:
-      213: -326675365233265963
-    second: FacelessManIdle_8
+      213: -8061405319914672079
+    second: FacelessManFastFoodWalking_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -98,8 +95,8 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
-    textureCompression: 1
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -137,199 +134,177 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FacelessManIdle_0
+      name: FacelessManFastFoodWalking_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 35
-        height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 80
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 33f845f22c4283350800000000000000
-      internalID: 5996583320280141619
+      spriteID: 132713560394837b0800000000000000
+      internalID: -5244361293867945423
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FacelessManIdle_1
+      name: FacelessManFastFoodWalking_1
       rect:
         serializedVersion: 2
-        x: 35
+        x: 80
         y: 0
-        width: 35
-        height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 80
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8d758b86dbb0f8e10800000000000000
-      internalID: 2201991650941097944
+      spriteID: 3bc006e4a030e9110800000000000000
+      internalID: 1269455487764532403
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FacelessManIdle_2
+      name: FacelessManFastFoodWalking_2
       rect:
         serializedVersion: 2
-        x: 70
+        x: 160
         y: 0
-        width: 35
-        height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 80
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ccd33b076b98f4fb0800000000000000
-      internalID: -4661355672637325876
+      spriteID: dbd3ac1d8a7728210800000000000000
+      internalID: 1333760006612991421
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FacelessManIdle_3
+      name: FacelessManFastFoodWalking_3
       rect:
         serializedVersion: 2
-        x: 105
+        x: 240
         y: 0
-        width: 35
-        height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 80
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 60eea24c346458a60800000000000000
-      internalID: 7675618396790779398
+      spriteID: bd11b369580b79810800000000000000
+      internalID: 1772079066191172059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FacelessManIdle_4
+      name: FacelessManFastFoodWalking_4
       rect:
         serializedVersion: 2
-        x: 140
+        x: 320
         y: 0
-        width: 35
-        height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 80
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f0433af67da48bb00800000000000000
-      internalID: 844507219283358735
+      spriteID: 3d111ece70351e290800000000000000
+      internalID: -7862912180908125741
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FacelessManIdle_5
+      name: FacelessManFastFoodWalking_5
       rect:
         serializedVersion: 2
-        x: 175
+        x: 400
         y: 0
-        width: 35
-        height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 80
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ea244ca148512fb60800000000000000
-      internalID: 7778303163551204014
+      spriteID: a5f1f621aa1ae36b0800000000000000
+      internalID: -5314632758424821926
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FacelessManIdle_6
+      name: FacelessManFastFoodWalking_6
       rect:
         serializedVersion: 2
-        x: 210
+        x: 480
         y: 0
-        width: 35
-        height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 80
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1e8d88e3e5de89ba0800000000000000
-      internalID: -6081850307731990303
+      spriteID: 184f80ce5e1aa5930800000000000000
+      internalID: 4132793616945443969
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FacelessManIdle_7
+      name: FacelessManFastFoodWalking_7
       rect:
         serializedVersion: 2
-        x: 245
+        x: 560
         y: 0
-        width: 35
-        height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 80
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 50a3130061d9ac170800000000000000
-      internalID: 8199538789399476741
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FacelessManIdle_8
-      rect:
-        serializedVersion: 2
-        x: 280
-        y: 0
-        width: 35
-        height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5d276627c7a677bf0800000000000000
-      internalID: -326675365233265963
+      spriteID: 130ba0c9292202090800000000000000
+      internalID: -8061405319914672079
       vertices: []
       indices: 
       edges: []
@@ -338,7 +313,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c5546c003f3cbd146af50318187e28e8
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -346,19 +321,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":35.0,"y":76.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      FacelessManIdle_0: 5996583320280141619
-      FacelessManIdle_1: 2201991650941097944
-      FacelessManIdle_2: -4661355672637325876
-      FacelessManIdle_3: 7675618396790779398
-      FacelessManIdle_4: 844507219283358735
-      FacelessManIdle_5: 7778303163551204014
-      FacelessManIdle_6: -6081850307731990303
-      FacelessManIdle_7: 8199538789399476741
-      FacelessManIdle_8: -326675365233265963
+      FacelessManFastFoodWalking_0: -5244361293867945423
+      FacelessManFastFoodWalking_1: 1269455487764532403
+      FacelessManFastFoodWalking_2: 1333760006612991421
+      FacelessManFastFoodWalking_3: 1772079066191172059
+      FacelessManFastFoodWalking_4: -7862912180908125741
+      FacelessManFastFoodWalking_5: -5314632758424821926
+      FacelessManFastFoodWalking_6: 4132793616945443969
+      FacelessManFastFoodWalking_7: -8061405319914672079
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
