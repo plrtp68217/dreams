@@ -45,6 +45,8 @@ public class InteractionTrigger : MonoBehaviour
         {
             if (_canvasIsActivated)
             {
+                if (_dialogCanvas.TryCompleteText()) return;
+
                 _dialogUI.Enable();
                 _dialogCanvas.Disable();
                 _canvasIsActivated = false;

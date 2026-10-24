@@ -30,11 +30,22 @@ public class GuestOrderSequence : MonoBehaviour
         foreach (string phraseId in _phraseIds)
         {
             _subtitles.Enable(GetText(phraseId));
-            yield return _inputService.WaitForKeyE();
+            yield return WaitForPhraseEnd();
         }
 
         _subtitles.Disable();
         _orderPanel.Enable(GetText(_orderId));
+    }
+
+    private IEnumerator WaitForPhraseEnd()
+    {
+        yield return _inputService.WaitForKeyE();
+
+        // Если фраза ещё печаталась, E только допечатывает её — ждём ещё одно нажатие
+        while (_subtitles.TryCompleteText())
+        {
+            yield return _inputService.WaitForKeyE();
+        }
     }
 
     private string GetText(string id)

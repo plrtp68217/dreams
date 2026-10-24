@@ -72,6 +72,8 @@ public class JoinTrigger : MonoBehaviour
     {
         if (_disableWithKey && _isEntered && _inputService.EIsPressed)
         {
+            if (_dialog.TryCompleteText()) return;
+
             _dialog.Disable();
             _inputService.Unblock();
             _player.ResetActiveDialog();

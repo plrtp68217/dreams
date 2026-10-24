@@ -322,6 +322,7 @@ MonoBehaviour:
   _textsMeshPro:
   - {fileID: 1883002403}
   _editableTextIndex: 0
+  _typewriter: {fileID: 0}
 --- !u!224 &77103481
 RectTransform:
   m_ObjectHideFlags: 0
@@ -353,6 +354,7 @@ GameObject:
   - component: {fileID: 89819355}
   - component: {fileID: 89819357}
   - component: {fileID: 89819356}
+  - component: {fileID: 89819358}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -478,6 +480,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 89819354}
   m_CullTransparentMesh: 1
+--- !u!114 &89819358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89819354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 214d6917b2f0de946a8b98637b929e80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TypewriterText
+  _charactersPerSecond: 30
+  _punctuationDelay: 0.15
+  _punctuation: ".,!?;:\u2026"
+  _useUnscaledTime: 0
 --- !u!1 &103801344
 GameObject:
   m_ObjectHideFlags: 0
@@ -3648,6 +3666,7 @@ MonoBehaviour:
   _textsMeshPro:
   - {fileID: 89819356}
   _editableTextIndex: 0
+  _typewriter: {fileID: 89819358}
 --- !u!1 &1881413941
 GameObject:
   m_ObjectHideFlags: 0
