@@ -3,6 +3,10 @@ using UnityEngine;
 
 public class TillTrigger : MonoBehaviour
 {
+    public event System.Action OrderCompleted;
+
+    public bool IsCompleted => _isCompleted;
+
     [SerializeField] private Player _player;
     [SerializeField] private InputService _inputService;
     [SerializeField] private Dialog _dialogUI;
@@ -95,6 +99,7 @@ public class TillTrigger : MonoBehaviour
         _isCompleted = true;
         _isBusy = false;
         _workCoroutine = null;
+        OrderCompleted?.Invoke();
     }
 
     private IEnumerator StepBehindCounter()
