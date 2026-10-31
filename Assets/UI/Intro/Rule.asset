@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!28 &2800000
+Texture2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Rule
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 4
+  m_Width: 128
+  m_Height: 1
+  m_CompleteImageSize: 512
+  m_MipsStripped: 0
+  m_TextureFormat: 4
+  m_MipCount: 1
+  m_IsReadable: 1
+  m_IsPreProcessed: 0
+  m_IgnoreMipmapLimit: 1
+  m_MipmapLimitGroupName: 
+  m_StreamingMipmaps: 0
+  m_StreamingMipmapsPriority: 0
+  m_VTOnly: 0
+  m_AlphaIsTransparency: 0
+  m_ImageCount: 1
+  m_TextureDimension: 2
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_LightmapFormat: 0
+  m_ColorSpace: 1
+  m_PlatformBlob: 
+  image data: 512
+  _typelessdata: b3c2cc00b3c2cc01b3c2cc03b3c2cc06b3c2cc08b3c2cc0bb3c2cc0eb3c2cc11b3c2cc14b3c2cc17b3c2cc1bb3c2cc1eb3c2cc22b3c2cc25b3c2cc29b3c2cc2cb3c2cc30b3c2cc34b3c2cc37b3c2cc3bb3c2cc3fb3c2cc43b3c2cc46b3c2cc4ab3c2cc4eb3c2cc52b3c2cc55b3c2cc59b3c2cc5db3c2cc60b3c2cc64b3c2cc67b3c2cc6ab3c2cc6eb3c2cc71b3c2cc74b3c2cc77b3c2cc7bb3c2cc7eb3c2cc80b3c2cc83b3c2cc86b3c2cc89b3c2cc8bb3c2cc8eb3c2cc90b3c2cc92b3c2cc94b3c2cc96b3c2cc98b3c2cc9ab3c2cc9cb3c2cc9db3c2cc9fb3c2cca0b3c2cca1b3c2cca2b3c2cca3b3c2cca4b3c2cca4b3c2cca5b3c2cca5b3c2cca6b3c2cca6b3c2cca6b3c2cca6b3c2cca5b3c2cca5b3c2cca4b3c2cca4b3c2cca3b3c2cca2b3c2cca1b3c2cca0b3c2cc9fb3c2cc9db3c2cc9cb3c2cc9ab3c2cc98b3c2cc96b3c2cc94b3c2cc92b3c2cc90b3c2cc8eb3c2cc8bb3c2cc89b3c2cc86b3c2cc83b3c2cc80b3c2cc7eb3c2cc7bb3c2cc77b3c2cc74b3c2cc71b3c2cc6eb3c2cc6ab3c2cc67b3c2cc64b3c2cc60b3c2cc5db3c2cc59b3c2cc55b3c2cc52b3c2cc4eb3c2cc4ab3c2cc46b3c2cc43b3c2cc3fb3c2cc3bb3c2cc37b3c2cc34b3c2cc30b3c2cc2cb3c2cc29b3c2cc25b3c2cc22b3c2cc1eb3c2cc1bb3c2cc17b3c2cc14b3c2cc11b3c2cc0eb3c2cc0bb3c2cc08b3c2cc06b3c2cc03b3c2cc01b3c2cc00
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 

@@ -1,5 +1,6 @@
 ﻿public enum SceneName
 {
-    MainMenu,
-    NightField,
+    Intro = 0,
+    MainMenu = 1,
+    NightField = 2,
 }
