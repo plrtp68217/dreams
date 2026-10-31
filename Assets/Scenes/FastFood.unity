@@ -2608,6 +2608,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2716587424791679061, guid: 7d6f7168e5af5924f8f3797a5bb1ae1a, type: 3}
       insertIndex: 2
       addedObject: {fileID: 705474776}
+    - targetCorrespondingSourceObject: {fileID: 2716587424791679061, guid: 7d6f7168e5af5924f8f3797a5bb1ae1a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 705474777}
   m_SourcePrefab: {fileID: 100100000, guid: 7d6f7168e5af5924f8f3797a5bb1ae1a, type: 3}
 --- !u!4 &655159176 stripped
 Transform:
@@ -2832,11 +2835,119 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91b5634a2d07a754d8128808b9ad7912, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioMovement
-  _audioSource: {fileID: 0}
-  _audioFootstepClips: []
-  _audioJumpClips: []
-  _audioInteractionClip: {fileID: 0}
-  _volume: 0.4
+  _audioSource: {fileID: 705474777}
+  _audioFootstepClips:
+  - {fileID: 8300000, guid: aca70007b2e471a49b4446aa90727a78, type: 3}
+  - {fileID: 8300000, guid: 1d8d784216f58ea40963bb2d3484f3ef, type: 3}
+  - {fileID: 8300000, guid: 11bde92796254c341b2708e4ddb02e82, type: 3}
+  _audioRunningClips:
+  - {fileID: 8300000, guid: 14fd99a604eb1a44fbe49bed9d76a9f5, type: 3}
+  - {fileID: 8300000, guid: 2ebc4bf8740b0d448adce2868c2a20e2, type: 3}
+  - {fileID: 8300000, guid: 20b173089d220004eb88ae640a041533, type: 3}
+  _audioJumpClips:
+  - {fileID: 8300000, guid: 2021c48350389fa4b95a37da4d8ea6f1, type: 3}
+  - {fileID: 8300000, guid: 10643950bbfd8d141aafe2356d71cae2, type: 3}
+  - {fileID: 8300000, guid: d0f91d61ae5dd654fb8d33b8b9be9bcb, type: 3}
+  _audioInteractionClip: {fileID: 8300000, guid: 49e38f748a528014ab0aa7d332c50dd8, type: 3}
+  _inputService: {fileID: 1445311326}
+  _volume: 0.5
+--- !u!82 &705474777
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701032471}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 96
+  DopplerLevel: 0
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &734366714
 GameObject:
   m_ObjectHideFlags: 0
@@ -3164,6 +3275,7 @@ GameObject:
   m_Component:
   - component: {fileID: 811745112}
   - component: {fileID: 811745113}
+  - component: {fileID: 811745114}
   m_Layer: 0
   m_Name: AudioController
   m_TagString: Untagged
@@ -3198,11 +3310,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa6f3327641a07b488b8f02d29554546, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioController
-  _audioSourceMain: {fileID: 0}
-  _ambientClip: {fileID: 0}
+  _audioSourceMain: {fileID: 1792393918}
+  _ambientClip: {fileID: 8300000, guid: c31edbb7a76f8514f8a2db0db707d1a6, type: 3}
   _audioSourceBG: {fileID: 0}
   _backgroundClip: {fileID: 0}
-  _volume: 0.5
+  _volume: 0.22
+--- !u!114 &811745114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811745111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edf67200c692d114d83c35dda9e88e4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FastFoodAudioPause
+  _sources:
+  - {fileID: 1792393918}
+  - {fileID: 705474777}
 --- !u!1 &820476229
 GameObject:
   m_ObjectHideFlags: 0
@@ -5888,16 +6015,16 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Resource: {fileID: 8300000, guid: c31edbb7a76f8514f8a2db0db707d1a6, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.22
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
+  Priority: 192
+  DopplerLevel: 0
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
