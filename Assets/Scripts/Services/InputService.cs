@@ -7,6 +7,7 @@ public class InputService : MonoBehaviour
     public const string Horizontal = "Horizontal";
 
     private bool isBlocked = false;
+    private bool _isPaused;
     private Coroutine _blockCoroutine;
 
     public bool IsBlocked => isBlocked;
@@ -34,7 +35,9 @@ public class InputService : MonoBehaviour
         ShiftIsHolding = Input.GetKey(KeyCode.LeftShift);
         ControlIsHolding = Input.GetKey(KeyCode.LeftControl);
 
-        if (isBlocked == true)
+        if (_isPaused) EIsPressed = false;
+
+        if (isBlocked || _isPaused)
         {
             Direction = 0;
             SpaceIsPressed = false;
@@ -58,6 +61,17 @@ public class InputService : MonoBehaviour
         }
 
         isBlocked = true;
+    }
+
+    public void SetPaused(bool paused)
+    {
+        _isPaused = paused;
+        if (paused)
+        {
+            Direction = 0;
+            EIsPressed = false;
+            SpaceIsPressed = false;
+        }
     }
 
     public void Unblock()

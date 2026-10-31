@@ -1,65 +1,154 @@
-using TMPro;
+﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class PauseWindowController: MonoBehaviour
+public class PauseWindowController : MonoBehaviour
 {
     [SerializeField] private InputService _inputService;
-    [SerializeField] private CanvasGroupService _canvasGroupService;
     [SerializeField] private CanvasGroup _pauseCanvasGroup;
+    [SerializeField] private GameObject _mainPage;
+    [SerializeField] private GameObject _settingsPage;
+    [SerializeField] private UnityEngine.UI.Button _resumeButton;
+    [SerializeField] private UnityEngine.UI.Slider _firstSetting;
+    [SerializeField] private UnityEngine.UI.Image _dimmer;
 
-    [SerializeField] private TextMeshProUGUI _textMeshProMenu;
-    [SerializeField] private string _menuTextId = "ingame_button_menu";
+    public bool IsOpen { get; private set; }
+    public bool IsSettingsOpen => _settingsPage != null && _settingsPage.activeSelf;
+    private bool _wasBlocked;
+    private bool _cursorWasVisible;
+    private CursorLockMode _cursorLock;
+    private float _previousTimeScale;
+    private Coroutine _fade;
 
-    private bool _wasBlocked = false;
-
-    private void Start()
+    private void Awake()
     {
-        _textMeshProMenu.text = LocalizedDialogueSystem.Instance.GetDialogueText(_menuTextId);
-
-        // В игре курсор нужен только в паузе
-        Cursor.visible = false;
+        if (_inputService == null) _inputService = FindFirstObjectByType<InputService>();
+        _pauseCanvasGroup.alpha = 0;
+        _pauseCanvasGroup.interactable = false;
+        _pauseCanvasGroup.blocksRaycasts = false;
     }
 
     private void Update()
     {
-        if (_inputService.EscapeIsPressed)
-        {
-            if (_pauseCanvasGroup.alpha == 0f)
-            {
-                OpenWindow();
-            }
-            else
-            {
-                CloseWindow();
-            }
-        }
+        if (_inputService != null && _inputService.EscapeIsPressed) HandleEscape();
     }
 
-    public void ReturnToNainMenu()
+    private void Start()
     {
-        SceneManager.LoadScene(SceneName.MainMenu.ToString());
+        if (!IsOpen) Cursor.visible = false;
+    }
+
+    public void HandleEscape()
+    {
+        if (!IsOpen) OpenWindow();
+        else if (IsSettingsOpen) ShowMainPage();
+        else CloseWindow();
     }
 
     public void OpenWindow()
     {
-        _canvasGroupService.Open(_pauseCanvasGroup);
+        if (IsOpen) return;
+        IsOpen = true;
+        _previousTimeScale = Time.timeScale;
+        _wasBlocked = _inputService != null && _inputService.IsBlocked;
+        _cursorWasVisible = Cursor.visible;
+        _cursorLock = Cursor.lockState;
+        if (_inputService != null)
+        {
+            if (!_wasBlocked) _inputService.Block();
+            _inputService.SetPaused(true);
+        }
+        Time.timeScale = 0;
         Cursor.visible = true;
-
-        // Пауза могла открыться во время катсцены, когда ввод уже заблокирован
-        _wasBlocked = _inputService.IsBlocked;
-        _inputService.Block();
+        Cursor.lockState = CursorLockMode.None;
+        _pauseCanvasGroup.interactable = true;
+        _pauseCanvasGroup.blocksRaycasts = true;
+        ShowMainPage();
+        BeginFade(1);
     }
 
     public void CloseWindow()
     {
-        _canvasGroupService.Close(_pauseCanvasGroup);
-        Cursor.visible = false;
+        if (!IsOpen) return;
+        IsOpen = false;
+        RestoreGameState();
+        _pauseCanvasGroup.interactable = false;
+        _pauseCanvasGroup.blocksRaycasts = false;
+        if (EventSystem.current != null) EventSystem.current.SetSelectedGameObject(null);
+        if (GameSettings.Instance != null) GameSettings.Instance.Save();
+        BeginFade(0);
+    }
 
-        if (_wasBlocked == false)
+    public void ShowSettings()
+    {
+        _mainPage.SetActive(false);
+        _settingsPage.SetActive(true);
+        SetDimmer(0.55f);
+        if (EventSystem.current != null) EventSystem.current.SetSelectedGameObject(_firstSetting.gameObject);
+    }
+
+    public void ShowMainPage()
+    {
+        _settingsPage.SetActive(false);
+        _mainPage.SetActive(true);
+        SetDimmer(0.78f);
+        if (EventSystem.current != null) EventSystem.current.SetSelectedGameObject(_resumeButton.gameObject);
+    }
+
+    public void ReturnToMainMenu()
+    {
+        CloseWindow();
+        SceneManager.LoadScene(SceneName.MainMenu.ToString());
+    }
+
+    // Preserve existing scene button references to the original method name.
+    public void ReturnToNainMenu() => ReturnToMainMenu();
+
+    private void SetDimmer(float alpha)
+    {
+        var color = _dimmer.color;
+        color.a = alpha;
+        _dimmer.color = color;
+    }
+
+    private void BeginFade(float alpha)
+    {
+        if (_fade != null) StopCoroutine(_fade);
+        _fade = StartCoroutine(Fade(alpha));
+    }
+
+    private IEnumerator Fade(float target)
+    {
+        float start = _pauseCanvasGroup.alpha;
+        float elapsed = 0;
+        while (elapsed < 0.18f)
         {
-            _inputService.Unblock();
+            elapsed += Time.unscaledDeltaTime;
+            _pauseCanvasGroup.alpha = Mathf.Lerp(start, target, Mathf.SmoothStep(0, 1, elapsed / 0.18f));
+            yield return null;
+        }
+        _pauseCanvasGroup.alpha = target;
+        _fade = null;
+    }
+
+    private void RestoreGameState()
+    {
+        Time.timeScale = _previousTimeScale;
+        Cursor.visible = _cursorWasVisible;
+        Cursor.lockState = _cursorLock;
+        if (_inputService != null)
+        {
+            _inputService.SetPaused(false);
+            if (!_wasBlocked) _inputService.Unblock();
         }
     }
-}
 
+    private void OnDisable()
+    {
+        if (_fade != null) StopCoroutine(_fade);
+        _fade = null;
+        if (IsOpen) RestoreGameState();
+        IsOpen = false;
+    }
+}
