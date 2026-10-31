@@ -101,6 +101,14 @@ public static class ConfigureFastFoodTurn
         if (turn == null) turn = machine.AddState("Turn", new Vector3(600, 350));
         turn.motion = clip;
         turn.writeDefaultValues = true;
+        string speedParameter = AnimatorFloat.TurnSpeed.ToString();
+        if (!fastFoodController.parameters.Any(p => p.name == speedParameter))
+            fastFoodController.AddParameter(new AnimatorControllerParameter
+            {
+                name = speedParameter, type = AnimatorControllerParameterType.Float, defaultFloat = 1f
+            });
+        turn.speedParameter = speedParameter;
+        turn.speedParameterActive = true;
         foreach (var transition in turn.transitions) turn.RemoveTransition(transition);
         AddExit(turn, machine, "Crouching", AnimatorBool.IsCrouching);
         AddExit(turn, machine, "Sitting", AnimatorBool.IsSitting);
