@@ -15,6 +15,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _decelerationMultiplier = 0.5f;
 
     private readonly float _defaultMultiplier = 1.0f;
+    private PlayerTurnAnimation _turnAnimation;
+
+    private void Start()
+    {
+        _turnAnimation = _player.GetComponent<PlayerTurnAnimation>();
+    }
 
     public float SpeedMultiplier
     {
@@ -43,7 +49,10 @@ public class PlayerController : MonoBehaviour
 
         if (_inputService.Direction != 0)
         {
-            _player.SpriteRenderer.flipX = _inputService.Direction < 0;
+            if (_turnAnimation != null && _turnAnimation.isActiveAndEnabled)
+                _turnAnimation.FaceMovement(_inputService.Direction);
+            else
+                _player.SpriteRenderer.flipX = _inputService.Direction < 0;
 
             _movementService.Move(
                     _player.Rigidbody,

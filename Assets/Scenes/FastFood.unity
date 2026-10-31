@@ -2611,6 +2611,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2716587424791679061, guid: 7d6f7168e5af5924f8f3797a5bb1ae1a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 705474777}
+    - targetCorrespondingSourceObject: {fileID: 2716587424791679061, guid: 7d6f7168e5af5924f8f3797a5bb1ae1a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 705474782}
   m_SourcePrefab: {fileID: 100100000, guid: 7d6f7168e5af5924f8f3797a5bb1ae1a, type: 3}
 --- !u!4 &655159176 stripped
 Transform:
@@ -2948,6 +2951,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &705474782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701032471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 705c106bf6a873246a493bb853361ca4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerTurnAnimation
+  _inputService: {fileID: 1445311326}
+  _controller: {fileID: 1420808884}
 --- !u!1 &734366714
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,7 +7,7 @@ AnimatorOverrideController:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: EvaFastFoodAnimatorOverride
-  m_Controller: {fileID: 9100000, guid: 7883003961148834fb460b31d4eb9103, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2fb10343d6213704f98e9f7cef50a113, type: 2}
   m_Clips:
   - m_OriginalClip: {fileID: 7400000, guid: a4013f742c55c2b43b492365f55aa826, type: 2}
     m_OverrideClip: {fileID: 7400000, guid: 6764c4db1cc5cc342bb22ed3a085c0ec, type: 2}
@@ -29,3 +29,5 @@ AnimatorOverrideController:
     m_OverrideClip: {fileID: 7400000, guid: a1a11c2da8469964191491435fea0db9, type: 2}
   - m_OriginalClip: {fileID: 7400000, guid: 3bba6dae6b7f04845adc8479abaa8f3d, type: 2}
     m_OverrideClip: {fileID: 7400000, guid: dc81eabcac285f94d9c608adfe56e4eb, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 54e27d8ebd1fdde4b8f0285413ddcd65, type: 2}
+    m_OverrideClip: {fileID: 0}
