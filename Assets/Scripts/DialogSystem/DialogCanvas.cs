@@ -31,6 +31,7 @@ public class DialogCanvas : Dialog
 
     public override void Disable()
     {
+        if (_typewriter != null) _typewriter.Complete();
         _graphicService.FadeGraphic(_images, 0f);
         _graphicService.FadeGraphic(_textsMeshPro, 0f);
     }
