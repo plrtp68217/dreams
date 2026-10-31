@@ -647,9 +647,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: b66693e2d6adda24889ee71658ae97b8, type: 3}
   - {fileID: 8300000, guid: 17c225efa95ec5d4ca02a45234416737, type: 3}
   - {fileID: 8300000, guid: e364b772f0db32d44b1a852e9908c408, type: 3}
+  _audioRunningClips: []
   _audioJumpClips:
   - {fileID: 8300000, guid: 0730ca2df65c27a47aa8789e4f7c360f, type: 3}
   _audioInteractionClip: {fileID: 8300000, guid: 950fc676641348b4e99e0e00318b4801, type: 3}
+  _inputService: {fileID: 0}
   _volume: 0.4
 --- !u!114 &161999134 stripped
 MonoBehaviour:
@@ -16471,10 +16473,29 @@ MonoBehaviour:
   - {fileID: 8300000, guid: b66693e2d6adda24889ee71658ae97b8, type: 3}
   - {fileID: 8300000, guid: 17c225efa95ec5d4ca02a45234416737, type: 3}
   - {fileID: 8300000, guid: e364b772f0db32d44b1a852e9908c408, type: 3}
+  _audioRunningClips: []
   _audioJumpClips:
   - {fileID: 8300000, guid: 0730ca2df65c27a47aa8789e4f7c360f, type: 3}
   _audioInteractionClip: {fileID: 8300000, guid: 950fc676641348b4e99e0e00318b4801, type: 3}
+  _inputService: {fileID: 0}
   _volume: 0.4
+--- !u!114 &1494529351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494529345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 705c106bf6a873246a493bb853361ca4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerTurnAnimation
+  _inputService: {fileID: 853908781}
+  _controller: {fileID: 2006612262}
+  _turnSpeed: 2
+  _rapidTurnSpeed: 3
+  _rapidTurnWindow: 0.35
 --- !u!1 &1502861114
 GameObject:
   m_ObjectHideFlags: 0
@@ -19211,6 +19232,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2716587424791679061, guid: 7d6f7168e5af5924f8f3797a5bb1ae1a, type: 3}
       insertIndex: 4
       addedObject: {fileID: 1494529350}
+    - targetCorrespondingSourceObject: {fileID: 2716587424791679061, guid: 7d6f7168e5af5924f8f3797a5bb1ae1a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1494529351}
   m_SourcePrefab: {fileID: 100100000, guid: 7d6f7168e5af5924f8f3797a5bb1ae1a, type: 3}
 --- !u!1001 &2603318424485337855
 PrefabInstance:
@@ -19364,6 +19388,18 @@ PrefabInstance:
       propertyPath: _audioSource
       value: 
       objectReference: {fileID: 1358278424}
+    - target: {fileID: 8762799728393770026, guid: 573b4c0ddbccc8840be9032339990593, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8762799728393770026, guid: 573b4c0ddbccc8840be9032339990593, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8762799728393770026, guid: 573b4c0ddbccc8840be9032339990593, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8791297989392822378, guid: 573b4c0ddbccc8840be9032339990593, type: 3}
       propertyPath: field of view
       value: 22.57126
