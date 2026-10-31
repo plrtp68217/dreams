@@ -46,7 +46,7 @@ public static class BuildFastFoodKitchen
         Box(kitchen.transform, "Floor", new Vector2(-20f, -1.01f), new Vector2(5.4f, 0.54f), false);
         Box(kitchen.transform, "LeftBoundary", new Vector2(-22.65f, 1f), new Vector2(0.3f, 10f), false);
         Box(kitchen.transform, "RightBoundary", new Vector2(-17.35f, 1f), new Vector2(0.3f, 10f), false);
-        var kitchenBounds = Box(kitchen.transform, "CameraBounds", new Vector2(-20f, 0f), new Vector2(5f, 1.8f), true);
+        var kitchenBounds = ConfigureCamera();
         var kitchenSpawn = Child(kitchen.transform, "SpawnFromCounter");
         kitchenSpawn.transform.position = new Vector3(-18.15f, -0.337f, -3f);
 
@@ -116,11 +116,57 @@ public static class BuildFastFoodKitchen
         SetObject(route, "_hint", hint);
         SetObject(route, "_hintText", text);
         SetObject(route, "_blackMask", mask);
+        var routeSettings = new SerializedObject(route);
+        routeSettings.FindProperty("_fadeDuration").floatValue = 0.4f;
+        routeSettings.FindProperty("_blackHoldDuration").floatValue = 0.1f;
+        routeSettings.ApplyModifiedProperties();
 
         EditorSceneManager.MarkSceneDirty(scene);
         EditorSceneManager.SaveScene(scene);
         Undo.CollapseUndoOperations(undoGroup);
         return "Saved FastFood: Kitchen, floor and boundaries, two doors, first-order hint and black transition overlay.";
+    }
+
+    public static string FixCamera()
+    {
+        var scene = SceneManager.GetActiveScene();
+        if (Application.isPlaying || scene.path != "Assets/Scenes/FastFood.unity")
+            throw new InvalidOperationException("Camera fix requires FastFood in Edit Mode.");
+        Undo.IncrementCurrentGroup();
+        int group = Undo.GetCurrentGroup();
+        Undo.SetCurrentGroupName("Fix FastFood kitchen camera");
+        var bounds = ConfigureCamera();
+        var route = GameObject.Find("FastFoodKitchenRoute").GetComponent<FastFoodKitchenRoute>();
+        SetObject(route, "_kitchenCameraBounds", bounds);
+        var settings = new SerializedObject(route);
+        settings.FindProperty("_fadeDuration").floatValue = 0.4f;
+        settings.FindProperty("_blackHoldDuration").floatValue = 0.1f;
+        settings.ApplyModifiedProperties();
+        EditorSceneManager.MarkSceneDirty(scene);
+        EditorSceneManager.SaveScene(scene);
+        Undo.CollapseUndoOperations(group);
+        return "Updated kitchen Confiner, fixed camera horizon, and eased 0.4s fades. Existing CAMERA/Confiner retained.";
+    }
+
+    private static BoxCollider2D ConfigureCamera()
+    {
+        // Leave the counter's authored CAMERA/Confiner intact. A small vertical margin
+        // prevents the kitchen's confined region collapsing when the view is one screen tall.
+        var cameraRoot = GameObject.Find("CAMERA").transform;
+        var oldBounds = GameObject.Find("Kitchen").transform.Find("CameraBounds");
+        if (oldBounds != null)
+        {
+            Undo.SetTransformParent(oldBounds, cameraRoot, "Move kitchen camera bounds");
+            Undo.RecordObject(oldBounds.gameObject, "Name kitchen camera bounds");
+            oldBounds.name = "KitchenConfiner";
+        }
+        var bounds = Box(cameraRoot, "KitchenConfiner", new Vector2(-20f, 0f), new Vector2(5f, 2f), true);
+        var camera = GameObject.Find("CAMERA/CinemachineCamera");
+        Component<FastFoodCameraHorizon>(camera);
+        var confiner = camera.GetComponent<CinemachineConfiner2D>();
+        Undo.RecordObject(confiner, "Tune camera boundary slowdown");
+        confiner.SlowingDistance = 0.2f;
+        return bounds;
     }
 
     private static GameObject Child(Transform parent, string name, bool ui = false)

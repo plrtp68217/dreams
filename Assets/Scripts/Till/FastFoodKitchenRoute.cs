@@ -19,8 +19,8 @@ public class FastFoodKitchenRoute : MonoBehaviour
     [SerializeField] private CanvasGroup _hint;
     [SerializeField] private TextMeshProUGUI _hintText;
     [SerializeField] private UnityEngine.UI.Image _blackMask;
-    [SerializeField, Min(0.01f)] private float _fadeDuration = 0.12f;
-    [SerializeField, Min(0f)] private float _blackHoldDuration = 0.12f;
+    [SerializeField, Min(0.01f)] private float _fadeDuration = 0.4f;
+    [SerializeField, Min(0f)] private float _blackHoldDuration = 0.1f;
 
     private bool _hasOrder;
     private bool _isInKitchen;
@@ -88,15 +88,24 @@ public class FastFoodKitchenRoute : MonoBehaviour
 
         Vector3 destination = (toKitchen ? _kitchenSpawn : _counterSpawn).position;
         Vector3 delta = destination - _player.transform.position;
+        Vector3 cameraPosition = _camera.State.GetFinalPosition();
         _player.transform.position = destination;
         _player.Rigidbody.position = destination;
         _player.SpriteRenderer.flipX = toKitchen;
         _confiner.BoundingShape2D = toKitchen ? _kitchenCameraBounds : _counterCameraBounds;
         _confiner.InvalidateBoundingShapeCache();
+        _confiner.BakeBoundingShape(_camera, 0.1f);
         _camera.OnTargetObjectWarped(_player.transform, delta);
+        _camera.ForceCameraPosition(new Vector3(destination.x, cameraPosition.y, cameraPosition.z), _camera.transform.rotation);
         _camera.PreviousStateIsValid = false;
         _isInKitchen = toKitchen;
         Physics2D.SyncTransforms();
+
+        // Apply the destination's framing while the mask is fully black. The first revealed
+        // frame already contains Eva, rather than waiting for normal follow damping.
+        _camera.InternalUpdateCameraState(Vector3.up, -1f);
+        // Let the Brain apply this state in its normal update mode before revealing it.
+        yield return null;
 
         yield return new WaitForSeconds(_blackHoldDuration);
         yield return Fade(0f);
@@ -113,7 +122,7 @@ public class FastFoodKitchenRoute : MonoBehaviour
         while (elapsed < _fadeDuration)
         {
             elapsed += Time.deltaTime;
-            SetBlackAlpha(Mathf.Lerp(startAlpha, targetAlpha, elapsed / _fadeDuration));
+            SetBlackAlpha(Mathf.Lerp(startAlpha, targetAlpha, Mathf.SmoothStep(0f, 1f, elapsed / _fadeDuration)));
             yield return null;
         }
         SetBlackAlpha(targetAlpha);
