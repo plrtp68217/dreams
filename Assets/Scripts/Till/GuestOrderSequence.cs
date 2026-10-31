@@ -10,10 +10,30 @@ public class GuestOrderSequence : MonoBehaviour
     [SerializeField] private Dialog _orderPanel;
     [SerializeField] private string _orderId;
 
+    private bool _hasOrder;
+
+    private void OnEnable()
+    {
+        LocalizedDialogueSystem.LanguageChanged += RefreshOrder;
+        RefreshOrder();
+    }
+
+    private void OnDisable()
+    {
+        LocalizedDialogueSystem.LanguageChanged -= RefreshOrder;
+    }
+
     public IEnumerator Play()
     {
         yield return _guestVisit.Play();
 
-        _orderPanel.Enable(LocalizedDialogueSystem.Instance.GetDialogueText(_orderId));
+        _hasOrder = true;
+        RefreshOrder();
+    }
+
+    private void RefreshOrder()
+    {
+        if (_hasOrder)
+            _orderPanel.Enable(LocalizedDialogueSystem.Instance.GetDialogueText(_orderId));
     }
 }

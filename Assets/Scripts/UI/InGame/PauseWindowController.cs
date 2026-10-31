@@ -64,6 +64,7 @@ public class PauseWindowController : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         _pauseCanvasGroup.interactable = true;
         _pauseCanvasGroup.blocksRaycasts = true;
+        SetDimmer(0.78f);
         ShowMainPage();
         BeginFade(1);
     }
@@ -84,7 +85,6 @@ public class PauseWindowController : MonoBehaviour
     {
         _mainPage.SetActive(false);
         _settingsPage.SetActive(true);
-        SetDimmer(0.55f);
         if (EventSystem.current != null) EventSystem.current.SetSelectedGameObject(_firstSetting.gameObject);
     }
 
@@ -92,7 +92,6 @@ public class PauseWindowController : MonoBehaviour
     {
         _settingsPage.SetActive(false);
         _mainPage.SetActive(true);
-        SetDimmer(0.78f);
         if (EventSystem.current != null) EventSystem.current.SetSelectedGameObject(_resumeButton.gameObject);
     }
 
