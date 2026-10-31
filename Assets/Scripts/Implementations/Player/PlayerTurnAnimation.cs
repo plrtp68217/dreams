@@ -9,6 +9,7 @@ public class PlayerTurnAnimation : MonoBehaviour
 
     [SerializeField] private InputService _inputService;
     [SerializeField] private PlayerController _controller;
+    [SerializeField, Min(1f)] private float _turnSpeed = 2f;
     [SerializeField, Min(1f)] private float _rapidTurnSpeed = 3f;
     [SerializeField, Min(0f)] private float _rapidTurnWindow = 0.35f;
 
@@ -63,7 +64,7 @@ public class PlayerTurnAnimation : MonoBehaviour
                 _startFacingLeft = _targetFacingLeft;
                 _targetFacingLeft = faceLeft;
                 _lastTurnTime = Time.time;
-                SetTurnSpeed(_rapidTurnSpeed);
+                SetTurnSpeed(_turnSpeed * _rapidTurnSpeed);
                 _animator.Play(TurnState, 0, Mathf.Clamp01(1f - progress - 0.001f));
             }
             return;
@@ -72,7 +73,7 @@ public class PlayerTurnAnimation : MonoBehaviour
 
         _startFacingLeft = _renderer.flipX;
         _targetFacingLeft = faceLeft;
-        SetTurnSpeed(Time.time - _lastTurnTime <= _rapidTurnWindow ? _rapidTurnSpeed : 1f);
+        SetTurnSpeed(_turnSpeed * (Time.time - _lastTurnTime <= _rapidTurnWindow ? _rapidTurnSpeed : 1f));
         _lastTurnTime = Time.time;
         IsTurning = true;
         _animator.Play(TurnState, 0, 0f);

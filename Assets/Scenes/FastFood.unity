@@ -2965,6 +2965,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerTurnAnimation
   _inputService: {fileID: 1445311326}
   _controller: {fileID: 1420808884}
+  _turnSpeed: 2
+  _rapidTurnSpeed: 3
+  _rapidTurnWindow: 0.35
 --- !u!1 &734366714
 GameObject:
   m_ObjectHideFlags: 0
