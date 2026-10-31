@@ -30,6 +30,14 @@ public class FastFoodKitchenRoute : MonoBehaviour
     private bool _controllerWasEnabled;
     private bool _inputWasBlocked;
 
+    private void Awake()
+    {
+        // The route always starts at the counter, even if the kitchen was previewed in the Editor.
+        _confiner.BoundingShape2D = _counterCameraBounds;
+        _confiner.InvalidateBoundingShapeCache();
+        _camera.PreviousStateIsValid = false;
+    }
+
     private void OnEnable()
     {
         _till.OrderCompleted += UnlockKitchen;

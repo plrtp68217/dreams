@@ -16,8 +16,6 @@ public class PauseWindowController : MonoBehaviour
     public bool IsOpen { get; private set; }
     public bool IsSettingsOpen => _settingsPage != null && _settingsPage.activeSelf;
     private bool _wasBlocked;
-    private bool _cursorWasVisible;
-    private CursorLockMode _cursorLock;
     private float _previousTimeScale;
     private Coroutine _fade;
 
@@ -36,7 +34,8 @@ public class PauseWindowController : MonoBehaviour
 
     private void Start()
     {
-        if (!IsOpen) Cursor.visible = false;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 
     public void HandleEscape()
@@ -52,8 +51,6 @@ public class PauseWindowController : MonoBehaviour
         IsOpen = true;
         _previousTimeScale = Time.timeScale;
         _wasBlocked = _inputService != null && _inputService.IsBlocked;
-        _cursorWasVisible = Cursor.visible;
-        _cursorLock = Cursor.lockState;
         if (_inputService != null)
         {
             if (!_wasBlocked) _inputService.Block();
@@ -134,8 +131,8 @@ public class PauseWindowController : MonoBehaviour
     private void RestoreGameState()
     {
         Time.timeScale = _previousTimeScale;
-        Cursor.visible = _cursorWasVisible;
-        Cursor.lockState = _cursorLock;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
         if (_inputService != null)
         {
             _inputService.SetPaused(false);

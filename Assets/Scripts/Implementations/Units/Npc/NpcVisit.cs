@@ -11,6 +11,8 @@ public class NpcVisit : MonoBehaviour
     [SerializeField] private Npc _npc;
     [SerializeField] private Transform _spawnPoint;
     [SerializeField] private Transform _standPoint;
+    [Tooltip("Продолжить от текущего места уже видимого персонажа, без повторного появления")]
+    [SerializeField] private bool _continueFromCurrentPosition;
 
     [Tooltip("Если не задана, персонаж остаётся на месте")]
     [SerializeField] private Transform _exitPoint;
@@ -22,7 +24,8 @@ public class NpcVisit : MonoBehaviour
 
     public IEnumerator Play()
     {
-        _npc.transform.position = _spawnPoint.position;
+        if (!_continueFromCurrentPosition || !_npc.gameObject.activeSelf)
+            _npc.transform.position = _spawnPoint.position;
         _npc.gameObject.SetActive(true);
 
         yield return _npc.WalkTo(_standPoint.position);

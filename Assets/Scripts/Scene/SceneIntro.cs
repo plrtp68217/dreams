@@ -26,6 +26,8 @@ public class SceneIntro : MonoBehaviour
     [SerializeField] private Dialog _subtitles;
     [SerializeField] private string[] _phraseIds;
     [SerializeField] private float _delayBeforeDialog = 0.5f;
+    [Tooltip("Если задан, персонаж подходит и произносит вступительные реплики вместо отдельного диалога")]
+    [SerializeField] private NpcVisit _wakeUpVisit;
 
     private IEnumerator Start()
     {
@@ -46,7 +48,12 @@ public class SceneIntro : MonoBehaviour
         _playerAnimator.speed = 1f;
         yield return new WaitForSeconds(_wakeUpTime);
 
-        if (_subtitles != null && _phraseIds.Length > 0)
+        if (_wakeUpVisit != null)
+        {
+            yield return new WaitForSeconds(_delayBeforeDialog);
+            yield return _wakeUpVisit.Play();
+        }
+        else if (_subtitles != null && _phraseIds.Length > 0)
         {
             yield return new WaitForSeconds(_delayBeforeDialog);
             yield return DialogPhrases.Play(_subtitles, _inputService, _phraseIds);

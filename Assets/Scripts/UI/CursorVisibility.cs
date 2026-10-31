@@ -1,12 +1,11 @@
 using UnityEngine;
 
-// Задаёт видимость курсора при загрузке сцены
+// Курсор доступен и в игре, и в меню.
 public class CursorVisibility : MonoBehaviour
 {
-    [SerializeField] private bool _isVisible = true;
-
     private void Start()
     {
-        Cursor.visible = _isVisible;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 }

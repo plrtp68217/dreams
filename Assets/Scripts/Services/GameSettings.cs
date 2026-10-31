@@ -37,6 +37,8 @@ public class GameSettings : MonoBehaviour
         }
         Instance = this;
         DontDestroyOnLoad(gameObject);
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
         Volume = Mathf.Clamp01(PlayerPrefs.GetFloat(VolumeKey, 1f));
         Brightness = Mathf.Clamp(PlayerPrefs.GetFloat(BrightnessKey, 1f), 0.5f, 1.5f);
         Fullscreen = PlayerPrefs.GetInt(FullscreenKey, Screen.fullScreen ? 1 : 0) != 0;
@@ -58,6 +60,8 @@ public class GameSettings : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
         _sceneExposure = 0;
         float highestPriority = float.NegativeInfinity;
         foreach (var other in FindObjectsByType<Volume>(FindObjectsSortMode.None))

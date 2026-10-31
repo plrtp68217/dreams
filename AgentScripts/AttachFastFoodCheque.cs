@@ -37,6 +37,7 @@ public static class AttachFastFoodCheque
         image.raycastTarget = false;
         image.color = new Color(1, 1, 1, 0);
         // Keep the existing HUD width and use the receipt's natural proportions.
+        image.rectTransform.pivot = new Vector2(0.5f, 0.5f);
         image.rectTransform.sizeDelta = new Vector2(179, 179f * 190f / 112f);
         image.rectTransform.anchoredPosition = new Vector2(126, 35);
 
@@ -57,8 +58,25 @@ public static class AttachFastFoodCheque
         color.a = 0;
         text.color = color;
 
+        // Hold the top-right paper corner in place as it folds down and opens on hover.
+        var receiptRect = image.rectTransform;
+        receiptRect.anchoredPosition += Vector2.Scale(new Vector2(0.5f, 0.5f), Vector2.Scale(receiptRect.rect.size, receiptRect.localScale));
+        receiptRect.pivot = Vector2.one;
+        var hover = image.GetComponent<ReceiptHover>();
+        if (hover == null) hover = Undo.AddComponent<ReceiptHover>(image.gameObject);
+        var shadow = image.GetComponent<UnityEngine.UI.Shadow>();
+        if (shadow == null) shadow = Undo.AddComponent<UnityEngine.UI.Shadow>(image.gameObject);
+        shadow.effectColor = new Color(0.04f, 0.015f, 0.025f, 0.38f);
+        shadow.effectDistance = new Vector2(4, -6);
+        var hoverSettings = new SerializedObject(hover);
+        hoverSettings.FindProperty("_shadow").objectReferenceValue = shadow;
+        hoverSettings.ApplyModifiedProperties();
+        var orderSettings = new SerializedObject(GameObject.Find("TILL/TillTrigger").GetComponent<GuestOrderSequence>());
+        orderSettings.FindProperty("_receipt").objectReferenceValue = hover;
+        orderSettings.ApplyModifiedProperties();
+
         EditorSceneManager.MarkSceneDirty(scene);
         EditorSceneManager.SaveScene(scene);
-        return "Receipt sprite assigned to the existing order panel; starts hidden and fades in through GuestOrderSequence after the guest's order.";
+        return "Receipt starts hidden, opens for five seconds after the order, then compacts and expands on hover.";
     }
 }

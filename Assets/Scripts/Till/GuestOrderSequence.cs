@@ -9,6 +9,7 @@ public class GuestOrderSequence : MonoBehaviour
     [Header("Заказ")]
     [SerializeField] private Dialog _orderPanel;
     [SerializeField] private string _orderId;
+    [SerializeField] private ReceiptHover _receipt;
 
     private bool _hasOrder;
 
@@ -29,6 +30,7 @@ public class GuestOrderSequence : MonoBehaviour
 
         _hasOrder = true;
         RefreshOrder();
+        if (_receipt != null) _receipt.ShowReceivedOrder();
     }
 
     private void RefreshOrder()

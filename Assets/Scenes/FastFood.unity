@@ -2140,6 +2140,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 894876890}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &591922890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 591922891}
+  m_Layer: 0
+  m_Name: AdminWakeStand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &591922891
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591922890}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.46, y: -0.73, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1269335167}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &592146985 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6916028422876984894, guid: 573b4c0ddbccc8840be9032339990593, type: 3}
@@ -2753,6 +2784,7 @@ MonoBehaviour:
   - fastfood_admin_wake_1
   - fastfood_admin_wake_2
   _delayBeforeDialog: 0.5
+  _wakeUpVisit: {fileID: 2116340105}
 --- !u!1 &748454940
 GameObject:
   m_ObjectHideFlags: 0
@@ -2832,6 +2864,7 @@ MonoBehaviour:
   _npc: {fileID: 1962463337}
   _spawnPoint: {fileID: 510562720}
   _standPoint: {fileID: 339318326}
+  _continueFromCurrentPosition: 0
   _exitPoint: {fileID: 926990300}
   _subtitles: {fileID: 1574625510}
   _phraseIds:
@@ -3194,6 +3227,7 @@ MonoBehaviour:
   _guestVisit: {fileID: 895084607}
   _orderPanel: {fileID: 77103480}
   _orderId: fastfood_order_faceless_man
+  _receipt: {fileID: 1431691108}
 --- !u!61 &895084606
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3256,6 +3290,7 @@ MonoBehaviour:
   _npc: {fileID: 2011049205}
   _spawnPoint: {fileID: 328804273}
   _standPoint: {fileID: 1749922498}
+  _continueFromCurrentPosition: 0
   _exitPoint: {fileID: 0}
   _subtitles: {fileID: 1869483092}
   _phraseIds:
@@ -3840,7 +3875,7 @@ PrefabInstance:
       objectReference: {fileID: 655159176}
     - target: {fileID: 7110333461967760217, guid: 573b4c0ddbccc8840be9032339990593, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.56879663
+      value: 0.56880164
       objectReference: {fileID: 0}
     - target: {fileID: 7110333461967760217, guid: 573b4c0ddbccc8840be9032339990593, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4157,6 +4192,8 @@ Transform:
   - {fileID: 120952019}
   - {fileID: 748454941}
   - {fileID: 734366715}
+  - {fileID: 1946090322}
+  - {fileID: 591922891}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1283716684
@@ -4629,6 +4666,8 @@ GameObject:
   - component: {fileID: 1431691104}
   - component: {fileID: 1431691105}
   - component: {fileID: 1431691106}
+  - component: {fileID: 1431691108}
+  - component: {fileID: 1431691107}
   m_Layer: 5
   m_Name: Image_Order
   m_TagString: Untagged
@@ -4653,9 +4692,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 126, y: 35}
+  m_AnchoredPosition: {x: 154.64, y: 83.58571}
   m_SizeDelta: {x: 179, y: 303.6607}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 1}
 --- !u!222 &1431691105
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4694,6 +4733,37 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1431691107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431691103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Shadow
+  m_EffectColor: {r: 0.04, g: 0.015, b: 0.025, a: 0.38}
+  m_EffectDistance: {x: 4, y: -6}
+  m_UseGraphicAlpha: 1
+--- !u!114 &1431691108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431691103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1cc379179e4aa94caaf374a08d1dfac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ReceiptHover
+  _readDuration: 5
+  _collapsedScale: 0.55
+  _animationDuration: 0.35
+  _shadow: {fileID: 1431691107}
 --- !u!1 &1435467910
 GameObject:
   m_ObjectHideFlags: 0
@@ -5071,6 +5141,7 @@ Transform:
   - {fileID: 259159004}
   - {fileID: 518488061}
   - {fileID: 740784555}
+  - {fileID: 2116340104}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1671076919
@@ -6259,6 +6330,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1946090321
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1946090322}
+  m_Layer: 0
+  m_Name: AdminWakeSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1946090322
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946090321}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.81, y: -0.73, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1269335167}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1962463336
 GameObject:
   m_ObjectHideFlags: 0
@@ -6951,6 +7053,61 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2113001608}
   m_CullTransparentMesh: 1
+--- !u!1 &2116340103
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2116340104}
+  - component: {fileID: 2116340105}
+  m_Layer: 0
+  m_Name: AdminWakeUpVisit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2116340104
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2116340103}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1669061050}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2116340105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2116340103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6a8bc8948721364fadd08b1de6662d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NpcVisit
+  _inputService: {fileID: 1445311326}
+  _npc: {fileID: 1962463337}
+  _spawnPoint: {fileID: 1946090322}
+  _standPoint: {fileID: 591922891}
+  _continueFromCurrentPosition: 0
+  _exitPoint: {fileID: 0}
+  _subtitles: {fileID: 1574625510}
+  _phraseIds:
+  - fastfood_admin_wake_1
+  - fastfood_admin_wake_2
+  _delayBeforeDialog: 0.3
 --- !u!1 &2125339595
 GameObject:
   m_ObjectHideFlags: 0
