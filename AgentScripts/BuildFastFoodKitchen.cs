@@ -193,6 +193,11 @@ public static class BuildFastFoodKitchen
         box.size = size;
         box.offset = Vector2.zero;
         box.isTrigger = trigger;
+        if (!trigger && (name == "LeftBoundary" || name == "RightBoundary"))
+        {
+            box.sharedMaterial = AssetDatabase.LoadAssetAtPath<PhysicsMaterial2D>("Assets/Materials/LevelBoundary.physicsMaterial2D");
+            if (box.sharedMaterial == null) throw new InvalidOperationException("LevelBoundary physics material is missing.");
+        }
         return box;
     }
 
