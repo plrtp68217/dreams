@@ -164,6 +164,361 @@
       "id": "fastfood_poster_menu_body",
       "russian": "Возможно, вы\nпросто неправильно\nего поняли.",
       "english": "Perhaps you\njust misunderstood\nit."
+    },
+    {
+      "id": "service_order_title",
+      "russian": "ЗАКАЗ №1",
+      "english": "ORDER #1"
+    },
+    {
+      "id": "service_order_served",
+      "russian": "ЗАКАЗ ВЫДАН",
+      "english": "ORDER SERVED"
+    },
+    {
+      "id": "service_fridge_code",
+      "russian": "Код холодильника:",
+      "english": "Fridge code:"
+    },
+    {
+      "id": "service_tray",
+      "russian": "ПОДНОС",
+      "english": "TRAY"
+    },
+    {
+      "id": "service_pocket",
+      "russian": "КАРМАН",
+      "english": "POCKET"
+    },
+    {
+      "id": "service_ready",
+      "russian": "ЗАКАЗ ГОТОВ · Отнесите его гостю",
+      "english": "ORDER READY · Bring it to the guest"
+    },
+    {
+      "id": "service_complete",
+      "russian": "Заказ выдан. Медицинская запись в кармане · I — прочитать",
+      "english": "Order served. Medical record in pocket · I — read"
+    },
+    {
+      "id": "service_close",
+      "russian": "ЗАКРЫТЬ",
+      "english": "CLOSE"
+    },
+    {
+      "id": "service_station_0",
+      "russian": "Фритюрница",
+      "english": "Deep fryer"
+    },
+    {
+      "id": "service_station_1",
+      "russian": "Блок предохранителей",
+      "english": "Fuse box"
+    },
+    {
+      "id": "service_station_2",
+      "russian": "Холодильник",
+      "english": "Refrigerator"
+    },
+    {
+      "id": "service_station_3",
+      "russian": "Автомат с напитками",
+      "english": "Drinks machine"
+    },
+    {
+      "id": "service_station_4",
+      "russian": "Зеркало",
+      "english": "Mirror"
+    },
+    {
+      "id": "service_station_5",
+      "russian": "Мужчина без лица",
+      "english": "Faceless man"
+    },
+    {
+      "id": "service_item_0",
+      "russian": "Бургер без булки",
+      "english": "Burger without a bun"
+    },
+    {
+      "id": "service_item_1",
+      "russian": "Картошка без соли",
+      "english": "Fries without salt"
+    },
+    {
+      "id": "service_item_2",
+      "russian": "Напиток без вкуса",
+      "english": "Drink without taste"
+    },
+    {
+      "id": "service_item_3",
+      "russian": "Игрушка без лица",
+      "english": "Toy without a face"
+    },
+    {
+      "id": "service_item_description_0",
+      "russian": "Никакой булки. Только то, что осталось на дне.\nПредмет заказа, слот 1 подноса.",
+      "english": "No bun. Only what remained at the bottom.\nOrder item, tray slot 1."
+    },
+    {
+      "id": "service_item_description_1",
+      "russian": "Картошка из запертого холодильника. Ни крупинки соли.\nПредмет заказа, слот 2 подноса.",
+      "english": "Fries from the locked refrigerator. Not a grain of salt.\nOrder item, tray slot 2."
+    },
+    {
+      "id": "service_item_description_2",
+      "russian": "Прозрачный напиток. Рецепт соблюдён, вкуса нет.\nПредмет заказа, слот 3 подноса.",
+      "english": "A clear drink. The recipe is correct, but there is no taste.\nOrder item, tray slot 3."
+    },
+    {
+      "id": "service_item_description_3",
+      "russian": "На её лице ничего нет. Почему кажется, что она смотрит?\nПредмет заказа, слот 4 подноса.",
+      "english": "There is nothing on its face. Why does it seem to be watching?\nOrder item, tray slot 4."
+    },
+    {
+      "id": "service_fryer_powered",
+      "russian": "От масла идёт дым. Сначала нужно отключить питание.",
+      "english": "Smoke rises from the oil. Turn the power off first."
+    },
+    {
+      "id": "service_find_fuse",
+      "russian": "Питание выключено. В блоке на левой стене кухни ещё остался предохранитель. Найдите и выньте его, прежде чем сливать масло.",
+      "english": "Power is off. A fuse remains in the box on the left kitchen wall. Find and remove it before draining the oil."
+    },
+    {
+      "id": "service_drain_hint",
+      "russian": "Предохранитель вынут. Теперь можно открыть сливной кран. На дне что-то осталось.",
+      "english": "The fuse is removed. You can open the drain valve now. Something remains at the bottom."
+    },
+    {
+      "id": "service_fryer_empty",
+      "russian": "Старое масло слито. Бургер без булки лежит на дне фритюрницы.",
+      "english": "The old oil is drained. The bunless burger lies at the bottom."
+    },
+    {
+      "id": "service_power_off",
+      "russian": "ОТКЛЮЧИТЬ ПИТАНИЕ",
+      "english": "TURN OFF POWER"
+    },
+    {
+      "id": "service_find_fuse_button",
+      "russian": "НАЙТИ ПРЕДОХРАНИТЕЛЬ",
+      "english": "FIND THE FUSE"
+    },
+    {
+      "id": "service_drain",
+      "russian": "СЛИТЬ СТАРОЕ МАСЛО",
+      "english": "DRAIN OLD OIL"
+    },
+    {
+      "id": "service_take_burger",
+      "russian": "ВЗЯТЬ БУРГЕР",
+      "english": "TAKE BURGER"
+    },
+    {
+      "id": "service_fuse_safe",
+      "russian": "Питание выключено. Выньте предохранитель фритюрницы, чтобы безопасно открыть слив.",
+      "english": "Power is off. Remove the fryer fuse to make the drain safe."
+    },
+    {
+      "id": "service_fuse_danger",
+      "russian": "Не трогайте блок под напряжением. Сначала выключите питание на фритюрнице.",
+      "english": "Do not touch the live fuse box. Switch off the fryer first."
+    },
+    {
+      "id": "service_remove_fuse",
+      "russian": "ВЫНУТЬ ПРЕДОХРАНИТЕЛЬ",
+      "english": "REMOVE FUSE"
+    },
+    {
+      "id": "service_fridge_open",
+      "russian": "Замок открыт. На полке лежит картошка без соли.",
+      "english": "The lock is open. Unsalted fries sit on the shelf."
+    },
+    {
+      "id": "service_fridge_locked",
+      "russian": "Дверь заперта. Четыре цифры напечатаны на вашем чеке. Введите их на панели.",
+      "english": "The door is locked. Four digits are printed on your receipt. Enter them on the panel."
+    },
+    {
+      "id": "service_take_fries",
+      "russian": "ВЗЯТЬ КАРТОШКУ",
+      "english": "TAKE FRIES"
+    },
+    {
+      "id": "service_recipe",
+      "russian": "Рецепт прозрачного напитка\nКрасный / янтарный / зелёный:",
+      "english": "Clear drink recipe\nRed / amber / green:"
+    },
+    {
+      "id": "service_syrup_0",
+      "russian": "Красный",
+      "english": "Red"
+    },
+    {
+      "id": "service_syrup_1",
+      "russian": "Янтарный",
+      "english": "Amber"
+    },
+    {
+      "id": "service_syrup_2",
+      "russian": "Зелёный",
+      "english": "Green"
+    },
+    {
+      "id": "service_pour",
+      "russian": "ПРИГОТОВИТЬ",
+      "english": "PREPARE"
+    },
+    {
+      "id": "service_take_drink",
+      "russian": "ВЗЯТЬ НАПИТОК",
+      "english": "TAKE DRINK"
+    },
+    {
+      "id": "service_mirror_dark",
+      "russian": "В отражении пусто. Посмотрите внимательнее.",
+      "english": "There is nothing in the reflection. Look closer."
+    },
+    {
+      "id": "service_mirror_toy",
+      "russian": "Отражение исчезло. На столике появилась игрушка без лица.",
+      "english": "The reflection is gone. A faceless toy has appeared on the table."
+    },
+    {
+      "id": "service_look",
+      "russian": "ПОСМОТРЕТЬ В ЗЕРКАЛО",
+      "english": "LOOK IN THE MIRROR"
+    },
+    {
+      "id": "service_take_toy",
+      "russian": "ВЗЯТЬ ИГРУШКУ",
+      "english": "TAKE TOY"
+    },
+    {
+      "id": "service_deliver_hint",
+      "russian": "Все четыре предмета на подносе. Гость всё ещё ждёт.",
+      "english": "All four items are on the tray. The guest is still waiting."
+    },
+    {
+      "id": "service_missing_items",
+      "russian": "На подносе должны быть все четыре предмета. Недостающие отмечены на чеке.",
+      "english": "All four items must be on the tray. Missing items are marked on the receipt."
+    },
+    {
+      "id": "service_deliver",
+      "russian": "ВЫДАТЬ ЗАКАЗ",
+      "english": "SERVE ORDER"
+    },
+    {
+      "id": "service_code_ok",
+      "russian": "Замок щёлкнул.",
+      "english": "The lock clicks open."
+    },
+    {
+      "id": "service_code_wrong",
+      "russian": "Неверный код. Проверьте чек.",
+      "english": "Wrong code. Check your receipt."
+    },
+    {
+      "id": "service_recipe_wrong",
+      "russian": "Не те пропорции. Сверьте все три значения с рецептом.",
+      "english": "Wrong proportions. Match all three values to the recipe."
+    },
+    {
+      "id": "service_power_safe",
+      "russian": "Питание отключено. Найдите блок предохранителей.",
+      "english": "Power is off. Find the fuse box."
+    },
+    {
+      "id": "service_fuse_removed",
+      "russian": "Предохранитель вынут. Слив безопасен.",
+      "english": "Fuse removed. The drain is safe."
+    },
+    {
+      "id": "service_added",
+      "russian": "Предмет добавлен на поднос.",
+      "english": "Item added to the tray."
+    },
+    {
+      "id": "service_draining",
+      "russian": "Сливаем старое масло…",
+      "english": "Draining old oil…"
+    },
+    {
+      "id": "service_pouring",
+      "russian": "Наполняем стакан…",
+      "english": "Filling the cup…"
+    },
+    {
+      "id": "service_looking",
+      "russian": "Отражение меняется…",
+      "english": "The reflection changes…"
+    },
+    {
+      "id": "service_action_done",
+      "russian": "Готово.",
+      "english": "Done."
+    },
+    {
+      "id": "service_record_title",
+      "russian": "Фрагмент медицинской записи",
+      "english": "Medical record fragment"
+    },
+    {
+      "id": "service_record_text",
+      "russian": "МЕДИЦИНСКАЯ ЗАПИСЬ · ФРАГМЕНТ\n\nПациент: Ева.\nНаблюдение 01.\n\nРеакция на отсутствие лица: узнавание.\nПамять о событии не восстановлена.\n\nНа обороте: «Ты уже обслуживала его».\n\nНаграда хранится в кармане.",
+      "english": "MEDICAL RECORD · FRAGMENT\n\nPatient: Eva.\nObservation 01.\n\nResponse to the absence of a face: recognition.\nMemory of the event has not returned.\n\nOn the back: \"You have served him before.\"\n\nThe reward is kept in your pocket."
+    },
+    {
+      "id": "service_tension",
+      "russian": "НАПРЯЖЕНИЕ",
+      "english": "TENSION"
+    },
+    {
+      "id": "service_clown_0",
+      "russian": "Клоун: «Наш гость уже заждался».",
+      "english": "Clown: \"Our guest has been waiting.\""
+    },
+    {
+      "id": "service_clown_1",
+      "russian": "Клоун: «Улыбайся. Время идёт».",
+      "english": "Clown: \"Smile. Time is passing.\""
+    },
+    {
+      "id": "service_clown_2",
+      "russian": "Клоун: «Не заставляй его вспоминать».",
+      "english": "Clown: \"Do not make him remember.\""
+    },
+    {
+      "id": "service_bathroom",
+      "russian": "УБОРНАЯ →",
+      "english": "RESTROOM →"
+    },
+    {
+      "id": "service_exit_bathroom",
+      "russian": "В ЗАЛ →",
+      "english": "HALL →"
+    },
+    {
+      "id": "fastfood_faceless_complete_1",
+      "russian": "Всё на месте. Даже то, чего нет.",
+      "english": "Everything is here. Even what is missing."
+    },
+    {
+      "id": "fastfood_faceless_complete_2",
+      "russian": "Это было у меня в кармане. Кажется, здесь написано ваше имя.",
+      "english": "This was in my pocket. I think it has your name on it."
+    },
+    {
+      "id": "fastfood_service_admin_1",
+      "russian": "Первый гость уже идёт. Чек появится сам. На кухню проходите налево.",
+      "english": "The first guest is coming. The receipt will appear on its own. The kitchen is to the left."
+    },
+    {
+      "id": "fastfood_service_admin_2",
+      "russian": "Соберите заказ на поднос. Полученные от гостей вещи держите в кармане.",
+      "english": "Collect the order on the tray. Keep anything the guests give you in your pocket."
     }
   ]
 }

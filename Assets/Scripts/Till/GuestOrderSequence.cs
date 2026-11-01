@@ -10,8 +10,13 @@ public class GuestOrderSequence : MonoBehaviour
     [SerializeField] private Dialog _orderPanel;
     [SerializeField] private string _orderId;
     [SerializeField] private ReceiptHover _receipt;
+    [SerializeField] private FacelessOrderService _service;
+    [SerializeField] private NpcVisit _completionVisit;
+    public event System.Action OrderReceived;
+    public bool HasOrder => _hasOrder;
 
     private bool _hasOrder;
+    private bool _receivingOrder;
 
     private void OnEnable()
     {
@@ -26,16 +31,28 @@ public class GuestOrderSequence : MonoBehaviour
 
     public IEnumerator Play()
     {
-        yield return _guestVisit.Play();
-
-        _hasOrder = true;
-        RefreshOrder();
-        if (_receipt != null) _receipt.ShowReceivedOrder();
+        if (_hasOrder || _receivingOrder) yield break;
+        _receivingOrder = true;
+        try
+        {
+            yield return _guestVisit.Play();
+            _hasOrder = true;
+            if (_service != null) _service.AcceptOrder();
+            RefreshOrder();
+            if (_receipt != null) _receipt.ShowReceivedOrder();
+            OrderReceived?.Invoke();
+        }
+        finally { _receivingOrder = false; }
     }
 
-    private void RefreshOrder()
+    public IEnumerator FinishOrder()
+    {
+        if (_completionVisit != null) yield return _completionVisit.Play();
+    }
+
+    public void RefreshOrder()
     {
         if (_hasOrder)
-            _orderPanel.Enable(LocalizedDialogueSystem.Instance.GetDialogueText(_orderId));
+            _orderPanel.Enable(_service != null ? _service.ReceiptText() : LocalizedDialogueSystem.Instance.GetDialogueText(_orderId));
     }
 }
