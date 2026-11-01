@@ -104,6 +104,66 @@
       "id": "fastfood_admin_briefing_2",
       "russian": "Главное — не ошибаться. У нас ведь свободный выбор: бургер, картошка или последствия.",
       "english": "The main thing is not to make mistakes. After all, we have free choice here: a burger, fries, or consequences."
+    },
+    {
+      "id": "fastfood_poster_smile_title",
+      "russian": "Улыбайся.",
+      "english": "Smile."
+    },
+    {
+      "id": "fastfood_poster_smile_body",
+      "russian": "Камеры любят\nсчастливых\nграждан.",
+      "english": "Cameras love\nhappy citizens."
+    },
+    {
+      "id": "fastfood_poster_till_title",
+      "russian": "Свободная\nкасса —",
+      "english": "A free till"
+    },
+    {
+      "id": "fastfood_poster_till_body",
+      "russian": "это касса,\nкоторая знает\nсвоё место.",
+      "english": "is a till that\nknows its place."
+    },
+    {
+      "id": "fastfood_poster_order_title",
+      "russian": "Ваш заказ\nочень важен\nдля нас.",
+      "english": "Your order\nmatters to us."
+    },
+    {
+      "id": "fastfood_poster_order_body",
+      "russian": "Особенно его\nсодержание.",
+      "english": "Especially\nwhat's inside."
+    },
+    {
+      "id": "fastfood_poster_sauce_title",
+      "russian": "Не обсуждайте\nсостав соуса.",
+      "english": "Don't discuss\nthe sauce recipe."
+    },
+    {
+      "id": "fastfood_poster_sauce_body",
+      "russian": "Соус одобрен.",
+      "english": "The sauce\nis approved."
+    },
+    {
+      "id": "fastfood_poster_happiness_title",
+      "russian": "Счастье —",
+      "english": "Happiness —"
+    },
+    {
+      "id": "fastfood_poster_happiness_body",
+      "russian": "это когда\nвсё понятно\nзаранее.",
+      "english": "knowing it all\nin advance."
+    },
+    {
+      "id": "fastfood_poster_menu_title",
+      "russian": "Не нравится\nменю?",
+      "english": "Don't like\nthe menu?"
+    },
+    {
+      "id": "fastfood_poster_menu_body",
+      "russian": "Возможно, вы\nпросто неправильно\nего поняли.",
+      "english": "Perhaps you\njust misunderstood\nit."
     }
   ]
 }
