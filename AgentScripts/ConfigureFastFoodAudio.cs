@@ -74,6 +74,7 @@ public static class ConfigureFastFoodAudio
         movementFields.FindProperty("_audioSource").objectReferenceValue = playerSource;
         movementFields.FindProperty("_inputService").objectReferenceValue = input;
         movementFields.FindProperty("_volume").floatValue = 0.5f;
+        movementFields.FindProperty("_footstepVolumeMultiplier").floatValue = 0.18f;
         SetClips(movementFields, "_audioFootstepClips", "walk");
         SetClips(movementFields, "_audioRunningClips", "run");
         SetClips(movementFields, "_audioJumpClips", "jump");

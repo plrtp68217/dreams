@@ -11,6 +11,7 @@ public class AudioMovement : MonoBehaviour
     [SerializeField] private InputService _inputService;
 
     [SerializeField] private float _volume = 0.5f;
+    [SerializeField, Range(0f, 1f)] private float _footstepVolumeMultiplier = 1f;
 
     public int AudioFootstepClipIndex => Random.Range(0, _audioFootstepClips.Length);
     public int AudioJumpClipIndex => Random.Range(0, _audioJumpClips.Length);
@@ -37,7 +38,7 @@ public class AudioMovement : MonoBehaviour
             ? _audioRunningClips : _audioFootstepClips;
         if (clips == null || clips.Length == 0) return;
         var clip = clips[Random.Range(0, clips.Length)];
-        if (clip != null) _audioSource.PlayOneShot(clip, _volume);
+        if (clip != null) _audioSource.PlayOneShot(clip, _volume * _footstepVolumeMultiplier);
     }
 
     public void PlayJumpSound()

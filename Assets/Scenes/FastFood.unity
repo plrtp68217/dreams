@@ -3114,6 +3114,7 @@ MonoBehaviour:
   _audioInteractionClip: {fileID: 8300000, guid: 49e38f748a528014ab0aa7d332c50dd8, type: 3}
   _inputService: {fileID: 1445311326}
   _volume: 0.5
+  _footstepVolumeMultiplier: 0.18
 --- !u!82 &705474777
 AudioSource:
   m_ObjectHideFlags: 0
