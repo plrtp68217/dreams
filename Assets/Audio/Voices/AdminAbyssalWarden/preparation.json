@@ -1,0 +1,134 @@
+{
+  "source": "C:\\Users\\moroz\\Desktop\\DEV\\UNITY\\DREAMS-DATABASES\\VoiceDatabase\\admin_voice\\12_Abyssal_Warden.wav",
+  "sha256": "8d7e3e20119b59819c07731d6f99edc0f16ff604850853047c5467afe25158a7",
+  "sample_rate": 48000,
+  "gain_db": -4.987645257805009,
+  "fragments": [
+    {
+      "file": "abyssal_warden_01.wav",
+      "start": 0.855,
+      "end": 1.5,
+      "duration": 0.645
+    },
+    {
+      "file": "abyssal_warden_02.wav",
+      "start": 1.575,
+      "end": 2.2,
+      "duration": 0.625
+    },
+    {
+      "file": "abyssal_warden_03.wav",
+      "start": 2.205,
+      "end": 2.875,
+      "duration": 0.67
+    },
+    {
+      "file": "abyssal_warden_04.wav",
+      "start": 3.735,
+      "end": 4.335,
+      "duration": 0.6
+    },
+    {
+      "file": "abyssal_warden_05.wav",
+      "start": 4.405,
+      "end": 5.22,
+      "duration": 0.815
+    },
+    {
+      "file": "abyssal_warden_06.wav",
+      "start": 5.275,
+      "end": 5.76,
+      "duration": 0.485
+    },
+    {
+      "file": "abyssal_warden_07.wav",
+      "start": 6.67,
+      "end": 7.475,
+      "duration": 0.805
+    },
+    {
+      "file": "abyssal_warden_08.wav",
+      "start": 7.49,
+      "end": 8.205,
+      "duration": 0.715
+    },
+    {
+      "file": "abyssal_warden_09.wav",
+      "start": 8.205,
+      "end": 8.935,
+      "duration": 0.73
+    },
+    {
+      "file": "abyssal_warden_10.wav",
+      "start": 9.86,
+      "end": 10.59,
+      "duration": 0.73
+    },
+    {
+      "file": "abyssal_warden_11.wav",
+      "start": 10.59,
+      "end": 11.205,
+      "duration": 0.615
+    },
+    {
+      "file": "abyssal_warden_12.wav",
+      "start": 11.265,
+      "end": 12.15,
+      "duration": 0.885
+    },
+    {
+      "file": "abyssal_warden_13.wav",
+      "start": 13.35,
+      "end": 14.005,
+      "duration": 0.655
+    },
+    {
+      "file": "abyssal_warden_14.wav",
+      "start": 14.005,
+      "end": 14.685,
+      "duration": 0.68
+    },
+    {
+      "file": "abyssal_warden_15.wav",
+      "start": 14.75,
+      "end": 15.38,
+      "duration": 0.63
+    },
+    {
+      "file": "abyssal_warden_16.wav",
+      "start": 16.36,
+      "end": 17.08,
+      "duration": 0.72
+    },
+    {
+      "file": "abyssal_warden_17.wav",
+      "start": 17.08,
+      "end": 17.76,
+      "duration": 0.68
+    },
+    {
+      "file": "abyssal_warden_18.wav",
+      "start": 17.85,
+      "end": 18.31,
+      "duration": 0.46
+    },
+    {
+      "file": "abyssal_warden_19.wav",
+      "start": 19.575,
+      "end": 20.43,
+      "duration": 0.855
+    },
+    {
+      "file": "abyssal_warden_20.wav",
+      "start": 20.46,
+      "end": 21.23,
+      "duration": 0.77
+    },
+    {
+      "file": "abyssal_warden_21.wav",
+      "start": 21.25,
+      "end": 21.945,
+      "duration": 0.695
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6625f5c70b7f82a48a5c0e849f9da003, type: 3}
+  m_Name: AdminAbyssalWarden
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueVoiceProfile
+  _clips:
+  - {fileID: 8300000, guid: 1037785e649a2ca489b1e2ef51f73bce, type: 3}
+  - {fileID: 8300000, guid: d31111050b15e0c46a6cc3fac51341c5, type: 3}
+  - {fileID: 8300000, guid: fb14aaecf616c4949b17b7bb44da108a, type: 3}
+  - {fileID: 8300000, guid: c09bff73a8c09dd45b8dbee5dc4d7aba, type: 3}
+  - {fileID: 8300000, guid: d265a3cb8ca8390488ac9156874023f8, type: 3}
+  - {fileID: 8300000, guid: 9bf72043b604f8545985aa1b075bda5b, type: 3}
+  - {fileID: 8300000, guid: bd577cae09af6b1419eb915870989c85, type: 3}
+  - {fileID: 8300000, guid: 592faa4bdaa61864d9025ad7c05049d9, type: 3}
+  - {fileID: 8300000, guid: cfa4df0198c3986478160a5d21f3d726, type: 3}
+  - {fileID: 8300000, guid: 02dff246fa50d3646847d57bbfa8383d, type: 3}
+  - {fileID: 8300000, guid: d0694a0ff85341f44a347b8c4da40c52, type: 3}
+  - {fileID: 8300000, guid: 1771e967749dc384c93b1854749c220f, type: 3}
+  - {fileID: 8300000, guid: 7cfebde41c6df9f4ba033063289b2e8d, type: 3}
+  - {fileID: 8300000, guid: 4d9ce073269b1304c8fae64675bf7768, type: 3}
+  - {fileID: 8300000, guid: c2ef1e3f081c6824fb1866ce064a120c, type: 3}
+  - {fileID: 8300000, guid: cee41d8cec1ba684da6ff93b595e49cd, type: 3}
+  - {fileID: 8300000, guid: b21bfa2edf8586649809d6d3e12f498a, type: 3}
+  - {fileID: 8300000, guid: 684060dd21666b442a2c53209635191f, type: 3}
+  - {fileID: 8300000, guid: ddf846857ed5f0347821e00c2fa2c813, type: 3}
+  - {fileID: 8300000, guid: 29f56c8d7b6477049bfcfb15c41ec9f8, type: 3}
+  - {fileID: 8300000, guid: 1314c31687dd405428d5393c761ec785, type: 3}
+  _volume: 0.15
+  _fragmentsPerSecond: 3
+  _pauseRange: {x: 0.09, y: 0.2}
+  _pitchRange: {x: 0.97, y: 1.03}

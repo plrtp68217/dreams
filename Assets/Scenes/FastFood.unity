@@ -3468,7 +3468,7 @@ MonoBehaviour:
   _phraseIds:
   - fastfood_admin_briefing_1
   - fastfood_admin_briefing_2
-  _voiceProfile: {fileID: 0}
+  _voiceProfile: {fileID: 11400000, guid: a30da5ca29f979642bad037598423333, type: 2}
   _delayBeforeDialog: 0.3
 --- !u!1 &802143381
 GameObject:
@@ -5817,7 +5817,7 @@ MonoBehaviour:
   - {fileID: 1435467914}
   _editableTextIndex: 0
   _typewriter: {fileID: 1435467911}
-  _voiceProfile: {fileID: 0}
+  _voiceProfile: {fileID: 11400000, guid: a30da5ca29f979642bad037598423333, type: 2}
 --- !u!224 &1574625511
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8180,7 +8180,7 @@ MonoBehaviour:
   _phraseIds:
   - fastfood_admin_wake_1
   - fastfood_admin_wake_2
-  _voiceProfile: {fileID: 0}
+  _voiceProfile: {fileID: 11400000, guid: a30da5ca29f979642bad037598423333, type: 2}
   _delayBeforeDialog: 0.3
 --- !u!1 &2125339595
 GameObject:

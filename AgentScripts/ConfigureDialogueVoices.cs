@@ -51,6 +51,30 @@ public static class ConfigureDialogueVoices
         return $"Configured {speakers} faceless speaker, 13 clips, {sources} voice sources; typing loop disabled everywhere.";
     }
 
+    public static string ApplyAdmin()
+    {
+        var scene = SceneManager.GetActiveScene();
+        if (Application.isPlaying || scene.path != "Assets/Scenes/FastFood.unity")
+            throw new InvalidOperationException("Open FastFood in Edit Mode first.");
+        Directory.CreateDirectory("Logs/AdminVoice");
+        EditorSceneManager.SaveScene(scene, "Logs/AdminVoice/FastFood.before-configure.unity", true);
+        var visits = scene.GetRootGameObjects().SelectMany(r => r.GetComponentsInChildren<NpcVisit>(true))
+            .Where(v => {
+                var ids = new SerializedObject(v).FindProperty("_phraseIds");
+                return Enumerable.Range(0, ids.arraySize).Any(i => ids.GetArrayElementAtIndex(i).stringValue
+                    .StartsWith("fastfood_admin_", StringComparison.Ordinal));
+            }).ToArray();
+        if (visits.Length != 2) throw new InvalidOperationException("Expected the two administrator visits.");
+        var profile = PrepareProfile("Assets/Audio/Voices/AdminAbyssalWarden.asset",
+            "Assets/Audio/Voices/AdminAbyssalWarden", 21, 0.15f,
+            new Vector2(0.09f, 0.20f), new Vector2(0.97f, 1.03f));
+        foreach (var visit in visits) AssignProfile(visit, profile);
+        EditorSceneManager.MarkSceneDirty(scene);
+        EditorSceneManager.SaveScene(scene);
+        AssetDatabase.SaveAssets();
+        return "Assigned Abyssal Warden (21 clips) to administrator wake-up and counter briefing; faceless voice retained.";
+    }
+
     static DialogueVoiceProfile PrepareProfile(string profilePath, string clipsPath, int count,
         float volume, Vector2 pause, Vector2 pitch)
     {
