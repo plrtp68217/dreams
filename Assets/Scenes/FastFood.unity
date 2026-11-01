@@ -407,6 +407,7 @@ MonoBehaviour:
   - {fileID: 1883002403}
   _editableTextIndex: 0
   _typewriter: {fileID: 0}
+  _voiceProfile: {fileID: 0}
 --- !u!224 &77103481
 RectTransform:
   m_ObjectHideFlags: 0
@@ -581,7 +582,7 @@ MonoBehaviour:
   _punctuationDelay: 0.15
   _punctuation: ".,!?;:\u2026"
   _useUnscaledTime: 0
-  _typingAudio: {fileID: 665705188}
+  _voiceAudio: {fileID: 665705188}
 --- !u!1 &103801344
 GameObject:
   m_ObjectHideFlags: 0
@@ -2274,7 +2275,7 @@ GameObject:
   - component: {fileID: 571347101}
   - component: {fileID: 571347100}
   m_Layer: 0
-  m_Name: TypingAudio
+  m_Name: VoiceAudio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2291,11 +2292,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 59bfa71cf1e567846abb4571e4880bb0, type: 3}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.03
+  m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -2857,7 +2858,7 @@ GameObject:
   - component: {fileID: 665705187}
   - component: {fileID: 665705188}
   m_Layer: 0
-  m_Name: TypingAudio
+  m_Name: VoiceAudio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2889,11 +2890,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 59bfa71cf1e567846abb4571e4880bb0, type: 3}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.03
+  m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -3467,6 +3468,7 @@ MonoBehaviour:
   _phraseIds:
   - fastfood_admin_briefing_1
   - fastfood_admin_briefing_2
+  _voiceProfile: {fileID: 0}
   _delayBeforeDialog: 0.3
 --- !u!1 &802143381
 GameObject:
@@ -3909,6 +3911,7 @@ MonoBehaviour:
   _phraseIds:
   - fastfood_faceless_man_1
   - fastfood_faceless_man_2
+  _voiceProfile: {fileID: 11400000, guid: 323c5416bbb9126468df76047424340e, type: 2}
   _delayBeforeDialog: 0.3
 --- !u!1 &926990299
 GameObject:
@@ -5613,7 +5616,7 @@ MonoBehaviour:
   _punctuationDelay: 0.15
   _punctuation: ".,!?;:\u2026"
   _useUnscaledTime: 0
-  _typingAudio: {fileID: 571347100}
+  _voiceAudio: {fileID: 571347100}
 --- !u!222 &1435467912
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5814,6 +5817,7 @@ MonoBehaviour:
   - {fileID: 1435467914}
   _editableTextIndex: 0
   _typewriter: {fileID: 1435467911}
+  _voiceProfile: {fileID: 0}
 --- !u!224 &1574625511
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6983,6 +6987,7 @@ MonoBehaviour:
   - {fileID: 89819356}
   _editableTextIndex: 0
   _typewriter: {fileID: 89819358}
+  _voiceProfile: {fileID: 11400000, guid: 323c5416bbb9126468df76047424340e, type: 2}
 --- !u!1 &1881413941
 GameObject:
   m_ObjectHideFlags: 0
@@ -8175,6 +8180,7 @@ MonoBehaviour:
   _phraseIds:
   - fastfood_admin_wake_1
   - fastfood_admin_wake_2
+  _voiceProfile: {fileID: 0}
   _delayBeforeDialog: 0.3
 --- !u!1 &2125339595
 GameObject:

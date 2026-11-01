@@ -4,11 +4,12 @@ using System.Collections.Generic;
 public static class DialogPhrases
 {
     // Показывает фразы по очереди и листает их по E, затем закрывает диалог
-    public static IEnumerator Play(Dialog dialog, InputService inputService, IEnumerable<string> phraseIds)
+    public static IEnumerator Play(Dialog dialog, InputService inputService, IEnumerable<string> phraseIds,
+        DialogueVoiceProfile voiceProfile = null)
     {
         foreach (string phraseId in phraseIds)
         {
-            dialog.Enable(LocalizedDialogueSystem.Instance.GetDialogueText(phraseId));
+            dialog.Enable(LocalizedDialogueSystem.Instance.GetDialogueText(phraseId), voiceProfile);
             yield return inputService.WaitForKeyE();
 
             // Если фраза ещё печаталась, E только допечатывает её — ждём ещё одно нажатие

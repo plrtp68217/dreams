@@ -1,0 +1,86 @@
+{
+  "source": "C:\\Users\\moroz\\Desktop\\DEV\\UNITY\\DREAMS-DATABASES\\VoiceDatabase\\faceless_voice\\03_Dark_Radio.wav",
+  "sha256": "fa7fe44c5df7c69512f66731cfd5bbcd75712d2bd8ce7f727a6a2a4664d2a9dd",
+  "sample_rate": 48000,
+  "gain_db": 24.600469217534325,
+  "fragments": [
+    {
+      "file": "dark_radio_01.wav",
+      "start": 0.58,
+      "end": 1.585,
+      "duration": 1.005
+    },
+    {
+      "file": "dark_radio_02.wav",
+      "start": 1.585,
+      "end": 1.965,
+      "duration": 0.38
+    },
+    {
+      "file": "dark_radio_03.wav",
+      "start": 3.8,
+      "end": 4.2,
+      "duration": 0.4
+    },
+    {
+      "file": "dark_radio_04.wav",
+      "start": 4.2,
+      "end": 4.95,
+      "duration": 0.75
+    },
+    {
+      "file": "dark_radio_05.wav",
+      "start": 4.95,
+      "end": 5.84,
+      "duration": 0.89
+    },
+    {
+      "file": "dark_radio_06.wav",
+      "start": 7.375,
+      "end": 8.065,
+      "duration": 0.69
+    },
+    {
+      "file": "dark_radio_07.wav",
+      "start": 8.065,
+      "end": 8.73,
+      "duration": 0.665
+    },
+    {
+      "file": "dark_radio_08.wav",
+      "start": 10.185,
+      "end": 11.275,
+      "duration": 1.09
+    },
+    {
+      "file": "dark_radio_09.wav",
+      "start": 11.305,
+      "end": 11.72,
+      "duration": 0.415
+    },
+    {
+      "file": "dark_radio_10.wav",
+      "start": 14.255,
+      "end": 15.515,
+      "duration": 1.26
+    },
+    {
+      "file": "dark_radio_11.wav",
+      "start": 17.415,
+      "end": 18.295,
+      "duration": 0.88
+    },
+    {
+      "file": "dark_radio_12.wav",
+      "start": 18.345,
+      "end": 18.63,
+      "duration": 0.285
+    },
+    {
+      "file": "dark_radio_13.wav",
+      "start": 18.755,
+      "end": 19.32,
+      "duration": 0.565
+    }
+  ]
+}

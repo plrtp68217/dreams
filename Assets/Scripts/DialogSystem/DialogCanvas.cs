@@ -14,11 +14,19 @@ public class DialogCanvas : Dialog
     [Tooltip("Необязательно: если задан, текст печатается посимвольно")]
     [SerializeField] private TypewriterText _typewriter;
 
+    [Tooltip("Default voice for this dialogue window. Leave empty for silent text.")]
+    [SerializeField] private DialogueVoiceProfile _voiceProfile;
+
     public override void Enable(string text)
+    {
+        Enable(text, _voiceProfile);
+    }
+
+    public override void Enable(string text, DialogueVoiceProfile voiceProfile)
     {
         if (_typewriter != null)
         {
-            _typewriter.Play(text);
+            _typewriter.Play(text, voiceProfile != null ? voiceProfile : _voiceProfile);
         }
         else if (_textsMeshPro.Length > 0)
         {
@@ -42,5 +50,10 @@ public class DialogCanvas : Dialog
 
         _typewriter.Complete();
         return true;
+    }
+
+    private void OnDisable()
+    {
+        if (_typewriter != null) _typewriter.Complete();
     }
 }

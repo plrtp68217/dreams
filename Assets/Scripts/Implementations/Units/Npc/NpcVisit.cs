@@ -20,6 +20,7 @@ public class NpcVisit : MonoBehaviour
     [Header("Диалог")]
     [SerializeField] private Dialog _subtitles;
     [SerializeField] private string[] _phraseIds;
+    [SerializeField] private DialogueVoiceProfile _voiceProfile;
     [SerializeField] private float _delayBeforeDialog = 0.3f;
 
     public IEnumerator Play()
@@ -33,7 +34,7 @@ public class NpcVisit : MonoBehaviour
 
         if (_phraseIds.Length > 0)
         {
-            yield return DialogPhrases.Play(_subtitles, _inputService, _phraseIds);
+            yield return DialogPhrases.Play(_subtitles, _inputService, _phraseIds, _voiceProfile);
         }
 
         if (_exitPoint != null)

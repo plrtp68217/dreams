@@ -1346,6 +1346,7 @@ MonoBehaviour:
   - {fileID: 6288598863809315801}
   _editableTextIndex: 0
   _typewriter: {fileID: 0}
+  _voiceProfile: {fileID: 0}
 --- !u!1 &2115070760677810028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1851,7 +1852,7 @@ MonoBehaviour:
   _punctuationDelay: 0.15
   _punctuation: ".,!?;:\u2026"
   _useUnscaledTime: 0
-  _typingAudio: {fileID: 4307464166580655373}
+  _voiceAudio: {fileID: 4307464166580655373}
 --- !u!1 &2870812182397727688
 GameObject:
   m_ObjectHideFlags: 0
@@ -3534,6 +3535,7 @@ MonoBehaviour:
   - {fileID: 1323434164714720592}
   _editableTextIndex: 0
   _typewriter: {fileID: 5565019699142650376}
+  _voiceProfile: {fileID: 0}
 --- !u!1 &5675767246810221294
 GameObject:
   m_ObjectHideFlags: 0
@@ -6564,7 +6566,7 @@ GameObject:
   - component: {fileID: 5880645981591289821}
   - component: {fileID: 4307464166580655373}
   m_Layer: 0
-  m_Name: TypingAudio
+  m_Name: VoiceAudio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6596,11 +6598,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 59bfa71cf1e567846abb4571e4880bb0, type: 3}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.03
+  m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

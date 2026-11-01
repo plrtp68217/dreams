@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6625f5c70b7f82a48a5c0e849f9da003, type: 3}
+  m_Name: FacelessDarkRadio
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueVoiceProfile
+  _clips:
+  - {fileID: 8300000, guid: 5d907d3236e11bd4aa8a9381fc6ad508, type: 3}
+  - {fileID: 8300000, guid: 97fbbb174abc9c94497fd53762a2b9b3, type: 3}
+  - {fileID: 8300000, guid: f9b168e8a8e388d47a057b93ccf88d1d, type: 3}
+  - {fileID: 8300000, guid: 3b38ffec1caaccf4da1861d66b6fca76, type: 3}
+  - {fileID: 8300000, guid: 68073fd645900964c9415d3af72d4d99, type: 3}
+  - {fileID: 8300000, guid: ec6027419b460de47a1e24918c9bea2e, type: 3}
+  - {fileID: 8300000, guid: 0267259716777ec4bb8b27a6c9cb01b0, type: 3}
+  - {fileID: 8300000, guid: 5792aedfbe5c5e64eb8b1da008c7c016, type: 3}
+  - {fileID: 8300000, guid: 0d7dcb368fa37f2449de55c6c2de66b4, type: 3}
+  - {fileID: 8300000, guid: 46125bb25ba17a04db14caa9c8ee006a, type: 3}
+  - {fileID: 8300000, guid: b8ab09edb13edc640b382a048a9afe2d, type: 3}
+  - {fileID: 8300000, guid: 43b2686dd15a0734a9ebbd153039f746, type: 3}
+  - {fileID: 8300000, guid: daca047b3c0b8ad4286ac49cc12af902, type: 3}
+  _volume: 0.18
+  _fragmentsPerSecond: 3
+  _pauseRange: {x: 0.08, y: 0.18}
+  _pitchRange: {x: 0.94, y: 1.04}
