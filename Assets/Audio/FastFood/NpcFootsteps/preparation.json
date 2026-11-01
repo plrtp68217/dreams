@@ -1,0 +1,65 @@
+{
+  "processing": "Pitch resample, low-pass and low-frequency body, short edge fades; peak -8 dBFS",
+  "files": [
+    {
+      "source": "Assets/Audio/FastFood/Movement/fastfood_sfx_player_walk_01.wav",
+      "sha256": "c549acef29636bdf4665a27e088682324e533f50a1cbd150ed52de08adc0ffc0",
+      "output": "Assets/Audio/FastFood/NpcFootsteps/Admin/fastfood_sfx_admin_walk_01.wav",
+      "pitch_ratio": 0.93,
+      "lowpass_hz": 3800,
+      "low_body": 0.12,
+      "gain_db": -1.7855653456239384,
+      "duration": 0.26877551020408164
+    },
+    {
+      "source": "Assets/Audio/FastFood/Movement/fastfood_sfx_player_walk_02.wav",
+      "sha256": "a082596c8de4ae907b8f01d8dd00564161fe0279c9467875149e19f907f9c0c1",
+      "output": "Assets/Audio/FastFood/NpcFootsteps/Admin/fastfood_sfx_admin_walk_02.wav",
+      "pitch_ratio": 0.93,
+      "lowpass_hz": 3800,
+      "low_body": 0.12,
+      "gain_db": -1.7855653456239384,
+      "duration": 0.26877551020408164
+    },
+    {
+      "source": "Assets/Audio/FastFood/Movement/fastfood_sfx_player_walk_03.wav",
+      "sha256": "3cd48c0072ec0a18baa968c45c206f439fcc7beaeb5624a3e9a44bce6e44d24d",
+      "output": "Assets/Audio/FastFood/NpcFootsteps/Admin/fastfood_sfx_admin_walk_03.wav",
+      "pitch_ratio": 0.93,
+      "lowpass_hz": 3800,
+      "low_body": 0.12,
+      "gain_db": -1.7855653456239384,
+      "duration": 0.26877551020408164
+    },
+    {
+      "source": "Assets/Audio/FastFood/Movement/fastfood_sfx_player_walk_01.wav",
+      "sha256": "c549acef29636bdf4665a27e088682324e533f50a1cbd150ed52de08adc0ffc0",
+      "output": "Assets/Audio/FastFood/NpcFootsteps/FacelessMan/fastfood_sfx_facelessman_walk_01.wav",
+      "pitch_ratio": 0.82,
+      "lowpass_hz": 1800,
+      "low_body": 0.26,
+      "gain_db": -1.6245672513951523,
+      "duration": 0.3048299319727891
+    },
+    {
+      "source": "Assets/Audio/FastFood/Movement/fastfood_sfx_player_walk_02.wav",
+      "sha256": "a082596c8de4ae907b8f01d8dd00564161fe0279c9467875149e19f907f9c0c1",
+      "output": "Assets/Audio/FastFood/NpcFootsteps/FacelessMan/fastfood_sfx_facelessman_walk_02.wav",
+      "pitch_ratio": 0.82,
+      "lowpass_hz": 1800,
+      "low_body": 0.26,
+      "gain_db": -1.6245672513951523,
+      "duration": 0.3048299319727891
+    },
+    {
+      "source": "Assets/Audio/FastFood/Movement/fastfood_sfx_player_walk_03.wav",
+      "sha256": "3cd48c0072ec0a18baa968c45c206f439fcc7beaeb5624a3e9a44bce6e44d24d",
+      "output": "Assets/Audio/FastFood/NpcFootsteps/FacelessMan/fastfood_sfx_facelessman_walk_03.wav",
+      "pitch_ratio": 0.82,
+      "lowpass_hz": 1800,
+      "low_body": 0.26,
+      "gain_db": -1.6245672513951523,
+      "duration": 0.3048299319727891
+    }
+  ]
+}
