@@ -36,6 +36,8 @@ public class TypewriterText : MonoBehaviour
     private float _minimumStartDelay;
     private float _gapRemaining;
     private bool _voiceWasPlaying;
+    private DialogueVoiceEnvelope _voiceEnvelope;
+    private float _voiceTimeRemaining;
 
     public bool IsTyping => _isTyping;
 
@@ -105,8 +107,10 @@ public class TypewriterText : MonoBehaviour
         if (paused) return;
 
         float dt = _useUnscaledTime ? Time.unscaledDeltaTime : Time.deltaTime;
+        _voiceTimeRemaining -= dt;
         _speechWindow -= dt;
         _minimumStartDelay -= dt;
+        if (_voiceEnvelope != null && _voiceEnvelope.IsReleasing) return;
         if (_voiceAudio.isPlaying) return;
         if (_voiceWasPlaying)
         {
@@ -117,50 +121,73 @@ public class TypewriterText : MonoBehaviour
         _gapRemaining -= dt;
         if (_speechWindow <= 0f || _gapRemaining > 0f || _minimumStartDelay > 0f) return;
 
-        AudioClip clip = NextVoiceClip();
-        if (clip == null) return;
         Vector2 pitch = _voiceProfile.PitchRange;
-        _voiceAudio.loop = false;
-        _voiceAudio.volume = _voiceProfile.Volume;
-        _voiceAudio.pitch = UnityEngine.Random.Range(pitch.x, pitch.y);
-        _voiceAudio.clip = clip;
-        _voiceAudio.Play();
+        float playbackPitch = UnityEngine.Random.Range(pitch.x, pitch.y);
+        // Do not start a syllable that would have to be cut off by the last letter.
+        AudioClip clip = NextVoiceClip(Mathf.Max(0f, _voiceTimeRemaining - 0.06f) * playbackPitch);
+        if (clip == null) return;
+        if (_voiceEnvelope == null)
+        {
+            _voiceEnvelope = _voiceAudio.GetComponent<DialogueVoiceEnvelope>();
+            if (_voiceEnvelope == null) _voiceEnvelope = _voiceAudio.gameObject.AddComponent<DialogueVoiceEnvelope>();
+        }
+        _voiceEnvelope.Play(clip, _voiceProfile.Volume, playbackPitch);
         _voiceWasPlaying = true;
         _minimumStartDelay = 1f / _voiceProfile.FragmentsPerSecond;
     }
 
-    private AudioClip NextVoiceClip()
+    private AudioClip NextVoiceClip(float maxLength)
     {
         if (_voiceBag.Count == 0)
         {
             if (_voiceProfile.Clips == null) return null;
             foreach (AudioClip clip in _voiceProfile.Clips)
                 if (clip != null && !_voiceBag.Contains(clip)) _voiceBag.Add(clip);
-            for (int i = _voiceBag.Count - 1; i > 0; i--)
-            {
-                int j = UnityEngine.Random.Range(0, i + 1);
-                AudioClip swap = _voiceBag[i];
-                _voiceBag[i] = _voiceBag[j];
-                _voiceBag[j] = swap;
-            }
+            ShuffleVoiceBag();
         }
         if (_voiceBag.Count == 0) return null;
 
-        int selected = _voiceBag.Count - 1;
+        int selected = -1;
         // Avoid the last two clips across bag boundaries too; small sets degrade gracefully.
         for (int history = _recentClips.Count; history >= 0; history--)
         {
             int candidate = _voiceBag.FindLastIndex(c =>
-                !WasRecentlyPlayed(c, history));
+                c.length <= maxLength && !WasRecentlyPlayed(c, history));
             if (candidate < 0) continue;
             selected = candidate;
             break;
+        }
+        if (selected < 0)
+        {
+            // Long unused fragments must not leave successive short lines permanently silent.
+            bool added = false;
+            if (_voiceProfile.Clips != null)
+            foreach (AudioClip clip in _voiceProfile.Clips)
+            {
+                if (clip == null || clip.length > maxLength || _voiceBag.Contains(clip)) continue;
+                _voiceBag.Add(clip);
+                added = true;
+            }
+            if (!added) return null;
+            ShuffleVoiceBag();
+            return NextVoiceClip(maxLength);
         }
         AudioClip result = _voiceBag[selected];
         _voiceBag.RemoveAt(selected);
         _recentClips.Add(result);
         if (_recentClips.Count > 2) _recentClips.RemoveAt(0);
         return result;
+    }
+
+    private void ShuffleVoiceBag()
+    {
+        for (int i = _voiceBag.Count - 1; i > 0; i--)
+        {
+            int j = UnityEngine.Random.Range(0, i + 1);
+            AudioClip swap = _voiceBag[i];
+            _voiceBag[i] = _voiceBag[j];
+            _voiceBag[j] = swap;
+        }
     }
 
     private bool WasRecentlyPlayed(AudioClip clip, int count)
@@ -177,6 +204,13 @@ public class TypewriterText : MonoBehaviour
         TMP_TextInfo textInfo = Text.textInfo;
         int characterCount = textInfo.characterCount;
         float delay = 0f;
+        float remainingVoiceTime = 0f;
+        for (int i = 0; i < characterCount - 1; i++)
+        {
+            remainingVoiceTime += 1f / Mathf.Max(1f, _charactersPerSecond);
+            if (_punctuation.IndexOf(textInfo.characterInfo[i].character) >= 0)
+                remainingVoiceTime += _punctuationDelay;
+        }
 
         for (int i = 0; i < characterCount; i++)
         {
@@ -188,6 +222,9 @@ public class TypewriterText : MonoBehaviour
 
             Text.maxVisibleCharacters = i + 1;
             char character = textInfo.characterInfo[i].character;
+            _voiceTimeRemaining = remainingVoiceTime;
+            remainingVoiceTime -= 1f / Mathf.Max(1f, _charactersPerSecond);
+            if (_punctuation.IndexOf(character) >= 0) remainingVoiceTime -= _punctuationDelay;
             if (char.IsLetterOrDigit(character))
                 _speechWindow = Mathf.Max(0.12f, 2f / Mathf.Max(1f, _charactersPerSecond));
             else if (_punctuation.IndexOf(character) >= 0)
@@ -221,12 +258,17 @@ public class TypewriterText : MonoBehaviour
 
     private void StopVoice()
     {
-        if (_voiceAudio != null) _voiceAudio.Stop();
+        if (_voiceAudio != null)
+        {
+            if (_voiceEnvelope != null) _voiceEnvelope.Release();
+            else _voiceAudio.Stop();
+        }
         _audioPaused = false;
         _voiceWasPlaying = false;
         _speechWindow = 0f;
         _minimumStartDelay = 0f;
         _gapRemaining = 0f;
+        _voiceTimeRemaining = 0f;
     }
 
     private void ShowAll()
