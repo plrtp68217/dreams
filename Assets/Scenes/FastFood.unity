@@ -1206,6 +1206,65 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!1 &270664789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 270664790}
+  - component: {fileID: 270664791}
+  m_Layer: 0
+  m_Name: KitchenShadowFloor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &270664790
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270664789}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1033651225}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &270664791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270664789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f30e465387a94346aaae431f7566f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterShadowSurface
+  _floorBounds:
+    serializedVersion: 2
+    x: -22.5
+    y: -0.9
+    width: 5
+    height: 0.41
+  _groundY: -0.73
+  _lights:
+  - {fileID: 1860851584}
+  - {fileID: 2023264052}
+  - {fileID: 40509833}
+  - {fileID: 1314257805}
+  - {fileID: 1761592190}
+  - {fileID: 146687696}
+  _referenceIntensity: 0.65
 --- !u!1 &305017488
 GameObject:
   m_ObjectHideFlags: 0
@@ -2746,6 +2805,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2716587424791679061, guid: 7d6f7168e5af5924f8f3797a5bb1ae1a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 705474782}
+    - targetCorrespondingSourceObject: {fileID: 2716587424791679061, guid: 7d6f7168e5af5924f8f3797a5bb1ae1a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 705474787}
   m_SourcePrefab: {fileID: 100100000, guid: 7d6f7168e5af5924f8f3797a5bb1ae1a, type: 3}
 --- !u!4 &655159176 stripped
 Transform:
@@ -3230,6 +3292,40 @@ MonoBehaviour:
   _turnSpeed: 2
   _rapidTurnSpeed: 3
   _rapidTurnWindow: 0.35
+--- !u!212 &705474786 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5896015584293468792, guid: 7d6f7168e5af5924f8f3797a5bb1ae1a, type: 3}
+  m_PrefabInstance: {fileID: 655159175}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &705474787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701032471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f281544d71d890544b5e1686ec600fac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterGroundShadow
+  _source: {fileID: 705474786}
+  _material: {fileID: 2100000, guid: 49897c569d9a56346999b5322fc867f5, type: 2}
+  _surfaces:
+  - {fileID: 1057031855}
+  - {fileID: 270664791}
+  _shadowColor: {r: 0.18, g: 0.11, b: 0.14, a: 1}
+  _contactOpacity: 0.3
+  _projectionOpacity: 0.2
+  _contactSize: {x: 0.25, y: 0.06}
+  _projectionLength: 0.85
+  _projectionDepth: -0.16
+  _directionBias: 0.3
+  _directionSmoothing: 0.14
+  _jumpFadeHeight: 1.2
+  _footOffset: 0.02
+  _sortingLayer: ForeGround
+  _sortingOrder: 6
 --- !u!1 &734366714
 GameObject:
   m_ObjectHideFlags: 0
@@ -3944,6 +4040,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1269335167}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1033651224
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1033651225}
+  m_Layer: 0
+  m_Name: CharacterShadowFloors
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1033651225
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033651224}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1057031856}
+  - {fileID: 270664790}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1045979757
 GameObject:
   m_ObjectHideFlags: 0
@@ -4073,6 +4202,67 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!1 &1057031854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1057031856}
+  - component: {fileID: 1057031855}
+  m_Layer: 0
+  m_Name: HallShadowFloor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1057031855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057031854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f30e465387a94346aaae431f7566f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterShadowSurface
+  _floorBounds:
+    serializedVersion: 2
+    x: -8.2
+    y: -0.9
+    width: 13.2
+    height: 0.41
+  _groundY: -0.73
+  _lights:
+  - {fileID: 683066402}
+  - {fileID: 1975037606}
+  - {fileID: 1246660015}
+  - {fileID: 261469363}
+  - {fileID: 23824150}
+  - {fileID: 1053831981}
+  - {fileID: 15253202}
+  - {fileID: 2125339597}
+  _referenceIntensity: 3.57
+--- !u!4 &1057031856
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057031854}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1033651225}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1059615838
 GameObject:
   m_ObjectHideFlags: 0
@@ -7455,6 +7645,7 @@ GameObject:
   - component: {fileID: 1962463337}
   - component: {fileID: 1962463342}
   - component: {fileID: 1962463341}
+  - component: {fileID: 1962463343}
   m_Layer: 0
   m_Name: Admin_FastFood
   m_TagString: Untagged
@@ -7689,6 +7880,35 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1962463343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962463336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f281544d71d890544b5e1686ec600fac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterGroundShadow
+  _source: {fileID: 1962463339}
+  _material: {fileID: 2100000, guid: 49897c569d9a56346999b5322fc867f5, type: 2}
+  _surfaces:
+  - {fileID: 1057031855}
+  - {fileID: 270664791}
+  _shadowColor: {r: 0.18, g: 0.11, b: 0.14, a: 1}
+  _contactOpacity: 0.3
+  _projectionOpacity: 0.2
+  _contactSize: {x: 0.29, y: 0.06}
+  _projectionLength: 0.85
+  _projectionDepth: -0.16
+  _directionBias: 0.3
+  _directionSmoothing: 0.14
+  _jumpFadeHeight: 1.2
+  _footOffset: 0.02
+  _sortingLayer: ForeGround
+  _sortingOrder: 6
 --- !u!1 &1975037604
 GameObject:
   m_ObjectHideFlags: 0
@@ -7832,6 +8052,7 @@ GameObject:
   - component: {fileID: 2011049205}
   - component: {fileID: 2011049210}
   - component: {fileID: 2011049209}
+  - component: {fileID: 2011049211}
   m_Layer: 0
   m_Name: Guest_FacelessMan
   m_TagString: Untagged
@@ -8066,6 +8287,35 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2011049211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011049204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f281544d71d890544b5e1686ec600fac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterGroundShadow
+  _source: {fileID: 2011049206}
+  _material: {fileID: 2100000, guid: 49897c569d9a56346999b5322fc867f5, type: 2}
+  _surfaces:
+  - {fileID: 1057031855}
+  - {fileID: 270664791}
+  _shadowColor: {r: 0.18, g: 0.11, b: 0.14, a: 1}
+  _contactOpacity: 0.3
+  _projectionOpacity: 0.2
+  _contactSize: {x: 0.29, y: 0.06}
+  _projectionLength: 0.85
+  _projectionDepth: -0.16
+  _directionBias: 0.3
+  _directionSmoothing: 0.14
+  _jumpFadeHeight: 1.2
+  _footOffset: 0.02
+  _sortingLayer: ForeGround
+  _sortingOrder: 6
 --- !u!1 &2023264050
 GameObject:
   m_ObjectHideFlags: 0
@@ -8709,3 +8959,4 @@ SceneRoots:
   - {fileID: 1269335167}
   - {fileID: 2059035562}
   - {fileID: 1837265002}
+  - {fileID: 1033651225}
