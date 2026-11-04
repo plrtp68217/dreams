@@ -112,15 +112,20 @@ public static class BuildFacelessService
         }
         SetArray(view, "_syrupLess", less); SetArray(view, "_syrupMore", more);
         var sign = GameObject.Find("FacelessService/RestroomSign").GetComponent<TextMeshPro>(); sign.fontSize = .8f;
-        var kitchen = GameObject.Find("Kitchen/Background").GetComponent<SpriteRenderer>(); kitchen.sprite = Sprite("Kitchen");
-        var lights = kitchen.GetComponentsInChildren<UnityEngine.Rendering.Universal.Light2D>(true);
-        var lightPositions = lights.Select(light => light.transform.position).ToArray();
-        float horizon = new SerializedObject(UnityEngine.Object.FindFirstObjectByType<FastFoodCameraHorizon>()).FindProperty("_height").floatValue;
-        var cameraBounds = Ref<Collider2D>(UnityEngine.Object.FindFirstObjectByType<FastFoodKitchenRoute>(), "_kitchenCameraBounds").bounds;
-        kitchen.transform.localScale = new Vector3((cameraBounds.size.x + .04f) / kitchen.sprite.bounds.size.x, 2 * Camera.main.orthographicSize / kitchen.sprite.bounds.size.y, 1);
-        kitchen.transform.position = new Vector3(cameraBounds.center.x, horizon - Camera.main.orthographicSize, 0);
-        for (int i = 0; i < lights.Length; i++) lights[i].transform.position = lightPositions[i];
-        Set(UnityEngine.Object.FindFirstObjectByType<KitchenLampFlicker>(), "_backgroundOverride", kitchen.sprite);
+        var kitchen = GameObject.Find("Kitchen/Background").GetComponent<SpriteRenderer>();
+        // A restored Aseprite kitchen owns its background, geometry and layer outlines.
+        if (kitchen.transform.Find("InteractionOutlines") == null)
+        {
+            kitchen.sprite = Sprite("Kitchen");
+            var lights = kitchen.GetComponentsInChildren<UnityEngine.Rendering.Universal.Light2D>(true);
+            var lightPositions = lights.Select(light => light.transform.position).ToArray();
+            float horizon = new SerializedObject(UnityEngine.Object.FindFirstObjectByType<FastFoodCameraHorizon>()).FindProperty("_height").floatValue;
+            var cameraBounds = Ref<Collider2D>(UnityEngine.Object.FindFirstObjectByType<FastFoodKitchenRoute>(), "_kitchenCameraBounds").bounds;
+            kitchen.transform.localScale = new Vector3((cameraBounds.size.x + .04f) / kitchen.sprite.bounds.size.x, 2 * Camera.main.orthographicSize / kitchen.sprite.bounds.size.y, 1);
+            kitchen.transform.position = new Vector3(cameraBounds.center.x, horizon - Camera.main.orthographicSize, 0);
+            for (int i = 0; i < lights.Length; i++) lights[i].transform.position = lightPositions[i];
+            Set(UnityEngine.Object.FindFirstObjectByType<KitchenLampFlicker>(), "_backgroundOverride", kitchen.sprite);
+        }
         var clown = GameObject.Find("FacelessService/ClownVisitor").GetComponent<SpriteRenderer>();
         if (clown.GetComponent<CharacterGroundShadow>() == null)
         {
@@ -130,7 +135,9 @@ public static class BuildFacelessService
         }
         foreach (var pair in new[] { ("Kitchen/ServiceFryer", FastFoodStationKind.Fryer, "OilDrain"), ("Kitchen/ServiceFridge", FastFoodStationKind.Fridge, "FridgeOpening"), ("Kitchen/ServiceDispenser", FastFoodStationKind.Dispenser, "DrinkPour"), ("FacelessService/Restroom/ServiceMirror", FastFoodStationKind.Mirror, "MirrorReveal") })
         {
-            var renderer = GameObject.Find(pair.Item1).GetComponent<SpriteRenderer>();
+            var worldObject = GameObject.Find(pair.Item1);
+            if (worldObject == null) continue;
+            var renderer = worldObject.GetComponent<SpriteRenderer>();
             var state = renderer.GetComponent<FastFoodStationArt>() ?? renderer.gameObject.AddComponent<FastFoodStationArt>();
             Set(state, "_service", service); Set(state, "_renderer", renderer); Set(state, "_initial", renderer.sprite); Set(state, "_finished", Frames(pair.Item3).Last());
             var fields = new SerializedObject(state); fields.FindProperty("_kind").enumValueIndex = (int)pair.Item2; fields.ApplyModifiedPropertiesWithoutUndo();
