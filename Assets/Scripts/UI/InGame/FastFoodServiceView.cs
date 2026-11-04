@@ -10,6 +10,7 @@ public class FastFoodServiceView : MonoBehaviour
     [SerializeField] private FastFoodInventory _inventory;
     [SerializeField] private InputService _input;
     [SerializeField] private Player _player;
+    [SerializeField] private FastFoodFryerCloseUp _fryerCloseUp;
     [SerializeField] private GameObject _hud;
     [SerializeField] private GameObject _modal;
     [SerializeField] private TextMeshProUGUI _trayTitle;
@@ -60,7 +61,7 @@ public class FastFoodServiceView : MonoBehaviour
     private FastFoodOrderItem _inspectItem;
     private bool _inspectReward;
     public bool IsOpen => _modal != null && _modal.activeSelf;
-    public bool IsBusy => _busy;
+    public bool IsBusy => _busy || (_fryerCloseUp != null && _fryerCloseUp.IsVisible && _fryerCloseUp.IsBusy);
 
     private void Awake()
     {
@@ -113,7 +114,8 @@ public class FastFoodServiceView : MonoBehaviour
         Close();
     }
 
-    private bool CanUseUI => IsOpen && Time.timeScale > 0f && !_busy && _player.IsAlive;
+    private bool CanUseUI => IsOpen && Time.timeScale > 0f && !_busy && _player.IsAlive &&
+        (_fryerCloseUp == null || !_fryerCloseUp.IsVisible);
     private static string T(string key) => FacelessOrderService.Text(key);
     public FastFoodServiceStation NearestStation()
     {
@@ -168,6 +170,8 @@ public class FastFoodServiceView : MonoBehaviour
         _animation = null;
         _busy = false;
         _audioPaused = false;
+        if (_fryerCloseUp != null) _fryerCloseUp.Hide();
+        _art.transform.parent.gameObject.SetActive(true);
         foreach (var slider in _syrups) if (slider != null) slider.interactable = true;
         if (_audio != null) _audio.Stop();
         _modal.SetActive(false);
@@ -223,6 +227,7 @@ public class FastFoodServiceView : MonoBehaviour
         _pocketButton.interactable = _inventory.HasMedicalRecord;
         if (IsOpen && !_busy)
         {
+            if (_fryerCloseUp != null && _fryerCloseUp.IsVisible) return;
             if (_isInspecting) RefreshInspection(); else RefreshStation();
         }
     }
@@ -247,6 +252,12 @@ public class FastFoodServiceView : MonoBehaviour
     private void RefreshStation()
     {
         ResetControls();
+        if (_fryerCloseUp != null && (_station == FastFoodStationKind.Fryer || _station == FastFoodStationKind.FuseBox))
+        {
+            _art.transform.parent.gameObject.SetActive(false);
+            _fryerCloseUp.Show();
+            return;
+        }
         _description.rectTransform.sizeDelta = new Vector2(350, 112);
         _title.text = T("service_station_" + (int)_station);
         _art.sprite = _stationArt[(int)_station];

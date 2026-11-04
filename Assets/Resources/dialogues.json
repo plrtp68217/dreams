@@ -519,6 +519,71 @@
       "id": "fastfood_service_admin_2",
       "russian": "Соберите заказ на поднос. Полученные от гостей вещи держите в кармане.",
       "english": "Collect the order on the tray. Keep anything the guests give you in your pocket."
+    },
+    {
+      "id": "service_fryer_power_first",
+      "russian": "Сначала нажмите на красный выключатель, затем вытаскивайте тумблер.",
+      "english": "Press the red switch first, then pull out the tumbler."
+    },
+    {
+      "id": "service_fryer_switch_hint",
+      "russian": "Нажмите на красный выключатель · ЛКМ",
+      "english": "Click the red switch · LMB"
+    },
+    {
+      "id": "service_fryer_tumbler_hint",
+      "russian": "Зажмите ЛКМ на цветном тумблере и вытяните его из гнезда",
+      "english": "Hold LMB on the coloured tumbler and pull it out of its socket"
+    },
+    {
+      "id": "service_fryer_pull",
+      "russian": "Продолжайте тянуть тумблер с зажатой ЛКМ",
+      "english": "Keep pulling the tumbler while holding LMB"
+    },
+    {
+      "id": "service_fryer_release",
+      "russian": "Отпустите ЛКМ, чтобы выбросить тумблер",
+      "english": "Release LMB to throw the tumbler away"
+    },
+    {
+      "id": "service_fryer_flying",
+      "russian": "Тумблер извлечён…",
+      "english": "Tumbler pulled out…"
+    },
+    {
+      "id": "service_fryer_drain_hint_new",
+      "russian": "Нажмите E, чтобы слить масло",
+      "english": "Press E to drain the oil"
+    },
+    {
+      "id": "service_fryer_draining",
+      "russian": "Масло сливается…",
+      "english": "Draining the oil…"
+    },
+    {
+      "id": "service_fryer_hover_burger",
+      "russian": "Наведите курсор на бургер",
+      "english": "Move the cursor over the burger"
+    },
+    {
+      "id": "service_fryer_take_hint",
+      "russian": "Нажмите E, чтобы забрать бургер",
+      "english": "Press E to take the burger"
+    },
+    {
+      "id": "service_fryer_collected",
+      "russian": "Бургер добавлен на поднос",
+      "english": "Burger added to the tray"
+    },
+    {
+      "id": "service_fryer_switching",
+      "russian": "Выключаем питание…",
+      "english": "Switching off the power…"
+    },
+    {
+      "id": "service_fryer_collecting",
+      "russian": "Забираем бургер…",
+      "english": "Taking the burger…"
     }
   ]
 }

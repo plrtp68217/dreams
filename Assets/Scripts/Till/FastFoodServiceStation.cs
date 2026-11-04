@@ -22,6 +22,7 @@ public class FastFoodServiceStation : MonoBehaviour
             {
                 case FastFoodStationKind.Fryer:
                     return _service.CanPerform(FacelessServiceAction.PowerOff) ||
+                        _service.CanPerform(FacelessServiceAction.RemoveFuse) ||
                         _service.CanPerform(FacelessServiceAction.DrainOil) ||
                         _service.CanPerform(FacelessServiceAction.TakeBurger);
                 case FastFoodStationKind.FuseBox:
