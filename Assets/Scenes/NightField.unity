@@ -1023,6 +1023,7 @@ MonoBehaviour:
   _blockDelay: 3
   _dialog: {fileID: 1109048377}
   _dialogId: night_field_eva_1
+  _voiceProfile: {fileID: 11400000, guid: 064adf4c2559c664f9276aa58370c61b, type: 2}
 --- !u!1 &321734845
 GameObject:
   m_ObjectHideFlags: 0
@@ -8475,6 +8476,7 @@ MonoBehaviour:
   _blockDelay: 3
   _dialog: {fileID: 1109048377}
   _dialogId: night_field_eva_3
+  _voiceProfile: {fileID: 11400000, guid: 064adf4c2559c664f9276aa58370c61b, type: 2}
 --- !u!1 &1014034836
 GameObject:
   m_ObjectHideFlags: 0
@@ -16227,6 +16229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogTrigger
   _dialogId: night_field_eva_2
+  _voiceProfile: {fileID: 11400000, guid: 064adf4c2559c664f9276aa58370c61b, type: 2}
   _dialogCanvas: {fileID: 1109048377}
   _dialogUI: {fileID: 1137533468}
   _animator: {fileID: 858534451}
