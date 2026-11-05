@@ -75,17 +75,19 @@ def main():
     tumbler = compose(0, [4]).crop((277, 90, 293, 126))
     tumbler.save(OUTPUT / 'Tumbler.png'); outline(tumbler, 'TumblerOutline.png')
     for frame in range(count):
-        # Layer 11 is an alternate copy of the burger. Keep the interactive
-        # burger separate so fading it cannot reveal a baked-in duplicate.
-        compose(frame, [8, 9, 10, 12, 13]).save(OUTPUT / f'Drain_{frame:02}.png')
+        # Layer 11 redraws the emerging burger with the authored oil rim.
+        # Keep it throughout the drain; only the final, interactive state
+        # omits this copy so picking up the separate burger leaves no remnant.
+        foreground = [8, 9, 10, 11, 12, 13] if frame < count - 1 else [8, 9, 10, 12, 13]
+        compose(frame, foreground).save(OUTPUT / f'Drain_{frame:02}.png')
     compose(0, [8, 9, 10, 12]).save(OUTPUT / 'Idle.png')
     (OUTPUT / 'Fryer.aseprite.bytes').write_bytes(data)
     manifest = dict(source=str(SOURCE), sha256=hashlib.sha256(data).hexdigest(),
                     width=width, height=height, layers=layers, durationsMs=durations,
                     tumblerCenter=[285, 108], extractionDistancePixels=28,
-                    backgroundLayers=[0, 1, 2, 3, 6], foregroundLayers=[8, 9, 10, 12, 13],
+                    backgroundLayers=[0, 1, 2, 3, 6], foregroundLayers=[8, 9, 10, 11, 12, 13],
                     idleForegroundLayers=[8, 9, 10, 12], switchSourceFrames=[0, 1, 3],
-                    excludedAlternateBurgerLayer=11)
+                    burgerOilRimLayer=11, finalForegroundLayers=[8, 9, 10, 12, 13])
     (OUTPUT / 'source-layers.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2)+'\n', encoding='utf8')
     print('Exported layered fryer, 21 authored drain frames; SHA256', manifest['sha256'])
 
