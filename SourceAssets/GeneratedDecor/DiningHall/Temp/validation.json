@@ -1,0 +1,372 @@
+{
+  "budget_usd": 1.5,
+  "reported_cost_usd": 0.9149999999999998,
+  "new_requests": 11,
+  "reused_items": 1,
+  "files": [
+    {
+      "file": "abandoned_food_tray.png",
+      "size": [
+        40,
+        24
+      ],
+      "visible_colors": 8,
+      "colors": [
+        "#281122",
+        "#3a1d25",
+        "#482b33",
+        "#716b5e",
+        "#882c35",
+        "#918e73",
+        "#957d68",
+        "#ece0c2"
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "bbox": [
+        5,
+        3,
+        34,
+        16
+      ],
+      "selected_candidate": 52,
+      "reused": false,
+      "sha256": "e08a62a9337611cc9ff05b18458c2371d8207ab0a056a9c3a4fd41c105000d30"
+    },
+    {
+      "file": "forgotten_paper_cup.png",
+      "size": [
+        16,
+        24
+      ],
+      "visible_colors": 7,
+      "colors": [
+        "#3a1d25",
+        "#482b33",
+        "#716b5e",
+        "#882c35",
+        "#918e73",
+        "#957d68",
+        "#ece0c2"
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "bbox": [
+        1,
+        1,
+        13,
+        21
+      ],
+      "selected_candidate": 25,
+      "reused": false,
+      "sha256": "d8fcb16a7d873089f8d6946737886de7cada7d786e7337b2ef3011f9af2c8ae3"
+    },
+    {
+      "file": "napkin_dispenser.png",
+      "size": [
+        24,
+        24
+      ],
+      "visible_colors": 7,
+      "colors": [
+        "#1e2436",
+        "#281122",
+        "#484e5e",
+        "#4d5464",
+        "#716b5e",
+        "#918e73",
+        "#ece0c2"
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "bbox": [
+        3,
+        1,
+        20,
+        20
+      ],
+      "selected_candidate": null,
+      "reused": true,
+      "sha256": "1f0d66ccc968f3a9fb144a2dd42d7f4963edb044a57fe262c08e34a53d1f3363"
+    },
+    {
+      "file": "forgotten_toy.png",
+      "size": [
+        16,
+        16
+      ],
+      "visible_colors": 7,
+      "colors": [
+        "#281122",
+        "#3a1d25",
+        "#482b33",
+        "#882c35",
+        "#918e73",
+        "#957d68",
+        "#ece0c2"
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "bbox": [
+        3,
+        1,
+        13,
+        16
+      ],
+      "selected_candidate": 0,
+      "reused": false,
+      "sha256": "cf94338918845f75d610a180564a3de04868ff999690d1514aa7fe1960021bff"
+    },
+    {
+      "file": "restaurant_trash_bin.png",
+      "size": [
+        24,
+        32
+      ],
+      "visible_colors": 8,
+      "colors": [
+        "#1e2436",
+        "#281122",
+        "#3e4555",
+        "#482b33",
+        "#4d5464",
+        "#882c35",
+        "#957d68",
+        "#ece0c2"
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "bbox": [
+        1,
+        4,
+        22,
+        30
+      ],
+      "selected_candidate": 56,
+      "reused": false,
+      "sha256": "d97e0f11e1297a6c3afbf31edb7e221c72d4191d4647662a1eb1c3bc3cf9f730"
+    },
+    {
+      "file": "spilled_paper_cup.png",
+      "size": [
+        24,
+        16
+      ],
+      "visible_colors": 8,
+      "colors": [
+        "#281122",
+        "#3a1d25",
+        "#482b33",
+        "#716b5e",
+        "#882c35",
+        "#918e73",
+        "#957d68",
+        "#ece0c2"
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "bbox": [
+        3,
+        1,
+        24,
+        15
+      ],
+      "selected_candidate": 43,
+      "reused": false,
+      "sha256": "d9bfcfe45ff57c7a172b69c0af39057eb4c39497c8f69f03068008efebd0df46"
+    },
+    {
+      "file": "withered_floor_plant.png",
+      "size": [
+        32,
+        48
+      ],
+      "visible_colors": 6,
+      "colors": [
+        "#281122",
+        "#3a1d25",
+        "#482b33",
+        "#716b5e",
+        "#918e73",
+        "#957d68"
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "bbox": [
+        2,
+        1,
+        29,
+        39
+      ],
+      "selected_candidate": 5,
+      "reused": false,
+      "sha256": "837a25fb4cbf7d5b8dfd22c5966f188a90860e99421f50cca47e588a65bb0873"
+    },
+    {
+      "file": "window_sticker.png",
+      "size": [
+        24,
+        24
+      ],
+      "visible_colors": 9,
+      "colors": [
+        "#1e2436",
+        "#3e4555",
+        "#482b33",
+        "#484e5e",
+        "#4d5464",
+        "#716b5e",
+        "#918e73",
+        "#957d68",
+        "#ece0c2"
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "bbox": [
+        0,
+        5,
+        22,
+        22
+      ],
+      "selected_candidate": 27,
+      "reused": false,
+      "sha256": "ab5252ae4bc3b74e4083d92dd419f13afbb607a42b4e8f0acae97e3aea691e3f"
+    },
+    {
+      "file": "security_camera.png",
+      "size": [
+        32,
+        24
+      ],
+      "visible_colors": 9,
+      "colors": [
+        "#281122",
+        "#3a1d25",
+        "#3e4555",
+        "#4d5464",
+        "#716b5e",
+        "#882c35",
+        "#918e73",
+        "#957d68",
+        "#ece0c2"
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "bbox": [
+        1,
+        0,
+        30,
+        23
+      ],
+      "selected_candidate": 0,
+      "reused": false,
+      "sha256": "f5244b5fde45e06215bd483fd6ee59521b825ffc13b26b4cbf97ef85928b5ed1"
+    },
+    {
+      "file": "childrens_drawing.png",
+      "size": [
+        40,
+        32
+      ],
+      "visible_colors": 7,
+      "colors": [
+        "#281122",
+        "#3a1d25",
+        "#482b33",
+        "#716b5e",
+        "#882c35",
+        "#918e73",
+        "#ece0c2"
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "bbox": [
+        5,
+        3,
+        36,
+        28
+      ],
+      "selected_candidate": 44,
+      "reused": false,
+      "sha256": "a0d1eb3ae5ffecfd3682f7d9445c380094dfb565d29c8e1e71d2dea640289196"
+    },
+    {
+      "file": "promotional_poster.png",
+      "size": [
+        32,
+        48
+      ],
+      "visible_colors": 5,
+      "colors": [
+        "#3a1d25",
+        "#716b5e",
+        "#882c35",
+        "#918e73",
+        "#ece0c2"
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "bbox": [
+        2,
+        2,
+        30,
+        46
+      ],
+      "selected_candidate": 18,
+      "reused": false,
+      "sha256": "7e9734a81adcec2ba48caf1cc738cc3e0ac2ccf561592e35ac5d452b343259d7"
+    },
+    {
+      "file": "damaged_window_blinds.png",
+      "size": [
+        64,
+        48
+      ],
+      "visible_colors": 7,
+      "colors": [
+        "#281122",
+        "#3a1d25",
+        "#482b33",
+        "#484e5e",
+        "#716b5e",
+        "#918e73",
+        "#957d68"
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "bbox": [
+        17,
+        10,
+        48,
+        38
+      ],
+      "selected_candidate": 8,
+      "reused": false,
+      "sha256": "9ab166435d76019895c63fb688d0f54c013f442cd430066dcba0121fae1cda8d"
+    }
+  ]
+}
