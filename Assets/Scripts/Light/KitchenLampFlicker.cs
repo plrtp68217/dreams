@@ -14,6 +14,7 @@ public class KitchenLampFlicker : MonoBehaviour
     }
 
     [SerializeField] private SpriteRenderer _background;
+    [SerializeField] private Sprite _backgroundOverride;
     [SerializeField] private Light2D[] _lamps;
     [SerializeField] private Frame[] _frames;
     [SerializeField] private Transform _player;
@@ -95,7 +96,7 @@ public class KitchenLampFlicker : MonoBehaviour
     {
         _frameIndex = index;
         var frame = _frames[index];
-        _background.sprite = frame.sprite;
+        _background.sprite = _backgroundOverride != null ? _backgroundOverride : frame.sprite;
         for (int i = 0; i < _lamps.Length; i++)
         {
             float level = frame.lampLevels[i];

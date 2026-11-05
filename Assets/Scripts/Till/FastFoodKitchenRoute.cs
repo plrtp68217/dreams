@@ -19,11 +19,15 @@ public class FastFoodKitchenRoute : MonoBehaviour
     [SerializeField] private CanvasGroup _hint;
     [SerializeField] private TextMeshProUGUI _hintText;
     [SerializeField] private UnityEngine.UI.Image _blackMask;
+    [SerializeField] private Collider2D _restroomCameraBounds;
+    [SerializeField] private Transform _restroomSpawn;
+    [SerializeField] private Transform _hallRestroomSpawn;
     [SerializeField, Min(0.01f)] private float _fadeDuration = 0.4f;
     [SerializeField, Min(0f)] private float _blackHoldDuration = 0.1f;
 
     private bool _hasOrder;
     private bool _isInKitchen;
+    private bool _isInRestroom;
     private bool _isTransitioning;
     private Coroutine _transition;
     private RigidbodyType2D _bodyType;
@@ -74,14 +78,23 @@ public class FastFoodKitchenRoute : MonoBehaviour
     public void TryTravel(Player player, bool toKitchen)
     {
         if (player != _player || !_hasOrder || _isTransitioning ||
-            toKitchen == _isInKitchen || _inputService.IsBlocked || !_player.IsAlive)
+            _isInRestroom || toKitchen == _isInKitchen || _inputService.IsBlocked || !_player.IsAlive)
             return;
 
         _isTransitioning = true;
         _transition = StartCoroutine(Travel(toKitchen));
     }
 
-    private IEnumerator Travel(bool toKitchen)
+    public void TryTravelRestroom(Player player, bool toRestroom)
+    {
+        if (player != _player || !_hasOrder || _isTransitioning || _isInKitchen ||
+            toRestroom == _isInRestroom || _inputService.IsBlocked || !_player.IsAlive ||
+            _restroomSpawn == null || _hallRestroomSpawn == null || _restroomCameraBounds == null) return;
+        _isTransitioning = true;
+        _transition = StartCoroutine(Travel(false, toRestroom, true));
+    }
+
+    private IEnumerator Travel(bool toKitchen, bool toRestroom = false, bool restroomRoute = false)
     {
         _inputWasBlocked = _inputService.IsBlocked;
         _controllerWasEnabled = _playerController.enabled;
@@ -94,19 +107,20 @@ public class FastFoodKitchenRoute : MonoBehaviour
 
         yield return Fade(1f);
 
-        Vector3 destination = (toKitchen ? _kitchenSpawn : _counterSpawn).position;
+        Vector3 destination = (restroomRoute ? (toRestroom ? _restroomSpawn : _hallRestroomSpawn) : (toKitchen ? _kitchenSpawn : _counterSpawn)).position;
         Vector3 delta = destination - _player.transform.position;
         Vector3 cameraPosition = _camera.State.GetFinalPosition();
         _player.transform.position = destination;
         _player.Rigidbody.position = destination;
         _player.SpriteRenderer.flipX = toKitchen;
-        _confiner.BoundingShape2D = toKitchen ? _kitchenCameraBounds : _counterCameraBounds;
+        _confiner.BoundingShape2D = toRestroom ? _restroomCameraBounds : toKitchen ? _kitchenCameraBounds : _counterCameraBounds;
         _confiner.InvalidateBoundingShapeCache();
         _confiner.BakeBoundingShape(_camera, 0.1f);
         _camera.OnTargetObjectWarped(_player.transform, delta);
         _camera.ForceCameraPosition(new Vector3(destination.x, cameraPosition.y, cameraPosition.z), _camera.transform.rotation);
         _camera.PreviousStateIsValid = false;
         _isInKitchen = toKitchen;
+        _isInRestroom = toRestroom;
         Physics2D.SyncTransforms();
 
         // Apply the destination's framing while the mask is fully black. The first revealed

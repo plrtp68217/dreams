@@ -1,0 +1,271 @@
+{
+  "source_directory": "C:\\Users\\moroz\\Music\\DREAMS\\EvaSource",
+  "gain_db": -1.9957094931601822,
+  "edge_fade_seconds": 0.008,
+  "sources": [
+    {
+      "file": "Eva_Warm_Low_01.wav",
+      "sha256": "ab633b5a1c59477513b5f9ab222751b388f346b4ec566ce4d77d14f77e9ccdf9",
+      "sample_rate": 48000
+    },
+    {
+      "file": "Eva_Warm_Low_02.wav",
+      "sha256": "c7400078a4c766e48ba6a714c9427115a6cef260a2c130e0a019b2fa5401ea04",
+      "sample_rate": 48000
+    },
+    {
+      "file": "Eva_Warm_Low_03.wav",
+      "sha256": "b653056a3ae7bc4c6f75b66aa0f95387d5c314b08b9edfa4b516ff2fbfa53cd2",
+      "sample_rate": 48000
+    },
+    {
+      "file": "Eva_Warm_Low_05.wav",
+      "sha256": "fe6fb218aacafe22f400a2b140fdd71fb1297e7d4aa1688869126ce0cf9a8ed4",
+      "sample_rate": 48000
+    },
+    {
+      "file": "Eva_Warm_Low_06.wav",
+      "sha256": "bb305518b58989116da6f94fdcfb330986f4d56f3b03075902523e6358e728c4",
+      "sample_rate": 48000
+    },
+    {
+      "file": "Eva_Warm_Low_08.wav",
+      "sha256": "bd7012c3d9c709e45141cb519249434e1a1ddd1fafa6d72d316fdd2ba36106d0",
+      "sample_rate": 48000
+    },
+    {
+      "file": "Eva_Warm_Low_09.wav",
+      "sha256": "fb93f5f6a75081db988d5b97e11f39a1a5eddd924bef024935c2d647a304d172",
+      "sample_rate": 48000
+    },
+    {
+      "file": "Eva_Warm_Low_11.wav",
+      "sha256": "0130a6365e3d14746507989017a194c95ac820b7349f94d32ec19dcae834e647",
+      "sample_rate": 48000
+    },
+    {
+      "file": "Eva_Warm_Low_12.wav",
+      "sha256": "df8f73c59378207a425d66d4efe19a0aa857e51d413f2af3e1974ee9083337c9",
+      "sample_rate": 48000
+    }
+  ],
+  "fragments": [
+    {
+      "file": "eva_warm_low_01_01.wav",
+      "source": "Eva_Warm_Low_01.wav",
+      "start": 0.08,
+      "end": 0.6,
+      "duration": 0.52
+    },
+    {
+      "file": "eva_warm_low_01_02.wav",
+      "source": "Eva_Warm_Low_01.wav",
+      "start": 0.6,
+      "end": 1.15,
+      "duration": 0.55
+    },
+    {
+      "file": "eva_warm_low_01_03.wav",
+      "source": "Eva_Warm_Low_01.wav",
+      "start": 1.15,
+      "end": 1.96,
+      "duration": 0.81
+    },
+    {
+      "file": "eva_warm_low_01_04.wav",
+      "source": "Eva_Warm_Low_01.wav",
+      "start": 1.96,
+      "end": 2.965,
+      "duration": 1.005
+    },
+    {
+      "file": "eva_warm_low_02_01.wav",
+      "source": "Eva_Warm_Low_02.wav",
+      "start": 0.05,
+      "end": 0.49,
+      "duration": 0.44
+    },
+    {
+      "file": "eva_warm_low_02_02.wav",
+      "source": "Eva_Warm_Low_02.wav",
+      "start": 0.49,
+      "end": 0.895,
+      "duration": 0.405
+    },
+    {
+      "file": "eva_warm_low_02_03.wav",
+      "source": "Eva_Warm_Low_02.wav",
+      "start": 0.895,
+      "end": 1.445,
+      "duration": 0.55
+    },
+    {
+      "file": "eva_warm_low_02_04.wav",
+      "source": "Eva_Warm_Low_02.wav",
+      "start": 1.445,
+      "end": 1.855,
+      "duration": 0.41
+    },
+    {
+      "file": "eva_warm_low_02_05.wav",
+      "source": "Eva_Warm_Low_02.wav",
+      "start": 1.855,
+      "end": 2.42,
+      "duration": 0.565
+    },
+    {
+      "file": "eva_warm_low_03_01.wav",
+      "source": "Eva_Warm_Low_03.wav",
+      "start": 0.065,
+      "end": 2.05,
+      "duration": 1.985
+    },
+    {
+      "file": "eva_warm_low_05_01.wav",
+      "source": "Eva_Warm_Low_05.wav",
+      "start": 0.07,
+      "end": 1.13,
+      "duration": 1.06
+    },
+    {
+      "file": "eva_warm_low_05_02.wav",
+      "source": "Eva_Warm_Low_05.wav",
+      "start": 1.13,
+      "end": 1.815,
+      "duration": 0.685
+    },
+    {
+      "file": "eva_warm_low_06_01.wav",
+      "source": "Eva_Warm_Low_06.wav",
+      "start": 0.07,
+      "end": 0.435,
+      "duration": 0.365
+    },
+    {
+      "file": "eva_warm_low_06_02.wav",
+      "source": "Eva_Warm_Low_06.wav",
+      "start": 0.435,
+      "end": 0.83,
+      "duration": 0.395
+    },
+    {
+      "file": "eva_warm_low_06_03.wav",
+      "source": "Eva_Warm_Low_06.wav",
+      "start": 0.83,
+      "end": 1.14,
+      "duration": 0.31
+    },
+    {
+      "file": "eva_warm_low_06_04.wav",
+      "source": "Eva_Warm_Low_06.wav",
+      "start": 1.14,
+      "end": 1.6,
+      "duration": 0.46
+    },
+    {
+      "file": "eva_warm_low_06_05.wav",
+      "source": "Eva_Warm_Low_06.wav",
+      "start": 1.6,
+      "end": 1.975,
+      "duration": 0.375
+    },
+    {
+      "file": "eva_warm_low_06_06.wav",
+      "source": "Eva_Warm_Low_06.wav",
+      "start": 1.975,
+      "end": 2.79,
+      "duration": 0.815
+    },
+    {
+      "file": "eva_warm_low_08_01.wav",
+      "source": "Eva_Warm_Low_08.wav",
+      "start": 0.06,
+      "end": 0.77,
+      "duration": 0.71
+    },
+    {
+      "file": "eva_warm_low_09_01.wav",
+      "source": "Eva_Warm_Low_09.wav",
+      "start": 0.04,
+      "end": 0.425,
+      "duration": 0.385
+    },
+    {
+      "file": "eva_warm_low_09_02.wav",
+      "source": "Eva_Warm_Low_09.wav",
+      "start": 0.425,
+      "end": 0.785,
+      "duration": 0.36
+    },
+    {
+      "file": "eva_warm_low_09_03.wav",
+      "source": "Eva_Warm_Low_09.wav",
+      "start": 0.785,
+      "end": 1.065,
+      "duration": 0.28
+    },
+    {
+      "file": "eva_warm_low_09_04.wav",
+      "source": "Eva_Warm_Low_09.wav",
+      "start": 1.065,
+      "end": 1.515,
+      "duration": 0.45
+    },
+    {
+      "file": "eva_warm_low_11_01.wav",
+      "source": "Eva_Warm_Low_11.wav",
+      "start": 0.06,
+      "end": 0.76,
+      "duration": 0.7
+    },
+    {
+      "file": "eva_warm_low_11_02.wav",
+      "source": "Eva_Warm_Low_11.wav",
+      "start": 0.76,
+      "end": 1.22,
+      "duration": 0.46
+    },
+    {
+      "file": "eva_warm_low_11_03.wav",
+      "source": "Eva_Warm_Low_11.wav",
+      "start": 1.22,
+      "end": 1.84,
+      "duration": 0.62
+    },
+    {
+      "file": "eva_warm_low_12_01.wav",
+      "source": "Eva_Warm_Low_12.wav",
+      "start": 0.07,
+      "end": 1.025,
+      "duration": 0.955
+    },
+    {
+      "file": "eva_warm_low_12_02.wav",
+      "source": "Eva_Warm_Low_12.wav",
+      "start": 1.025,
+      "end": 1.88,
+      "duration": 0.855
+    },
+    {
+      "file": "eva_warm_low_12_03.wav",
+      "source": "Eva_Warm_Low_12.wav",
+      "start": 1.88,
+      "end": 2.335,
+      "duration": 0.455
+    },
+    {
+      "file": "eva_warm_low_12_04.wav",
+      "source": "Eva_Warm_Low_12.wav",
+      "start": 2.335,
+      "end": 2.925,
+      "duration": 0.59
+    },
+    {
+      "file": "eva_warm_low_12_05.wav",
+      "source": "Eva_Warm_Low_12.wav",
+      "start": 2.925,
+      "end": 3.305,
+      "duration": 0.38
+    }
+  ]
+}

@@ -3,6 +3,7 @@ using UnityEngine;
 public class InteractionTrigger : MonoBehaviour
 {
     [SerializeField] private string _dialogId;
+    [SerializeField] private DialogueVoiceProfile _voiceProfile;
     [SerializeField] private Dialog _dialogCanvas;
     [SerializeField] private Dialog _dialogUI;
 
@@ -56,7 +57,7 @@ public class InteractionTrigger : MonoBehaviour
             {
                 _animator.SetTrigger(AnimatorTrigger.Reach.ToString());
                 _dialogUI.Disable();
-                _dialogCanvas.Enable(_dialogText);
+                _dialogCanvas.Enable(_dialogText, _voiceProfile);
                 _canvasIsActivated = true;
                 _inputService.Block();
             }

@@ -18,6 +18,7 @@ public class JoinTrigger : MonoBehaviour
 
     [SerializeField] private Dialog _dialog;
     [SerializeField] private string _dialogId;
+    [SerializeField] private DialogueVoiceProfile _voiceProfile;
 
     private bool _isEntered = false;
     private bool _isVisited = false;
@@ -36,7 +37,7 @@ public class JoinTrigger : MonoBehaviour
         if (collider.TryGetComponent(out Player player))
         {
             _isEntered = true;
-            _dialog.Enable(_dialogText);
+            _dialog.Enable(_dialogText, _voiceProfile);
             player.SetActiveDialog(_dialog);
 
 

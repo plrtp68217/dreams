@@ -1,0 +1,33 @@
+{
+  "source": "Assets/Sprites/Backgrounds/FastFood/Kitchen/bg_kitchen.aseprite",
+  "sourceSha256": "df12b24a932d1c13b6a218dd703a3ceec3380c0b1e852a7d62960710d41c3346",
+  "masks": [
+    {
+      "file": "Fryer.png",
+      "layer": "Layer 3 Fries",
+      "x": 353,
+      "y": 61,
+      "width": 120,
+      "height": 83,
+      "padding": 3
+    },
+    {
+      "file": "Fridge.png",
+      "layer": "Layer 3 Fridge",
+      "x": 258,
+      "y": 26,
+      "width": 94,
+      "height": 118,
+      "padding": 3
+    },
+    {
+      "file": "Dispenser.png",
+      "layer": "Layer 3 Soda",
+      "x": 474,
+      "y": 55,
+      "width": 40,
+      "height": 89,
+      "padding": 3
+    }
+  ]
+}

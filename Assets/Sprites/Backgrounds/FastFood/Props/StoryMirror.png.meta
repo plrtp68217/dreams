@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 13b1f39276d5bcb479cb818278a6fbdb
+guid: b5c5701152256624cbd15f15bcc6eb8f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3322413422838815829
-    second: StoryMirror_0
+      213: 7894705532326698737
+    second: pixellab--1793543382194_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -48,9 +48,9 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 0
-  alignment: 7
-  spritePivot: {x: 0.5, y: 0}
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -74,8 +74,8 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
+    textureFormat: 4
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: StoryMirror_0
+      name: pixellab--1793543382194_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 71
-        height: 108
+        width: 249
+        height: 334
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ba3e3b6489a64e1d0800000000000000
-      internalID: -3322413422838815829
+      spriteID: 1fed4ac8ad0af8d60800000000000000
+      internalID: 7894705532326698737
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      StoryMirror_0: -3322413422838815829
+      pixellab--1793543382194_0: 7894705532326698737
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

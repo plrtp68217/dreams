@@ -1,0 +1,685 @@
+{
+  "provider": "PixelLab API v2",
+  "source_specs": [
+    "01_faceless_man.pdf",
+    "eva_inventory.pdf"
+  ],
+  "assets": [
+    {
+      "name": "Burger",
+      "path": "Assets/Sprites/FastFoodService/Burger.png",
+      "sha256": "9e1a7a0194453ac60861ca52cf2cc3d28b0184d97ecaaa90bf99b5ed24dca185"
+    },
+    {
+      "name": "Clown",
+      "path": "Assets/Sprites/FastFoodService/Clown.png",
+      "sha256": "613f49611a4ade5a2285f10c530a9c7a4215fa95bc77eb08a8bdece768585f71"
+    },
+    {
+      "name": "Dispenser",
+      "path": "Assets/Sprites/FastFoodService/Dispenser.png",
+      "sha256": "03d9bfb44631b904fe2b8608703643aec1ce2e15d32c312a355cccb49f22d53d"
+    },
+    {
+      "name": "Drink",
+      "path": "Assets/Sprites/FastFoodService/Drink.png",
+      "sha256": "3157e9993a4368d9fe64c8d9b06117bb2578f5a2e5b3b04b0cc8c899339740f0"
+    },
+    {
+      "name": "DrinkPour",
+      "generation": "DrinkPour",
+      "frame": 0,
+      "path": "Assets/Sprites/FastFoodService/DrinkPour/00.png",
+      "sha256": "03d9bfb44631b904fe2b8608703643aec1ce2e15d32c312a355cccb49f22d53d"
+    },
+    {
+      "name": "DrinkPour",
+      "generation": "DrinkPour",
+      "frame": 1,
+      "path": "Assets/Sprites/FastFoodService/DrinkPour/01.png",
+      "sha256": "00cba75133ffa66c3360e235e88e876a542e9fbdf658ebd965155bf2deac1207"
+    },
+    {
+      "name": "DrinkPour",
+      "generation": "DrinkPour",
+      "frame": 2,
+      "path": "Assets/Sprites/FastFoodService/DrinkPour/02.png",
+      "sha256": "66be0386116e36c8ee2eef01457f84fcb661be92fd98055d671851c15a2103ac"
+    },
+    {
+      "name": "DrinkPour",
+      "generation": "DrinkPour",
+      "frame": 3,
+      "path": "Assets/Sprites/FastFoodService/DrinkPour/03.png",
+      "sha256": "c2a42def39be487c104a7dc243a766ebff9f9bdedef66ee984a32f84a5d9fd82"
+    },
+    {
+      "name": "DrinkPour",
+      "generation": "DrinkPour",
+      "frame": 4,
+      "path": "Assets/Sprites/FastFoodService/DrinkPour/04.png",
+      "sha256": "f1eb56b77edc9b89c95a247d20bf6e967e0fe6ebeb47a836a140944a2caa20f6"
+    },
+    {
+      "name": "DrinkPour",
+      "generation": "DrinkPour",
+      "frame": 5,
+      "path": "Assets/Sprites/FastFoodService/DrinkPour/05.png",
+      "sha256": "e99c7b931c39c73641ea06f75fecaf02a048d4c0d4d3f315798e5149ace3b1b3"
+    },
+    {
+      "name": "DrinkPour",
+      "generation": "DrinkPour",
+      "frame": 6,
+      "path": "Assets/Sprites/FastFoodService/DrinkPour/06.png",
+      "sha256": "a162491114672bd92a5fa531b20f6222025eb81dc3951f64a630ebee65d61ad1"
+    },
+    {
+      "name": "DrinkPour",
+      "generation": "DrinkPour",
+      "frame": 7,
+      "path": "Assets/Sprites/FastFoodService/DrinkPour/07.png",
+      "sha256": "20767c5a39b92bb214ab25b5f1f72eb3bd1814869839dd74aae61519f786ccca"
+    },
+    {
+      "name": "DrinkPour",
+      "generation": "DrinkPour",
+      "frame": 8,
+      "path": "Assets/Sprites/FastFoodService/DrinkPour/08.png",
+      "sha256": "4a4b333615ca2f7b08d40c282d852899f775bfc96292d3677bfce425f79aaf6f"
+    },
+    {
+      "name": "Fridge",
+      "path": "Assets/Sprites/FastFoodService/Fridge.png",
+      "sha256": "81b321b907a84994cabecd7ff44a08632d89fd8313153986bb60328f5c38b1a7"
+    },
+    {
+      "name": "FridgeOpen",
+      "path": "Assets/Sprites/FastFoodService/FridgeOpen.png",
+      "sha256": "8e69913936693e120ee53347abfb8a691a2cd0d3055d6c4ce24d1b1d8358bba1"
+    },
+    {
+      "name": "FridgeOpening",
+      "generation": "FridgeOpening",
+      "frame": 0,
+      "path": "Assets/Sprites/FastFoodService/FridgeOpening/00.png",
+      "sha256": "81b321b907a84994cabecd7ff44a08632d89fd8313153986bb60328f5c38b1a7"
+    },
+    {
+      "name": "FridgeOpening",
+      "generation": "FridgeOpening",
+      "frame": 1,
+      "path": "Assets/Sprites/FastFoodService/FridgeOpening/01.png",
+      "sha256": "12dca71a426d80b914078c621dada616386f219bce793f04448eb49d8668b9e0"
+    },
+    {
+      "name": "FridgeOpening",
+      "generation": "FridgeOpening",
+      "frame": 2,
+      "path": "Assets/Sprites/FastFoodService/FridgeOpening/02.png",
+      "sha256": "52061a64b20886f0f1896feb63fd98da4fc7b76c822987d16b2b33cc0f763215"
+    },
+    {
+      "name": "FridgeOpening",
+      "generation": "FridgeOpening",
+      "frame": 3,
+      "path": "Assets/Sprites/FastFoodService/FridgeOpening/03.png",
+      "sha256": "d5527f3f21b1e4f4e4a8cc6d677cb5c33c89823caf2dda6d7cf3db2f5de87b17"
+    },
+    {
+      "name": "FridgeOpening",
+      "generation": "FridgeOpening",
+      "frame": 4,
+      "path": "Assets/Sprites/FastFoodService/FridgeOpening/04.png",
+      "sha256": "262e0ffc95711abe3be074cde60dba156bd80efdbb682e426020d397805f1609"
+    },
+    {
+      "name": "FridgeOpening",
+      "generation": "FridgeOpening",
+      "frame": 5,
+      "path": "Assets/Sprites/FastFoodService/FridgeOpening/05.png",
+      "sha256": "9599824e010142b9bd33099eac1173516ff6fb490e1b1bb25f65aeab1ea477e6"
+    },
+    {
+      "name": "FridgeOpening",
+      "generation": "FridgeOpening",
+      "frame": 6,
+      "path": "Assets/Sprites/FastFoodService/FridgeOpening/06.png",
+      "sha256": "09f134de248a78f3ebc2b8598e5502a40a624595932a03dbd92cfbbda5e9defa"
+    },
+    {
+      "name": "FridgeOpening",
+      "generation": "FridgeOpening",
+      "frame": 7,
+      "path": "Assets/Sprites/FastFoodService/FridgeOpening/07.png",
+      "sha256": "2d3763d7c563a3faf1ba9246b25a40eb9e8d2fbddb6b03439030f0e536216cdc"
+    },
+    {
+      "name": "FridgeOpening",
+      "generation": "FridgeOpening",
+      "frame": 8,
+      "path": "Assets/Sprites/FastFoodService/FridgeOpening/08.png",
+      "sha256": "cca10b0429582f593018bfdb7f1c644aaf0830de40d0b8cdeb4e0bdd4a921164"
+    },
+    {
+      "name": "Fries",
+      "path": "Assets/Sprites/FastFoodService/Fries.png",
+      "sha256": "5976467d4cc53b744f7120560ed1ca780d0436f5da857fa6c6b637d708cf9584"
+    },
+    {
+      "name": "Fryer",
+      "path": "Assets/Sprites/FastFoodService/Fryer.png",
+      "sha256": "f5c4090211bacf13bbecdcc1e29d5be0c3822c64075c69646cb5b08ac33d1104"
+    },
+    {
+      "name": "FryerDrained",
+      "path": "Assets/Sprites/FastFoodService/FryerDrained.png",
+      "sha256": "b69ff2e8ba4009032ff94b9efbdc8a4061e42ed8976943c5deb4cfbaf839d150"
+    },
+    {
+      "name": "Fuse",
+      "path": "Assets/Sprites/FastFoodService/Fuse.png",
+      "sha256": "f0be6ef93cc51016f905795830d91c7af2d7284916c9f61478eb4a4ef589764f"
+    },
+    {
+      "name": "FuseBox",
+      "path": "Assets/Sprites/FastFoodService/FuseBox.png",
+      "sha256": "f9d766d133156ec8189362160b242aa426bef482c2550d85b4204d9407b0880b"
+    },
+    {
+      "name": "Kitchen",
+      "path": "Assets/Sprites/FastFoodService/Kitchen.png",
+      "sha256": "957631265ae670e46af96f7062f80199549bbcf2feb248f2e281a1ee3c63bee7"
+    },
+    {
+      "name": "MedicalRecord",
+      "path": "Assets/Sprites/FastFoodService/MedicalRecord.png",
+      "sha256": "5ba3109ad9ca59803312e5d6321ff953c1c23a6cc079368b85a45b4cd6c5b430"
+    },
+    {
+      "name": "Mirror",
+      "path": "Assets/Sprites/FastFoodService/Mirror.png",
+      "sha256": "149a41f54a0e753e51363ed6766278044b1ec491395bd0dd8045cd4f6bbd221e"
+    },
+    {
+      "name": "MirrorReveal",
+      "generation": "MirrorRevealV2",
+      "frame": 0,
+      "path": "Assets/Sprites/FastFoodService/MirrorReveal/00.png",
+      "sha256": "149a41f54a0e753e51363ed6766278044b1ec491395bd0dd8045cd4f6bbd221e"
+    },
+    {
+      "name": "MirrorReveal",
+      "generation": "MirrorRevealV2",
+      "frame": 1,
+      "path": "Assets/Sprites/FastFoodService/MirrorReveal/01.png",
+      "sha256": "9e60ac40658291eb2bdfefb3e7326d55f28e4de7ba5f7be18a13c0fe206e80a3"
+    },
+    {
+      "name": "MirrorReveal",
+      "generation": "MirrorRevealV2",
+      "frame": 2,
+      "path": "Assets/Sprites/FastFoodService/MirrorReveal/02.png",
+      "sha256": "99f4b9fdb93b1a7441efca0a43eba7892e44e8f9c13b2abf6a95c88af91b10f9"
+    },
+    {
+      "name": "MirrorReveal",
+      "generation": "MirrorRevealV2",
+      "frame": 3,
+      "path": "Assets/Sprites/FastFoodService/MirrorReveal/03.png",
+      "sha256": "af3d962baed272a0f26a3f38bf94e2e0754261b32e4b081470afb14f47333de2"
+    },
+    {
+      "name": "MirrorReveal",
+      "generation": "MirrorRevealV2",
+      "frame": 4,
+      "path": "Assets/Sprites/FastFoodService/MirrorReveal/04.png",
+      "sha256": "27731257dc393d1e8c569ef313d2b435e17053e48ea28e9def2a1a40c6092adc"
+    },
+    {
+      "name": "MirrorReveal",
+      "generation": "MirrorRevealV2",
+      "frame": 5,
+      "path": "Assets/Sprites/FastFoodService/MirrorReveal/05.png",
+      "sha256": "2162e07d04f57a334f96f91f49d6be3c82732a82019e2b84be10eee6eda7efc9"
+    },
+    {
+      "name": "MirrorReveal",
+      "generation": "MirrorRevealV2",
+      "frame": 6,
+      "path": "Assets/Sprites/FastFoodService/MirrorReveal/06.png",
+      "sha256": "d12b90d76bb9587e1fcf9ee79e7407ef4ef6fddc52f80f5f54bc89f28a3dcb6a"
+    },
+    {
+      "name": "MirrorReveal",
+      "generation": "MirrorRevealV2",
+      "frame": 7,
+      "path": "Assets/Sprites/FastFoodService/MirrorReveal/07.png",
+      "sha256": "c0dc4faf7f3368b6249094f7f567a6bd882f8c933dadfb9537ce44be51a31fbd"
+    },
+    {
+      "name": "MirrorReveal",
+      "generation": "MirrorRevealV2",
+      "frame": 8,
+      "path": "Assets/Sprites/FastFoodService/MirrorReveal/08.png",
+      "sha256": "85583672f4aed74748c65af2dd92289eedf19e74667bccf8fd06a4a16b3f6c93"
+    },
+    {
+      "name": "MirrorWithToy",
+      "path": "Assets/Sprites/FastFoodService/MirrorWithToy.png",
+      "sha256": "09c3bbb0856c47f35b2bcc649f001303ee8081cab371a4ddff9939baba501c72"
+    },
+    {
+      "name": "OilDrain",
+      "generation": "OilDrainV2",
+      "frame": 0,
+      "path": "Assets/Sprites/FastFoodService/OilDrain/00.png",
+      "sha256": "f5c4090211bacf13bbecdcc1e29d5be0c3822c64075c69646cb5b08ac33d1104"
+    },
+    {
+      "name": "OilDrain",
+      "generation": "OilDrainV2",
+      "frame": 1,
+      "path": "Assets/Sprites/FastFoodService/OilDrain/01.png",
+      "sha256": "8b228de4eb88b26b11757a1ab40a52aa15be0730f50da7062345a791226b6d5c"
+    },
+    {
+      "name": "OilDrain",
+      "generation": "OilDrainV2",
+      "frame": 2,
+      "path": "Assets/Sprites/FastFoodService/OilDrain/02.png",
+      "sha256": "9d42b514fb8f00d79084bf1c9468e3ec1bbd41e84aef5d016109cc8cdc194468"
+    },
+    {
+      "name": "OilDrain",
+      "generation": "OilDrainV2",
+      "frame": 3,
+      "path": "Assets/Sprites/FastFoodService/OilDrain/03.png",
+      "sha256": "2c672186bad13de6d6892b15f850f8809aaafeab136550400a6ca011a7f56e6d"
+    },
+    {
+      "name": "OilDrain",
+      "generation": "OilDrainV2",
+      "frame": 4,
+      "path": "Assets/Sprites/FastFoodService/OilDrain/04.png",
+      "sha256": "66dab8a1f52a4ae86320639555ccb06a6d51d2b9c64fc1c821d586e842d00e67"
+    },
+    {
+      "name": "OilDrain",
+      "generation": "OilDrainV2",
+      "frame": 5,
+      "path": "Assets/Sprites/FastFoodService/OilDrain/05.png",
+      "sha256": "93b2ead7d9a74bb5e04133527624f76cd0447013b2ccb4d0baa5f81318a7358c"
+    },
+    {
+      "name": "OilDrain",
+      "generation": "OilDrainV2",
+      "frame": 6,
+      "path": "Assets/Sprites/FastFoodService/OilDrain/06.png",
+      "sha256": "ab3142737952209e4721e6cf1a7a1ac419461d43d5863f757219a7f8fb443598"
+    },
+    {
+      "name": "OilDrain",
+      "generation": "OilDrainV2",
+      "frame": 7,
+      "path": "Assets/Sprites/FastFoodService/OilDrain/07.png",
+      "sha256": "22dffe3f51fad9c5be40e8207b9e0bc4d8000ec07e6620e80ed041a056e37252"
+    },
+    {
+      "name": "OilDrain",
+      "generation": "OilDrainV2",
+      "frame": 8,
+      "path": "Assets/Sprites/FastFoodService/OilDrain/08.png",
+      "sha256": "c1281b5fbedc680d7f67c5f224c1ed55dd63c43a2e366ddedc64affe80a629ca"
+    },
+    {
+      "name": "Pocket",
+      "path": "Assets/Sprites/FastFoodService/Pocket.png",
+      "sha256": "4568e32196c0e26ec344c47633d68bf5a99b2613100ab73821e6a1c812ff344b"
+    },
+    {
+      "name": "Receipt",
+      "path": "Assets/Sprites/FastFoodService/Receipt.png",
+      "sha256": "0a22e9bb6f45cec8645df5410bbf89798d8c014e0c5b40cb5e8d056f3f07bac0"
+    },
+    {
+      "name": "Restroom",
+      "path": "Assets/Sprites/FastFoodService/Restroom.png",
+      "sha256": "5fe111ba811260327bf8b114ea8996a18a9624dfe77e46578ba384f9e4ec0f4f"
+    },
+    {
+      "name": "Toy",
+      "path": "Assets/Sprites/FastFoodService/Toy.png",
+      "sha256": "9b32ac89562f9d2dc09ebe0940471be5927c3c2af96b7077082c8654cd66506d"
+    },
+    {
+      "name": "Tray",
+      "path": "Assets/Sprites/FastFoodService/Tray.png",
+      "sha256": "baf0533462c71d96a74b6467ef86dcb8d54a74cc65c2d66e7a870baa1dc567b4"
+    }
+  ],
+  "requests": [
+    {
+      "name": "Burger",
+      "job_id": "5c04ba36-e7fd-4d6d-a616-b6254547f1b6",
+      "endpoint": "/v2/generate-image-v2",
+      "seed": 705,
+      "description": "Crisp hand-drawn pixel art for DREAMS, a dark atmospheric 2D game. Limited muted palette, sharp single-pixel edges, no smoothing. a single small burger WITHOUT ANY BREAD OR BUN: beef patty, melted cheese, lettuce, tomato layers, sitting on crumpled wax paper. Inventory item sprite, centered, no tray, NO bread at top or bottom, no text, transparent background.",
+      "image_size": {
+        "width": 128,
+        "height": 128
+      },
+      "subscription_generations": 10.0,
+      "returned_png_count": 4
+    },
+    {
+      "name": "Clown",
+      "job_id": "dc69a92c-f013-4843-b68f-dd73dfe17bb7",
+      "endpoint": "/v2/generate-image-v2",
+      "seed": 709,
+      "description": "Crisp hand-drawn pixel art for DREAMS, a dark atmospheric 2D game. Limited muted palette, sharp single-pixel edges, no smoothing. full body eerie tired fast-food mascot clown with tangled dark red hair, mustard yellow jumpsuit with dirty burgundy patches, worn gloves and shoes, slightly hunched posture, facing right in a 2D side-view game. No weapon, no gore, no text. Transparent background.",
+      "image_size": {
+        "width": 128,
+        "height": 192
+      },
+      "subscription_generations": 10.0,
+      "returned_png_count": 1
+    },
+    {
+      "name": "Dispenser",
+      "job_id": "554d82c2-8275-481c-9ded-ca043faa05c6",
+      "endpoint": "/v2/generate-image-v2",
+      "seed": 703,
+      "description": "Crisp hand-drawn pixel art for DREAMS, a dark atmospheric 2D game. Limited muted palette, sharp single-pixel edges, no smoothing. front view close-up of an old fast food soda dispenser. Three translucent syrup tanks colored red, amber and green; knobs under tanks; transparent empty cup below the right nozzle. Worn dark metal, muted dark red panel, horror atmosphere. NO text, no numbers, no writing, no hands.",
+      "image_size": {
+        "width": 256,
+        "height": 192
+      },
+      "subscription_generations": 10.0,
+      "returned_png_count": 1
+    },
+    {
+      "name": "Drink",
+      "job_id": "270d54cc-11aa-41d3-b7be-25bd8d00303a",
+      "endpoint": "/v2/generate-image-v2",
+      "seed": 707,
+      "description": "Crisp hand-drawn pixel art for DREAMS, a dark atmospheric 2D game. Limited muted palette, sharp single-pixel edges, no smoothing. a single transparent fast food plastic cup containing clear colorless water, transparent lid and pale straw, no label. Inventory item sprite, centered, isolated, no tray, no text, transparent background.",
+      "image_size": {
+        "width": 128,
+        "height": 128
+      },
+      "subscription_generations": 10.0,
+      "returned_png_count": 4
+    },
+    {
+      "name": "DrinkPour",
+      "job_id": "9345e3b8-369f-406e-93fa-e15fc7ccac30",
+      "endpoint": "/v2/animate-with-text-v3",
+      "seed": 916,
+      "description": "The soda dispenser remains completely stationary, fixed camera. A thin transparent colorless liquid stream pours from the right nozzle into the clear plastic cup. The cup fills from empty to nearly full with transparent water, tiny bubbles appear, then the stream stops. No moving machine, no color in liquid, no camera motion, no text.",
+      "image_size": null,
+      "subscription_generations": 6.0,
+      "returned_png_count": 9
+    },
+    {
+      "name": "Fridge",
+      "job_id": "7094a288-ea10-47bd-8742-aeb0f44b58bf",
+      "endpoint": "/v2/generate-image-v2",
+      "seed": 702,
+      "description": "Crisp hand-drawn pixel art for DREAMS, a dark atmospheric 2D game. Limited muted palette, sharp single-pixel edges, no smoothing. front view of a locked worn dark steel double-door commercial refrigerator. Small unlabelled numeric keypad on the right and metal handles. Dark atmospheric fast food kitchen, red indicator light. Do not draw readable digits or words, they are added in game UI.",
+      "image_size": {
+        "width": 192,
+        "height": 256
+      },
+      "subscription_generations": 10.0,
+      "returned_png_count": 1
+    },
+    {
+      "name": "FridgeOpen",
+      "job_id": "c12433be-dd88-4aeb-829e-1e5a4c7f85bb",
+      "endpoint": "/v2/generate-image-v2",
+      "seed": 1844,
+      "description": "The exact same dark industrial refrigerator shown in the reference, same front view and entire framing. Its LEFT door is now swung fully open toward the left, showing a dim lit cold shelf containing one small red carton of fries. Right door and keypad remain in the same positions. Keep pixel art style and geometry. No text no letters. Isolated on transparent background.",
+      "image_size": {
+        "width": 192,
+        "height": 256
+      },
+      "subscription_generations": 10.0,
+      "returned_png_count": 1
+    },
+    {
+      "name": "FridgeOpening",
+      "job_id": "00fca706-bdd9-4d7b-966d-d3de8d2bcdad",
+      "endpoint": "/v2/animate-with-text-v3",
+      "seed": 2003,
+      "description": "Fixed camera. The left refrigerator door smoothly swings open to the left, revealing the cold interior shelf with the small red fries carton from the exact end frame. The right door and keypad stay completely still. Do not move or resize the refrigerator, no zoom, no text.",
+      "image_size": null,
+      "subscription_generations": 6.0,
+      "returned_png_count": 9
+    },
+    {
+      "name": "Fries",
+      "job_id": "84b0480b-45f1-4bb5-bb81-3a6402c92aa8",
+      "endpoint": "/v2/generate-image-v2",
+      "seed": 706,
+      "description": "Crisp hand-drawn pixel art for DREAMS, a dark atmospheric 2D game. Limited muted palette, sharp single-pixel edges, no smoothing. one red paper carton of golden french fries with NO salt, on a tiny piece of wax paper. Inventory item sprite, centered, isolated, no tray, no text, no logos, transparent background.",
+      "image_size": {
+        "width": 128,
+        "height": 128
+      },
+      "subscription_generations": 10.0,
+      "returned_png_count": 4
+    },
+    {
+      "name": "Fryer",
+      "job_id": "36ee3c7a-9def-46f1-a6b2-c3a1c0af99ac",
+      "endpoint": "/v2/generate-image-v2",
+      "seed": 701,
+      "description": "Crisp hand-drawn pixel art for DREAMS, a dark atmospheric 2D game. Limited muted palette, sharp single-pixel edges, no smoothing. front view close-up of an old stainless steel industrial deep fryer with amber dirty oil, a small burger patty visible at the bottom, a red rocker power switch and a copper drain valve at bottom. Dim abandoned fast food kitchen, worn metal, moody warm shadows. Empty space around controls, NO lettering, NO numbers, NO UI, no humans.",
+      "image_size": {
+        "width": 256,
+        "height": 192
+      },
+      "subscription_generations": 10.0,
+      "returned_png_count": 1
+    },
+    {
+      "name": "FryerDrained",
+      "job_id": "ca3070de-e57b-443b-8632-2c91278d6626",
+      "endpoint": "/v2/generate-image-v2",
+      "seed": 1331,
+      "description": "Recreate the EXACT SAME stationary industrial fryer shown in the reference image, same straight-on camera and exact outline. This is its FINAL EMPTY state after draining: ALL amber liquid has completely gone, dry grey steel bottom is visible, small bunless brown beef patty lies at bottom. No smoke, no glowing switch, no flowing liquid. Red power switch at right is OFF and the copper drain tap at the very bottom center is open. Keep every cabinet and switch in the same position. Transparent background. No words.",
+      "image_size": {
+        "width": 256,
+        "height": 192
+      },
+      "subscription_generations": 10.0,
+      "returned_png_count": 1
+    },
+    {
+      "name": "Fuse",
+      "job_id": "542b9d51-4335-41ae-9103-678c8d4203f6",
+      "endpoint": "/v2/generate-image-v2",
+      "seed": 711,
+      "description": "Crisp hand-drawn pixel art for DREAMS, a dark atmospheric 2D game. Limited muted palette, sharp single-pixel edges, no smoothing. one small glass electrical fuse with tarnished brass end caps, inventory item sprite, isolated on transparent background, no text.",
+      "image_size": {
+        "width": 64,
+        "height": 64
+      },
+      "subscription_generations": 10.0,
+      "returned_png_count": 16
+    },
+    {
+      "name": "FuseBox",
+      "job_id": "c4adbebe-e537-482d-a6b9-767741025ede",
+      "endpoint": "/v2/generate-image-v2",
+      "seed": 1003,
+      "description": "Crisp pixel art, front view of a small open rusty industrial electrical fuse box, one glass fuse inside two copper clips, loose disconnected wires and a small dark red warning lamp. Empty metal hinged cover on the left. Muted charcoal, brass and burgundy palette, no writing no letters no digits, isolated on transparent background.",
+      "image_size": {
+        "width": 192,
+        "height": 192
+      },
+      "subscription_generations": 10.0,
+      "returned_png_count": 1
+    },
+    {
+      "name": "Kitchen",
+      "job_id": "b118e98b-e6f4-4bdc-85f0-7a058bfddfe0",
+      "endpoint": "/v2/generate-image-v2",
+      "seed": 1627,
+      "description": "Crisp side-on pixel art background for a dark abandoned fast food industrial kitchen, aspect 5:1. Muted dirty steel, grey-green tiled wall, burgundy stripe, six warm pendant lamps, narrow checkerboard floor along the bottom quarter. Broad empty work counter and empty appliance bays on the wall for separately placed interactive fryer, refrigerator and soda dispenser. A closed plain left door and a plain right door at edges. NO large appliances in the central wall, no stove, no fridge, no characters, no text. Exact side-scroller view without a vanishing point. Match the gritty detailed palette of the reference.",
+      "image_size": {
+        "width": 640,
+        "height": 230
+      },
+      "subscription_generations": 25.0,
+      "returned_png_count": 1
+    },
+    {
+      "name": "MedicalRecord",
+      "job_id": "6bb6fe24-792f-499f-9110-3c08e7c68f9c",
+      "endpoint": "/v2/generate-image-v2",
+      "seed": 710,
+      "description": "Crisp hand-drawn pixel art for DREAMS, a dark atmospheric 2D game. Limited muted palette, sharp single-pixel edges, no smoothing. one torn yellowed fragment of an old medical patient record, dark red hospital stamp and a few illegible thin ink lines, frayed edges. Inventory item sprite, isolated, no readable text, transparent background.",
+      "image_size": {
+        "width": 128,
+        "height": 128
+      },
+      "subscription_generations": 10.0,
+      "returned_png_count": 4
+    },
+    {
+      "name": "Mirror",
+      "job_id": "c052bd0b-5d53-4d27-b1d0-eb19a0b5dcba",
+      "endpoint": "/v2/generate-image-v2",
+      "seed": 704,
+      "description": "Crisp hand-drawn pixel art for DREAMS, a dark atmospheric 2D game. Limited muted palette, sharp single-pixel edges, no smoothing. front view of an antique dressing table with a tall dark mirror outlined with warm incandescent bulbs, dirty reflective glass showing an empty shadow, small red stool. Dark abandoned fast food restroom. Single whole object, no person, no lettering.",
+      "image_size": {
+        "width": 192,
+        "height": 256
+      },
+      "subscription_generations": 10.0,
+      "returned_png_count": 1
+    },
+    {
+      "name": "MirrorReveal",
+      "job_id": "c04fc42b-88be-4dd1-9cef-d070500cba1f",
+      "endpoint": "/v2/animate-with-text-v3",
+      "seed": 917,
+      "description": "The dressing table and mirror stay completely stationary. Reflection glass darkens slowly, a shadow fades out and a small faceless brown-haired rag doll wearing dark clothes slowly materializes on the table in front of the mirror. Warm mirror bulbs flicker softly. Fixed camera, no other people, no camera motion.",
+      "image_size": null,
+      "subscription_generations": 6.0,
+      "returned_png_count": 9
+    },
+    {
+      "name": "MirrorRevealV2",
+      "job_id": "28255e0c-9762-4f12-95a9-d0c195fc8aec",
+      "endpoint": "/v2/animate-with-text-v3",
+      "seed": 1217,
+      "description": "Fixed camera and perfectly stationary mirror and furniture. Reflection fades darker. The tiny faceless seated rag doll from the exact end frame slowly appears on the TABLE under the mirror. It remains tiny and seated, with brown hair, dark clothes and completely blank fabric face. No standing human, no movement of the furniture. Smoothly reach the exact provided end frame.",
+      "image_size": null,
+      "subscription_generations": 6.0,
+      "returned_png_count": 9
+    },
+    {
+      "name": "MirrorWithToy",
+      "job_id": "641e6569-8745-4bd3-a23d-66adceb72d07",
+      "endpoint": "/v2/generate-image-v2",
+      "seed": 1332,
+      "description": "The EXACT SAME mirror and dressing table as the first reference, same camera, framing, bulbs, stool and table. A TINY SEATED rag doll from the second reference now sits on the table, below the mirror, as a small collectible toy. The doll has dark brown hair and black clothes, a completely blank smooth beige face with NO EYES NO MOUTH NO NOSE. It is a small soft toy, not a standing person. No human figure in the mirror glass. Fixed geometry. Transparent background. No text.",
+      "image_size": {
+        "width": 192,
+        "height": 256
+      },
+      "subscription_generations": 10.0,
+      "returned_png_count": 1
+    },
+    {
+      "name": "OilDrain",
+      "job_id": "09c50e12-fa5c-4b02-b5a4-967e70a8b163",
+      "endpoint": "/v2/animate-with-text-v3",
+      "seed": 915,
+      "description": "The fryer stays completely still, fixed camera. Turn open the lower copper drain valve. Dirty amber oil drains downward into a dark bucket, oil level steadily falls until the metal vat is empty, smoke fades, a small burger patty at the bottom is revealed. Animate only the oil, steam and valve. No camera movement, no new text.",
+      "image_size": null,
+      "subscription_generations": 6.0,
+      "returned_png_count": 9
+    },
+    {
+      "name": "OilDrainV2",
+      "job_id": "5ee87860-2831-4c43-b7ec-20d1e0042851",
+      "endpoint": "/v2/animate-with-text-v3",
+      "seed": 1215,
+      "description": "Fixed camera and perfectly stationary machine. The lower copper drain valve at the bottom is opened. All amber oil steadily drains from the vat downward through the bottom tap, smoke dissipates, the dry steel bottom and a small beef patty become visible. Smoothly reach the exact provided empty end frame. Do not pour from the switch or side controls. No camera movement.",
+      "image_size": null,
+      "subscription_generations": 6.0,
+      "returned_png_count": 9
+    },
+    {
+      "name": "Pocket",
+      "job_id": "bf00fdb3-2285-48c9-b00f-fe30de1c5fd7",
+      "endpoint": "/v2/generate-image-v2",
+      "seed": 714,
+      "description": "Crisp hand-drawn pixel art for DREAMS, a dark atmospheric 2D game. Limited muted palette, sharp single-pixel edges, no smoothing. empty rectangular dark charcoal blue-grey pocket inventory panel, worn metal frame with three equal empty square compartments arranged horizontally. Subtle gold accent border. GUI inventory panel, NO text NO items, transparent background.",
+      "image_size": {
+        "width": 192,
+        "height": 64
+      },
+      "subscription_generations": 10.0,
+      "returned_png_count": 1
+    },
+    {
+      "name": "Receipt",
+      "job_id": "d2f1fd7d-43b8-4812-bfe8-a731e9bfdc38",
+      "endpoint": "/v2/generate-image-v2",
+      "seed": 1901,
+      "description": "Crisp pixel art of ONE blank aged cream paper fast food order receipt. Vertical rectangular torn paper with a small dark clip at the top, tiny burgundy hamburger pictogram near the upper edge, a short decorative rule under the pictogram, LARGE EMPTY CREAM AREA taking up the central 75 percent of the paper, tiny barcode at very bottom. Paper fills almost the entire image with only 2 pixels of transparent padding. NO text, NO words, NO numbers, NO handwriting anywhere. Front view flat GUI sprite, no perspective. Warm tan and burgundy palette matching the reference. Transparent background.",
+      "image_size": {
+        "width": 192,
+        "height": 288
+      },
+      "subscription_generations": 10.0,
+      "returned_png_count": 1
+    },
+    {
+      "name": "Restroom",
+      "job_id": "4d0ce5a5-5dde-4273-b286-48e237972137",
+      "endpoint": "/v2/generate-image-v2",
+      "seed": 712,
+      "description": "Crisp hand-drawn pixel art for DREAMS, a dark atmospheric 2D game. Limited muted palette, sharp single-pixel edges, no smoothing. side-on 2D platform game background of a deserted fast food employee restroom. Dark stained green grey tiled walls, old sink on the left, a plain closed wooden door at far right, red and cream checkerboard floor along bottom quarter, dim overhead bulbs. Center wall mostly empty for a dressing mirror game object. No characters, no furniture obscuring the floor, no text, no perspective vanishing point.",
+      "image_size": {
+        "width": 384,
+        "height": 216
+      },
+      "subscription_generations": 15.0,
+      "returned_png_count": 1
+    },
+    {
+      "name": "Toy",
+      "job_id": "382c4dac-e6ba-453f-9ce9-0ab03ccea6b0",
+      "endpoint": "/v2/generate-image-v2",
+      "seed": 708,
+      "description": "Crisp hand-drawn pixel art for DREAMS, a dark atmospheric 2D game. Limited muted palette, sharp single-pixel edges, no smoothing. one small eerie seated rag doll wearing dark clothes, brown tousled hair, completely smooth blank fabric face without eyes nose or mouth. Inventory item sprite, isolated, no tray, no text, transparent background.",
+      "image_size": {
+        "width": 128,
+        "height": 128
+      },
+      "subscription_generations": 10.0,
+      "returned_png_count": 4
+    },
+    {
+      "name": "Tray",
+      "job_id": "473d6ea2-8359-46b6-8bbc-bbeebe651931",
+      "endpoint": "/v2/generate-image-v2",
+      "seed": 713,
+      "description": "Crisp hand-drawn pixel art for DREAMS, a dark atmospheric 2D game. Limited muted palette, sharp single-pixel edges, no smoothing. empty rectangular dark burgundy plastic fast food serving tray, viewed slightly from above. Raised red rim, four equal empty black recessed compartments arranged horizontally inside. GUI inventory panel, no food, NO text NO digits, straight clean silhouette, transparent background.",
+      "image_size": {
+        "width": 256,
+        "height": 96
+      },
+      "subscription_generations": 10.0,
+      "returned_png_count": 1
+    }
+  ],
+  "total_subscription_generations": 256.0,
+  "credential_storage": "None. Session-only process memory; process closed after generation."
+}
