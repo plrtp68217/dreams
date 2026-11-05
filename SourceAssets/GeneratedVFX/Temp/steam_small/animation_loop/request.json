@@ -1,0 +1,14 @@
+{
+  "first_frame": {
+    "base64": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAwCAYAAABwrHhvAAAA/klEQVR4nGNgGAWjYKQDRt+QlAF1ANOA2s4w6gCG0ShgGE2ETKPZkGGkF0QslBowvyfuP4ydWLKIka4hMB/Jcmx8moTAfDRLkH1NUwfMx2I4OUFOtShIxGI5zdLAfDKClqoOQAdL121kGDblABO5vnex4v9PNwckIiWu6CB/uDg1HMFEjiZ0R8AwTR2QiJbFkB2B7BiaOYBWjmAhRTE2R6iI/4JbqKAsSv9seOclGyMlocBEqQOQHfHg7usRUBANCQfsOfaRkd4O+D9guYAS34MANRzwX0X8F9j3pFpOLQeQbTnVHECu5VRzACWAiQpmUNQyZmIYYMA06gCGAQYAIWBN9fTEsyoAAAAASUVORK5CYII="
+  },
+  "last_frame": {
+    "base64": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAwCAYAAABwrHhvAAAA/klEQVR4nGNgGAWjYKQDRt+QlAF1ANOA2s4w6gCG0ShgGE2ETKPZkGGkF0QslBowvyfuP4ydWLKIka4hMB/Jcmx8moTAfDRLkH1NUwfMx2I4OUFOtShIxGI5zdLAfDKClqoOQAdL121kGDblABO5vnex4v9PNwckIiWu6CB/uDg1HMFEjiZ0R8AwTR2QiJbFkB2B7BiaOYBWjmAhRTE2R6iI/4JbqKAsSv9seOclGyMlocBEqQOQHfHg7usRUBANCQfsOfaRkd4O+D9guYAS34MANRzwX0X8F9j3pFpOLQeQbTnVHECu5VRzACWAiQpmUNQyZmIYYMA06gCGAQYAIWBN9fTEsyoAAAAASUVORK5CYII="
+  },
+  "action": "Looping kitchen steam VFX, static 32x48 pixel canvas. The same beginning and ending plume is an intentional cyclic boundary, not a still image: animate a gentle continuous upward curl through the intermediate frames and return smoothly to this phase. Keep the emission origin fixed at x16 y42 in EVERY frame. The lower wisp persists while one upper wisp slowly curls and rises then dissolves; new steam joins smoothly. Maintain fairly even visible steam volume, never an abrupt disappearance or sudden bright puff. Tiny one-pixel evolution between frames. End shape and palette must match the supplied reference. No whole-sprite drift, zoom, jitter, black outlines, gradients, glow, background, appliance or other object. Strict hard-edged muted gray and cream pixel clusters, transparent exterior.",
+  "frame_count": 8,
+  "seed": 5112402,
+  "no_background": true,
+  "drift_threshold": 0,
+  "enhance_prompt": false
+}

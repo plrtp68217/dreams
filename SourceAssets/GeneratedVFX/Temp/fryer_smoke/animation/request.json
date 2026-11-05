@@ -1,0 +1,14 @@
+{
+  "first_frame": {
+    "base64": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAwCAYAAABwrHhvAAABfklEQVR4nO2YS2rEMAyGJeHN9BBtB7ooOUDvf4owu04vkSxdXGJQXUt+j6HkhwxJFFufZclOBmCy8PntYyoATfUOJwCcUwBnEprMarGKDUcDWPezLO+/bm77DvfPL2/HUSuhjTkXQHBIEi6Kc6enywVery8elh/NU2CPjrPknnUwXut6y5oagkE6Imf//zqw7Xv0fF1v/tQ2AWys0/B+aOM54KaAJbAtBbAahAQVUwoChXWgqALC0ZesFwSTRZLhoBVH649UXtQCoAQROvXXYTVI1ZELIEKUjDAnIqTYfrI2loy841wgacMirVGqElqdO+W+kGSJ50MwdeKmZHo6Fq7VHZEUG2ql2EsmYXcQNpUbLuR81CWVYjKewXB59pHhINwpi1zyhcRAhaTqKHHcZS+4BzlSuoE1A8QgDtkRAMidSRVSGgVT9LRQFS2iijZ/EqxlvTDVLXWI4VWAyn18VBVg4no4QBdRn27qP88JJss0tm/6d8RpegToBIDJ+gZcrqpkogQVmgAAAABJRU5ErkJggg=="
+  },
+  "action": "Seamless looping heavy dark-gray fryer smoke. Source stays fixed at x16 y42. Dense rounded lobes roll upward slowly, a top lobe breaks apart while a new lower lobe replaces it. Keep overall scale and dark palette stable, no explosive growth, no sudden whole-plume translation. Strict native one-pixel-grid pixel art for DREAMS, a dark abandoned fast-food restaurant at 320x180 native resolution. Effect only, transparent background, hard opaque pixel clusters, limited supplied palette. No anti-aliasing, gradients, dithering, blur, glow, drawn background lighting, characters, text, furniture or other objects. Static camera and fixed canvas; no zoom or global position/scale jitter. ",
+  "frame_count": 8,
+  "seed": 5112601,
+  "no_background": true,
+  "enhance_prompt": false,
+  "last_frame": {
+    "base64": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAwCAYAAABwrHhvAAABfklEQVR4nO2YS2rEMAyGJeHN9BBtB7ooOUDvf4owu04vkSxdXGJQXUt+j6HkhwxJFFufZclOBmCy8PntYyoATfUOJwCcUwBnEprMarGKDUcDWPezLO+/bm77DvfPL2/HUSuhjTkXQHBIEi6Kc6enywVery8elh/NU2CPjrPknnUwXut6y5oagkE6Imf//zqw7Xv0fF1v/tQ2AWys0/B+aOM54KaAJbAtBbAahAQVUwoChXWgqALC0ZesFwSTRZLhoBVH649UXtQCoAQROvXXYTVI1ZELIEKUjDAnIqTYfrI2loy841wgacMirVGqElqdO+W+kGSJ50MwdeKmZHo6Fq7VHZEUG2ql2EsmYXcQNpUbLuR81CWVYjKewXB59pHhINwpi1zyhcRAhaTqKHHcZS+4BzlSuoE1A8QgDtkRAMidSRVSGgVT9LRQFS2iijZ/EqxlvTDVLXWI4VWAyn18VBVg4no4QBdRn27qP88JJss0tm/6d8RpegToBIDJ+gZcrqpkogQVmgAAAABJRU5ErkJggg=="
+  },
+  "drift_threshold": 0
+}

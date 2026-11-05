@@ -1,0 +1,14 @@
+{
+  "first_frame": {
+    "base64": "iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAUElEQVR4nO3awQnAIBAEwMOW04eQllJJCrAHgz+xgQs6A/vZ1xawEQCHaO/TR+au5M0BAOAMd736SPxMyR4AAAAAAAAASdpyIwMAAAAAiI18QigPzkcOrBUAAAAASUVORK5CYII="
+  },
+  "action": "Seamless looping pale dust motes visible in an already lit room. Twelve tiny particles drift independently on very short slow paths, at most one pixel per frame, preserving count and pixel size. No synchronized whole-field movement or abrupt blinking. Return to the supplied cyclic arrangement. Absolutely no painted illumination or glow. Strict native one-pixel-grid pixel art for DREAMS, a dark abandoned fast-food restaurant at 320x180 native resolution. Effect only, transparent background, hard opaque pixel clusters, limited supplied palette. No anti-aliasing, gradients, dithering, blur, glow, drawn background lighting, characters, text, furniture or other objects. Static camera and fixed canvas; no zoom or global position/scale jitter. ",
+  "frame_count": 12,
+  "seed": 5112609,
+  "no_background": true,
+  "enhance_prompt": false,
+  "last_frame": {
+    "base64": "iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAUElEQVR4nO3awQnAIBAEwMOW04eQllJJCrAHgz+xgQs6A/vZ1xawEQCHaO/TR+au5M0BAOAMd736SPxMyR4AAAAAAAAASdpyIwMAAAAAiI18QigPzkcOrBUAAAAASUVORK5CYII="
+  },
+  "drift_threshold": 0
+}

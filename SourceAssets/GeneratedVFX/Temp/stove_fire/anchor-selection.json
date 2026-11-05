@@ -1,0 +1,12 @@
+{
+  "candidate": 1,
+  "integer_translation": [
+    1,
+    -2
+  ],
+  "emission_anchor": [
+    16,
+    20
+  ],
+  "scaling": false
+}

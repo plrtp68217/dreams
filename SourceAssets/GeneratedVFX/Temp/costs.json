@@ -1,0 +1,235 @@
+{
+  "stages": [
+    {
+      "stage": "Temp\\electric_sparks\\anchor",
+      "usd_equivalent": 0.08,
+      "billing_usage": {
+        "usd": 0.0,
+        "type": "generations",
+        "generations": 10
+      }
+    },
+    {
+      "stage": "Temp\\electric_sparks\\animation",
+      "usd_equivalent": 0.028047094881534576,
+      "billing_usage": {
+        "type": "generations",
+        "generations": 1.0
+      }
+    },
+    {
+      "stage": "Temp\\falling_leaves\\anchor",
+      "usd_equivalent": 0.08,
+      "billing_usage": {
+        "usd": 0.0,
+        "type": "generations",
+        "generations": 10
+      }
+    },
+    {
+      "stage": "Temp\\falling_leaves\\animation",
+      "usd_equivalent": 0.03690187304549747,
+      "billing_usage": {
+        "type": "generations",
+        "generations": 1.0
+      }
+    },
+    {
+      "stage": "Temp\\falling_leaves\\animation_fall",
+      "usd_equivalent": 0.027324742641713883,
+      "billing_usage": {
+        "type": "generations",
+        "generations": 1.0
+      }
+    },
+    {
+      "stage": "Temp\\floating_dust\\anchor",
+      "usd_equivalent": 0.08,
+      "billing_usage": {
+        "usd": 0.0,
+        "type": "generations",
+        "generations": 10
+      }
+    },
+    {
+      "stage": "Temp\\floating_dust\\animation",
+      "usd_equivalent": 0,
+      "billing_usage": null
+    },
+    {
+      "stage": "Temp\\floating_dust\\animation_matte",
+      "usd_equivalent": 0.039546361790763006,
+      "billing_usage": {
+        "type": "generations",
+        "generations": 1.0
+      }
+    },
+    {
+      "stage": "Temp\\floating_dust_light\\anchor",
+      "usd_equivalent": 0.08,
+      "billing_usage": {
+        "usd": 0.0,
+        "type": "generations",
+        "generations": 10
+      }
+    },
+    {
+      "stage": "Temp\\floating_dust_light\\animation",
+      "usd_equivalent": 0,
+      "billing_usage": null
+    },
+    {
+      "stage": "Temp\\floating_dust_light\\animation_matte",
+      "usd_equivalent": 0.031692942122618355,
+      "billing_usage": {
+        "type": "generations",
+        "generations": 1.0
+      }
+    },
+    {
+      "stage": "Temp\\fryer_smoke\\anchor",
+      "usd_equivalent": 0.08,
+      "billing_usage": {
+        "usd": 0.0,
+        "type": "generations",
+        "generations": 10
+      }
+    },
+    {
+      "stage": "Temp\\fryer_smoke\\animation",
+      "usd_equivalent": 0.022960484478208754,
+      "billing_usage": {
+        "type": "generations",
+        "generations": 1.0
+      }
+    },
+    {
+      "stage": "Temp\\light_flicker\\anchor",
+      "usd_equivalent": 0.08,
+      "billing_usage": {
+        "usd": 0.0,
+        "type": "generations",
+        "generations": 10
+      }
+    },
+    {
+      "stage": "Temp\\light_flicker\\animation",
+      "usd_equivalent": 0.037706440627574916,
+      "billing_usage": {
+        "type": "generations",
+        "generations": 1.0
+      }
+    },
+    {
+      "stage": "Temp\\screen_flicker\\anchor",
+      "usd_equivalent": 0.08,
+      "billing_usage": {
+        "usd": 0.0,
+        "type": "generations",
+        "generations": 10
+      }
+    },
+    {
+      "stage": "Temp\\screen_flicker\\animation",
+      "usd_equivalent": 0.02478040179941389,
+      "billing_usage": {
+        "type": "generations",
+        "generations": 1.0
+      }
+    },
+    {
+      "stage": "Temp\\steam_large\\anchor",
+      "usd_equivalent": 0.08,
+      "billing_usage": {
+        "usd": 0.0,
+        "type": "generations",
+        "generations": 10
+      }
+    },
+    {
+      "stage": "Temp\\steam_large\\animation",
+      "usd_equivalent": 0.030394820418622757,
+      "billing_usage": {
+        "type": "generations",
+        "generations": 1.0
+      }
+    },
+    {
+      "stage": "Temp\\steam_small\\anchor",
+      "usd_equivalent": 0.08,
+      "billing_usage": {
+        "usd": 0.0,
+        "type": "generations",
+        "generations": 10
+      }
+    },
+    {
+      "stage": "Temp\\steam_small\\animation",
+      "usd_equivalent": 0.023736930496162836,
+      "billing_usage": {
+        "type": "generations",
+        "generations": 1.0
+      }
+    },
+    {
+      "stage": "Temp\\steam_small\\animation_loop",
+      "usd_equivalent": 0.03136075485414929,
+      "billing_usage": {
+        "type": "generations",
+        "generations": 1.0
+      }
+    },
+    {
+      "stage": "Temp\\stove_fire\\anchor",
+      "usd_equivalent": 0.08,
+      "billing_usage": {
+        "usd": 0.0,
+        "type": "generations",
+        "generations": 10
+      }
+    },
+    {
+      "stage": "Temp\\stove_fire\\animation",
+      "usd_equivalent": 0.02375805252128177,
+      "billing_usage": {
+        "type": "generations",
+        "generations": 1.0
+      }
+    },
+    {
+      "stage": "Temp\\water_drip\\anchor",
+      "usd_equivalent": 0.08,
+      "billing_usage": {
+        "usd": 0.0,
+        "type": "generations",
+        "generations": 10
+      }
+    },
+    {
+      "stage": "Temp\\water_drip\\animation",
+      "usd_equivalent": 0.022566043615341185,
+      "billing_usage": {
+        "type": "generations",
+        "generations": 1.0
+      }
+    },
+    {
+      "stage": "Temp\\window_fog\\anchor",
+      "usd_equivalent": 0.08,
+      "billing_usage": {
+        "usd": 0.0,
+        "type": "generations",
+        "generations": 10
+      }
+    },
+    {
+      "stage": "Temp\\window_fog\\animation",
+      "usd_equivalent": 0.028085167348384857,
+      "billing_usage": {
+        "type": "generations",
+        "generations": 1.0
+      }
+    }
+  ],
+  "usd_equivalent_estimate": 1.3688621106412675
+}

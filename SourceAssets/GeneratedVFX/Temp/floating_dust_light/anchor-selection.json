@@ -1,0 +1,17 @@
+{
+  "source": "floating_dust/first_frame.png",
+  "reason": "All 16 light dust anchor variants were erased by API background removal",
+  "method": "Recolor existing API-generated particle layout to light palette; animate separately",
+  "rgb_mapping": {
+    "(77, 84, 100)": [
+      145,
+      142,
+      115
+    ],
+    "(145, 142, 115)": [
+      236,
+      224,
+      194
+    ]
+  }
+}

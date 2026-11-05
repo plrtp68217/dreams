@@ -1,0 +1,68 @@
+{
+  "seed": 5112602,
+  "type": "message_done",
+  "usage": {
+    "usd": 0.0,
+    "type": "generations",
+    "generations": 1,
+    "cost_if_paid": 0.022566043615341185
+  },
+  "images": [
+    {
+      "type": "base64",
+      "base64": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAgCAYAAAAbifjMAAAAY0lEQVR4nGNkYGBgsHMNZSAXMJGtc0gZ8J8SA/4He8rhNYSJCM0M+AxhIuAChuggf7zyTIQMWLpuI155FjxyjGu3P0J2NiOpBuDUNPQSEl7AxEAhYBo1gGE0DBiGQxiMgsEAAFQmDoETPdJMAAAAAElFTkSuQmCC",
+      "format": "png"
+    },
+    {
+      "type": "base64",
+      "base64": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAgCAYAAAAbifjMAAAAd0lEQVR4nGPUM3VhoAQwUaR71IChEogCAoL/yTZAQEDwf7CnHF5DmAi5IDrIH688Ez7b183OBbNBNC5XMDFQCJhwSXz48J4xKHUymA2iQXxs6hjx5UZkZ+MygAWf83BpGmIpkRBgIqhi1ACCgImwklEDCIFhEIgAlMobpWYaecgAAAAASUVORK5CYII=",
+      "format": "png"
+    },
+    {
+      "type": "base64",
+      "base64": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAgCAYAAAAbifjMAAAAa0lEQVR4nGPUM3VhoAQwUaR71AAwYGKgEDCNGsBAuzC4dHoPg4CA4H8YJtkAO9dQsKZ1s3PJcwFMc1DqZAZ8gBFfdoY5/cOH94y41LDgMx2fRhhgIqRg1ADCgIkINaMGEABMhBSMGsBAEAAAT/kU1X3iJd4AAAAASUVORK5CYII=",
+      "format": "png"
+    },
+    {
+      "type": "base64",
+      "base64": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAgCAYAAAAbifjMAAAAUklEQVR4nGPUM3VhoAQwUaR71AAwYGKgEDCNGsAwGgYMNA4DAQHB/yBMlgECBDQS5YJgTznKDCAGMOGS+PDhPePa7Y8IuoJxtFBlGM2NDMMhDABygAunDlr6nwAAAABJRU5ErkJggg==",
+      "format": "png"
+    },
+    {
+      "type": "base64",
+      "base64": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAgCAYAAAAbifjMAAAAW0lEQVR4nGPUM3VhoAQwUaR71AAwYGKgEDCNGsAwGgYMo2HAMBoGeMNAQEDwPwiTVaAIQDWum50LZ5NcIq2bnUuf7MyIq2qDOf3Dh/eM+AxgwSVBSCMMDIMSCQAqnxCL/N8fwwAAAABJRU5ErkJggg==",
+      "format": "png"
+    },
+    {
+      "type": "base64",
+      "base64": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAgCAYAAAAbifjMAAAAfUlEQVR4nGPUM3VhoAQwUaR71AAwYGKgEDCNGsAwGgYMo2HAMKjDQEBA8D8ID4wLBAQE/6+bncsAwoRcwYheL4A0fPjwnpGQGFYXCEBtRgf4XMKEzAHZEpQ6mWHf6jq4YhAbJIbLBYzYqjZ023BpBgEWbIL4NKCDQZwSiQUAVBQs/Sjt9IAAAAAASUVORK5CYII=",
+      "format": "png"
+    },
+    {
+      "type": "base64",
+      "base64": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAgCAYAAAAbifjMAAAATklEQVR4nGPUM3VhoAQwUaR71AAwYGKgEDCNGsAwGgYMo2HAMOjDQEBA8D9FBnz48J6RIgOIAUxUNUAAj59xyTER62dcckwMFAKmUQMYADrQDOeshTApAAAAAElFTkSuQmCC",
+      "format": "png"
+    },
+    {
+      "type": "base64",
+      "base64": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAgCAYAAAAbifjMAAAAM0lEQVR4nGPUM3VhoAQwUaR71AAwYGKgEDCNGsAwGgYMo2HAMBoGo2EAAUwMFAKmUQMYAFf2AOeoaCHJAAAAAElFTkSuQmCC",
+      "format": "png"
+    },
+    {
+      "type": "base64",
+      "base64": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAgCAYAAAAbifjMAAAAM0lEQVR4nGPUM3VhoAQwUaR71AAwYGKgEDCNGsAwGgYMo2HAMBoGo2EAAUwMFAKmUQMYAFf2AOeoaCHJAAAAAElFTkSuQmCC",
+      "format": "png"
+    }
+  ],
+  "status": "completed",
+  "progress": 0.8,
+  "flow_kind": "animation",
+  "billing_usage": {
+    "type": "generations",
+    "generations": 1.0
+  },
+  "generation_id": "0d9cd3e5-1b83-4c66-8189-d43a3787aeec",
+  "queue_position": 0,
+  "billing_charged": true,
+  "generation_started_at": "2026-11-05T11:12:20.421573+00:00"
+}

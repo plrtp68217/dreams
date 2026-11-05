@@ -1,0 +1,11 @@
+{
+  "first_frame": {
+    "base64": "iVBORw0KGgoAAAANSUhEUgAAADAAAABACAYAAABcIPRGAAABCElEQVR4nO3ZQWrDMBRF0eeLRx12DV1XN9BR9us1ZJipSigJJaPIia1/mx4wnkj4PyTBF54OX58xI3JEjsgROSJH5IgckSNy5MUCtIgDtJt3CUSOlfPaX1iBlgKIHA/Ob6YAU8UQdI6fOoLtYl4xZ2jBt17+EA9H5IgckSNyRI7IETlSV7MH2KwX2lrrGVxtBdrH+1vOjzFA6ym8YoCr5Xi6u22fK+375afwrjtHlQDT2oklt1CP/wCjETkiR+SIHJEjckSOQd9t1gDtV9v8lBBz9X5/dIDNf36wR5t8uSZe+v2eC0uFLTQtx9N1JZ5Z/J5nYLO/OkSOyBE5IkfkiByRI3KMLuBR3yO9JwPa9JBQAAAAAElFTkSuQmCC"
+  },
+  "action": "One continuous downward passage of four tiny dry leaves outside a window. Every leaf must descend through the canvas, about one or two pixels lower on each next frame, with slight independent sideways sway and tiny shape rotations. Do NOT orbit, rise, return to the original arrangement or reverse direction to force a loop. Preserve each leaf size and the static 48x64 camera canvas. Only individual leaves move; no global canvas drift. This is a short non-looping falling passage, not a repeating dance. Strict native one-pixel-grid pixel art for DREAMS, a dark abandoned fast-food restaurant at 320x180 native resolution. Effect only, transparent background, hard opaque pixel clusters, limited supplied palette. No anti-aliasing, gradients, dithering, blur, glow, drawn background lighting, characters, text, furniture or other objects. Static camera and fixed canvas; no zoom or global position/scale jitter. ",
+  "frame_count": 10,
+  "seed": 5112608,
+  "no_background": true,
+  "enhance_prompt": false,
+  "drift_threshold": 0
+}

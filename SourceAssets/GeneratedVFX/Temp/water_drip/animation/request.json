@@ -1,0 +1,11 @@
+{
+  "first_frame": {
+    "base64": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAgCAYAAAAbifjMAAAAY0lEQVR4nGNkYGBgsHMNZSAXMJGtc0gZ8J8SA/4He8rhNYSJCM0M+AxhIuAChuggf7zyTIQMWLpuI155FjxyjGu3P0J2NiOpBuDUNPQSEl7AxEAhYBo1gGE0DBiGQxiMgsEAAFQmDoETPdJMAAAAAElFTkSuQmCC"
+  },
+  "action": "One water-drip cycle, not walking or morphing into an object. Small drop forms at x8 y4, elongates, releases, falls vertically down the fixed x8 axis and hits an invisible surface at y28, splitting into three tiny outward splash pixels that disappear. No camera movement or horizontal drift of the falling drop. Finish quiet with transparent space; playback may pause before repeating. Strict native one-pixel-grid pixel art for DREAMS, a dark abandoned fast-food restaurant at 320x180 native resolution. Effect only, transparent background, hard opaque pixel clusters, limited supplied palette. No anti-aliasing, gradients, dithering, blur, glow, drawn background lighting, characters, text, furniture or other objects. Static camera and fixed canvas; no zoom or global position/scale jitter. ",
+  "frame_count": 8,
+  "seed": 5112602,
+  "no_background": true,
+  "enhance_prompt": false,
+  "drift_threshold": 0
+}

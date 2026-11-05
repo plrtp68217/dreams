@@ -1,0 +1,14 @@
+{
+  "first_frame": {
+    "base64": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAAZElEQVR4nGOUUzFjGEjANKC2M4w6gGHgo4CFgPx/KtnDOGhDgGnEO4AFXwgUZ9nilOuddpigGnS15CRCBnyaiZEnBBgJFMWjuYDmgIn2Vow6YJBHAQu5lciwCQGmUQcwjPQoAADMygz0k/J3ZAAAAABJRU5ErkJggg=="
+  },
+  "action": "A short old-display flicker loop. Keep the rectangular screen footprint absolutely locked. A few thin horizontal scan bars briefly shift by one pixel, dim and reappear in a restrained uneven sequence. No readable text, no moving monitor object, no halo or cast light. Return naturally to the reference display pattern. Strict native one-pixel-grid pixel art for DREAMS, a dark abandoned fast-food restaurant at 320x180 native resolution. Effect only, transparent background, hard opaque pixel clusters, limited supplied palette. No anti-aliasing, gradients, dithering, blur, glow, drawn background lighting, characters, text, furniture or other objects. Static camera and fixed canvas; no zoom or global position/scale jitter. ",
+  "frame_count": 6,
+  "seed": 5112605,
+  "no_background": true,
+  "enhance_prompt": false,
+  "last_frame": {
+    "base64": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAAZElEQVR4nGOUUzFjGEjANKC2M4w6gGHgo4CFgPx/KtnDOGhDgGnEO4AFXwgUZ9nilOuddpigGnS15CRCBnyaiZEnBBgJFMWjuYDmgIn2Vow6YJBHAQu5lciwCQGmUQcwjPQoAADMygz0k/J3ZAAAAABJRU5ErkJggg=="
+  },
+  "drift_threshold": 0
+}

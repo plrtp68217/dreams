@@ -1,0 +1,67 @@
+{
+  "usage": {
+    "type": "generations",
+    "generations": 1.0
+  },
+  "id": "62c9d8ff-87e8-41ef-843f-93f184c9fa4f",
+  "status": "processing",
+  "created_at": "2026-11-05T11:15:21.662920+00:00",
+  "last_response": {
+    "seed": 5112605,
+    "type": "message_done",
+    "usage": {
+      "usd": 0.0,
+      "type": "generations",
+      "generations": 1,
+      "cost_if_paid": 0.02478040179941389
+    },
+    "images": [
+      {
+        "type": "base64",
+        "base64": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAAZElEQVR4nGOUUzFjGEjANKC2M4w6gGHgo4CFgPx/KtnDOGhDgGnEO4AFXwgUZ9nilOuddpigGnS15CRCBnyaiZEnBBgJFMWjuYDmgIn2Vow6YJBHAQu5lciwCQGmUQcwjPQoAADMygz0k/J3ZAAAAABJRU5ErkJggg==",
+        "format": "png"
+      },
+      {
+        "type": "base64",
+        "base64": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAAZElEQVR4nGOUUzFjGEjANKC2M4w6gGHgo4CFgPx/KtnDOGhDgGnEO4AFXwgUZ9nilOuddpigGnS15CRCBnyaiZEnBBgJFMWjuYDmgIn2Vow6YJBHAQu5lciwCQGmUQcwjPQoAADMygz0k/J3ZAAAAABJRU5ErkJggg==",
+        "format": "png"
+      },
+      {
+        "type": "base64",
+        "base64": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAAWElEQVR4nGOUUzFjGEjANKC2M4w6gGHgo4CFgPx/KtnDOGhDgGnUAQyDOREWZ9nilOuddpigGnS12AAjgaJ4NBcM/0TINOoAhkFeGTEO+xBgGnUAw0iPAgCrFQkmGb2gBgAAAABJRU5ErkJggg==",
+        "format": "png"
+      },
+      {
+        "type": "base64",
+        "base64": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAAWElEQVR4nGOUUzFjGEjANKC2M4w6gGHgo4CFgPx/KtnDOGhDgGnUAQyDOREWZ9nilOuddpigGnS12AAjgaJ4NBcM/0TINOoAhkFeGTEO+xBgGnUAw0iPAgCrFQkmGb2gBgAAAABJRU5ErkJggg==",
+        "format": "png"
+      },
+      {
+        "type": "base64",
+        "base64": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAAYUlEQVR4nGOUUzFjGEjANKC2M4w6gGHgo4CFgPx/KtnDOGhDgGnUAQyDOREWZ9nilOuddpigGnS1JDuAkGZi5AkBRgJ1wWg2HP65gGnEO4CF3EpkNAqoBZioZtKoAxjIAwAduAz0IgbOXwAAAABJRU5ErkJggg==",
+        "format": "png"
+      },
+      {
+        "type": "base64",
+        "base64": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAAZElEQVR4nGOUUzFjGEjANKC2M4w6gGHgo4CFgPx/KtnDOGhDgGnEO4AFXwgUZ9nilOuddpigGnS15CRCBnyaiZEnBBgJFMWjuYDmgIn2Vow6YJBHAQu5lciwCQGmUQcwjPQoAADMygz0k/J3ZAAAAABJRU5ErkJggg==",
+        "format": "png"
+      },
+      {
+        "type": "base64",
+        "base64": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAAZElEQVR4nGOUUzFjGEjANKC2M4w6gGHgo4CFgPx/KtnDOGhDgGnEO4AFXwgUZ9nilOuddpigGnS15CRCBnyaiZEnBBgJFMWjuYDmgIn2Vow6YJBHAQu5lciwCQGmUQcwjPQoAADMygz0k/J3ZAAAAABJRU5ErkJggg==",
+        "format": "png"
+      }
+    ],
+    "status": "completed",
+    "progress": 0.8461538461538461,
+    "flow_kind": "animation",
+    "billing_usage": {
+      "type": "generations",
+      "generations": 1.0
+    },
+    "generation_id": "2794a38d-b34f-47a6-976c-f035dd73993f",
+    "queue_position": 0,
+    "billing_charged": true,
+    "generation_started_at": "2026-11-05T11:15:34.917627+00:00"
+  }
+}

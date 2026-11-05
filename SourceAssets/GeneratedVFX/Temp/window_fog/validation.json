@@ -1,0 +1,247 @@
+{
+  "size": [
+    64,
+    48
+  ],
+  "count": 10,
+  "fps": 6,
+  "loop": true,
+  "unique_frames": 10,
+  "palette": [
+    "#4d5464",
+    "#716b5e",
+    "#918e73",
+    "#ece0c2"
+  ],
+  "seam_ratio": 0.9095626389918458,
+  "changes": [
+    499,
+    469,
+    495,
+    326,
+    471,
+    456,
+    498,
+    420,
+    413,
+    409
+  ],
+  "bottom_y_range": 0,
+  "bottom_x_range": 15.655555555555555,
+  "notes": [],
+  "frames": [
+    {
+      "index": 0,
+      "bbox": [
+        0,
+        10,
+        64,
+        37
+      ],
+      "visible_pixels": 537,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "034914ca481bdef0d19ab6698882dd8f081d612fb0e5e7743a6ba1991ff3de50",
+      "bottom_y": 36,
+      "bottom_x": 21.05,
+      "centroid": [
+        29.206703910614525,
+        23.733705772811916
+      ]
+    },
+    {
+      "index": 1,
+      "bbox": [
+        0,
+        10,
+        64,
+        37
+      ],
+      "visible_pixels": 573,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "df2f70bbc251491c02cf15ef39519476fa1852a9f19d0690bf436eb1003e967e",
+      "bottom_y": 36,
+      "bottom_x": 28.210526315789473,
+      "centroid": [
+        31.79232111692845,
+        23.923211169284468
+      ]
+    },
+    {
+      "index": 2,
+      "bbox": [
+        0,
+        10,
+        64,
+        37
+      ],
+      "visible_pixels": 532,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "92b8250caf88caaaba63bace3bc16c3e87f6f4f026028b157bcb9c03211775c9",
+      "bottom_y": 36,
+      "bottom_x": 21.0,
+      "centroid": [
+        31.18421052631579,
+        23.366541353383457
+      ]
+    },
+    {
+      "index": 3,
+      "bbox": [
+        0,
+        10,
+        64,
+        37
+      ],
+      "visible_pixels": 501,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "e42d1ce5837db50dbc80dcb8dfd24a704e5d3870e552c1277039695c7a80ae4e",
+      "bottom_y": 36,
+      "bottom_x": 25.692307692307693,
+      "centroid": [
+        30.96606786427146,
+        23.710578842315368
+      ]
+    },
+    {
+      "index": 4,
+      "bbox": [
+        0,
+        10,
+        64,
+        37
+      ],
+      "visible_pixels": 526,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "09671dad1389baab59a2e0eb5e6a62e73c10d13017da85f709c8e97991d22830",
+      "bottom_y": 36,
+      "bottom_x": 33.72222222222222,
+      "centroid": [
+        31.53041825095057,
+        24.26425855513308
+      ]
+    },
+    {
+      "index": 5,
+      "bbox": [
+        0,
+        10,
+        64,
+        37
+      ],
+      "visible_pixels": 552,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "278289553200421cc83c45d39f92742d8d0711c88459ee71e478f5c5c455c9b7",
+      "bottom_y": 36,
+      "bottom_x": 33.529411764705884,
+      "centroid": [
+        31.653985507246375,
+        24.543478260869566
+      ]
+    },
+    {
+      "index": 6,
+      "bbox": [
+        0,
+        12,
+        64,
+        37
+      ],
+      "visible_pixels": 601,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "32d3ee21f4701afc7d4128824f499afedab43d5d075e595f479b9e5addfe3197",
+      "bottom_y": 36,
+      "bottom_x": 29.5,
+      "centroid": [
+        31.3477537437604,
+        23.938435940099833
+      ]
+    },
+    {
+      "index": 7,
+      "bbox": [
+        0,
+        12,
+        64,
+        37
+      ],
+      "visible_pixels": 495,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "1872d853671e2215444e1bbd23fb9d8b67e17c62afc5995119be5f5b40b474fa",
+      "bottom_y": 36,
+      "bottom_x": 20.055555555555557,
+      "centroid": [
+        28.834343434343435,
+        24.806060606060605
+      ]
+    },
+    {
+      "index": 8,
+      "bbox": [
+        0,
+        10,
+        64,
+        37
+      ],
+      "visible_pixels": 588,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "3ed211c12b4496ee9f67b7c348d5fa82cc5f26e85610b69da5f5f7cb4db13054",
+      "bottom_y": 36,
+      "bottom_x": 20.0,
+      "centroid": [
+        30.110544217687075,
+        23.3656462585034
+      ]
+    },
+    {
+      "index": 9,
+      "bbox": [
+        0,
+        10,
+        64,
+        37
+      ],
+      "visible_pixels": 523,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "fad48dadfa878341c6f28a0e3b7fe15c5ad926bd6570ce8c3b7cc4eb4cece092",
+      "bottom_y": 36,
+      "bottom_x": 18.066666666666666,
+      "centroid": [
+        29.678776290630974,
+        23.434034416826005
+      ]
+    }
+  ],
+  "mask_luminance_curve": null,
+  "emitter_registration_offsets": [],
+  "leaf_registration_offsets": []
+}

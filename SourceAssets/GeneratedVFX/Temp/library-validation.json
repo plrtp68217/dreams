@@ -1,0 +1,749 @@
+{
+  "effects": {
+    "steam_small": {
+      "size": [
+        32,
+        48
+      ],
+      "count": 8,
+      "unique_frames": 8,
+      "fps": 8,
+      "colors": [
+        "#4d5464",
+        "#716b5e",
+        "#918e73",
+        "#ece0c2"
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sheet_size": [
+        256,
+        48
+      ],
+      "loop": true,
+      "seam_ratio": 0.8520461699895069,
+      "mask_derived": false,
+      "frame_files": [
+        {
+          "file": "steam_small\\frames\\frame_000.png",
+          "sha256": "2b01768372a1f9e388ef3b408b67ba4f7d1ae5727d4816759ac925a72e260fae"
+        },
+        {
+          "file": "steam_small\\frames\\frame_001.png",
+          "sha256": "ba3f60b5d2e7f6c084e80f3b1bbe5d3523dd49a2cf3cac8d1a545e054cdc48ed"
+        },
+        {
+          "file": "steam_small\\frames\\frame_002.png",
+          "sha256": "36338621c6ceb45d84975e1ec67f8278d3e521400be4c6accc16b40beda4ea5e"
+        },
+        {
+          "file": "steam_small\\frames\\frame_003.png",
+          "sha256": "729f1ec9f5253f47d832be291223528e2d65bdb21cb911c0b48a0f9e0671b151"
+        },
+        {
+          "file": "steam_small\\frames\\frame_004.png",
+          "sha256": "5110dbd67174ecf19804e4831e4eaa54c453e3cb3c4da6d302ed23f53b0fedf6"
+        },
+        {
+          "file": "steam_small\\frames\\frame_005.png",
+          "sha256": "7df8a3fb2f58555c58c3137338fb60783659b2d13d0eb2ecc2476649448f483c"
+        },
+        {
+          "file": "steam_small\\frames\\frame_006.png",
+          "sha256": "022dfb55527740abd92c1ebf72825166ee3d5e84ad7aea53aac60acdbf1806d6"
+        },
+        {
+          "file": "steam_small\\frames\\frame_007.png",
+          "sha256": "acd3ac67ff98d0e086ddccc65f411292fe159ed9accdaf9adfa53972f4cf96fe"
+        }
+      ]
+    },
+    "steam_large": {
+      "size": [
+        48,
+        64
+      ],
+      "count": 10,
+      "unique_frames": 10,
+      "fps": 8,
+      "colors": [
+        "#4d5464",
+        "#918e73",
+        "#ece0c2"
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sheet_size": [
+        480,
+        64
+      ],
+      "loop": true,
+      "seam_ratio": 1.072721786360893,
+      "mask_derived": false,
+      "frame_files": [
+        {
+          "file": "steam_large\\frames\\frame_000.png",
+          "sha256": "80474225366b2c5408b624ffe08051ee2095a0c59f357916cfef843b077eee5d"
+        },
+        {
+          "file": "steam_large\\frames\\frame_001.png",
+          "sha256": "33fab8e3893c7e2a2acb6c4e8d401c8d0a5ba0e258dbfa87e781c55e43c8bf86"
+        },
+        {
+          "file": "steam_large\\frames\\frame_002.png",
+          "sha256": "ea866237e19919598421bf92cef3f5e19243ec0fba5de192ffcb7e75a065ffc7"
+        },
+        {
+          "file": "steam_large\\frames\\frame_003.png",
+          "sha256": "74063cbaeaf25d1cb17ca4536eb9129e77d96d3d553501e4443200d40c4b434b"
+        },
+        {
+          "file": "steam_large\\frames\\frame_004.png",
+          "sha256": "65da22edb6e3d435426889fc38ca8ed907f5c6ab57241e4b9123f82b877abc94"
+        },
+        {
+          "file": "steam_large\\frames\\frame_005.png",
+          "sha256": "105a144f41f8aebe2c6df2b5e38f5fb5cfccc037dc4953a07e5aea63d52f1122"
+        },
+        {
+          "file": "steam_large\\frames\\frame_006.png",
+          "sha256": "bfe9fdacf35838afb6c46dc19711f46e95c4835979372054edb39a9fde07511e"
+        },
+        {
+          "file": "steam_large\\frames\\frame_007.png",
+          "sha256": "8f55eff7b342d5621ecfac7c9c21681231b96039664b761948b11335d5932f5f"
+        },
+        {
+          "file": "steam_large\\frames\\frame_008.png",
+          "sha256": "cc71e52db7e32e690ccb02ff4df7c9786b2adf396d22d6604403b5b57bf25788"
+        },
+        {
+          "file": "steam_large\\frames\\frame_009.png",
+          "sha256": "31303658fcacff40a475decb1cca862df6aa4b3cac5bf268f1ad5a7bcad976fc"
+        }
+      ]
+    },
+    "stove_fire": {
+      "size": [
+        32,
+        24
+      ],
+      "count": 6,
+      "unique_frames": 6,
+      "fps": 10,
+      "colors": [
+        "#762527",
+        "#9c2020",
+        "#b66e3d",
+        "#e3984c",
+        "#feea9a"
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sheet_size": [
+        192,
+        24
+      ],
+      "loop": true,
+      "seam_ratio": 1.0256410256410255,
+      "mask_derived": false,
+      "frame_files": [
+        {
+          "file": "stove_fire\\frames\\frame_000.png",
+          "sha256": "3d0fa66e4bbbf35a709836c1662286465a19a944156fe83ddad2dd0d37fefb97"
+        },
+        {
+          "file": "stove_fire\\frames\\frame_001.png",
+          "sha256": "2de3b41603cdf8ec9145641ee2e4c4ded574a9761c268f0ab091b1f467d647c5"
+        },
+        {
+          "file": "stove_fire\\frames\\frame_002.png",
+          "sha256": "1157b1ca829efee2d7048bea88ab66da30e467c331764b712b918043bdb80913"
+        },
+        {
+          "file": "stove_fire\\frames\\frame_003.png",
+          "sha256": "199c298822312a004ebe18df82ec9ac05bfecaf410e1f2f9f85b99bfab1128ac"
+        },
+        {
+          "file": "stove_fire\\frames\\frame_004.png",
+          "sha256": "a54282d94051d38208da36635e0d0e56e24750cd94afae122f2e21cc737282b0"
+        },
+        {
+          "file": "stove_fire\\frames\\frame_005.png",
+          "sha256": "b750e658ff6913f7a907d674a48cf3443eceb4ffbcdf5e8658958222c30891e5"
+        }
+      ]
+    },
+    "fryer_smoke": {
+      "size": [
+        32,
+        48
+      ],
+      "count": 8,
+      "unique_frames": 8,
+      "fps": 8,
+      "colors": [
+        "#1e2436",
+        "#3e4555",
+        "#484e5e"
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sheet_size": [
+        256,
+        48
+      ],
+      "loop": true,
+      "seam_ratio": 0.6090584028605482,
+      "mask_derived": false,
+      "frame_files": [
+        {
+          "file": "fryer_smoke\\frames\\frame_000.png",
+          "sha256": "111faa2460f0992f778cf53191b9e0d1f8410b882f1ce1a93b488a83afabb8c1"
+        },
+        {
+          "file": "fryer_smoke\\frames\\frame_001.png",
+          "sha256": "42b9b75c33e8f1b3f788b163be066a1777b6c88fc32eedfafa3ef3f982d0a9cf"
+        },
+        {
+          "file": "fryer_smoke\\frames\\frame_002.png",
+          "sha256": "ffe4676f412caac0c3fed0aeb25851f0cb8b8996d2d9fdcc4ece556c38466289"
+        },
+        {
+          "file": "fryer_smoke\\frames\\frame_003.png",
+          "sha256": "ee3f5a73d6499ee7815191024b5f7ac4250614b0775388d36ad20b8ee5bf81e0"
+        },
+        {
+          "file": "fryer_smoke\\frames\\frame_004.png",
+          "sha256": "bf58ef227d9300d35c530e4acf9074a08048b54f67e0d977950fe2d3825d45c3"
+        },
+        {
+          "file": "fryer_smoke\\frames\\frame_005.png",
+          "sha256": "71f1265ce10d9b2c1b3cf4a85eb566e479a264906140ee149c3c143c2e4d7586"
+        },
+        {
+          "file": "fryer_smoke\\frames\\frame_006.png",
+          "sha256": "3cee88138ace5a3e13a0cf74866fbf34281d076f1d5f597a4be7f66ded1fb6f7"
+        },
+        {
+          "file": "fryer_smoke\\frames\\frame_007.png",
+          "sha256": "3df8a91e1aac0284a174d4cee7e5c3cfae3a1462d106c0ea134c313780dcb3de"
+        }
+      ]
+    },
+    "water_drip": {
+      "size": [
+        16,
+        32
+      ],
+      "count": 8,
+      "unique_frames": 7,
+      "fps": 12,
+      "colors": [
+        "#3e4555",
+        "#918e73",
+        "#ece0c2"
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sheet_size": [
+        128,
+        32
+      ],
+      "loop": false,
+      "seam_ratio": 1.248062015503876,
+      "mask_derived": false,
+      "frame_files": [
+        {
+          "file": "water_drip\\frames\\frame_000.png",
+          "sha256": "49ccf50fe618ec39a8a05c9dd92f3167bba6814b279e7db86c0d830f5a62ae69"
+        },
+        {
+          "file": "water_drip\\frames\\frame_001.png",
+          "sha256": "0bad731fb79480b704efbe2aa8eac305725349ef782144575d1df3960bd2a8bf"
+        },
+        {
+          "file": "water_drip\\frames\\frame_002.png",
+          "sha256": "db29c5b37d4cd5dce0ad9619fb1a67c5f80769d6e4f4c887256ca232c7d8d289"
+        },
+        {
+          "file": "water_drip\\frames\\frame_003.png",
+          "sha256": "ae1f30f25a0774f2cb5a13df9c02f1addd140afb1b3da26127dd381fd6bb7328"
+        },
+        {
+          "file": "water_drip\\frames\\frame_004.png",
+          "sha256": "0ec13d3140accecf8a4f8ebdaf723f34683d690ea94f4ec306be11e83c805ba6"
+        },
+        {
+          "file": "water_drip\\frames\\frame_005.png",
+          "sha256": "d3667fa36c358695f839e80f656b46ad8cc6114b7d50f09f5b900423df681884"
+        },
+        {
+          "file": "water_drip\\frames\\frame_006.png",
+          "sha256": "c8c21f8270b94a967fcea4c0241e82f2c9db7cc18a974da68e97b8c81f3dce9c"
+        },
+        {
+          "file": "water_drip\\frames\\frame_007.png",
+          "sha256": "c8c21f8270b94a967fcea4c0241e82f2c9db7cc18a974da68e97b8c81f3dce9c"
+        }
+      ]
+    },
+    "electric_sparks": {
+      "size": [
+        24,
+        24
+      ],
+      "count": 6,
+      "unique_frames": 4,
+      "fps": 16,
+      "colors": [
+        "#e3984c"
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sheet_size": [
+        144,
+        24
+      ],
+      "loop": false,
+      "seam_ratio": 2.323943661971831,
+      "mask_derived": false,
+      "frame_files": [
+        {
+          "file": "electric_sparks\\frames\\frame_000.png",
+          "sha256": "0a01893f20d3a6b2812b89566e4221e7a5796573ffee173a5a2a87d0300ef867"
+        },
+        {
+          "file": "electric_sparks\\frames\\frame_001.png",
+          "sha256": "262dfe81b07e90bd29c4209db4db0755580f384d325d583d8c6a76eb225153c3"
+        },
+        {
+          "file": "electric_sparks\\frames\\frame_002.png",
+          "sha256": "d69e31150507f2d6a441060265a8b9e124f6b4e5cb4393b25423c8a1167bf76a"
+        },
+        {
+          "file": "electric_sparks\\frames\\frame_003.png",
+          "sha256": "73af7a37c0e1c0eb7a127ae402ea438e8e36a98b4ae5612f65400013ce836d17"
+        },
+        {
+          "file": "electric_sparks\\frames\\frame_004.png",
+          "sha256": "73af7a37c0e1c0eb7a127ae402ea438e8e36a98b4ae5612f65400013ce836d17"
+        },
+        {
+          "file": "electric_sparks\\frames\\frame_005.png",
+          "sha256": "73af7a37c0e1c0eb7a127ae402ea438e8e36a98b4ae5612f65400013ce836d17"
+        }
+      ]
+    },
+    "floating_dust": {
+      "size": [
+        64,
+        64
+      ],
+      "count": 12,
+      "unique_frames": 12,
+      "fps": 6,
+      "colors": [
+        "#4d5464",
+        "#918e73"
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sheet_size": [
+        768,
+        64
+      ],
+      "loop": true,
+      "seam_ratio": 0.7818627450980392,
+      "mask_derived": false,
+      "frame_files": [
+        {
+          "file": "floating_dust\\frames\\frame_000.png",
+          "sha256": "d0f8062deafded797a19df9561ed373c42f73e0c8076693988e44db4e16986f5"
+        },
+        {
+          "file": "floating_dust\\frames\\frame_001.png",
+          "sha256": "130b359d205ad79c356eb7b9e45ac737db916689cb9dd032b36415c301995988"
+        },
+        {
+          "file": "floating_dust\\frames\\frame_002.png",
+          "sha256": "4580069ead07fad19ef71f1a1bfdd09759df51a2979e84db20990c5bfa5b29c0"
+        },
+        {
+          "file": "floating_dust\\frames\\frame_003.png",
+          "sha256": "aa1291c57b9a8d41b7a20bc1c79c90fac11f528dacaba692f3b62dd1df734b33"
+        },
+        {
+          "file": "floating_dust\\frames\\frame_004.png",
+          "sha256": "f931eb97294e23fa0cf86f521c158263d2a1fad3c3f3643d5a30f978ac0ac46f"
+        },
+        {
+          "file": "floating_dust\\frames\\frame_005.png",
+          "sha256": "50e5d4297469f22f192a443d69842ab7e4ea1038078785ebea7e09860ad9bedf"
+        },
+        {
+          "file": "floating_dust\\frames\\frame_006.png",
+          "sha256": "015e75d09bd07fe7ef6754acb9a1725f957315d9c991b33b3899b5fd083cd781"
+        },
+        {
+          "file": "floating_dust\\frames\\frame_007.png",
+          "sha256": "f5467b87878da13a74193b3645701bd4201b28e90a8387750f223d4708d365da"
+        },
+        {
+          "file": "floating_dust\\frames\\frame_008.png",
+          "sha256": "8e2a7781e0021e5779310593185306b321b891dfeb4c96cf6e192b997786f4b6"
+        },
+        {
+          "file": "floating_dust\\frames\\frame_009.png",
+          "sha256": "3748bfa45154db61ad7192e5e4c6aea9cabdff2c2dc231e6835cdda56ec76d59"
+        },
+        {
+          "file": "floating_dust\\frames\\frame_010.png",
+          "sha256": "fbb8a1c8db6948fdaec6aa36e2647dc0806a6677266327b51a18ffc2ee824111"
+        },
+        {
+          "file": "floating_dust\\frames\\frame_011.png",
+          "sha256": "6117d50181bd55603053b76dfdfd0366be8ad7d36358fecac6dfaeb8f79ebe1f"
+        }
+      ]
+    },
+    "screen_flicker": {
+      "size": [
+        32,
+        24
+      ],
+      "count": 6,
+      "unique_frames": 3,
+      "fps": 12,
+      "colors": [
+        "#1e2436",
+        "#918e73"
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sheet_size": [
+        192,
+        24
+      ],
+      "loop": true,
+      "seam_ratio": 0.0,
+      "mask_derived": false,
+      "frame_files": [
+        {
+          "file": "screen_flicker\\frames\\frame_000.png",
+          "sha256": "b37b0d7cdd2b3c2b6073ef64d91cd120f7fa7fb85d69eccb02c1e565e7ab9de6"
+        },
+        {
+          "file": "screen_flicker\\frames\\frame_001.png",
+          "sha256": "9885f2b264556d3b286e3512c98246f232175d19aa850771b914e33022e83165"
+        },
+        {
+          "file": "screen_flicker\\frames\\frame_002.png",
+          "sha256": "9885f2b264556d3b286e3512c98246f232175d19aa850771b914e33022e83165"
+        },
+        {
+          "file": "screen_flicker\\frames\\frame_003.png",
+          "sha256": "d301ee9f43e3ea5209bf018553b2fb386765887f739cfddf1b01a09b28f2bbf7"
+        },
+        {
+          "file": "screen_flicker\\frames\\frame_004.png",
+          "sha256": "b37b0d7cdd2b3c2b6073ef64d91cd120f7fa7fb85d69eccb02c1e565e7ab9de6"
+        },
+        {
+          "file": "screen_flicker\\frames\\frame_005.png",
+          "sha256": "b37b0d7cdd2b3c2b6073ef64d91cd120f7fa7fb85d69eccb02c1e565e7ab9de6"
+        }
+      ]
+    },
+    "light_flicker": {
+      "size": [
+        16,
+        16
+      ],
+      "count": 8,
+      "unique_frames": 8,
+      "fps": 12,
+      "colors": [
+        "#ffffff"
+      ],
+      "alpha": [
+        0,
+        40,
+        64,
+        111,
+        140,
+        163,
+        198,
+        234
+      ],
+      "sheet_size": [
+        128,
+        16
+      ],
+      "loop": true,
+      "seam_ratio": 1.0,
+      "mask_derived": true,
+      "frame_files": [
+        {
+          "file": "light_flicker\\frames\\frame_000.png",
+          "sha256": "7a148ed5c7d1e77de33ddf1f1b04de067ac9b15a58c58298c1506c61fbf9c470"
+        },
+        {
+          "file": "light_flicker\\frames\\frame_001.png",
+          "sha256": "450ddc1f790ebf1efa22c74fee109fe453c24de438b0b20c4ad6efc6c8d6ff0f"
+        },
+        {
+          "file": "light_flicker\\frames\\frame_002.png",
+          "sha256": "00cd029f4c4e69bbe76cbcb73430901c7f65977b6ddf55a0a94ef44fa15c987f"
+        },
+        {
+          "file": "light_flicker\\frames\\frame_003.png",
+          "sha256": "98ea4d0cf35db1457214e34f4fb274bca439ae74327d6c9844c2cc0f972c163f"
+        },
+        {
+          "file": "light_flicker\\frames\\frame_004.png",
+          "sha256": "859094b597ae38fc7dcc5adcca6d04efd5b55841d3525144586b736e04e352cf"
+        },
+        {
+          "file": "light_flicker\\frames\\frame_005.png",
+          "sha256": "075cb6fd34f3c0fa260e86177fe002e90da599244861af51508a608ef893462b"
+        },
+        {
+          "file": "light_flicker\\frames\\frame_006.png",
+          "sha256": "cb56a9d5ef3fdbcbe4e44909997d006436a73f5572525745fb594f720ade1ae9"
+        },
+        {
+          "file": "light_flicker\\frames\\frame_007.png",
+          "sha256": "232c2eac760eae604f9dd43352c0b272396b7cfaf220081b54583b6d0cbc2320"
+        }
+      ]
+    },
+    "window_fog": {
+      "size": [
+        64,
+        48
+      ],
+      "count": 10,
+      "unique_frames": 10,
+      "fps": 6,
+      "colors": [
+        "#4d5464",
+        "#716b5e",
+        "#918e73",
+        "#ece0c2"
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sheet_size": [
+        640,
+        48
+      ],
+      "loop": true,
+      "seam_ratio": 0.9095626389918458,
+      "mask_derived": false,
+      "frame_files": [
+        {
+          "file": "window_fog\\frames\\frame_000.png",
+          "sha256": "556ecf566c20c8e055775f9585e242c78f7937c96b1e32dd94d8a65da3c77e34"
+        },
+        {
+          "file": "window_fog\\frames\\frame_001.png",
+          "sha256": "31a969487172f08f562ffbdb9a36c13a66477f935296de90fd3ead60dc946d06"
+        },
+        {
+          "file": "window_fog\\frames\\frame_002.png",
+          "sha256": "6a374170c2b3818b138d7539e6d7e7250db41acd65a3bbd2509092e0269d5e60"
+        },
+        {
+          "file": "window_fog\\frames\\frame_003.png",
+          "sha256": "f1d6e18b71ee912bae6ad472388afc6e56cc2fe35505773c90144cd4e80780d7"
+        },
+        {
+          "file": "window_fog\\frames\\frame_004.png",
+          "sha256": "26491215799c7875a617beceed7d6e8e773f88b44d36444e64c4f4b01f70d6ae"
+        },
+        {
+          "file": "window_fog\\frames\\frame_005.png",
+          "sha256": "91024dd1331ce4eb90e39c2981caf19179e2c7ee246a53a258b561e1ac42d6f2"
+        },
+        {
+          "file": "window_fog\\frames\\frame_006.png",
+          "sha256": "4b92139ff83548d7d6e7c6e286015b9fee345465a537f0a665555508ad813c99"
+        },
+        {
+          "file": "window_fog\\frames\\frame_007.png",
+          "sha256": "08d6e90fd37b997651bee8be20881fddec008977fb4fd8b3f022e5687bdcf42d"
+        },
+        {
+          "file": "window_fog\\frames\\frame_008.png",
+          "sha256": "6d5d53b3a91693e103af51ac0cd2443dabb2397d9f3c24654af92035e69f4a36"
+        },
+        {
+          "file": "window_fog\\frames\\frame_009.png",
+          "sha256": "8adadb89400c28e4cef32160c7a06a0f2ba58ba748b63da53b9056172774a572"
+        }
+      ]
+    },
+    "falling_leaves": {
+      "size": [
+        48,
+        64
+      ],
+      "count": 10,
+      "unique_frames": 10,
+      "fps": 8,
+      "colors": [
+        "#716b5e",
+        "#957d68"
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sheet_size": [
+        480,
+        64
+      ],
+      "loop": false,
+      "seam_ratio": 2.040764331210191,
+      "mask_derived": false,
+      "frame_files": [
+        {
+          "file": "falling_leaves\\frames\\frame_000.png",
+          "sha256": "8740b912432f795f3ff116f8054075b80458f4b2b50fc790736a032fe203540c"
+        },
+        {
+          "file": "falling_leaves\\frames\\frame_001.png",
+          "sha256": "7493048d252a73c353df6e10e72dc935ed569a8812dc840e8120bc37420b2d81"
+        },
+        {
+          "file": "falling_leaves\\frames\\frame_002.png",
+          "sha256": "7c238d853a656ed061f8e49dbc5594cd37956f2f827e6dc2a4f3df225a386c98"
+        },
+        {
+          "file": "falling_leaves\\frames\\frame_003.png",
+          "sha256": "afc32139d2a8f11274cb3619ad21c500b9e7e57fdcd52a69593569137b3e76ed"
+        },
+        {
+          "file": "falling_leaves\\frames\\frame_004.png",
+          "sha256": "c74061b962a278ad4e4b576f8fda4124710dc69a812c7470471f8253c100fc6f"
+        },
+        {
+          "file": "falling_leaves\\frames\\frame_005.png",
+          "sha256": "10356512ed7a6b86f1ca04484278105e62bbbd9a19d51f11daf3f973b3866a97"
+        },
+        {
+          "file": "falling_leaves\\frames\\frame_006.png",
+          "sha256": "8ab6679ee1c0d1a2ceb76d8b9debc3334de5465a5052d46cd4b82915d757665e"
+        },
+        {
+          "file": "falling_leaves\\frames\\frame_007.png",
+          "sha256": "57cb31e95949aa495194defc8f36c75f34d2f9733b2d2cf93d2364de68c2a9e1"
+        },
+        {
+          "file": "falling_leaves\\frames\\frame_008.png",
+          "sha256": "475a66dfa35da530fb8f0bdfcdb226cb0e9ba3e959be6534ae3d820fca0b1183"
+        },
+        {
+          "file": "falling_leaves\\frames\\frame_009.png",
+          "sha256": "047d6a0a94b8a4e3ac0ee704a7f0f6412d5f6a6a78da3420d030192b2f244a2e"
+        }
+      ]
+    },
+    "floating_dust_light": {
+      "size": [
+        64,
+        64
+      ],
+      "count": 12,
+      "unique_frames": 12,
+      "fps": 6,
+      "colors": [
+        "#918e73",
+        "#ece0c2"
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sheet_size": [
+        768,
+        64
+      ],
+      "loop": true,
+      "seam_ratio": 0.7818627450980392,
+      "mask_derived": false,
+      "frame_files": [
+        {
+          "file": "floating_dust_light\\frames\\frame_000.png",
+          "sha256": "cc684f24ae18d8f6ad3da2c5254fd3163ec8cb083958978ff4e38aa2a25fbc96"
+        },
+        {
+          "file": "floating_dust_light\\frames\\frame_001.png",
+          "sha256": "6b5c0676d833850cd238c3fffa0cdfb8de54f3256cd06c94454e8ea537fc502d"
+        },
+        {
+          "file": "floating_dust_light\\frames\\frame_002.png",
+          "sha256": "416d39d977b972c6254590e3f83a0452c732ce24521e9234732297c4f117b17e"
+        },
+        {
+          "file": "floating_dust_light\\frames\\frame_003.png",
+          "sha256": "135e9002ef8c30fd4fdbc95ac4a9abe3f01cd949c7600fafe41c9d4e411d346a"
+        },
+        {
+          "file": "floating_dust_light\\frames\\frame_004.png",
+          "sha256": "6bd4f8b9b6453539d7fc1f8ea5589885a452137391c3fc28cc7c07dffaf10694"
+        },
+        {
+          "file": "floating_dust_light\\frames\\frame_005.png",
+          "sha256": "40aa1fc798f5d3657cf302d6142ed99f4ea7b07a2dd4dbe975e9ab4d03e16e87"
+        },
+        {
+          "file": "floating_dust_light\\frames\\frame_006.png",
+          "sha256": "6b6ba2d4d5cf7933b79ca8e851051d2109112e6e63301fdfc914761c32795027"
+        },
+        {
+          "file": "floating_dust_light\\frames\\frame_007.png",
+          "sha256": "a4c8939a83028eec454ce5a57dbab2604b08cd7e3f757454888fc3dbab065cd0"
+        },
+        {
+          "file": "floating_dust_light\\frames\\frame_008.png",
+          "sha256": "0576a792050981d794e0bba30b350aba2099414f0877fc5208659a2e758b426a"
+        },
+        {
+          "file": "floating_dust_light\\frames\\frame_009.png",
+          "sha256": "f9900f2b0e45c75e49cbc86dcce60395469801fcf9e34a2695fdabe12e71b597"
+        },
+        {
+          "file": "floating_dust_light\\frames\\frame_010.png",
+          "sha256": "74500312570acc1ca3e69e83db6d44583a39866c8721bc166e50738d7fb40298"
+        },
+        {
+          "file": "floating_dust_light\\frames\\frame_011.png",
+          "sha256": "ba06ac29ad7e92d6b7bf020a72b367a2756e12adbb809385a9eeee15071ac9d7"
+        }
+      ]
+    }
+  },
+  "approved_tests_unchanged": true,
+  "frame_count": 104,
+  "usd_equivalent_estimate": 1.3688621106412675
+}

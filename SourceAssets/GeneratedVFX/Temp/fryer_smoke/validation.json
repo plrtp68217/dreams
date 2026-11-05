@@ -1,0 +1,237 @@
+{
+  "size": [
+    32,
+    48
+  ],
+  "count": 8,
+  "fps": 8,
+  "loop": true,
+  "unique_frames": 8,
+  "palette": [
+    "#1e2436",
+    "#3e4555",
+    "#484e5e"
+  ],
+  "seam_ratio": 0.6090584028605482,
+  "changes": [
+    149,
+    90,
+    171,
+    163,
+    69,
+    49,
+    148,
+    73
+  ],
+  "bottom_y_range": 0,
+  "bottom_x_range": 1.0,
+  "notes": [
+    "Emission origin stabilized by integer-only translation of each generated frame to the requested fixed source. No scaling, blur, interpolation or redraw. Per-frame offsets recorded in validation.json; untouched originals remain in Temp."
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "bbox": [
+        4,
+        9,
+        28,
+        43
+      ],
+      "visible_pixels": 489,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "e9bee42de5cc8637132aa27391e3e1ba0e78157ca7e3e7aa1a1cb5b231381839",
+      "bottom_y": 42,
+      "bottom_x": 15.5,
+      "centroid": [
+        15.114519427402863,
+        22.848670756646218
+      ]
+    },
+    {
+      "index": 1,
+      "bbox": [
+        4,
+        10,
+        28,
+        43
+      ],
+      "visible_pixels": 486,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "142a09249997e91139e0293cd9f462c3ea2972b28dc8b343dbc23b791029b6eb",
+      "bottom_y": 42,
+      "bottom_x": 15.5,
+      "centroid": [
+        15.055555555555555,
+        23.65432098765432
+      ]
+    },
+    {
+      "index": 2,
+      "bbox": [
+        4,
+        10,
+        28,
+        43
+      ],
+      "visible_pixels": 484,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "b4dd34dbbef550fe0951f3d0044fb8b2f4712955a0c535d0d42b8131efd6941d",
+      "bottom_y": 42,
+      "bottom_x": 16.0,
+      "centroid": [
+        15.24586776859504,
+        23.320247933884296
+      ]
+    },
+    {
+      "index": 3,
+      "bbox": [
+        5,
+        11,
+        28,
+        43
+      ],
+      "visible_pixels": 465,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "8aa95ae6c2b8d5eade18ae67c865f7e17843e08fcf16c8d46cbd3ab95ba4812e",
+      "bottom_y": 42,
+      "bottom_x": 16.0,
+      "centroid": [
+        15.298924731182796,
+        24.116129032258065
+      ]
+    },
+    {
+      "index": 4,
+      "bbox": [
+        5,
+        10,
+        28,
+        43
+      ],
+      "visible_pixels": 471,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "74c38a188d84dd765f27944b4a59ee9825f8ec767115bd5cb4968ca0843e3d82",
+      "bottom_y": 42,
+      "bottom_x": 16.0,
+      "centroid": [
+        15.698513800424628,
+        23.651804670912952
+      ]
+    },
+    {
+      "index": 5,
+      "bbox": [
+        5,
+        9,
+        28,
+        43
+      ],
+      "visible_pixels": 485,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "fe651d3d1137ae0c046726d5d64b8113f1adda1a5cb8c015b078062623b6fe9f",
+      "bottom_y": 42,
+      "bottom_x": 16.5,
+      "centroid": [
+        15.835051546391753,
+        23.27422680412371
+      ]
+    },
+    {
+      "index": 6,
+      "bbox": [
+        6,
+        9,
+        28,
+        43
+      ],
+      "visible_pixels": 476,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "817f510a4ddad0651eef0b424b2626945dae0d84de3dd9b14fb80eb8e659aaac",
+      "bottom_y": 42,
+      "bottom_x": 16.5,
+      "centroid": [
+        15.970588235294118,
+        23.300420168067227
+      ]
+    },
+    {
+      "index": 7,
+      "bbox": [
+        5,
+        9,
+        28,
+        43
+      ],
+      "visible_pixels": 481,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "3ee140b7679eff8aababd5cd6809a47d36215cd956aa3b715225c0b99bb86c2d",
+      "bottom_y": 42,
+      "bottom_x": 15.5,
+      "centroid": [
+        15.284823284823284,
+        22.7983367983368
+      ]
+    }
+  ],
+  "mask_luminance_curve": null,
+  "emitter_registration_offsets": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "leaf_registration_offsets": []
+}

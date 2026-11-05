@@ -1,0 +1,11 @@
+{
+  "first_frame": {
+    "base64": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAABBUlEQVR4nGNkYGBgKFNVZxgowDRgNlPbAQ6eYv8HzAEOZFpONQdQApgG0vdUcQClgIkavveoiWXQ1eLHKkdVBzhgMRRmsXSQH1ie1ChhYiATqP3++R9mMTEOxQVYSLUQZDjI19gshoXG5WsfYUIgPYxUD4HLCAsoBkyk+B4GQIkOGwCFCnLIOHiKYegl2QFqUAOk/GTxWk6MA8lyADJAz2rUUMvEMMCAaaAdwEJIwS1Wdkg22vQYmpg2weXQs+KOlsUowf9s02OEfnpnw8tEZlVGUppksBwB9RWo2IWneJDvD2x/xYhFHfUcwAAp2WD6sOVvRizqqFMUYzEQn+EELR4FDFAAAHrnVcw//elqAAAAAElFTkSuQmCC"
+  },
+  "action": "Seamless looping small yellow-orange gas flame VFX on a fixed 32x24 canvas. The short flame base stays locked at x8..24 y20. Three tongues alternately lean and curl only one or two pixels; their tips fluctuate gently while the base remains stable. Continuous controlled small combustion, no explosive growth, no whole-sprite translation, zoom, disappearance, smoke, sparks or other objects. Last frame must transition naturally back to the first. Strict native hard pixel clusters with flat muted burnt-orange, yellow and cream colors, no black outline, glow, light rays, gradients, antialiasing or background. Keep transparent exterior.",
+  "frame_count": 6,
+  "seed": 5112401,
+  "no_background": true,
+  "drift_threshold": 0,
+  "enhance_prompt": false
+}

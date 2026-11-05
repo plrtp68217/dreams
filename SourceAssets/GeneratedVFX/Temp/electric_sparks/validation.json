@@ -1,0 +1,122 @@
+{
+  "size": [
+    24,
+    24
+  ],
+  "count": 6,
+  "fps": 16,
+  "loop": false,
+  "unique_frames": 4,
+  "palette": [
+    "#e3984c"
+  ],
+  "seam_ratio": 2.323943661971831,
+  "changes": [
+    37,
+    23,
+    11,
+    0,
+    0,
+    33
+  ],
+  "bottom_y_range": 1,
+  "bottom_x_range": 0.16666666666666607,
+  "notes": [
+    "1 opaque pixels mapped to the nearest approved palette color, no dithering, blur or spatial interpolation. Raw API frames retained in Temp."
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "bbox": [
+        7,
+        8,
+        17,
+        16
+      ],
+      "visible_pixels": 33,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "94400614f6d9254338031d7fd8382b0bc57feafe3ddcd875123cfc98dc424563",
+      "bottom_y": 15,
+      "bottom_x": 11.5,
+      "centroid": [
+        11.606060606060606,
+        11.393939393939394
+      ]
+    },
+    {
+      "index": 1,
+      "bbox": [
+        6,
+        7,
+        18,
+        16
+      ],
+      "visible_pixels": 16,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "fafefb39e68108107e7de9999f4ecdb72a17098f393b0c6688aa1a67dd21e332",
+      "bottom_y": 15,
+      "bottom_x": 11.666666666666666,
+      "centroid": [
+        11.625,
+        11.6875
+      ]
+    },
+    {
+      "index": 2,
+      "bbox": [
+        5,
+        7,
+        19,
+        17
+      ],
+      "visible_pixels": 11,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "f3d3eef4c5f88c9802fd0b5a481d19cc8a33928c9972399506e7e59d090d3ac3",
+      "bottom_y": 16,
+      "bottom_x": 11.5,
+      "centroid": [
+        11.636363636363637,
+        11.363636363636363
+      ]
+    },
+    {
+      "index": 3,
+      "bbox": null,
+      "visible_pixels": 0,
+      "alpha_values": [
+        0
+      ],
+      "sha256_pixels": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b"
+    },
+    {
+      "index": 4,
+      "bbox": null,
+      "visible_pixels": 0,
+      "alpha_values": [
+        0
+      ],
+      "sha256_pixels": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b"
+    },
+    {
+      "index": 5,
+      "bbox": null,
+      "visible_pixels": 0,
+      "alpha_values": [
+        0
+      ],
+      "sha256_pixels": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b"
+    }
+  ],
+  "mask_luminance_curve": null,
+  "emitter_registration_offsets": [],
+  "leaf_registration_offsets": []
+}

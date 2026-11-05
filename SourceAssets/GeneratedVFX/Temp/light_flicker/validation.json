@@ -1,0 +1,199 @@
+{
+  "size": [
+    16,
+    16
+  ],
+  "count": 8,
+  "fps": 12,
+  "loop": true,
+  "unique_frames": 8,
+  "palette": [
+    "#ffffff"
+  ],
+  "seam_ratio": 1.0,
+  "changes": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
+  ],
+  "bottom_y_range": 0,
+  "bottom_x_range": 0.0,
+  "notes": [
+    "Technical light mask: API-generated temporal luminance averaged inside the input support, transferred to uniform alpha on that exact static support. No procedural timing curve or missing frames added. Original RGB animation retained in Temp. White RGB, alpha varies per frame; no spatial light painting or gradient."
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "bbox": [
+        3,
+        3,
+        13,
+        13
+      ],
+      "visible_pixels": 100,
+      "alpha_values": [
+        0,
+        64
+      ],
+      "sha256_pixels": "16c04c92d8a186d182c630182673d996685eb7c7defc68de73b45fe3c9a16814",
+      "bottom_y": 12,
+      "bottom_x": 7.5,
+      "centroid": [
+        7.5,
+        7.5
+      ]
+    },
+    {
+      "index": 1,
+      "bbox": [
+        3,
+        3,
+        13,
+        13
+      ],
+      "visible_pixels": 100,
+      "alpha_values": [
+        0,
+        163
+      ],
+      "sha256_pixels": "8254b8d234a2c277fa25aae1de05ea1e8aee4f660875dbe045eb85234acab3a5",
+      "bottom_y": 12,
+      "bottom_x": 7.5,
+      "centroid": [
+        7.5,
+        7.5
+      ]
+    },
+    {
+      "index": 2,
+      "bbox": [
+        3,
+        3,
+        13,
+        13
+      ],
+      "visible_pixels": 100,
+      "alpha_values": [
+        0,
+        234
+      ],
+      "sha256_pixels": "ee5fb42e0071b99bff6a600549a8b33293354c9f2cd35de113314cf9ef52387d",
+      "bottom_y": 12,
+      "bottom_x": 7.5,
+      "centroid": [
+        7.5,
+        7.5
+      ]
+    },
+    {
+      "index": 3,
+      "bbox": [
+        3,
+        3,
+        13,
+        13
+      ],
+      "visible_pixels": 100,
+      "alpha_values": [
+        0,
+        140
+      ],
+      "sha256_pixels": "01cc5c1bdaa1cc212509147e5712cd1529b72830486085600e2e8f9f6ea28323",
+      "bottom_y": 12,
+      "bottom_x": 7.5,
+      "centroid": [
+        7.5,
+        7.5
+      ]
+    },
+    {
+      "index": 4,
+      "bbox": [
+        3,
+        3,
+        13,
+        13
+      ],
+      "visible_pixels": 100,
+      "alpha_values": [
+        0,
+        198
+      ],
+      "sha256_pixels": "8fa189da9be6393c86864e28edb0328f3ad3e9dfeb558313decf085d4ba91576",
+      "bottom_y": 12,
+      "bottom_x": 7.5,
+      "centroid": [
+        7.5,
+        7.5
+      ]
+    },
+    {
+      "index": 5,
+      "bbox": [
+        3,
+        3,
+        13,
+        13
+      ],
+      "visible_pixels": 100,
+      "alpha_values": [
+        0,
+        111
+      ],
+      "sha256_pixels": "03b56a3b73b9879595360ac265fe02adf64f5fe5ac44e7fcb868f4ffc278d0bd",
+      "bottom_y": 12,
+      "bottom_x": 7.5,
+      "centroid": [
+        7.5,
+        7.5
+      ]
+    },
+    {
+      "index": 6,
+      "bbox": [
+        3,
+        3,
+        13,
+        13
+      ],
+      "visible_pixels": 100,
+      "alpha_values": [
+        0,
+        40
+      ],
+      "sha256_pixels": "a740c9d5f25edfe002d05447e495730bd5ad15ab9ffbfa49bb2ce361df1fd401",
+      "bottom_y": 12,
+      "bottom_x": 7.5,
+      "centroid": [
+        7.5,
+        7.5
+      ]
+    },
+    {
+      "index": 7,
+      "bbox": null,
+      "visible_pixels": 0,
+      "alpha_values": [
+        0
+      ],
+      "sha256_pixels": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+    }
+  ],
+  "mask_luminance_curve": [
+    64,
+    163,
+    234,
+    140,
+    198,
+    111,
+    40,
+    0
+  ],
+  "emitter_registration_offsets": [],
+  "leaf_registration_offsets": []
+}

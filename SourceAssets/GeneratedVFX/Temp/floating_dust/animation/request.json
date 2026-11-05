@@ -1,0 +1,14 @@
+{
+  "first_frame": {
+    "base64": "iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAtUlEQVR4nOXaIQ7CAAxG4beXee6DxuI4Asec5j6cADK5Mb0tvC+pqWlT9YsO98eTMomTOImTkNv18pkre4AtIyHT6z2sexIncRIncRIncRInce44a46gixh6BhI37jjrJ4aegcRJnMRJnMRJnMRJnMRJnMRJnMRJnMRJnMRJnMRJnMRJnMRJnMS5bqzfyHIHmDY+qf6ZxEmcxEmcxEmcxEmcxEmcxEmcxEmcxEmcxEmcRy9wtC+pCA0Um0BlSAAAAABJRU5ErkJggg=="
+  },
+  "action": "Seamless looping sparse floating dust field. Nine tiny individual motes drift independently by at most one pixel between adjacent frames on slow short curved paths and return to the supplied cyclic arrangement. Keep the particle count and size stable; no common whole-field translation, sudden blinking, growing blobs or random noise. Strict native one-pixel-grid pixel art for DREAMS, a dark abandoned fast-food restaurant at 320x180 native resolution. Effect only, transparent background, hard opaque pixel clusters, limited supplied palette. No anti-aliasing, gradients, dithering, blur, glow, drawn background lighting, characters, text, furniture or other objects. Static camera and fixed canvas; no zoom or global position/scale jitter. ",
+  "frame_count": 12,
+  "seed": 5112604,
+  "no_background": true,
+  "enhance_prompt": false,
+  "last_frame": {
+    "base64": "iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAtUlEQVR4nOXaIQ7CAAxG4beXee6DxuI4Asec5j6cADK5Mb0tvC+pqWlT9YsO98eTMomTOImTkNv18pkre4AtIyHT6z2sexIncRIncRIncRInce44a46gixh6BhI37jjrJ4aegcRJnMRJnMRJnMRJnMRJnMRJnMRJnMRJnMRJnMRJnMRJnMRJnMS5bqzfyHIHmDY+qf6ZxEmcxEmcxEmcxEmcxEmcxEmcxEmcxEmcxEmcRy9wtC+pCA0Um0BlSAAAAABJRU5ErkJggg=="
+  },
+  "drift_threshold": 0
+}

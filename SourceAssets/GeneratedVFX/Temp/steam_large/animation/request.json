@@ -1,0 +1,14 @@
+{
+  "first_frame": {
+    "base64": "iVBORw0KGgoAAAANSUhEUgAAADAAAABACAYAAABcIPRGAAACR0lEQVR4nO1ZS4oCMRCtFO69j2u3gyCzE4SGOYLH8A4NQm8H3Pfa+3iCHiK2E2O6O5VUxS7wgZuYz3tJvUpFAT74IAvm6/sHNANBORCUA0E5EJQDQTkQlANBORCUY1Fqofq470Lt1eFkZnMT+yR7ckPkOUSwhVCI5BRxaj8xAWMEcsixe8Alkxu7bzNxNRPiZAHSoVAnni7ZA9JCqGsgZ7p8BzC24xTJ5vd8+5QGpgzyxaxXS/GwYjOxS94PJa4TqAghGS3Akmsv10HyFrvtJna60XVEQmiKPAcab5PUldO77Ya8ObMSkJIUMGXy1JQZM64hzpv1oOkXmzKvTyp2XJEQopJoL9fB75q7MIqRFzmxGUve9nNP4V/E+aUvNQuRBLiEKbEa6GtJdoHTMLMop4fEeYQHyYZu/SwPDKW1ENEI8qyV6yK2oyXWh9AQSb+dGiL1cd/ZXRd90FhYIVMGTiEPCWUKSUCscVPMWY1UudkhZAmtV8uX9sg0GiTPVRBiZD8TuoBS63+3HGky3xCkELIiqsPpqc0lkFoaNJ4IkQdNf/ncF7g19GHlZigKWufWbS/PGyOVhR4L+p4YKdC60ElSSwb2Ym7ME/VxPzWc7TLDhDEmprL0RIj9aoG5E/giXEOWEIGJ40ysCM8r3ZxOwASMGSOCFYbhL6bgroZIS1SkyDCHcT4QY3BOIPN8T0JKiECheYuJQCgEqRcZghyK/OmBoByoOXxKn4BISCGUgZgfEGQhbmSUXkBaBIJyICgHgnLguwnk4g/FiyBWCafnhAAAAABJRU5ErkJggg=="
+  },
+  "action": "Seamless looping broad kitchen steam. Lower emission stays fixed at x24 y58, while rounded upper wisps slowly curl upward and disperse and new steam joins from below. Keep fairly constant volume. Return to the supplied endpoint phase without abrupt collapse or reappearance. Strict native one-pixel-grid pixel art for DREAMS, a dark abandoned fast-food restaurant at 320x180 native resolution. Effect only, transparent background, hard opaque pixel clusters, limited supplied palette. No anti-aliasing, gradients, dithering, blur, glow, drawn background lighting, characters, text, furniture or other objects. Static camera and fixed canvas; no zoom or global position/scale jitter. ",
+  "frame_count": 10,
+  "seed": 5112600,
+  "no_background": true,
+  "enhance_prompt": false,
+  "last_frame": {
+    "base64": "iVBORw0KGgoAAAANSUhEUgAAADAAAABACAYAAABcIPRGAAACR0lEQVR4nO1ZS4oCMRCtFO69j2u3gyCzE4SGOYLH8A4NQm8H3Pfa+3iCHiK2E2O6O5VUxS7wgZuYz3tJvUpFAT74IAvm6/sHNANBORCUA0E5EJQDQTkQlANBORCUY1Fqofq470Lt1eFkZnMT+yR7ckPkOUSwhVCI5BRxaj8xAWMEcsixe8Alkxu7bzNxNRPiZAHSoVAnni7ZA9JCqGsgZ7p8BzC24xTJ5vd8+5QGpgzyxaxXS/GwYjOxS94PJa4TqAghGS3Akmsv10HyFrvtJna60XVEQmiKPAcab5PUldO77Ya8ObMSkJIUMGXy1JQZM64hzpv1oOkXmzKvTyp2XJEQopJoL9fB75q7MIqRFzmxGUve9nNP4V/E+aUvNQuRBLiEKbEa6GtJdoHTMLMop4fEeYQHyYZu/SwPDKW1ENEI8qyV6yK2oyXWh9AQSb+dGiL1cd/ZXRd90FhYIVMGTiEPCWUKSUCscVPMWY1UudkhZAmtV8uX9sg0GiTPVRBiZD8TuoBS63+3HGky3xCkELIiqsPpqc0lkFoaNJ4IkQdNf/ncF7g19GHlZigKWufWbS/PGyOVhR4L+p4YKdC60ElSSwb2Ym7ME/VxPzWc7TLDhDEmprL0RIj9aoG5E/giXEOWEIGJ40ysCM8r3ZxOwASMGSOCFYbhL6bgroZIS1SkyDCHcT4QY3BOIPN8T0JKiECheYuJQCgEqRcZghyK/OmBoByoOXxKn4BISCGUgZgfEGQhbmSUXkBaBIJyICgHgnLguwnk4g/FiyBWCafnhAAAAABJRU5ErkJggg=="
+  },
+  "drift_threshold": 0
+}

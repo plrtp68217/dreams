@@ -1,0 +1,157 @@
+{
+  "size": [
+    32,
+    24
+  ],
+  "count": 6,
+  "fps": 12,
+  "loop": true,
+  "unique_frames": 3,
+  "palette": [
+    "#1e2436",
+    "#918e73"
+  ],
+  "seam_ratio": 0.0,
+  "changes": [
+    31,
+    0,
+    1,
+    32,
+    0,
+    0
+  ],
+  "bottom_y_range": 0,
+  "bottom_x_range": 0.0,
+  "notes": [],
+  "frames": [
+    {
+      "index": 0,
+      "bbox": [
+        7,
+        5,
+        25,
+        18
+      ],
+      "visible_pixels": 234,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "bbceb9d33def238e376330d6a83116b97f6a1f96d1183da053ae0231cdbbf318",
+      "bottom_y": 17,
+      "bottom_x": 15.5,
+      "centroid": [
+        15.5,
+        11.0
+      ]
+    },
+    {
+      "index": 1,
+      "bbox": [
+        7,
+        5,
+        25,
+        18
+      ],
+      "visible_pixels": 234,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "e2c429a0b3d87905f68a2925a53452186c468fe5a26040e0cae3cfed2c45a127",
+      "bottom_y": 17,
+      "bottom_x": 15.5,
+      "centroid": [
+        15.5,
+        11.0
+      ]
+    },
+    {
+      "index": 2,
+      "bbox": [
+        7,
+        5,
+        25,
+        18
+      ],
+      "visible_pixels": 234,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "e2c429a0b3d87905f68a2925a53452186c468fe5a26040e0cae3cfed2c45a127",
+      "bottom_y": 17,
+      "bottom_x": 15.5,
+      "centroid": [
+        15.5,
+        11.0
+      ]
+    },
+    {
+      "index": 3,
+      "bbox": [
+        7,
+        5,
+        25,
+        18
+      ],
+      "visible_pixels": 234,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "18abaaea863f29796a9d4fc9ffb4ba7d2798eee9d37b8c9e269dae220aacdc81",
+      "bottom_y": 17,
+      "bottom_x": 15.5,
+      "centroid": [
+        15.5,
+        11.0
+      ]
+    },
+    {
+      "index": 4,
+      "bbox": [
+        7,
+        5,
+        25,
+        18
+      ],
+      "visible_pixels": 234,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "bbceb9d33def238e376330d6a83116b97f6a1f96d1183da053ae0231cdbbf318",
+      "bottom_y": 17,
+      "bottom_x": 15.5,
+      "centroid": [
+        15.5,
+        11.0
+      ]
+    },
+    {
+      "index": 5,
+      "bbox": [
+        7,
+        5,
+        25,
+        18
+      ],
+      "visible_pixels": 234,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "bbceb9d33def238e376330d6a83116b97f6a1f96d1183da053ae0231cdbbf318",
+      "bottom_y": 17,
+      "bottom_x": 15.5,
+      "centroid": [
+        15.5,
+        11.0
+      ]
+    }
+  ],
+  "mask_luminance_curve": null,
+  "emitter_registration_offsets": [],
+  "leaf_registration_offsets": []
+}

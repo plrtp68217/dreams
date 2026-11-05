@@ -1,0 +1,14 @@
+{
+  "first_frame": {
+    "base64": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAL0lEQVR4nGNsaGhgoAQwUaSbGgawoPH/E6mPkWouYBo1gGE0DBgwUiI8hQ2dhAQAoEICpanjkukAAAAASUVORK5CYII="
+  },
+  "action": "Technical brightness-mask flicker. Keep the exact same centered square footprint and hard edge on every frame. Change only the uniform gray intensity inside the entire square between dark gray, mid gray and white in an irregular brief dim-bright sequence, returning to the starting level. No movement, no shape change, no texture, no drawn lamp, glow, spotlight or gradient. Strict native one-pixel-grid pixel art for DREAMS, a dark abandoned fast-food restaurant at 320x180 native resolution. Effect only, transparent background, hard opaque pixel clusters, limited supplied palette. No anti-aliasing, gradients, dithering, blur, glow, drawn background lighting, characters, text, furniture or other objects. Static camera and fixed canvas; no zoom or global position/scale jitter. ",
+  "frame_count": 8,
+  "seed": 5112606,
+  "no_background": true,
+  "enhance_prompt": false,
+  "last_frame": {
+    "base64": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAL0lEQVR4nGNsaGhgoAQwUaSbGgawoPH/E6mPkWouYBo1gGE0DBgwUiI8hQ2dhAQAoEICpanjkukAAAAASUVORK5CYII="
+  },
+  "drift_threshold": 1000
+}

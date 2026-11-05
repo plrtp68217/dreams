@@ -1,0 +1,14 @@
+{
+  "first_frame": {
+    "base64": "iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAA00lEQVR4nO3XwUlEMRRG4XNPB9OCIFiHU4FlWISlaSMWo4zgZnDpvHmPk28TyCIJITf8d55OD1+ESZzs0Ovby2Z7zSqBkMvLun5dEjerBOIkTuIkTuIkzv8IE0cmcbNVEHo8P/+Mn+8f7InEzYrCcRIncRIncRInB3IJU7+BKnkBtzArCG1sb92kxM0qgTiJkziJkziJkziJk5C/ukmJmxWF4yTO64k99epbmPUHxEmcxEmcxEmcxHmLRY8UpmYFoTiJkziJkziJkziJkzjvfYB7+wYxux6SbSonHQAAAABJRU5ErkJggg=="
+  },
+  "action": "Seamless looping sparse floating dust field. Nine tiny individual motes drift independently by at most one pixel between adjacent frames on slow short curved paths and return to the supplied cyclic arrangement. Keep the particle count and size stable; no common whole-field translation, sudden blinking, growing blobs or random noise. Keep the exact solid dark plum background #281122 absolutely flat and unchanged. Animate only the tiny contrasting motes. The background is a temporary technical chroma key and will be removed later; never remove the motes or paint any haze, object or illumination. Hard pixel art, no gradients, antialiasing or blur.",
+  "frame_count": 12,
+  "seed": 5112604,
+  "no_background": false,
+  "enhance_prompt": false,
+  "last_frame": {
+    "base64": "iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAA00lEQVR4nO3XwUlEMRRG4XNPB9OCIFiHU4FlWISlaSMWo4zgZnDpvHmPk28TyCIJITf8d55OD1+ESZzs0Ovby2Z7zSqBkMvLun5dEjerBOIkTuIkTuIkzv8IE0cmcbNVEHo8P/+Mn+8f7InEzYrCcRIncRIncRInB3IJU7+BKnkBtzArCG1sb92kxM0qgTiJkziJkziJkziJk5C/ukmJmxWF4yTO64k99epbmPUHxEmcxEmcxEmcxHmLRY8UpmYFoTiJkziJkziJkziJkzjvfYB7+wYxux6SbSonHQAAAABJRU5ErkJggg=="
+  },
+  "drift_threshold": 0
+}

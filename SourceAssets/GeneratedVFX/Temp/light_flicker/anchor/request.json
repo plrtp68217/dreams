@@ -1,0 +1,19 @@
+{
+  "description": "A technical pixel-art luminance mask, not a lamp or scene: one perfectly flat uniform solid medium-light gray 12x12 square centered on a transparent 16x16 canvas. Crisp square edges, no border, no texture, no icon, no light rays, no bulb and no gradient. Only the uniform square mask, four allowed neutral gray intensity levels. Strict native one-pixel-grid pixel art for DREAMS, a dark abandoned fast-food restaurant at 320x180 native resolution. Effect only, transparent background, hard opaque pixel clusters, limited supplied palette. No anti-aliasing, gradients, dithering, blur, glow, drawn background lighting, characters, text, furniture or other objects. Static camera and fixed canvas; no zoom or global position/scale jitter. Canvas exactly 16x16 pixels.",
+  "image_size": {
+    "width": 16,
+    "height": 16
+  },
+  "seed": 5112506,
+  "no_background": true,
+  "target_palette": {
+    "colors": [
+      "#404040",
+      "#808080",
+      "#bfbfbf",
+      "#ffffff"
+    ],
+    "max_colors": 4,
+    "name": "DREAMS light_flicker VFX"
+  }
+}

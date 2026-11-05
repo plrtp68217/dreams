@@ -1,0 +1,11 @@
+{
+  "first_frame": {
+    "base64": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAwCAYAAABwrHhvAAAA/klEQVR4nGNgGAWjYKQDRt+QlAF1ANOA2s4w6gCG0ShgGE2ETKPZkGGkF0QslBowvyfuP4ydWLKIka4hMB/Jcmx8moTAfDRLkH1NUwfMx2I4OUFOtShIxGI5zdLAfDKClqoOQAdL121kGDblABO5vnex4v9PNwckIiWu6CB/uDg1HMFEjiZ0R8AwTR2QiJbFkB2B7BiaOYBWjmAhRTE2R6iI/4JbqKAsSv9seOclGyMlocBEqQOQHfHg7usRUBANCQfsOfaRkd4O+D9guYAS34MANRzwX0X8F9j3pFpOLQeQbTnVHECu5VRzACWAiQpmUNQyZmIYYMA06gCGAQYAIWBN9fTEsyoAAAAASUVORK5CYII="
+  },
+  "action": "Seamless looping small steam VFX, fixed 32x48 canvas and static camera. Narrow emission source stays exactly at bottom center x16 y42. Two light wisps gently curl and rise, upper wisp disperses into transparency while new steam emerges at the same source. Smooth small one-pixel changes between adjacent frames. Keep plume scale, center and origin stable; no whole-sprite translation, no zoom, no sudden bursts or flickering noise. Last frame should lead smoothly back into the first with a similar plume distribution, not a fully vanished ending. Strict hard-edged native pixel clusters, four muted gray and cream tones, no black outlines, gradients, antialiasing, glow, drawn lighting or extra objects. Transparent exterior.",
+  "frame_count": 8,
+  "seed": 5112400,
+  "no_background": true,
+  "drift_threshold": 0,
+  "enhance_prompt": false
+}

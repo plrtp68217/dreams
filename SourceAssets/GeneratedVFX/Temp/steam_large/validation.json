@@ -1,0 +1,289 @@
+{
+  "size": [
+    48,
+    64
+  ],
+  "count": 10,
+  "fps": 8,
+  "loop": true,
+  "unique_frames": 10,
+  "palette": [
+    "#4d5464",
+    "#918e73",
+    "#ece0c2"
+  ],
+  "seam_ratio": 1.072721786360893,
+  "changes": [
+    345,
+    274,
+    295,
+    369,
+    581,
+    422,
+    346,
+    276,
+    406,
+    395
+  ],
+  "bottom_y_range": 0,
+  "bottom_x_range": 0.0,
+  "notes": [
+    "Emission origin stabilized by integer-only translation of each generated frame to the requested fixed source. No scaling, blur, interpolation or redraw. Per-frame offsets recorded in validation.json; untouched originals remain in Temp."
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "bbox": [
+        9,
+        10,
+        39,
+        59
+      ],
+      "visible_pixels": 776,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "430bd0bbfa92ddb6902ca37a8f9a87a0c8c79b20202fc5d2a49f8eb71de4e6be",
+      "bottom_y": 58,
+      "bottom_x": 24.0,
+      "centroid": [
+        23.045103092783506,
+        29.323453608247423
+      ]
+    },
+    {
+      "index": 1,
+      "bbox": [
+        9,
+        8,
+        39,
+        59
+      ],
+      "visible_pixels": 765,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "d7aedb588f528bc1ebae96963d4ccf98d507d4fffb8006cb618386f3587978c8",
+      "bottom_y": 58,
+      "bottom_x": 24.0,
+      "centroid": [
+        23.075816993464052,
+        27.603921568627452
+      ]
+    },
+    {
+      "index": 2,
+      "bbox": [
+        9,
+        6,
+        39,
+        59
+      ],
+      "visible_pixels": 766,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "8a68ff9319e4d374baaad2ccbe1cbddef7e577b7772f232510b2bb7faf384fbc",
+      "bottom_y": 58,
+      "bottom_x": 24.0,
+      "centroid": [
+        22.989556135770236,
+        26.33289817232376
+      ]
+    },
+    {
+      "index": 3,
+      "bbox": [
+        9,
+        6,
+        39,
+        59
+      ],
+      "visible_pixels": 780,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "a253d3fec26728cdd8e48dcf66948fef6104564b565f2bea15dcae454ed2ad25",
+      "bottom_y": 58,
+      "bottom_x": 24.0,
+      "centroid": [
+        22.567948717948717,
+        27.05
+      ]
+    },
+    {
+      "index": 4,
+      "bbox": [
+        9,
+        6,
+        36,
+        59
+      ],
+      "visible_pixels": 719,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "dc99c49f5ed08809538fa71dfee9b138c7b0fe23d20fd7f3700d30d255313192",
+      "bottom_y": 58,
+      "bottom_x": 24.0,
+      "centroid": [
+        21.869262865090402,
+        27.394993045897078
+      ]
+    },
+    {
+      "index": 5,
+      "bbox": [
+        9,
+        11,
+        34,
+        59
+      ],
+      "visible_pixels": 602,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "268aade1b3ef14bd042a12e16c755c81f284fb8ecdbbf45a476ed79c4d70d5cf",
+      "bottom_y": 58,
+      "bottom_x": 24.0,
+      "centroid": [
+        19.996677740863788,
+        32.380398671096344
+      ]
+    },
+    {
+      "index": 6,
+      "bbox": [
+        9,
+        15,
+        36,
+        59
+      ],
+      "visible_pixels": 623,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "f4d2faacf5882579870a724fcb2461836b2fb3beb8af3716949ce33ec545a66f",
+      "bottom_y": 58,
+      "bottom_x": 24.0,
+      "centroid": [
+        20.813804173354736,
+        34.03049759229535
+      ]
+    },
+    {
+      "index": 7,
+      "bbox": [
+        9,
+        16,
+        37,
+        59
+      ],
+      "visible_pixels": 713,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "8e19d530a4384d36a10c84613cf09caa7741f45ec6ab3e9ec0b4a56c42593f70",
+      "bottom_y": 58,
+      "bottom_x": 24.0,
+      "centroid": [
+        21.97194950911641,
+        34.096774193548384
+      ]
+    },
+    {
+      "index": 8,
+      "bbox": [
+        9,
+        14,
+        38,
+        59
+      ],
+      "visible_pixels": 769,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "f715d202cb8a0dd29c3f3ac388d57d1dc9ae663d03809cbcbfa4eb2955e78902",
+      "bottom_y": 58,
+      "bottom_x": 24.0,
+      "centroid": [
+        22.644993498049416,
+        32.98699609882965
+      ]
+    },
+    {
+      "index": 9,
+      "bbox": [
+        9,
+        12,
+        39,
+        59
+      ],
+      "visible_pixels": 779,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "sha256_pixels": "346f63220014614c516cad24c8afd2360cf608eee428fed0f99c7cc123834a18",
+      "bottom_y": 58,
+      "bottom_x": 24.0,
+      "centroid": [
+        23.01540436456996,
+        30.90757381258023
+      ]
+    }
+  ],
+  "mask_luminance_curve": null,
+  "emitter_registration_offsets": [
+    [
+      0,
+      -1
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "leaf_registration_offsets": []
+}

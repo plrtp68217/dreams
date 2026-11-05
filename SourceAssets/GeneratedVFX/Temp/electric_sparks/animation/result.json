@@ -1,0 +1,58 @@
+{
+  "seed": 5112603,
+  "type": "message_done",
+  "usage": {
+    "usd": 0.0,
+    "type": "generations",
+    "generations": 1,
+    "cost_if_paid": 0.028047094881534576
+  },
+  "images": [
+    {
+      "type": "base64",
+      "base64": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAT0lEQVR4nGNkYGBgeDzDh4FWgIlmJkPBqAUEwWgQDa0g+k9rCxjJsYjUIPpPrzj4TysLGNFoqltAclxQkkwZaW0BUWDUAoJgNIgIApoHEQA93Ab3G1cWHQAAAABJRU5ErkJggg==",
+      "format": "png"
+    },
+    {
+      "type": "base64",
+      "base64": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAgUlEQVR4nGM8NCmUgZaAiaamM4xaQAQYjQPKg0iR7ft/cuSItuD+L05GZINgbBB9/xcnIe0MLARVMGC3BCRGjF4WagTPfTyW4bUAWSO6ZcT6gKR8cB9qKLGGExUHilCXoxuKS5wsH9xHMoRUXxCVTBnIkCPaAkrBqAUEwWgQMRACAMIpOWygZvVkAAAAAElFTkSuQmCC",
+      "format": "png"
+    },
+    {
+      "type": "base64",
+      "base64": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAfUlEQVR4nGM8NCmUgZaAiaamM4xaQAQY5nGgyPb9P00tuP+Lk5GQpYQcQXIQ3UezFJsjyLJAkczgYsJnILKhuFyKrg4dsOCSIOR1RaihNAui+784GQkZTrQFimzf/8MMIzUuiMoH9/G4lKJkis1gmiVTcsGoBQTBaBAxEAIAl7E3+CQrkBsAAAAASUVORK5CYII=",
+      "format": "png"
+    },
+    {
+      "type": "base64",
+      "base64": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAcUlEQVR4nGM8NCmUgZaAiaamM4xaMLLjQJHt+39i5fCpxWnB/V+cjMTK4VNLVBAp4nEhIUCUBffxuJAsC8hxsSIOPUyUuFgRyVBceihKpveJcMjgjGRFEiwkK6PdJ8FCsjIaOqA4o1ECRi0gCIZ+EAEAZngt2TfTvs8AAAAASUVORK5CYII=",
+      "format": "png"
+    },
+    {
+      "type": "base64",
+      "base64": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAANElEQVR4nGM8NCmUgZaAiaamM4xaQAQYjQOCYDSICILRICIIRoOIIBgNIoJgNIgIApoHEQD6LAHZSiDuxAAAAABJRU5ErkJggg==",
+      "format": "png"
+    },
+    {
+      "type": "base64",
+      "base64": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAANElEQVR4nGM8NCmUgZaAiaamM4xaQAQYjQOCYDSICILRICIIRoOIIBgNIoJgNIgIApoHEQD6LAHZSiDuxAAAAABJRU5ErkJggg==",
+      "format": "png"
+    },
+    {
+      "type": "base64",
+      "base64": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAANElEQVR4nGM8NCmUgZaAiaamM4xaQAQYjQOCYDSICILRICIIRoOIIBgNIoJgNIgIApoHEQD6LAHZSiDuxAAAAABJRU5ErkJggg==",
+      "format": "png"
+    }
+  ],
+  "status": "completed",
+  "progress": 0.8461538461538461,
+  "flow_kind": "animation",
+  "billing_usage": {
+    "type": "generations",
+    "generations": 1.0
+  },
+  "generation_id": "964f9aca-5d64-4084-9a86-711e2b16392a",
+  "queue_position": 0,
+  "billing_charged": true,
+  "generation_started_at": "2026-11-05T11:13:52.436126+00:00"
+}

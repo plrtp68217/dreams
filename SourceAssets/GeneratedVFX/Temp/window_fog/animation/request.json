@@ -1,0 +1,14 @@
+{
+  "first_frame": {
+    "base64": "iVBORw0KGgoAAAANSUhEUgAAAEAAAAAwCAYAAAChS3wfAAABr0lEQVR4nOWYP2rDMBjFnx4ia8dcIKfo3DUUSrZCIZAj5Bi9QyDQtdA9U4ecIkPXQJasWVw6OAhXlmRbrp2+32TkP9J73yd9ks18sYIyhDiEOIQ4hDiEOIQ4hDiEOIQ4tuHzReyBh/s7b/tufzYYIYQ4Nlf06yLv3C/GmA22i+jN68uvtrf3j2inP2YMZEKRakAR+Mh14Mv1NqlXN/oDEOybEMfMF6uk6JTpvlxvW6duNROenx6v16HvNlw/iiwGbDzzu4v42JTwCWsydXb7c6uxmNPXZ1InucSnEIp4yBSfCbHqZOoM+EvBbWi7sFYNtbhRXCExM0Lrhh17pPvG4h/QZVNFiEOIQ4hDiGPbvjibXryl53Cc3ERVKUunzSXcvT9mE6p7Bls2xEpJTPgQJlTF1GkIbZSMcxgyKeIPx0ntgGbTi7e9DzNy/WMgxDHV43AgiskfbZMJvimWmjldssGk/hDxvVvTnmRoiC5TJnJcNjnKoGl4P9ngHGtF03OBdQac9CO0KaWoWBUZqnQS4ljnutcIjHVzRIhDiEOIQ4hDiEOIQ4hDiEOIw6EHMDTfBD+ineplOFkAAAAASUVORK5CYII="
+  },
+  "action": "Seamless looping light fog outside a window. Two low horizontal fog ribbons gently curl and flow internally, drifting only one pixel at a time. Edges gradually break into transparent gaps and reform; preserve overall placement and scale. Return to the supplied endpoint phase without whole-canvas jumps, sudden flashing or a filled background. Strict native one-pixel-grid pixel art for DREAMS, a dark abandoned fast-food restaurant at 320x180 native resolution. Effect only, transparent background, hard opaque pixel clusters, limited supplied palette. No anti-aliasing, gradients, dithering, blur, glow, drawn background lighting, characters, text, furniture or other objects. Static camera and fixed canvas; no zoom or global position/scale jitter. ",
+  "frame_count": 10,
+  "seed": 5112607,
+  "no_background": true,
+  "enhance_prompt": false,
+  "last_frame": {
+    "base64": "iVBORw0KGgoAAAANSUhEUgAAAEAAAAAwCAYAAAChS3wfAAABr0lEQVR4nOWYP2rDMBjFnx4ia8dcIKfo3DUUSrZCIZAj5Bi9QyDQtdA9U4ecIkPXQJasWVw6OAhXlmRbrp2+32TkP9J73yd9ks18sYIyhDiEOIQ4hDiEOIQ4hDiEOIQ4tuHzReyBh/s7b/tufzYYIYQ4Nlf06yLv3C/GmA22i+jN68uvtrf3j2inP2YMZEKRakAR+Mh14Mv1NqlXN/oDEOybEMfMF6uk6JTpvlxvW6duNROenx6v16HvNlw/iiwGbDzzu4v42JTwCWsydXb7c6uxmNPXZ1InucSnEIp4yBSfCbHqZOoM+EvBbWi7sFYNtbhRXCExM0Lrhh17pPvG4h/QZVNFiEOIQ4hDiGPbvjibXryl53Cc3ERVKUunzSXcvT9mE6p7Bls2xEpJTPgQJlTF1GkIbZSMcxgyKeIPx0ntgGbTi7e9DzNy/WMgxDHV43AgiskfbZMJvimWmjldssGk/hDxvVvTnmRoiC5TJnJcNjnKoGl4P9ngHGtF03OBdQac9CO0KaWoWBUZqnQS4ljnutcIjHVzRIhDiEOIQ4hDiEOIQ4hDiEOIw6EHMDTfBD+ineplOFkAAAAASUVORK5CYII="
+  },
+  "drift_threshold": 0
+}

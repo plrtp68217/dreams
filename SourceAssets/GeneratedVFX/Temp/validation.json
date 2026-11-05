@@ -1,0 +1,305 @@
+{
+  "steam_small": {
+    "size": [
+      32,
+      48
+    ],
+    "frame_count": 8,
+    "fps": 8,
+    "palette": [
+      "#4d5464",
+      "#716b5e",
+      "#918e73",
+      "#ece0c2"
+    ],
+    "alpha": [
+      0,
+      255
+    ],
+    "unique_frames": 8,
+    "sheet_size": [
+      256,
+      48
+    ],
+    "source": "Temp\\steam_small\\animation_loop",
+    "discarded_input_reference": true,
+    "pixel_change_per_transition": [
+      172,
+      168,
+      160,
+      123,
+      122,
+      92,
+      116,
+      116
+    ],
+    "seam_change_ratio": 0.8520461699895069,
+    "emission_bottom_y_range": 0,
+    "emission_bottom_x_range": 0.0,
+    "frames": [
+      {
+        "bbox": [
+          9,
+          14,
+          22,
+          43
+        ],
+        "visible_pixels": 143,
+        "centroid": [
+          15.062937062937063,
+          24.95104895104895
+        ],
+        "bottom_y": 42,
+        "bottom_x": 16.0,
+        "sha256_pixels": "d403d7e2093b1d445338d33550fa03dfb7938d1ab2bc5e4e991af7913d0326c0"
+      },
+      {
+        "bbox": [
+          10,
+          11,
+          23,
+          43
+        ],
+        "visible_pixels": 127,
+        "centroid": [
+          14.755905511811024,
+          21.0
+        ],
+        "bottom_y": 42,
+        "bottom_x": 16.0,
+        "sha256_pixels": "f638dc329749307227b3eb76724d8666a2ca1e44f8f57a26772d5dfa22432979"
+      },
+      {
+        "bbox": [
+          10,
+          8,
+          23,
+          43
+        ],
+        "visible_pixels": 130,
+        "centroid": [
+          14.946153846153846,
+          19.29230769230769
+        ],
+        "bottom_y": 42,
+        "bottom_x": 16.0,
+        "sha256_pixels": "486a70f442a98ad2748e25e75c165682e29be65c14a3b249ec655a3099c6c2a0"
+      },
+      {
+        "bbox": [
+          10,
+          6,
+          22,
+          43
+        ],
+        "visible_pixels": 139,
+        "centroid": [
+          14.446043165467627,
+          19.48201438848921
+        ],
+        "bottom_y": 42,
+        "bottom_x": 16.0,
+        "sha256_pixels": "15c6538f29014d816338eca12a25c6a44fdef53c61a7d5ef24b020584ab44386"
+      },
+      {
+        "bbox": [
+          10,
+          5,
+          20,
+          43
+        ],
+        "visible_pixels": 104,
+        "centroid": [
+          14.528846153846153,
+          20.240384615384617
+        ],
+        "bottom_y": 42,
+        "bottom_x": 16.0,
+        "sha256_pixels": "5e176002969b51b39be990c8481b4298442774730450f46e5e79eab7841b644f"
+      },
+      {
+        "bbox": [
+          12,
+          5,
+          19,
+          43
+        ],
+        "visible_pixels": 61,
+        "centroid": [
+          15.131147540983607,
+          28.360655737704917
+        ],
+        "bottom_y": 42,
+        "bottom_x": 16.0,
+        "sha256_pixels": "71cc84bced61e86fb843e994c3e01332eceeff1c4b0125afd6bf5234c539e500"
+      },
+      {
+        "bbox": [
+          10,
+          9,
+          21,
+          43
+        ],
+        "visible_pixels": 75,
+        "centroid": [
+          15.146666666666667,
+          29.92
+        ],
+        "bottom_y": 42,
+        "bottom_x": 16.0,
+        "sha256_pixels": "53bc6fcb95961d25866569ad49e8b0887281284b1c93a5a7e299a7e0a0f1c2ca"
+      },
+      {
+        "bbox": [
+          9,
+          18,
+          22,
+          43
+        ],
+        "visible_pixels": 116,
+        "centroid": [
+          15.241379310344827,
+          28.42241379310345
+        ],
+        "bottom_y": 42,
+        "bottom_x": 16.0,
+        "sha256_pixels": "f2fb9cece252600a485acd1e28f7365be1eb8df46512cf7ea14e9a8508f9dd41"
+      }
+    ]
+  },
+  "stove_fire": {
+    "size": [
+      32,
+      24
+    ],
+    "frame_count": 6,
+    "fps": 10,
+    "palette": [
+      "#762527",
+      "#9c2020",
+      "#b66e3d",
+      "#e3984c",
+      "#feea9a"
+    ],
+    "alpha": [
+      0,
+      255
+    ],
+    "unique_frames": 6,
+    "sheet_size": [
+      192,
+      24
+    ],
+    "source": "Temp\\stove_fire\\animation",
+    "discarded_input_reference": true,
+    "pixel_change_per_transition": [
+      121,
+      93,
+      86,
+      91,
+      155,
+      112
+    ],
+    "seam_change_ratio": 1.0256410256410255,
+    "emission_bottom_y_range": 0,
+    "emission_bottom_x_range": 0.0,
+    "frames": [
+      {
+        "bbox": [
+          7,
+          3,
+          26,
+          21
+        ],
+        "visible_pixels": 206,
+        "centroid": [
+          16.160194174757283,
+          13.101941747572816
+        ],
+        "bottom_y": 20,
+        "bottom_x": 16.0,
+        "sha256_pixels": "6c20c7a46fee09207802f68fa54c88b3a9fe935f264959eddee0e604bcff51b6"
+      },
+      {
+        "bbox": [
+          6,
+          5,
+          26,
+          21
+        ],
+        "visible_pixels": 175,
+        "centroid": [
+          15.902857142857142,
+          13.777142857142858
+        ],
+        "bottom_y": 20,
+        "bottom_x": 16.0,
+        "sha256_pixels": "c25255fee444d0b052063648db408753ccb697fab682842dc7918f740ec876f7"
+      },
+      {
+        "bbox": [
+          5,
+          7,
+          27,
+          21
+        ],
+        "visible_pixels": 192,
+        "centroid": [
+          15.921875,
+          13.682291666666666
+        ],
+        "bottom_y": 20,
+        "bottom_x": 16.0,
+        "sha256_pixels": "234bfa0b776047d2d8dd24aa1fef7de69aa55e5c9d05c084f876d90ba1a6ea84"
+      },
+      {
+        "bbox": [
+          6,
+          7,
+          27,
+          21
+        ],
+        "visible_pixels": 180,
+        "centroid": [
+          16.238888888888887,
+          14.144444444444444
+        ],
+        "bottom_y": 20,
+        "bottom_x": 16.0,
+        "sha256_pixels": "80fb91fb5b8dea177b00d631454a10af175cd90826713d92ac70010a9ca6cbb4"
+      },
+      {
+        "bbox": [
+          7,
+          6,
+          26,
+          21
+        ],
+        "visible_pixels": 189,
+        "centroid": [
+          15.920634920634921,
+          14.0
+        ],
+        "bottom_y": 20,
+        "bottom_x": 16.0,
+        "sha256_pixels": "61d3f1a9d63f3bdfd8d2c3fb2c7a5f032854b43e7037dbbb52d2c2479a1557b6"
+      },
+      {
+        "bbox": [
+          9,
+          4,
+          25,
+          21
+        ],
+        "visible_pixels": 161,
+        "centroid": [
+          16.40993788819876,
+          13.416149068322982
+        ],
+        "bottom_y": 20,
+        "bottom_x": 16.0,
+        "sha256_pixels": "e3205b3e23e838e73e248b59ab8250f04feb82554e82a096cc3d0f62c5f68a37"
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "description": "One small isolated low yellow-orange gas stove flame effect for a moody abandoned fast-food restaurant in a 320x180 pixel-art side-scroller. Strict native 32x24 pixels, one-pixel grid. Three short connected flame tongues, warm muted burnt-orange outside and pale yellow core, flat two or three-tone pixel clusters. Base fixed horizontally around x=8..24 y=20, tallest tongue reaches about y=6, complete silhouette contained within x=5..27 y=3..21. No burner, stove, pan, fuel, smoke, sparks, floor, blue flame, black outline, outer halo or cast light. No glow, gradients, antialiasing, blur or dithering. Fully transparent background, effect only.",
+  "image_size": {
+    "width": 32,
+    "height": 24
+  },
+  "seed": 5112301,
+  "no_background": true,
+  "reference_images": [
+    {
+      "image": {
+        "base64": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABPklEQVR4nGOUUzFjGEjANKC2MzAwsCBzyiON/oPoO+++YSisLk0h2fDW7jkYYipCXAydy88xYjjg3J6e/zF5mBrIBbjMuv74G0Owu8b/tTtvMKJEATbXjog0wDTqAIaRHgUs9LLoweEjCDaIEBYh7IBr126QbSGyXi0tDTCdIC0MF5v2Y6hEAdfbN2DaxjCBNJOhQUyxA74RaRAx4MD/f0g8ZuxRcI2CeCcEHjx7D8cwwIjUHvgf7A5JLCCwducNUKWBtTbDB7DVpOh6Jk/ZBQpZRhQHKCjK/0dx7f2HMHEGWoAH9x+i1oboAJZ1aA2YcEl8+/4d7HtYSNDdAfQCTIQU0CoNEO0AWgMmmtsw6gBi64JXZ87SpPzHVbnBKismZEmQxbS0HGYHMmBiGGDANGjSwDdo7UQPgBwNAx4CAJ3LWlT8nNdrAAAAAElFTkSuQmCC"
+      },
+      "size": {
+        "width": 32,
+        "height": 32
+      },
+      "usage_description": "Only pixel density, muted aesthetic and hard flat pixel rendering; do NOT draw any printer, object or outline."
+    }
+  ],
+  "target_palette": {
+    "colors": [
+      "#762527",
+      "#9c2020",
+      "#b66e3d",
+      "#e3984c",
+      "#d8bb7e",
+      "#feea9a",
+      "#ece0c2"
+    ],
+    "max_colors": 7,
+    "name": "DREAMS stove_fire VFX"
+  }
+}

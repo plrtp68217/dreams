@@ -1,0 +1,20 @@
+{
+  "candidate": 50,
+  "integer_translation": [
+    0,
+    0
+  ],
+  "original_bbox": [
+    7,
+    5,
+    25,
+    18
+  ],
+  "aligned_bbox": [
+    7,
+    5,
+    25,
+    18
+  ],
+  "scaling": false
+}

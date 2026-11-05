@@ -1,0 +1,14 @@
+{
+  "first_frame": {
+    "base64": "iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAA3klEQVR4nO3ZsU0DQRBG4TevA1ogoh3KoAgiiiClA5ogpyQjI5EgApDw+ey3X3LZ3mk1M/pHN3c3twfCJE526O39ZbN3zWqBkGNlfa8uiZvVAnESJ3ESJ3ES53+EiUsmcbNVEHp4vP98Pj+9sicSNysK/9E1DcCjVQHESZzESZxckGOY+gpUyQs4hVlBaGN72yYlblYLxEmcxEmcxEmcxEmchPy0TUrcrCgcJ3HueVffgsTNGoJxEidxEidxEucpDr2kMDUrB1zxn9/fkLhZLRAncRIncRIncZ77A87tA5sOMyhDaSlDAAAAAElFTkSuQmCC"
+  },
+  "action": "Seamless looping pale dust motes visible in an already lit room. Twelve tiny particles drift independently on very short slow paths, at most one pixel per frame, preserving count and pixel size. No synchronized whole-field movement or abrupt blinking. Return to the supplied cyclic arrangement. Absolutely no painted illumination or glow. Keep the exact solid dark plum background #281122 absolutely flat and unchanged. Animate only the tiny contrasting motes. The background is a temporary technical chroma key and will be removed later; never remove the motes or paint any haze, object or illumination. Hard pixel art, no gradients, antialiasing or blur.",
+  "frame_count": 12,
+  "seed": 5112609,
+  "no_background": false,
+  "enhance_prompt": false,
+  "last_frame": {
+    "base64": "iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAA3klEQVR4nO3ZsU0DQRBG4TevA1ogoh3KoAgiiiClA5ogpyQjI5EgApDw+ey3X3LZ3mk1M/pHN3c3twfCJE526O39ZbN3zWqBkGNlfa8uiZvVAnESJ3ESJ3ES53+EiUsmcbNVEHp4vP98Pj+9sicSNysK/9E1DcCjVQHESZzESZxckGOY+gpUyQs4hVlBaGN72yYlblYLxEmcxEmcxEmcxEmchPy0TUrcrCgcJ3HueVffgsTNGoJxEidxEidxEucpDr2kMDUrB1zxn9/fkLhZLRAncRIncRIncZ77A87tA5sOMyhDaSlDAAAAAElFTkSuQmCC"
+  },
+  "drift_threshold": 0
+}

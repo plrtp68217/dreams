@@ -1,0 +1,11 @@
+{
+  "first_frame": {
+    "base64": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAT0lEQVR4nGNkYGBgeDzDh4FWgIlmJkPBqAUEwWgQDa0g+k9rCxjJsYjUIPpPrzj4TysLGNFoqltAclxQkkwZaW0BUWDUAoJgNIgIApoHEQA93Ab3G1cWHQAAAABJRU5ErkJggg=="
+  },
+  "action": "One brief electrical spark burst at fixed center x12 y12. A tiny flash branches into three or four short angular pixel sparks, expands only a few pixels, fragments and extinguishes. No constant beam, star icon or object. End dark and allow an external pause between bursts. No glow or cast light. Strict native one-pixel-grid pixel art for DREAMS, a dark abandoned fast-food restaurant at 320x180 native resolution. Effect only, transparent background, hard opaque pixel clusters, limited supplied palette. No anti-aliasing, gradients, dithering, blur, glow, drawn background lighting, characters, text, furniture or other objects. Static camera and fixed canvas; no zoom or global position/scale jitter. ",
+  "frame_count": 6,
+  "seed": 5112603,
+  "no_background": true,
+  "enhance_prompt": false,
+  "drift_threshold": 0
+}

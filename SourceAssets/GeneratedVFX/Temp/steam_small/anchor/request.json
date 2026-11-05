@@ -1,0 +1,31 @@
+{
+  "description": "One small isolated plume of pale gray kitchen steam, a VFX sprite for a moody abandoned fast-food restaurant in a 320x180 pixel-art side-scroller. Native 32x48 pixels, one-pixel grid. Two small connected wisps curl upward from a narrow invisible fixed source at bottom center, x=16 y=42. Sparse clear soft-looking cloud shapes formed ONLY with hard flat pixel clusters and four muted colors, no outlined tube or smoke stack. Compact plume within x=7..25 and y=8..42, generous transparent margins. No container, appliance, ground, black outline, lighting, glow, blur, gradient, dithering or antialiasing. Fully transparent background. Only steam, not a character or object.",
+  "image_size": {
+    "width": 32,
+    "height": 48
+  },
+  "seed": 5112300,
+  "no_background": true,
+  "reference_images": [
+    {
+      "image": {
+        "base64": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABPklEQVR4nGOUUzFjGEjANKC2MzAwsCBzyiON/oPoO+++YSisLk0h2fDW7jkYYipCXAydy88xYjjg3J6e/zF5mBrIBbjMuv74G0Owu8b/tTtvMKJEATbXjog0wDTqAIaRHgUs9LLoweEjCDaIEBYh7IBr126QbSGyXi0tDTCdIC0MF5v2Y6hEAdfbN2DaxjCBNJOhQUyxA74RaRAx4MD/f0g8ZuxRcI2CeCcEHjx7D8cwwIjUHvgf7A5JLCCwducNUKWBtTbDB7DVpOh6Jk/ZBQpZRhQHKCjK/0dx7f2HMHEGWoAH9x+i1oboAJZ1aA2YcEl8+/4d7HtYSNDdAfQCTIQU0CoNEO0AWgMmmtsw6gBi64JXZ87SpPzHVbnBKismZEmQxbS0HGYHMmBiGGDANGjSwDdo7UQPgBwNAx4CAJ3LWlT8nNdrAAAAAElFTkSuQmCC"
+      },
+      "size": {
+        "width": 32,
+        "height": 32
+      },
+      "usage_description": "Only pixel density, muted aesthetic and hard flat pixel rendering; do NOT draw any printer, object or outline."
+    }
+  ],
+  "target_palette": {
+    "colors": [
+      "#4d5464",
+      "#716b5e",
+      "#918e73",
+      "#ece0c2"
+    ],
+    "max_colors": 4,
+    "name": "DREAMS steam_small VFX"
+  }
+}

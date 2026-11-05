@@ -1,0 +1,24 @@
+{
+  "source": "first_frame.png",
+  "reused_seed_translations": [
+    [
+      0,
+      0
+    ],
+    [
+      17,
+      9
+    ],
+    [
+      33,
+      23
+    ],
+    [
+      8,
+      39
+    ]
+  ],
+  "reason": "Preserve tiny API-generated particle shapes that automated background removal erases; animate the field through PixelLab with a temporary exact-color matte.",
+  "key_color": "#281122",
+  "scaling": false
+}
