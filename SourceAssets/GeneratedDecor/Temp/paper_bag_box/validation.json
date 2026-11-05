@@ -1,0 +1,29 @@
+{
+  "file": "paper_bag_box.png",
+  "size": [
+    32,
+    24
+  ],
+  "bbox": [
+    2,
+    0,
+    30,
+    24
+  ],
+  "opaque_colors": 7,
+  "colors": [
+    "#281122",
+    "#482b33",
+    "#484e5e",
+    "#716b5e",
+    "#918e73",
+    "#957d68",
+    "#ece0c2"
+  ],
+  "alpha_values": [
+    0,
+    255
+  ],
+  "selected_candidate": 3,
+  "sha256": "462e4b440178e6148ba257f4c340c8a7ff2e0ff596868e86fe4d9e87999b7313"
+}

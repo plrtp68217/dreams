@@ -1,0 +1,31 @@
+{
+  "file": "old_calendar.png",
+  "size": [
+    32,
+    40
+  ],
+  "bbox": [
+    2,
+    4,
+    30,
+    37
+  ],
+  "opaque_colors": 9,
+  "colors": [
+    "#281122",
+    "#3e4555",
+    "#482b33",
+    "#484e5e",
+    "#716b5e",
+    "#882c35",
+    "#918e73",
+    "#957d68",
+    "#ece0c2"
+  ],
+  "alpha_values": [
+    0,
+    255
+  ],
+  "selected_candidate": 24,
+  "sha256": "e0a8abe5e21ef9d5e7cc118bdbe76e5561241c34c7e85dfefe6f1b23cff7d2cf"
+}

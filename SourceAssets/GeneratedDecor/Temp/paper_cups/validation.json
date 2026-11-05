@@ -1,0 +1,31 @@
+{
+  "file": "paper_cups.png",
+  "size": [
+    16,
+    24
+  ],
+  "bbox": [
+    2,
+    1,
+    14,
+    23
+  ],
+  "opaque_colors": 9,
+  "colors": [
+    "#1e2436",
+    "#281122",
+    "#3a1d25",
+    "#482b33",
+    "#716b5e",
+    "#882c35",
+    "#918e73",
+    "#957d68",
+    "#ece0c2"
+  ],
+  "alpha_values": [
+    0,
+    255
+  ],
+  "selected_candidate": 14,
+  "sha256": "20b183a70806466049133f49762237e06bc9cb10c61cbd0bbf59bf2fe20475ce"
+}

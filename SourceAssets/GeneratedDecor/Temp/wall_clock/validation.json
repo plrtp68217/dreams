@@ -1,0 +1,30 @@
+{
+  "file": "wall_clock.png",
+  "size": [
+    24,
+    24
+  ],
+  "bbox": [
+    0,
+    1,
+    23,
+    24
+  ],
+  "opaque_colors": 8,
+  "colors": [
+    "#281122",
+    "#3a1d25",
+    "#482b33",
+    "#716b5e",
+    "#882c35",
+    "#918e73",
+    "#957d68",
+    "#ece0c2"
+  ],
+  "alpha_values": [
+    0,
+    255
+  ],
+  "selected_candidate": 35,
+  "sha256": "0b9ee9416229b11af013fec8d5e5daa336b45d476fbed5da2bf04328c286c42c"
+}

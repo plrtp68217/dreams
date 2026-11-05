@@ -1,0 +1,27 @@
+{
+  "file": "straw_container.png",
+  "size": [
+    16,
+    24
+  ],
+  "bbox": [
+    2,
+    6,
+    14,
+    22
+  ],
+  "opaque_colors": 5,
+  "colors": [
+    "#281122",
+    "#482b33",
+    "#484e5e",
+    "#882c35",
+    "#ece0c2"
+  ],
+  "alpha_values": [
+    0,
+    255
+  ],
+  "selected_candidate": 34,
+  "sha256": "e914aadcff9ee5331b3e711f8bb257a389e420ab6b3a4ada6a0f5f32799ff261"
+}

@@ -1,0 +1,31 @@
+{
+  "file": "service_phone.png",
+  "size": [
+    32,
+    24
+  ],
+  "bbox": [
+    2,
+    0,
+    31,
+    24
+  ],
+  "opaque_colors": 9,
+  "colors": [
+    "#1e2436",
+    "#281122",
+    "#3a1d25",
+    "#482b33",
+    "#484e5e",
+    "#4d5464",
+    "#716b5e",
+    "#957d68",
+    "#ece0c2"
+  ],
+  "alpha_values": [
+    0,
+    255
+  ],
+  "selected_candidate": 42,
+  "sha256": "83fb14de8b0b7d7222b3f7bde79cfe1487cd19bb5525713a29ade89a72abf2fe"
+}

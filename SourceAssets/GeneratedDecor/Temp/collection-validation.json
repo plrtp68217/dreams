@@ -1,0 +1,359 @@
+[
+  {
+    "file": "receipt_printer.png",
+    "size": [
+      32,
+      32
+    ],
+    "bbox": [
+      2,
+      2,
+      30,
+      30
+    ],
+    "opaque_colors": 9,
+    "colors": [
+      "#1e2436",
+      "#281122",
+      "#3e4555",
+      "#482b33",
+      "#484e5e",
+      "#716b5e",
+      "#882c35",
+      "#957d68",
+      "#ece0c2"
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "selected_candidate": 0,
+    "sha256": "ea4258979fa3ec09f48c4ce8c54cac53a683208e535bb2203cc34a118ee20317"
+  },
+  {
+    "file": "paper_cups.png",
+    "size": [
+      16,
+      24
+    ],
+    "bbox": [
+      2,
+      1,
+      14,
+      23
+    ],
+    "opaque_colors": 9,
+    "colors": [
+      "#1e2436",
+      "#281122",
+      "#3a1d25",
+      "#482b33",
+      "#716b5e",
+      "#882c35",
+      "#918e73",
+      "#957d68",
+      "#ece0c2"
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "selected_candidate": 14,
+    "sha256": "20b183a70806466049133f49762237e06bc9cb10c61cbd0bbf59bf2fe20475ce"
+  },
+  {
+    "file": "napkin_holder.png",
+    "size": [
+      24,
+      24
+    ],
+    "bbox": [
+      3,
+      1,
+      20,
+      20
+    ],
+    "opaque_colors": 7,
+    "colors": [
+      "#1e2436",
+      "#281122",
+      "#484e5e",
+      "#4d5464",
+      "#716b5e",
+      "#918e73",
+      "#ece0c2"
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "selected_candidate": 0,
+    "sha256": "1f0d66ccc968f3a9fb144a2dd42d7f4963edb044a57fe262c08e34a53d1f3363"
+  },
+  {
+    "file": "straw_container.png",
+    "size": [
+      16,
+      24
+    ],
+    "bbox": [
+      2,
+      6,
+      14,
+      22
+    ],
+    "opaque_colors": 5,
+    "colors": [
+      "#281122",
+      "#482b33",
+      "#484e5e",
+      "#882c35",
+      "#ece0c2"
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "selected_candidate": 34,
+    "sha256": "e914aadcff9ee5331b3e711f8bb257a389e420ab6b3a4ada6a0f5f32799ff261"
+  },
+  {
+    "file": "service_phone.png",
+    "size": [
+      32,
+      24
+    ],
+    "bbox": [
+      2,
+      0,
+      31,
+      24
+    ],
+    "opaque_colors": 9,
+    "colors": [
+      "#1e2436",
+      "#281122",
+      "#3a1d25",
+      "#482b33",
+      "#484e5e",
+      "#4d5464",
+      "#716b5e",
+      "#957d68",
+      "#ece0c2"
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "selected_candidate": 42,
+    "sha256": "83fb14de8b0b7d7222b3f7bde79cfe1487cd19bb5525713a29ade89a72abf2fe"
+  },
+  {
+    "file": "wall_clock.png",
+    "size": [
+      24,
+      24
+    ],
+    "bbox": [
+      0,
+      1,
+      23,
+      24
+    ],
+    "opaque_colors": 8,
+    "colors": [
+      "#281122",
+      "#3a1d25",
+      "#482b33",
+      "#716b5e",
+      "#882c35",
+      "#918e73",
+      "#957d68",
+      "#ece0c2"
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "selected_candidate": 35,
+    "sha256": "0b9ee9416229b11af013fec8d5e5daa336b45d476fbed5da2bf04328c286c42c"
+  },
+  {
+    "file": "paper_bag_box.png",
+    "size": [
+      32,
+      24
+    ],
+    "bbox": [
+      2,
+      0,
+      30,
+      24
+    ],
+    "opaque_colors": 7,
+    "colors": [
+      "#281122",
+      "#482b33",
+      "#484e5e",
+      "#716b5e",
+      "#918e73",
+      "#957d68",
+      "#ece0c2"
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "selected_candidate": 3,
+    "sha256": "462e4b440178e6148ba257f4c340c8a7ff2e0ff596868e86fe4d9e87999b7313"
+  },
+  {
+    "file": "receipt_paper_rolls.png",
+    "size": [
+      24,
+      16
+    ],
+    "bbox": [
+      2,
+      0,
+      23,
+      13
+    ],
+    "opaque_colors": 7,
+    "colors": [
+      "#281122",
+      "#482b33",
+      "#484e5e",
+      "#716b5e",
+      "#918e73",
+      "#957d68",
+      "#ece0c2"
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "selected_candidate": 0,
+    "sha256": "25398aee384cca5591afb85e913e42a039c79dbcdf5f9445a720a3a75e528dfe"
+  },
+  {
+    "file": "coin_container.png",
+    "size": [
+      24,
+      16
+    ],
+    "bbox": [
+      1,
+      1,
+      23,
+      14
+    ],
+    "opaque_colors": 8,
+    "colors": [
+      "#1e2436",
+      "#281122",
+      "#3e4555",
+      "#4d5464",
+      "#716b5e",
+      "#918e73",
+      "#957d68",
+      "#ece0c2"
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "selected_candidate": 3,
+    "sha256": "cab053b6d0ab842352d1758ee664fe824b5318ef5730bb9871fc8803e2ba802a"
+  },
+  {
+    "file": "cashier_closed_sign.png",
+    "size": [
+      80,
+      32
+    ],
+    "bbox": [
+      2,
+      0,
+      79,
+      32
+    ],
+    "opaque_colors": 7,
+    "colors": [
+      "#281122",
+      "#3a1d25",
+      "#3e4555",
+      "#482b33",
+      "#716b5e",
+      "#957d68",
+      "#ece0c2"
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "selected_candidate": 5,
+    "sha256": "2434bf949dd22f1de132e338476b29e99cd363f09b59d145a0c16e70b35f27f0"
+  },
+  {
+    "file": "old_calendar.png",
+    "size": [
+      32,
+      40
+    ],
+    "bbox": [
+      2,
+      4,
+      30,
+      37
+    ],
+    "opaque_colors": 9,
+    "colors": [
+      "#281122",
+      "#3e4555",
+      "#482b33",
+      "#484e5e",
+      "#716b5e",
+      "#882c35",
+      "#918e73",
+      "#957d68",
+      "#ece0c2"
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "selected_candidate": 24,
+    "sha256": "e0a8abe5e21ef9d5e7cc118bdbe76e5561241c34c7e85dfefe6f1b23cff7d2cf"
+  },
+  {
+    "file": "employee_instructions.png",
+    "size": [
+      40,
+      48
+    ],
+    "bbox": [
+      3,
+      4,
+      37,
+      46
+    ],
+    "opaque_colors": 8,
+    "colors": [
+      "#281122",
+      "#3a1d25",
+      "#482b33",
+      "#484e5e",
+      "#882c35",
+      "#918e73",
+      "#957d68",
+      "#ece0c2"
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "selected_candidate": 5,
+    "sha256": "952031a86f5309fcc1b42e9922cdfe7e150df6fe29ebf478be2042c72deabed1"
+  }
+]

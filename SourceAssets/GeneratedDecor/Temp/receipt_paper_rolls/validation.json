@@ -1,0 +1,29 @@
+{
+  "file": "receipt_paper_rolls.png",
+  "size": [
+    24,
+    16
+  ],
+  "bbox": [
+    2,
+    0,
+    23,
+    13
+  ],
+  "opaque_colors": 7,
+  "colors": [
+    "#281122",
+    "#482b33",
+    "#484e5e",
+    "#716b5e",
+    "#918e73",
+    "#957d68",
+    "#ece0c2"
+  ],
+  "alpha_values": [
+    0,
+    255
+  ],
+  "selected_candidate": 0,
+  "sha256": "25398aee384cca5591afb85e913e42a039c79dbcdf5f9445a720a3a75e528dfe"
+}

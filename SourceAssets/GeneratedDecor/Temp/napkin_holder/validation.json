@@ -1,0 +1,29 @@
+{
+  "file": "napkin_holder.png",
+  "size": [
+    24,
+    24
+  ],
+  "bbox": [
+    3,
+    1,
+    20,
+    20
+  ],
+  "opaque_colors": 7,
+  "colors": [
+    "#1e2436",
+    "#281122",
+    "#484e5e",
+    "#4d5464",
+    "#716b5e",
+    "#918e73",
+    "#ece0c2"
+  ],
+  "alpha_values": [
+    0,
+    255
+  ],
+  "selected_candidate": 0,
+  "sha256": "1f0d66ccc968f3a9fb144a2dd42d7f4963edb044a57fe262c08e34a53d1f3363"
+}

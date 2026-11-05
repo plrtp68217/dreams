@@ -1,0 +1,30 @@
+{
+  "size": [
+    32,
+    32
+  ],
+  "opaque_colors": 9,
+  "colors": [
+    "#1e2436",
+    "#281122",
+    "#3e4555",
+    "#482b33",
+    "#484e5e",
+    "#716b5e",
+    "#882c35",
+    "#957d68",
+    "#ece0c2"
+  ],
+  "alpha_values": [
+    0,
+    255
+  ],
+  "bounding_box": [
+    2,
+    2,
+    30,
+    30
+  ],
+  "provider": "PixelLab",
+  "generation_count": 1
+}

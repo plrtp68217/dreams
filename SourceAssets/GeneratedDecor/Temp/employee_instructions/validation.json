@@ -1,0 +1,30 @@
+{
+  "file": "employee_instructions.png",
+  "size": [
+    40,
+    48
+  ],
+  "bbox": [
+    3,
+    4,
+    37,
+    46
+  ],
+  "opaque_colors": 8,
+  "colors": [
+    "#281122",
+    "#3a1d25",
+    "#482b33",
+    "#484e5e",
+    "#882c35",
+    "#918e73",
+    "#957d68",
+    "#ece0c2"
+  ],
+  "alpha_values": [
+    0,
+    255
+  ],
+  "selected_candidate": 5,
+  "sha256": "952031a86f5309fcc1b42e9922cdfe7e150df6fe29ebf478be2042c72deabed1"
+}

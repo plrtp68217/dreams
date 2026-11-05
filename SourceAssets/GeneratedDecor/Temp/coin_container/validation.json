@@ -1,0 +1,30 @@
+{
+  "file": "coin_container.png",
+  "size": [
+    24,
+    16
+  ],
+  "bbox": [
+    1,
+    1,
+    23,
+    14
+  ],
+  "opaque_colors": 8,
+  "colors": [
+    "#1e2436",
+    "#281122",
+    "#3e4555",
+    "#4d5464",
+    "#716b5e",
+    "#918e73",
+    "#957d68",
+    "#ece0c2"
+  ],
+  "alpha_values": [
+    0,
+    255
+  ],
+  "selected_candidate": 3,
+  "sha256": "cab053b6d0ab842352d1758ee664fe824b5318ef5730bb9871fc8803e2ba802a"
+}

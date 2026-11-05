@@ -1,0 +1,29 @@
+{
+  "file": "cashier_closed_sign.png",
+  "size": [
+    80,
+    32
+  ],
+  "bbox": [
+    2,
+    0,
+    79,
+    32
+  ],
+  "opaque_colors": 7,
+  "colors": [
+    "#281122",
+    "#3a1d25",
+    "#3e4555",
+    "#482b33",
+    "#716b5e",
+    "#957d68",
+    "#ece0c2"
+  ],
+  "alpha_values": [
+    0,
+    255
+  ],
+  "selected_candidate": 5,
+  "sha256": "2434bf949dd22f1de132e338476b29e99cd363f09b59d145a0c16e70b35f27f0"
+}
