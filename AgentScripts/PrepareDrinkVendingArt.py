@@ -10,8 +10,8 @@ SOURCE = Path('SourceAssets/Art/FastFood/art/guests/01_faceless_man/03_drink/dri
 OUTPUT = Path('Assets/Sprites/FastFoodService/DrinkVending')
 LOG = Path('Logs/DrinkVending')
 
-def read():
-    data = SOURCE.read_bytes()
+def read(source=SOURCE):
+    data = source.read_bytes()
     count, width, height, depth = struct.unpack_from('<4H', data, 6)
     assert depth == 32
     layers, frames, durations = [], [], []

@@ -1,0 +1,288 @@
+{
+  "source": "SourceAssets/Art/FastFood/art/guests/01_faceless_man/02_fries/fridge_keypad.aseprite",
+  "sha256": "386d2583f2252826b430baf1cc49d34c7850de322b03682d542c537fd5406ae8",
+  "width": 294,
+  "height": 193,
+  "layers": [
+    {
+      "name": "Fridge",
+      "flags": 3,
+      "type": 0,
+      "child": 0,
+      "blend": 0,
+      "opacity": 255
+    },
+    {
+      "name": "Shelves",
+      "flags": 3,
+      "type": 0,
+      "child": 0,
+      "blend": 0,
+      "opacity": 255
+    },
+    {
+      "name": "Potato",
+      "flags": 3,
+      "type": 0,
+      "child": 0,
+      "blend": 0,
+      "opacity": 255
+    },
+    {
+      "name": "1",
+      "flags": 2,
+      "type": 0,
+      "child": 0,
+      "blend": 0,
+      "opacity": 255
+    },
+    {
+      "name": "2",
+      "flags": 2,
+      "type": 0,
+      "child": 0,
+      "blend": 0,
+      "opacity": 255
+    },
+    {
+      "name": "3",
+      "flags": 2,
+      "type": 0,
+      "child": 0,
+      "blend": 0,
+      "opacity": 255
+    },
+    {
+      "name": "4",
+      "flags": 2,
+      "type": 0,
+      "child": 0,
+      "blend": 0,
+      "opacity": 255
+    },
+    {
+      "name": "5",
+      "flags": 2,
+      "type": 0,
+      "child": 0,
+      "blend": 0,
+      "opacity": 255
+    },
+    {
+      "name": "6",
+      "flags": 2,
+      "type": 0,
+      "child": 0,
+      "blend": 0,
+      "opacity": 255
+    },
+    {
+      "name": "7",
+      "flags": 2,
+      "type": 0,
+      "child": 0,
+      "blend": 0,
+      "opacity": 255
+    },
+    {
+      "name": "8",
+      "flags": 2,
+      "type": 0,
+      "child": 0,
+      "blend": 0,
+      "opacity": 255
+    },
+    {
+      "name": "9",
+      "flags": 2,
+      "type": 0,
+      "child": 0,
+      "blend": 0,
+      "opacity": 255
+    },
+    {
+      "name": "0",
+      "flags": 2,
+      "type": 0,
+      "child": 0,
+      "blend": 0,
+      "opacity": 255
+    },
+    {
+      "name": "backspace",
+      "flags": 2,
+      "type": 0,
+      "child": 0,
+      "blend": 0,
+      "opacity": 255
+    },
+    {
+      "name": "Open Doors",
+      "flags": 3,
+      "type": 0,
+      "child": 0,
+      "blend": 0,
+      "opacity": 255
+    }
+  ],
+  "durationsMs": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
+  ],
+  "buttons": [
+    {
+      "name": "Key_1",
+      "label": "1",
+      "layer": 3,
+      "bounds": [
+        186,
+        90,
+        203,
+        106
+      ]
+    },
+    {
+      "name": "Key_2",
+      "label": "2",
+      "layer": 4,
+      "bounds": [
+        205,
+        90,
+        222,
+        106
+      ]
+    },
+    {
+      "name": "Key_3",
+      "label": "3",
+      "layer": 5,
+      "bounds": [
+        223,
+        90,
+        241,
+        106
+      ]
+    },
+    {
+      "name": "Key_4",
+      "label": "4",
+      "layer": 6,
+      "bounds": [
+        186,
+        107,
+        203,
+        124
+      ]
+    },
+    {
+      "name": "Key_5",
+      "label": "5",
+      "layer": 7,
+      "bounds": [
+        205,
+        108,
+        222,
+        124
+      ]
+    },
+    {
+      "name": "Key_6",
+      "label": "6",
+      "layer": 8,
+      "bounds": [
+        223,
+        108,
+        241,
+        124
+      ]
+    },
+    {
+      "name": "Key_7",
+      "label": "7",
+      "layer": 9,
+      "bounds": [
+        186,
+        125,
+        202,
+        141
+      ]
+    },
+    {
+      "name": "Key_8",
+      "label": "8",
+      "layer": 10,
+      "bounds": [
+        205,
+        125,
+        222,
+        142
+      ]
+    },
+    {
+      "name": "Key_9",
+      "label": "9",
+      "layer": 11,
+      "bounds": [
+        223,
+        125,
+        241,
+        142
+      ]
+    },
+    {
+      "name": "Key_0",
+      "label": "0",
+      "layer": 12,
+      "bounds": [
+        187,
+        144,
+        219,
+        160
+      ]
+    },
+    {
+      "name": "Key_backspace",
+      "label": "backspace",
+      "layer": 13,
+      "bounds": [
+        223,
+        144,
+        241,
+        160
+      ]
+    }
+  ],
+  "potatoBounds": [
+    66,
+    65,
+    91,
+    88
+  ],
+  "backgroundLayers": [
+    0,
+    1
+  ],
+  "potatoLayer": 2,
+  "doorLayer": 14,
+  "codeDisplayBounds": [
+    183,
+    41,
+    244,
+    56
+  ]
+}

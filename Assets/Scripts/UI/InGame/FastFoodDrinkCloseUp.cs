@@ -27,6 +27,8 @@ public class FastFoodDrinkCloseUp : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _hint;
     [SerializeField] private CanvasGroup _warning;
     [SerializeField] private TextMeshProUGUI _warningText;
+    [SerializeField] private SmoothServiceNotice _warningNotice;
+    [SerializeField] private SmoothServiceNotice _hintNotice;
     [SerializeField] private AudioSource _audio;
     [SerializeField] private AudioClip _pourSound;
     [SerializeField] private AudioClip _pickupSound;
@@ -80,8 +82,10 @@ public class FastFoodDrinkCloseUp : MonoBehaviour
     {
         _pouring = _collecting = false;
         _elapsed = _warningRemaining = 0;
-        if (_warning != null) _warning.alpha = 0;
-        if (_hint != null) _hint.gameObject.SetActive(false);
+        if (_warningNotice != null) _warningNotice.Clear();
+        else if (_warning != null) _warning.alpha = 0;
+        if (_hintNotice != null) _hintNotice.Clear();
+        else if (_hint != null) _hint.gameObject.SetActive(false);
         if (_outline != null) _outline.enabled = false;
         if (_drink != null)
         {
@@ -97,8 +101,8 @@ public class FastFoodDrinkCloseUp : MonoBehaviour
         if (_recipeTitle == null) return;
         _recipeTitle.text = T("recipe");
         _prepare.text = FacelessOrderService.Text("service_pour");
-        _hint.text = T("take");
-        _warningText.text = T("wrong");
+        if (_hintNotice == null) _hint.text = T("take");
+        if (_warningNotice == null) _warningText.text = T("wrong");
         for (int i = 0; i < 3; i++) _recipeValues[i].text = Mathf.RoundToInt(_service.Recipe[i]) + "%";
         UpdateReadouts();
     }
@@ -121,7 +125,7 @@ public class FastFoodDrinkCloseUp : MonoBehaviour
         if (!_service.CorrectRecipe(values))
         {
             _warningRemaining = _warningDuration;
-            _warningText.text = T("wrong");
+            if (_warningNotice == null) _warningText.text = T("wrong");
             return;
         }
         _poured = values;
@@ -174,9 +178,16 @@ public class FastFoodDrinkCloseUp : MonoBehaviour
         _controls.interactable = CanMix;
         _controls.blocksRaycasts = CanMix;
         _outline.enabled = overDrink;
-        _hint.gameObject.SetActive(overDrink);
-        _warning.alpha = _warningRemaining > 0 ? Mathf.Clamp01(_warningRemaining / .22f) : 0;
-        if (!CanControl) { _warning.alpha = 0; _hint.gameObject.SetActive(false); _outline.enabled = false; }
+        if (_hintNotice != null) _hintNotice.Show(overDrink ? T("take") : "");
+        else _hint.gameObject.SetActive(overDrink);
+        if (_warningNotice != null) _warningNotice.Show(_warningRemaining > 0 ? T("wrong") : "");
+        else _warning.alpha = _warningRemaining > 0 ? Mathf.Clamp01(_warningRemaining / .22f) : 0;
+        if (!CanControl)
+        {
+            if (_warningNotice == null) _warning.alpha = 0;
+            if (_hintNotice == null) _hint.gameObject.SetActive(false);
+            _outline.enabled = false;
+        }
         float progress = _pouring ? Mathf.Clamp01(_elapsed / _pourDuration) : _service.DrinkReady ? 1 : 0;
         Vector3 percentages = _service.DrinkReady ? _poured : _pouring ? _poured : Vector3.zero;
         // The authored first twelve cels drain the flasks; later cels fill

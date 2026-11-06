@@ -12,6 +12,8 @@ public class FastFoodServiceView : MonoBehaviour
     [SerializeField] private Player _player;
     [SerializeField] private FastFoodFryerCloseUp _fryerCloseUp;
     [SerializeField] private FastFoodDrinkCloseUp _drinkCloseUp;
+    [SerializeField] private FastFoodFridgeCloseUp _fridgeCloseUp;
+    [SerializeField] private SmoothServiceNotice _messageNotice;
     [SerializeField] private GameObject _hud;
     [SerializeField] private GameObject _modal;
     [SerializeField] private TextMeshProUGUI _trayTitle;
@@ -63,7 +65,8 @@ public class FastFoodServiceView : MonoBehaviour
     private bool _inspectReward;
     public bool IsOpen => _modal != null && _modal.activeSelf;
     public bool IsBusy => _busy || (_fryerCloseUp != null && _fryerCloseUp.IsVisible && _fryerCloseUp.IsBusy) ||
-        (_drinkCloseUp != null && _drinkCloseUp.IsVisible && _drinkCloseUp.IsBusy);
+        (_drinkCloseUp != null && _drinkCloseUp.IsVisible && _drinkCloseUp.IsBusy) ||
+        (_fridgeCloseUp != null && _fridgeCloseUp.IsVisible && _fridgeCloseUp.IsBusy);
 
     private void Awake()
     {
@@ -117,8 +120,14 @@ public class FastFoodServiceView : MonoBehaviour
     }
 
     private bool CanUseUI => IsOpen && Time.timeScale > 0f && !_busy && _player.IsAlive &&
-        (_fryerCloseUp == null || !_fryerCloseUp.IsVisible) && (_drinkCloseUp == null || !_drinkCloseUp.IsVisible);
+        (_fryerCloseUp == null || !_fryerCloseUp.IsVisible) && (_drinkCloseUp == null || !_drinkCloseUp.IsVisible) &&
+        (_fridgeCloseUp == null || !_fridgeCloseUp.IsVisible);
     private static string T(string key) => FacelessOrderService.Text(key);
+    private void Message(string value)
+    {
+        if (_messageNotice != null) _messageNotice.Show(value);
+        else _message.text = value;
+    }
     public FastFoodServiceStation NearestStation()
     {
         if (_stations == null) return null;
@@ -154,7 +163,7 @@ public class FastFoodServiceView : MonoBehaviour
         _station = station.Kind;
         _isInspecting = false;
         BeginModal();
-        _message.text = "";
+        Message("");
         RefreshStation();
     }
     private void BeginModal()
@@ -174,6 +183,7 @@ public class FastFoodServiceView : MonoBehaviour
         _audioPaused = false;
         if (_fryerCloseUp != null) _fryerCloseUp.Hide();
         if (_drinkCloseUp != null) _drinkCloseUp.Hide();
+        if (_fridgeCloseUp != null) _fridgeCloseUp.Hide();
         _art.transform.parent.gameObject.SetActive(true);
         foreach (var slider in _syrups) if (slider != null) slider.interactable = true;
         if (_audio != null) _audio.Stop();
@@ -207,7 +217,7 @@ public class FastFoodServiceView : MonoBehaviour
         _description.text = T(_inspectReward ? "service_record_text" : "service_item_description_" + (int)_inspectItem);
         _description.rectTransform.sizeDelta = new Vector2(350, 380);
         _art.sprite = _inspectReward ? _inventory.MedicalRecordIcon : _inventory.Icon(_inspectItem);
-        _message.text = "";
+        Message("");
     }
 
     public void Refresh()
@@ -232,6 +242,7 @@ public class FastFoodServiceView : MonoBehaviour
         {
             if (_fryerCloseUp != null && _fryerCloseUp.IsVisible) return;
             if (_drinkCloseUp != null && _drinkCloseUp.IsVisible) return;
+            if (_fridgeCloseUp != null && _fridgeCloseUp.IsVisible) return;
             if (_isInspecting) RefreshInspection(); else RefreshStation();
         }
     }
@@ -256,6 +267,12 @@ public class FastFoodServiceView : MonoBehaviour
     private void RefreshStation()
     {
         ResetControls();
+        if (_fridgeCloseUp != null && _station == FastFoodStationKind.Fridge)
+        {
+            _art.transform.parent.gameObject.SetActive(false);
+            _fridgeCloseUp.Show();
+            return;
+        }
         if (_drinkCloseUp != null && _station == FastFoodStationKind.Dispenser)
         {
             _art.transform.parent.gameObject.SetActive(false);
@@ -318,21 +335,21 @@ public class FastFoodServiceView : MonoBehaviour
         if (!CanUseUI || _station != FastFoodStationKind.Fridge) return;
         if (_service.EnterFridgeCode(_code.text))
         {
-            _message.text = T("service_code_ok");
+            Message(T("service_code_ok"));
             _animation = StartCoroutine(OpenFridge());
         }
-        else { _message.text = T("service_code_wrong"); _code.text = ""; }
+        else { Message(T("service_code_wrong")); _code.text = ""; }
     }
     private void UpdateSyrups()
     {
-        if (IsOpen && !_busy && _station == FastFoodStationKind.Dispenser) _message.text = "";
+        if (IsOpen && !_busy && _station == FastFoodStationKind.Dispenser) Message("");
         for (int i = 0; i < 3; i++)
             _syrupLabels[i].text = T("service_syrup_" + i) + "  " + Mathf.RoundToInt(_syrups[i].value) + "%";
     }
     private void Pour()
     {
         var values = new Vector3(_syrups[0].value, _syrups[1].value, _syrups[2].value);
-        if (!_service.CorrectRecipe(values)) { _message.text = T("service_recipe_wrong"); return; }
+        if (!_service.CorrectRecipe(values)) { Message(T("service_recipe_wrong")); return; }
         Do(FacelessServiceAction.PourDrink);
     }
     private void Do(FacelessServiceAction action)
@@ -346,7 +363,7 @@ public class FastFoodServiceView : MonoBehaviour
         if (_service.Perform(action))
         {
             PlaySound(_pickupSound);
-            _message.text = T(action == FacelessServiceAction.PowerOff ? "service_power_safe" : action == FacelessServiceAction.RemoveFuse ? "service_fuse_removed" : "service_added");
+            Message(T(action == FacelessServiceAction.PowerOff ? "service_power_safe" : action == FacelessServiceAction.RemoveFuse ? "service_fuse_removed" : "service_added"));
             RefreshStation();
         }
     }
@@ -357,7 +374,7 @@ public class FastFoodServiceView : MonoBehaviour
         foreach (var slider in _syrups) slider.interactable = false;
         var frames = action == FacelessServiceAction.DrainOil ? _oilFrames : action == FacelessServiceAction.PourDrink ? _pourFrames : _mirrorFrames;
         PlaySound(action == FacelessServiceAction.DrainOil ? _drainSound : action == FacelessServiceAction.PourDrink ? _pourSound : null);
-        _message.text = T(action == FacelessServiceAction.DrainOil ? "service_draining" : action == FacelessServiceAction.PourDrink ? "service_pouring" : "service_looking");
+        Message(T(action == FacelessServiceAction.DrainOil ? "service_draining" : action == FacelessServiceAction.PourDrink ? "service_pouring" : "service_looking"));
         float elapsed = 0f;
         while (elapsed < _animationDuration)
         {
@@ -371,7 +388,7 @@ public class FastFoodServiceView : MonoBehaviour
         foreach (var slider in _syrups) slider.interactable = true;
         if (_audio != null) _audio.Stop();
         _service.Perform(action);
-        _message.text = T("service_action_done");
+        Message(T("service_action_done"));
         RefreshStation();
     }
     private IEnumerator OpenFridge()

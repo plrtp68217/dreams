@@ -421,6 +421,16 @@
       "english": "Wrong code. Check your receipt."
     },
     {
+      "id": "service_fridge_wrong",
+      "russian": "Неверный код",
+      "english": "Wrong code"
+    },
+    {
+      "id": "service_fridge_take",
+      "russian": "E — Забрать картофель",
+      "english": "E — Take fries"
+    },
+    {
       "id": "service_vending_recipe",
       "russian": "РЕЦЕПТ",
       "english": "RECIPE"

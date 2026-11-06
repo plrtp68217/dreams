@@ -21,6 +21,7 @@ public class FastFoodFryerCloseUp : MonoBehaviour
     [SerializeField] private Sprite _idleForeground;
     [SerializeField] private Sprite[] _switchFrames;
     [SerializeField] private TextMeshProUGUI _hint;
+    [SerializeField] private SmoothServiceNotice _hintNotice;
     [SerializeField] private AudioSource _audio;
     [SerializeField] private AudioClip _drainSound;
     [SerializeField] private AudioClip _pickupSound;
@@ -54,6 +55,7 @@ public class FastFoodFryerCloseUp : MonoBehaviour
     {
         _dragging = _flying = _draining = _switching = _collecting = _audioPaused = false;
         _elapsed = _warningUntil = 0;
+        if (_hintNotice != null) _hintNotice.Clear();
         _offset = Vector2.zero;
         if (_tumbler != null) _tumbler.rectTransform.localRotation = Quaternion.identity;
         if (_burger != null) SetBurgerAlpha(1);
@@ -195,12 +197,13 @@ public class FastFoodFryerCloseUp : MonoBehaviour
         bool onTumbler = (_dragging || !IsBusy) && !_service.FuseRemoved && Hit(_tumbler.sprite, point - _origin - _offset + new Vector2(8, 18));
         bool onBurger = !IsBusy && _service.CanPerform(FacelessServiceAction.TakeBurger) && Hit(_burger.sprite, point);
         SetOutlines(onSwitch, onTumbler, onBurger);
-        _hint.text = T(Time.time < _warningUntil ? "power_first" : _switching ? "switching" :
+        string hint = T(Time.time < _warningUntil ? "power_first" : _switching ? "switching" :
             _collecting ? "collecting" : _flying ? "flying" :
             _draining ? "draining" : _dragging ? (_offset.magnitude >= _pullDistance ? "release" : "pull") :
             !_service.PowerOff ? "switch_hint" : !_service.FuseRemoved ? "tumbler_hint" :
             !_service.OilDrained ? "drain_hint_new" : onBurger ? "take_hint" :
             _burger.enabled ? "hover_burger" : "collected");
+        if (_hintNotice != null) _hintNotice.Show(hint); else _hint.text = hint;
     }
 
     private void SetOutlines(bool power, bool tumbler, bool burger)
