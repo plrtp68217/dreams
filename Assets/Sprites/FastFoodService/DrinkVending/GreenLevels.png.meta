@@ -1,0 +1,2751 @@
+fileFormatVersion: 2
+guid: 737eee7ee7af5e445a89d406bf870d65
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8537818256384430160
+    second: GreenLevels_0
+  - first:
+      213: -6242854883373379114
+    second: GreenLevels_1
+  - first:
+      213: -7822096970973635531
+    second: GreenLevels_2
+  - first:
+      213: -926311427286880221
+    second: GreenLevels_3
+  - first:
+      213: 4119129208912487136
+    second: GreenLevels_4
+  - first:
+      213: 1399954823730606056
+    second: GreenLevels_5
+  - first:
+      213: 4246780617108593082
+    second: GreenLevels_6
+  - first:
+      213: 8640742533435049831
+    second: GreenLevels_7
+  - first:
+      213: 678107993195147236
+    second: GreenLevels_8
+  - first:
+      213: 7272210684450387165
+    second: GreenLevels_9
+  - first:
+      213: -2740692295353144736
+    second: GreenLevels_10
+  - first:
+      213: -3684814335471022961
+    second: GreenLevels_11
+  - first:
+      213: -3032164397299608591
+    second: GreenLevels_12
+  - first:
+      213: -1883501987934081405
+    second: GreenLevels_13
+  - first:
+      213: 543339391258964527
+    second: GreenLevels_14
+  - first:
+      213: 7817799051260435764
+    second: GreenLevels_15
+  - first:
+      213: 1041146180670978020
+    second: GreenLevels_16
+  - first:
+      213: 373938846229723164
+    second: GreenLevels_17
+  - first:
+      213: 7105995052632933684
+    second: GreenLevels_18
+  - first:
+      213: 5887675449841860693
+    second: GreenLevels_19
+  - first:
+      213: -6317460539373160568
+    second: GreenLevels_20
+  - first:
+      213: 1587825403059536481
+    second: GreenLevels_21
+  - first:
+      213: -303158158042634870
+    second: GreenLevels_22
+  - first:
+      213: -7317839819799369340
+    second: GreenLevels_23
+  - first:
+      213: 5931630264043157401
+    second: GreenLevels_24
+  - first:
+      213: -5327957645879416974
+    second: GreenLevels_25
+  - first:
+      213: -8553408777916432092
+    second: GreenLevels_26
+  - first:
+      213: -8196132911489593802
+    second: GreenLevels_27
+  - first:
+      213: 5083739310141721494
+    second: GreenLevels_28
+  - first:
+      213: 7758711666546946325
+    second: GreenLevels_29
+  - first:
+      213: -6581772966196136838
+    second: GreenLevels_30
+  - first:
+      213: -5101941910549733143
+    second: GreenLevels_31
+  - first:
+      213: 4526647306526334046
+    second: GreenLevels_32
+  - first:
+      213: -2599829469997400221
+    second: GreenLevels_33
+  - first:
+      213: -3875056873361495191
+    second: GreenLevels_34
+  - first:
+      213: 2061938803428171525
+    second: GreenLevels_35
+  - first:
+      213: -1231175162971055287
+    second: GreenLevels_36
+  - first:
+      213: -2014471149455794466
+    second: GreenLevels_37
+  - first:
+      213: 7220919376343970380
+    second: GreenLevels_38
+  - first:
+      213: 5274745820401767576
+    second: GreenLevels_39
+  - first:
+      213: -3588017334816224169
+    second: GreenLevels_40
+  - first:
+      213: 4745503436882320121
+    second: GreenLevels_41
+  - first:
+      213: 7368318279353536510
+    second: GreenLevels_42
+  - first:
+      213: -5593756110410021047
+    second: GreenLevels_43
+  - first:
+      213: 6134855046047938234
+    second: GreenLevels_44
+  - first:
+      213: -8790836589546433681
+    second: GreenLevels_45
+  - first:
+      213: 5426283621912671397
+    second: GreenLevels_46
+  - first:
+      213: 8847367161333361658
+    second: GreenLevels_47
+  - first:
+      213: -1123700194528503952
+    second: GreenLevels_48
+  - first:
+      213: 2939182100591915238
+    second: GreenLevels_49
+  - first:
+      213: 1338726484180815548
+    second: GreenLevels_50
+  - first:
+      213: -6692803365171309148
+    second: GreenLevels_51
+  - first:
+      213: -673307826689403545
+    second: GreenLevels_52
+  - first:
+      213: 598693929752560113
+    second: GreenLevels_53
+  - first:
+      213: 2869822677098447627
+    second: GreenLevels_54
+  - first:
+      213: -5868687667357115091
+    second: GreenLevels_55
+  - first:
+      213: -4448757159171755730
+    second: GreenLevels_56
+  - first:
+      213: -1581743936849482726
+    second: GreenLevels_57
+  - first:
+      213: 6897475513616871566
+    second: GreenLevels_58
+  - first:
+      213: 5921303836324229056
+    second: GreenLevels_59
+  - first:
+      213: -8887093933410434571
+    second: GreenLevels_60
+  - first:
+      213: -8662335385519874720
+    second: GreenLevels_61
+  - first:
+      213: -1355432549341897814
+    second: GreenLevels_62
+  - first:
+      213: -3861562938749657573
+    second: GreenLevels_63
+  - first:
+      213: -8927026617322738497
+    second: GreenLevels_64
+  - first:
+      213: -1777695210875084073
+    second: GreenLevels_65
+  - first:
+      213: -4049253146634299338
+    second: GreenLevels_66
+  - first:
+      213: 2253621330873559807
+    second: GreenLevels_67
+  - first:
+      213: -111631271357485395
+    second: GreenLevels_68
+  - first:
+      213: -5283472781388823562
+    second: GreenLevels_69
+  - first:
+      213: -4915759109809946145
+    second: GreenLevels_70
+  - first:
+      213: 7442400343163840862
+    second: GreenLevels_71
+  - first:
+      213: 217741691901338965
+    second: GreenLevels_72
+  - first:
+      213: -8515280171246485651
+    second: GreenLevels_73
+  - first:
+      213: -2102086173932718196
+    second: GreenLevels_74
+  - first:
+      213: 2025997156422966268
+    second: GreenLevels_75
+  - first:
+      213: 2246577157422169865
+    second: GreenLevels_76
+  - first:
+      213: 6581221378337993516
+    second: GreenLevels_77
+  - first:
+      213: -5051860934696931045
+    second: GreenLevels_78
+  - first:
+      213: 5686796237149440306
+    second: GreenLevels_79
+  - first:
+      213: 885621360832585684
+    second: GreenLevels_80
+  - first:
+      213: 1896006410374714617
+    second: GreenLevels_81
+  - first:
+      213: 8433023993044271414
+    second: GreenLevels_82
+  - first:
+      213: 869857783924068881
+    second: GreenLevels_83
+  - first:
+      213: -1172795560579017563
+    second: GreenLevels_84
+  - first:
+      213: 3520329663438543740
+    second: GreenLevels_85
+  - first:
+      213: 382994926505066686
+    second: GreenLevels_86
+  - first:
+      213: 770773108154724588
+    second: GreenLevels_87
+  - first:
+      213: 124984223253945082
+    second: GreenLevels_88
+  - first:
+      213: 5237609202326698878
+    second: GreenLevels_89
+  - first:
+      213: 3544733443657723129
+    second: GreenLevels_90
+  - first:
+      213: -2521378243283641631
+    second: GreenLevels_91
+  - first:
+      213: 8088817036910126086
+    second: GreenLevels_92
+  - first:
+      213: -8844415807867646778
+    second: GreenLevels_93
+  - first:
+      213: 3515388122721072041
+    second: GreenLevels_94
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GreenLevels_000
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 580
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8c2be556ca13fa40a7a5c371e5c3197
+      internalID: 759280049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_001
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 580
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 964ff8064d261064baf5cb8ff248f6bb
+      internalID: -774670143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_002
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 580
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42cbdd044ce62d24a8c0f9dd17cb9cff
+      internalID: -47503133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_003
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 580
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f12988a81df4d439a71dccc87f28b0
+      internalID: -823467182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_004
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 580
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59bf3ceca92803b42b8a882d69f54469
+      internalID: -394274289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_005
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 580
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ea5728bb75cacb4482689d727eaaedf
+      internalID: -2100188667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_006
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 580
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d1ac67e4fa3e02439c91a17e75af9ee
+      internalID: -1444743398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_007
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 580
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f98529e82263a488840e810a197ace
+      internalID: -97477664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_008
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 580
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ddefd8b6db42e0438ec93d3365d7c7c
+      internalID: 860404891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_009
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 580
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b73d3c993c9e5b349878d332bf5fc9de
+      internalID: 1599378810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_010
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 580
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8e2873d3e3ccd4d87c63fe9e0b6d01
+      internalID: -2093602813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_011
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 516
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71ead0939a67f274bab6a4b6fb7cfd37
+      internalID: -469066558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_012
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 516
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7e72470ef91d2488c75477bdbfb97d
+      internalID: 2059446748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_013
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 516
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a78fb45fc5d41429d8d91936d469b5
+      internalID: 314032970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_014
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 516
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93224eb8ea82faa45a6f18cbcaaac9e7
+      internalID: -1222239026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_015
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 516
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df4bf2db57f1d384aaf5a623ae870541
+      internalID: -1840061324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_016
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 516
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d664099c23e849c408cdb52d4935f327
+      internalID: 665396455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_017
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 516
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f920bc6eaf277734a95478a9dc452292
+      internalID: 1528671054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_018
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 516
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f1c03a2712f977458876c91f8e50b4a
+      internalID: -1592591835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_019
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 516
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccdd02c6d4b663d45aee1f2098728ef2
+      internalID: 1010815249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_020
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 516
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 474973bdb0218934788a82a0f102e545
+      internalID: -1037576501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_021
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 516
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e114e473ae9d4c344b5f5cb33dab0b70
+      internalID: 2122055931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_022
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 452
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aada324e71cfe264d8a5cf6520e104d0
+      internalID: 610897166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_023
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 452
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11f8ed6db06ef7a44adb9b04a98955f4
+      internalID: 1422454824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_024
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 452
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f225d036171a91142b634b9c3e789fc4
+      internalID: -411126245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_025
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 452
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eaf3c5a09bf0e14d8d82ea7f74835b9
+      internalID: -1224375910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_026
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 452
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b70adedea12e6d45bc3c823c129752a
+      internalID: 1216923467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_027
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 452
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2d0518cf543e004fbfe6319539fa0f5
+      internalID: 831255031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_028
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 452
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea39041faf1e9a149a66ef067aca32ed
+      internalID: 70329014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_029
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 452
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bdf0e2684e1b824a991fd8301254491
+      internalID: -1566601945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_030
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 452
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35dacc62c2d84ca498c1124522ddd8ad
+      internalID: -1659126020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_031
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 452
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e76bc1eaa09a6445815e96f23bc04cd
+      internalID: 21325364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_032
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 452
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc3ed775a46782a4597681e0ddb81a6d
+      internalID: 240969719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_033
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 388
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95da6d4977a04e743bed38c7bb0b6ee0
+      internalID: -87582178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_034
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 388
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe79cefe1d8593c4a9b4cb101a6842bb
+      internalID: -1667946319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_035
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 388
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c6b8f0ed395bb541b753f3181bb631f
+      internalID: 416967864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_036
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 388
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29315750601cc2e43a6a042b88019e89
+      internalID: -1380749733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_037
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 388
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4fb98640a581143b1e5f9f246b02a5
+      internalID: 559848666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_038
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 388
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e13e70907fd2174a95f72c35f114505
+      internalID: -1027770919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_039
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 388
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3da6755848cb754da67b10ecdbe3a6f
+      internalID: 1178215331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_040
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 388
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c228f31c450bac04ca97bcd3a9d45345
+      internalID: -520021490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_041
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 388
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e7edb42331a8cd4b9bd621faebd6970
+      internalID: -1526803778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_042
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 388
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79740ed51614eaf4aa8e9ee627d2d3b3
+      internalID: -1141605830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_043
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 388
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17ab49dd71817344f87cba531f048648
+      internalID: 1124350392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_044
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 324
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efda9a9938604c347b01e3a6a1a1aa63
+      internalID: 617138180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_045
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 324
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d41562617d1d03478d769ff95cf63da
+      internalID: 660803131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_046
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 324
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b3fc71f0e6f10e44a38fef1df7b9c51
+      internalID: -1283655289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_047
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 324
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91584d923e19c424498d2c671c76d8f7
+      internalID: 1722809075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_048
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 324
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27381ba7d3720a946aa603054c541051
+      internalID: -212154227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_049
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 324
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf6b419d3235e6499db91e48116ba9e
+      internalID: -399478116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_050
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 324
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9687ed277d3dfd644ba3cbc1bb07c6cd
+      internalID: -1468467347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_051
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 324
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d4b4dc427aba4547acb00542ad5e087
+      internalID: 116519702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_052
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 324
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5290fb7a25d56345ab3b64c59289a62
+      internalID: -2130258740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_053
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 324
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4740f90dbdbdf1b4589edb679870f5a3
+      internalID: -701235145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_054
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 324
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adfbb72badeab124ab1f30852d1d614b
+      internalID: -2098055240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_055
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 260
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd26a2e1af2412444b4bc2e8f7dc9781
+      internalID: -1990278418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_056
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 260
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f923581dae92a014c8034beef8ffbaa5
+      internalID: 1469669402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_057
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 260
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c8def81221cd54699bc3ad5d89dbd5
+      internalID: -1951203217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_058
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 260
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 144f2241243173746b89bc59d780da74
+      internalID: -578862836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_059
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 260
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 002ef1c6e1bd99a41b5130b434076de5
+      internalID: -1462781176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_060
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 260
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f17d8063489b89144b4286776b4b4b46
+      internalID: 1037156901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_061
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 260
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 552f228bd1df7594e95912a55ce5130d
+      internalID: -538915041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_062
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 260
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 250ae9d76e0936b4faac051f894076e3
+      internalID: -1828704945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_063
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 260
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f82f2a4be041f24cbb16e0de28d0ce2
+      internalID: 246547970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_064
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 260
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b9336ce0e282847be05de166575d3c
+      internalID: 114116404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_065
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 260
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17754aabfeb681042a70ff2ba9194383
+      internalID: -1006609166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_066
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 196
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24f23bfd87a76784086f20d8e5c90b76
+      internalID: -747049300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_067
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 196
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8c6ef5ad41c2a54f9fa70d5a4929359
+      internalID: -1498810037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_068
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 196
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64974e867e14d6a40adf42390d630990
+      internalID: -2115498335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_069
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 196
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3681bb04670546d47a16c766fc14a626
+      internalID: -2118422883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_070
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 196
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67070c5c0c4caba4f82148eb1b9f65cf
+      internalID: -1207691356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_071
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 196
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2501b0a72abe38f4c91ffac9216c5fd9
+      internalID: 648993014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_072
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 196
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eab71674ecde9742bcb7493006ab8c8
+      internalID: -255773331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_073
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 196
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfffe5b402763644896a8d53b1d662f2
+      internalID: 702513423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_074
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 196
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e896d48af008fb47b15e10dcecfc72a
+      internalID: -1890209030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_075
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 196
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f791d03aeddc00c419cb37b492ad09df
+      internalID: -166030511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_076
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 196
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 940f8da4345ee4444a523d3e034f16d5
+      internalID: 1917008546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_077
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 132
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c328205fd96cce44ba0b1b8303bd774
+      internalID: 240398358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_078
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 132
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b425872b4efa024cb32e1c7fd4ce213
+      internalID: -57384259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_079
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 132
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74286d6280d0b0144ba99a2801350b03
+      internalID: 899019127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_080
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 132
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bbe591e2de83dd4999ca05b13aeecc5
+      internalID: -181813394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_081
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 132
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9b184dbab2b5e049b9b681053aebad6
+      internalID: -1424177523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_082
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 132
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a685b8c1172b974b91043fba5b31bf8
+      internalID: 1015873593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_083
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 132
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63302f2575950744193e254571b46b43
+      internalID: -1561317917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_084
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 132
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfab38d64d966c24b82d483cc38fb159
+      internalID: 1100642728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_085
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 132
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9d2b1b70f558c2419a4b260d2c2d38b
+      internalID: 882927719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_086
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 132
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cbb6decb27192746ba53054438ae202
+      internalID: 238683753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_087
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 132
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbdc6af8c55b09e48886451e805c0925
+      internalID: 762221607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_088
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 68
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4827fe879a040534280e2b534c623a9e
+      internalID: 1230407291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_089
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 68
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5c354a1f9c79046a146f58d9f273c1
+      internalID: 1931064441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_090
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 68
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 792297fa83897444cb4dfb47d1321549
+      internalID: -183521070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_091
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 68
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26bd7635965bed94baa023abbaf1d155
+      internalID: 1736610055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_092
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 68
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 945a05a3c56bdb94ca6acaab21a21d3e
+      internalID: 996811191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_093
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 68
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c36f52d100a19459b7c1c7d991f925
+      internalID: -1896665237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_094
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 68
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38cd89c418b35a44285ee14286b8ab06
+      internalID: 906448532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_095
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 68
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d551fcb5321914781425eb0ed09cf0
+      internalID: -1997944874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_096
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 68
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a356fd55e46b64eb37fb29106e6065
+      internalID: 351249578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_097
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 68
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fb3ac988234e964db9b250d632bb3d5
+      internalID: 1792995136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_098
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 68
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a78a733f87719a4480a3c90257f7742
+      internalID: 1691362951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_099
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ae2997f4b9c1f14d97c2eb6fbc7fc4d
+      internalID: -279135088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLevels_100
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 4
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce63347b28bcd6244b67631e2730b5bd
+      internalID: 148051416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4b774c85b7c20034884b9d0beb61f499
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GreenLevels_000: 759280049
+      GreenLevels_001: -774670143
+      GreenLevels_002: -47503133
+      GreenLevels_003: -823467182
+      GreenLevels_004: -394274289
+      GreenLevels_005: -2100188667
+      GreenLevels_006: -1444743398
+      GreenLevels_007: -97477664
+      GreenLevels_008: 860404891
+      GreenLevels_009: 1599378810
+      GreenLevels_010: -2093602813
+      GreenLevels_011: -469066558
+      GreenLevels_012: 2059446748
+      GreenLevels_013: 314032970
+      GreenLevels_014: -1222239026
+      GreenLevels_015: -1840061324
+      GreenLevels_016: 665396455
+      GreenLevels_017: 1528671054
+      GreenLevels_018: -1592591835
+      GreenLevels_019: 1010815249
+      GreenLevels_020: -1037576501
+      GreenLevels_021: 2122055931
+      GreenLevels_022: 610897166
+      GreenLevels_023: 1422454824
+      GreenLevels_024: -411126245
+      GreenLevels_025: -1224375910
+      GreenLevels_026: 1216923467
+      GreenLevels_027: 831255031
+      GreenLevels_028: 70329014
+      GreenLevels_029: -1566601945
+      GreenLevels_030: -1659126020
+      GreenLevels_031: 21325364
+      GreenLevels_032: 240969719
+      GreenLevels_033: -87582178
+      GreenLevels_034: -1667946319
+      GreenLevels_035: 416967864
+      GreenLevels_036: -1380749733
+      GreenLevels_037: 559848666
+      GreenLevels_038: -1027770919
+      GreenLevels_039: 1178215331
+      GreenLevels_040: -520021490
+      GreenLevels_041: -1526803778
+      GreenLevels_042: -1141605830
+      GreenLevels_043: 1124350392
+      GreenLevels_044: 617138180
+      GreenLevels_045: 660803131
+      GreenLevels_046: -1283655289
+      GreenLevels_047: 1722809075
+      GreenLevels_048: -212154227
+      GreenLevels_049: -399478116
+      GreenLevels_050: -1468467347
+      GreenLevels_051: 116519702
+      GreenLevels_052: -2130258740
+      GreenLevels_053: -701235145
+      GreenLevels_054: -2098055240
+      GreenLevels_055: -1990278418
+      GreenLevels_056: 1469669402
+      GreenLevels_057: -1951203217
+      GreenLevels_058: -578862836
+      GreenLevels_059: -1462781176
+      GreenLevels_060: 1037156901
+      GreenLevels_061: -538915041
+      GreenLevels_062: -1828704945
+      GreenLevels_063: 246547970
+      GreenLevels_064: 114116404
+      GreenLevels_065: -1006609166
+      GreenLevels_066: -747049300
+      GreenLevels_067: -1498810037
+      GreenLevels_068: -2115498335
+      GreenLevels_069: -2118422883
+      GreenLevels_070: -1207691356
+      GreenLevels_071: 648993014
+      GreenLevels_072: -255773331
+      GreenLevels_073: 702513423
+      GreenLevels_074: -1890209030
+      GreenLevels_075: -166030511
+      GreenLevels_076: 1917008546
+      GreenLevels_077: 240398358
+      GreenLevels_078: -57384259
+      GreenLevels_079: 899019127
+      GreenLevels_080: -181813394
+      GreenLevels_081: -1424177523
+      GreenLevels_082: 1015873593
+      GreenLevels_083: -1561317917
+      GreenLevels_084: 1100642728
+      GreenLevels_085: 882927719
+      GreenLevels_086: 238683753
+      GreenLevels_087: 762221607
+      GreenLevels_088: 1230407291
+      GreenLevels_089: 1931064441
+      GreenLevels_090: -183521070
+      GreenLevels_091: 1736610055
+      GreenLevels_092: 996811191
+      GreenLevels_093: -1896665237
+      GreenLevels_094: 906448532
+      GreenLevels_095: -1997944874
+      GreenLevels_096: 351249578
+      GreenLevels_097: 1792995136
+      GreenLevels_098: 1691362951
+      GreenLevels_099: -279135088
+      GreenLevels_100: 148051416
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

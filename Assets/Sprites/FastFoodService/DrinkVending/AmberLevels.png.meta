@@ -1,0 +1,2751 @@
+fileFormatVersion: 2
+guid: 76e1d0f1d76893a4c95e05fedad397b0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4160068698575837623
+    second: AmberLevels_0
+  - first:
+      213: -6201243295741600905
+    second: AmberLevels_1
+  - first:
+      213: 5244564454101217106
+    second: AmberLevels_2
+  - first:
+      213: 8132977299972093212
+    second: AmberLevels_3
+  - first:
+      213: 2166507053113052904
+    second: AmberLevels_4
+  - first:
+      213: 5403918050129360179
+    second: AmberLevels_5
+  - first:
+      213: 5544688096482019028
+    second: AmberLevels_6
+  - first:
+      213: 9202162691320275838
+    second: AmberLevels_7
+  - first:
+      213: -2136317508410715304
+    second: AmberLevels_8
+  - first:
+      213: -4745534552842436
+    second: AmberLevels_9
+  - first:
+      213: 4393239459572389502
+    second: AmberLevels_10
+  - first:
+      213: -7543256057988168421
+    second: AmberLevels_11
+  - first:
+      213: -247550462148662586
+    second: AmberLevels_12
+  - first:
+      213: -7973498312187058058
+    second: AmberLevels_13
+  - first:
+      213: -299685427410498274
+    second: AmberLevels_14
+  - first:
+      213: 4255587404809494227
+    second: AmberLevels_15
+  - first:
+      213: -4071650221387845081
+    second: AmberLevels_16
+  - first:
+      213: 7465538949225619203
+    second: AmberLevels_17
+  - first:
+      213: -373275147445970170
+    second: AmberLevels_18
+  - first:
+      213: -1783724026554672534
+    second: AmberLevels_19
+  - first:
+      213: 8301121565514177880
+    second: AmberLevels_20
+  - first:
+      213: 1449332174382340629
+    second: AmberLevels_21
+  - first:
+      213: -5116066576539957173
+    second: AmberLevels_22
+  - first:
+      213: -8457387911926551351
+    second: AmberLevels_23
+  - first:
+      213: 7446894282399855870
+    second: AmberLevels_24
+  - first:
+      213: -4401478715428891287
+    second: AmberLevels_25
+  - first:
+      213: 298148383631897822
+    second: AmberLevels_26
+  - first:
+      213: 7857358111195537179
+    second: AmberLevels_27
+  - first:
+      213: -2545371891197092434
+    second: AmberLevels_28
+  - first:
+      213: -3241611449299982880
+    second: AmberLevels_29
+  - first:
+      213: -6352872435566145022
+    second: AmberLevels_30
+  - first:
+      213: -1084575685927903311
+    second: AmberLevels_31
+  - first:
+      213: -8893590613527634126
+    second: AmberLevels_32
+  - first:
+      213: -2460813449048892577
+    second: AmberLevels_33
+  - first:
+      213: -6993268306868486402
+    second: AmberLevels_34
+  - first:
+      213: -8147539188499326394
+    second: AmberLevels_35
+  - first:
+      213: 4587531221605696516
+    second: AmberLevels_36
+  - first:
+      213: 4496813408272257299
+    second: AmberLevels_37
+  - first:
+      213: 3812932822573042393
+    second: AmberLevels_38
+  - first:
+      213: -7154891748927816704
+    second: AmberLevels_39
+  - first:
+      213: -8425127391436653881
+    second: AmberLevels_40
+  - first:
+      213: 5029981789053281057
+    second: AmberLevels_41
+  - first:
+      213: -2489646081440718293
+    second: AmberLevels_42
+  - first:
+      213: -3304528139159950870
+    second: AmberLevels_43
+  - first:
+      213: 8808621679201296688
+    second: AmberLevels_44
+  - first:
+      213: -5790501235901123421
+    second: AmberLevels_45
+  - first:
+      213: -2923170365762635332
+    second: AmberLevels_46
+  - first:
+      213: 342205043047122458
+    second: AmberLevels_47
+  - first:
+      213: -6656718106951702510
+    second: AmberLevels_48
+  - first:
+      213: 7230590602715347308
+    second: AmberLevels_49
+  - first:
+      213: -3946571209549935464
+    second: AmberLevels_50
+  - first:
+      213: 8831779102599053765
+    second: AmberLevels_51
+  - first:
+      213: 5957960643531902453
+    second: AmberLevels_52
+  - first:
+      213: -3850950941152146796
+    second: AmberLevels_53
+  - first:
+      213: -503913814441436874
+    second: AmberLevels_54
+  - first:
+      213: 178403172777120753
+    second: AmberLevels_55
+  - first:
+      213: -7954595175493631349
+    second: AmberLevels_56
+  - first:
+      213: 1233677570558629480
+    second: AmberLevels_57
+  - first:
+      213: -5363005451092692479
+    second: AmberLevels_58
+  - first:
+      213: 6601694195309734741
+    second: AmberLevels_59
+  - first:
+      213: -5795141096862063535
+    second: AmberLevels_60
+  - first:
+      213: -8938704643892438899
+    second: AmberLevels_61
+  - first:
+      213: -6939897806219405610
+    second: AmberLevels_62
+  - first:
+      213: -998627566820777145
+    second: AmberLevels_63
+  - first:
+      213: -3134083297738551353
+    second: AmberLevels_64
+  - first:
+      213: -8891559604214116069
+    second: AmberLevels_65
+  - first:
+      213: 8730413691133006576
+    second: AmberLevels_66
+  - first:
+      213: -5866105032919214883
+    second: AmberLevels_67
+  - first:
+      213: -8376468307415551748
+    second: AmberLevels_68
+  - first:
+      213: 5844626251548741717
+    second: AmberLevels_69
+  - first:
+      213: 57310849610373649
+    second: AmberLevels_70
+  - first:
+      213: -7069723501861214364
+    second: AmberLevels_71
+  - first:
+      213: -790105153276172942
+    second: AmberLevels_72
+  - first:
+      213: 8763734638171422210
+    second: AmberLevels_73
+  - first:
+      213: -3352220707203025622
+    second: AmberLevels_74
+  - first:
+      213: 1386415686802031780
+    second: AmberLevels_75
+  - first:
+      213: -8667472432650343830
+    second: AmberLevels_76
+  - first:
+      213: -3358851373002704418
+    second: AmberLevels_77
+  - first:
+      213: 6412100027814130232
+    second: AmberLevels_78
+  - first:
+      213: -8703266271208833405
+    second: AmberLevels_79
+  - first:
+      213: 1577790534936436003
+    second: AmberLevels_80
+  - first:
+      213: -678004824127774334
+    second: AmberLevels_81
+  - first:
+      213: 4825335314198724737
+    second: AmberLevels_82
+  - first:
+      213: -6389367506014935159
+    second: AmberLevels_83
+  - first:
+      213: 5708587290700627844
+    second: AmberLevels_84
+  - first:
+      213: -5613391444406872891
+    second: AmberLevels_85
+  - first:
+      213: 9022325613771912096
+    second: AmberLevels_86
+  - first:
+      213: -2029383369094618121
+    second: AmberLevels_87
+  - first:
+      213: 2990842269055248319
+    second: AmberLevels_88
+  - first:
+      213: 1756817968666513008
+    second: AmberLevels_89
+  - first:
+      213: -3012323244046749885
+    second: AmberLevels_90
+  - first:
+      213: -7901468789889946295
+    second: AmberLevels_91
+  - first:
+      213: 7848916052676191334
+    second: AmberLevels_92
+  - first:
+      213: -7082151042900135198
+    second: AmberLevels_93
+  - first:
+      213: 1096873027647776042
+    second: AmberLevels_94
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AmberLevels_000
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 580
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb0100344cc41834ca06f8f93bcdbdff
+      internalID: -1382967420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_001
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 580
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f02f2a57bbced547bb75cc460d58d83
+      internalID: -1869548233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_002
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 580
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec67504bbccd2624581aeba858bcb151
+      internalID: 237388649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_003
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 580
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 723ec473ad9130f45a3d5324220c4737
+      internalID: 914244682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_004
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 580
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a632f8a7a70ca014e824b50e4fa3973a
+      internalID: -1992654134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_005
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 580
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7935e2d5b1c37334db189c482277e97d
+      internalID: -576200501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_006
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 580
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1761deaf26d8b34b86af1f83dea019b
+      internalID: 416771577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_007
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 580
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f29ab0a6c07cd44c98d03353616178e
+      internalID: 1933720100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_008
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 580
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d55922771eab6468a4d4db95485897
+      internalID: -2124728225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_009
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 580
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e239cb242f71e49b085b98e8b661e6
+      internalID: -528994082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_010
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 580
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 775a2f41f8f6f35469f66489b3789a33
+      internalID: 526183681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_011
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 516
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5390f4edfd1a0854a90d24b7cfc258a7
+      internalID: 1053552864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_012
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 516
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6617df714e6c7e14e91f8b815f5a656d
+      internalID: 894573017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_013
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 516
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2167b34131f7e45b7b47112a52e6c2
+      internalID: 1407283001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_014
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 516
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3273c271b31660745a3b3339f5bcf573
+      internalID: 1331079946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_015
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 516
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c7b5d1b51129c54c978ba9a9cfafe5a
+      internalID: 931681524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_016
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 516
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa123a5c0404d8947825e3e3d761795e
+      internalID: -1923829827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_017
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 516
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f35e4f3a843d30f49a8f5fa4cd2d5d3c
+      internalID: -1946867646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_018
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 516
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00cbb9fe63812c840b8636850045e351
+      internalID: -2138563402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_019
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 516
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b5e90ac9d634694fa63132de4a1a948
+      internalID: -422281137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_020
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 516
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 675f5e5bfacff7f4095d8417c7096767
+      internalID: -1937581739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_021
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 516
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058df1f4794638740bd68ddf2d066a69
+      internalID: -1742362435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_022
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 452
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f43c6a48d0957fd4d8008ff0f610cc3c
+      internalID: 311346320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_023
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 452
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a075b5ea78381e94f8858def9b6332f0
+      internalID: 1168566863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_024
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 452
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1e3d2fb7a0c1c4d80c9fbd5abd981c
+      internalID: 1726613465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_025
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 452
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 978703ea16093d74f858003ca45ad454
+      internalID: 1901531381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_026
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 452
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a5134f3b3b971c4fbdc230594fbe143
+      internalID: 1600638906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_027
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 452
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1edf16984c72e274a976c09cbd26f02e
+      internalID: -636293224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_028
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 452
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a3585a7bc093c4ba57c9fc6812df7b
+      internalID: -1784997185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_029
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 452
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36664d6495b6f934aafe7f0fd1788449
+      internalID: -1464325151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_030
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 452
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27df959a08b8a0f4eb23c21a41f5ea85
+      internalID: -1004226216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_031
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 452
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eafb8401fdb03941b242930bde96b8e
+      internalID: 957509132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_032
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 452
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f886cddb73f7a50418b960c54b5b9aba
+      internalID: -1354810475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_033
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 388
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2627e371dea0f94e83a5baf876dc818
+      internalID: -1427606365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_034
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 388
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0730c03f7a47bce4fac5244fd59e3ee2
+      internalID: 451965033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_035
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 388
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d58595c766e0144bb577bbde904feb5
+      internalID: -631875629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_036
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 388
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 025ee61976d10674c9b65c22c4bc4372
+      internalID: -1809646185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_037
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 388
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d04ba547bc5dddc4797c32455d133082
+      internalID: -507691428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_038
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 388
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4fba837c1f32f8438c73cbbb8cc8406
+      internalID: 1536478438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_039
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 388
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305a9f9c530310447bd8f19e2e3094d7
+      internalID: 1157103451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_040
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 388
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 541d6d48222d4f047893ea1e66746362
+      internalID: -400055898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_041
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 388
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c84dd9a81ca8d643947c8a616374c80
+      internalID: 1440296846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_042
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 388
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a64de59697a41c46ad5a71244593836
+      internalID: 448978660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_043
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 388
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d51eeb4d4b453844a7037d3482bac64
+      internalID: -1731073376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_044
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 324
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdcebb60a587aba41a4dfefb7121b6d7
+      internalID: -2062732220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_045
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 324
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab55ad68ed6f9440addb5d2dae63335
+      internalID: -186507027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_046
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 324
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50fe89269426f2545bf845817fce426e
+      internalID: 1767501262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_047
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 324
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9928c1b9f051b9f4ab5ac6e2d4e7ee58
+      internalID: -734453419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_048
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 324
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d19f16255180364a8200f3419c0dc38
+      internalID: -2026384607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_049
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 324
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffbe124b661885d4982a62db50c26b50
+      internalID: -875441603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_050
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 324
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a62d12696bb394468453b7f228409e6
+      internalID: 1980672539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_051
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 324
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9f51cd8587761e4092bd2717acfe9d5
+      internalID: 505640715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_052
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 324
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38170a3ccbd3e234e9aaddf657adeb82
+      internalID: -1882038216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_053
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 324
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 236d80d8df6f765468e2fc13be09a480
+      internalID: -1289029694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_054
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 324
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a155b08fa8550d34f9a3a0632c66b4f0
+      internalID: -1785960071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_055
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 260
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2c279c95d207c347b060e57beb275bd
+      internalID: 2146169118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_056
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 260
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00093f9f8ee517148afb27fb1e642fbf
+      internalID: 2034862081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_057
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 260
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 626b33191a7e20c4eb0017bfe4868fa0
+      internalID: 1509945303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_058
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 260
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f77645d398e078948ae3b151120a04e0
+      internalID: 1840857843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_059
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 260
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da426d3a6bc6732469cdd5f7a7657667
+      internalID: 339047515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_060
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 260
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e94edb688f7fef0408aa05c28105da2d
+      internalID: -2054041802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_061
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 260
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be6c65e3f3381f4ab99a6e058e0b560
+      internalID: 1687349221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_062
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 260
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f53e81396db28241ae2a860a31f4bf9
+      internalID: -1830849565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_063
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 260
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c76e35f93f24af94c85ff72cc23058c1
+      internalID: -1619327457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_064
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 260
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f804b9e05ecaf9409d4833c9b337c09
+      internalID: 792852233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_065
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 260
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e762d579df7d83449ab98b1abb361bf
+      internalID: -1467869168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_066
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 196
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e68d833b700038d499685e82068f17f6
+      internalID: 433237268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_067
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 196
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a92d0f2b802ed5459f36f0666e25a5c
+      internalID: 1797366893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_068
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 196
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 378627ff0e5d6844c84d1c14030dca50
+      internalID: -703315925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_069
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 196
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b64edfc6506b5f4884cedae0abf04e5
+      internalID: -299959418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_070
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 196
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a1dcb5b8ad73842bb8ee42d6d1b957
+      internalID: -966054441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_071
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 196
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b790aa4268ba6d64587df134169f2756
+      internalID: -549875967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_072
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 196
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b01650203b7431f47862e66f5d3ccb63
+      internalID: -2023217958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_073
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 196
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986d595f36fb5b84381648b39b53d460
+      internalID: 2113347776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_074
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 196
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827c8e13ac5f50245b535e8495aa0603
+      internalID: -1087156358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_075
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 196
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4272f5998687af4189e034d81c79b03
+      internalID: 452400117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_076
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 196
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adbb4d6a88932d84fb038063d6996d8a
+      internalID: -2105643420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_077
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 132
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d050b41d114dae4c8490cbbf3d43376
+      internalID: 1872484131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_078
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 132
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a198e92d4e9f44cb67e834728624d9
+      internalID: -1627575473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_079
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 132
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1d28d688b1892b46b2c998dba7cc246
+      internalID: 2083170401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_080
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 132
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99d7ec6cb7cb7494d916a6b1d3cd7be1
+      internalID: 1279009986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_081
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 132
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f00b928cfe850343824e730b1bc0f07
+      internalID: 287550000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_082
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 132
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d1a89e3c1cd924dad134aca57f416b
+      internalID: -765034845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_083
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 132
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2724e01483377249a39ecd5b1916d6c
+      internalID: -974692011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_084
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 132
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3401e68cb7c50da449a7f17286fcf9eb
+      internalID: -601734288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_085
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 132
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fb0882ae7e083a40937bff46e4b04a5
+      internalID: -1144657860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_086
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 132
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49a0b3e868e300e4d9e760baeacd9b3f
+      internalID: 884937717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_087
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 132
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ad5b08f3f0773c4996d4442d2951a8f
+      internalID: -720276098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_088
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 68
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a64eaf52276acac409a7d11f46ff7d0e
+      internalID: -1719891932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_089
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 68
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 325b7dca22a96104586098d7f6c03ec7
+      internalID: 749175483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_090
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 68
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 022771c3edff1f940a0b863d45d9c084
+      internalID: 1428411226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_091
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 68
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9963a6feaeea4364bb1eb3d1bf46d51c
+      internalID: -36753661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_092
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 68
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 637d891bc7daf5443ad8ae730ba3c723
+      internalID: 1537616661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_093
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 68
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae55b82b45738564d9537a15b45c2582
+      internalID: 2549388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_094
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 68
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d29a4f127601fa447a762d30c793e217
+      internalID: -522383807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_095
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 68
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd833e683d055848aafccbd52e03bd6
+      internalID: -761895080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_096
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 68
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51bb5359530ce1b48b527803ac947bc9
+      internalID: -984049610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_097
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 68
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0a72e82722f2be489e842281de7b8f3
+      internalID: 1610059124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_098
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 68
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 289cbec29c0234e44885a5c6888191ba
+      internalID: -698102369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_099
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 878555b7ed961a346939a4ab66aee808
+      internalID: 84529886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmberLevels_100
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 4
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bba5727d716bb948bdc837b6e6678bd
+      internalID: -572720526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7899a97c437b5ad4886b9818b98bece6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AmberLevels_000: -1382967420
+      AmberLevels_001: -1869548233
+      AmberLevels_002: 237388649
+      AmberLevels_003: 914244682
+      AmberLevels_004: -1992654134
+      AmberLevels_005: -576200501
+      AmberLevels_006: 416771577
+      AmberLevels_007: 1933720100
+      AmberLevels_008: -2124728225
+      AmberLevels_009: -528994082
+      AmberLevels_010: 526183681
+      AmberLevels_011: 1053552864
+      AmberLevels_012: 894573017
+      AmberLevels_013: 1407283001
+      AmberLevels_014: 1331079946
+      AmberLevels_015: 931681524
+      AmberLevels_016: -1923829827
+      AmberLevels_017: -1946867646
+      AmberLevels_018: -2138563402
+      AmberLevels_019: -422281137
+      AmberLevels_020: -1937581739
+      AmberLevels_021: -1742362435
+      AmberLevels_022: 311346320
+      AmberLevels_023: 1168566863
+      AmberLevels_024: 1726613465
+      AmberLevels_025: 1901531381
+      AmberLevels_026: 1600638906
+      AmberLevels_027: -636293224
+      AmberLevels_028: -1784997185
+      AmberLevels_029: -1464325151
+      AmberLevels_030: -1004226216
+      AmberLevels_031: 957509132
+      AmberLevels_032: -1354810475
+      AmberLevels_033: -1427606365
+      AmberLevels_034: 451965033
+      AmberLevels_035: -631875629
+      AmberLevels_036: -1809646185
+      AmberLevels_037: -507691428
+      AmberLevels_038: 1536478438
+      AmberLevels_039: 1157103451
+      AmberLevels_040: -400055898
+      AmberLevels_041: 1440296846
+      AmberLevels_042: 448978660
+      AmberLevels_043: -1731073376
+      AmberLevels_044: -2062732220
+      AmberLevels_045: -186507027
+      AmberLevels_046: 1767501262
+      AmberLevels_047: -734453419
+      AmberLevels_048: -2026384607
+      AmberLevels_049: -875441603
+      AmberLevels_050: 1980672539
+      AmberLevels_051: 505640715
+      AmberLevels_052: -1882038216
+      AmberLevels_053: -1289029694
+      AmberLevels_054: -1785960071
+      AmberLevels_055: 2146169118
+      AmberLevels_056: 2034862081
+      AmberLevels_057: 1509945303
+      AmberLevels_058: 1840857843
+      AmberLevels_059: 339047515
+      AmberLevels_060: -2054041802
+      AmberLevels_061: 1687349221
+      AmberLevels_062: -1830849565
+      AmberLevels_063: -1619327457
+      AmberLevels_064: 792852233
+      AmberLevels_065: -1467869168
+      AmberLevels_066: 433237268
+      AmberLevels_067: 1797366893
+      AmberLevels_068: -703315925
+      AmberLevels_069: -299959418
+      AmberLevels_070: -966054441
+      AmberLevels_071: -549875967
+      AmberLevels_072: -2023217958
+      AmberLevels_073: 2113347776
+      AmberLevels_074: -1087156358
+      AmberLevels_075: 452400117
+      AmberLevels_076: -2105643420
+      AmberLevels_077: 1872484131
+      AmberLevels_078: -1627575473
+      AmberLevels_079: 2083170401
+      AmberLevels_080: 1279009986
+      AmberLevels_081: 287550000
+      AmberLevels_082: -765034845
+      AmberLevels_083: -974692011
+      AmberLevels_084: -601734288
+      AmberLevels_085: -1144657860
+      AmberLevels_086: 884937717
+      AmberLevels_087: -720276098
+      AmberLevels_088: -1719891932
+      AmberLevels_089: 749175483
+      AmberLevels_090: 1428411226
+      AmberLevels_091: -36753661
+      AmberLevels_092: 1537616661
+      AmberLevels_093: 2549388
+      AmberLevels_094: -522383807
+      AmberLevels_095: -761895080
+      AmberLevels_096: -984049610
+      AmberLevels_097: 1610059124
+      AmberLevels_098: -698102369
+      AmberLevels_099: 84529886
+      AmberLevels_100: -572720526
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

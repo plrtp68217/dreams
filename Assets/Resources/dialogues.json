@@ -421,6 +421,26 @@
       "english": "Wrong code. Check your receipt."
     },
     {
+      "id": "service_vending_recipe",
+      "russian": "РЕЦЕПТ",
+      "english": "RECIPE"
+    },
+    {
+      "id": "service_vending_total",
+      "russian": "ОБЩИЙ ОБЪЁМ",
+      "english": "TOTAL VOLUME"
+    },
+    {
+      "id": "service_vending_wrong",
+      "russian": "Неверный рецепт",
+      "english": "Wrong recipe"
+    },
+    {
+      "id": "service_vending_take",
+      "russian": "E — Забрать",
+      "english": "E — Take"
+    },
+    {
       "id": "service_recipe_wrong",
       "russian": "Не те пропорции. Сверьте все три значения с рецептом.",
       "english": "Wrong proportions. Match all three values to the recipe."

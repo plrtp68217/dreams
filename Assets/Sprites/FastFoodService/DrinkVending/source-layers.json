@@ -1,0 +1,293 @@
+{
+  "source": "SourceAssets/Art/FastFood/art/guests/01_faceless_man/03_drink/drink_vending.aseprite",
+  "sha256": "540b59c72e94db313ef6c261c8db6d080460c8cf954b4b469bbdf9ab918c008c",
+  "referenceSha256": "c89d0f0d542c71b9472643bf1f169faa5edf0da57cdf4dcf3eba0868a9bac71c",
+  "width": 320,
+  "height": 180,
+  "layers": [
+    {
+      "name": "Layer 1",
+      "flags": 3,
+      "type": 0,
+      "child": 0,
+      "blend": 0,
+      "opacity": 255
+    },
+    {
+      "name": "Уровень напитка",
+      "flags": 3,
+      "type": 0,
+      "child": 0,
+      "blend": 0,
+      "opacity": 255
+    },
+    {
+      "name": "Уровень зеленый",
+      "flags": 3,
+      "type": 0,
+      "child": 0,
+      "blend": 0,
+      "opacity": 255
+    },
+    {
+      "name": "Уровень желтый",
+      "flags": 3,
+      "type": 0,
+      "child": 0,
+      "blend": 0,
+      "opacity": 255
+    },
+    {
+      "name": "Уровень Красный",
+      "flags": 3,
+      "type": 0,
+      "child": 0,
+      "blend": 0,
+      "opacity": 255
+    },
+    {
+      "name": "Аппарат",
+      "flags": 19,
+      "type": 0,
+      "child": 0,
+      "blend": 0,
+      "opacity": 255
+    },
+    {
+      "name": "Стакан",
+      "flags": 3,
+      "type": 0,
+      "child": 0,
+      "blend": 0,
+      "opacity": 255
+    },
+    {
+      "name": "Кнопка 1",
+      "flags": 19,
+      "type": 0,
+      "child": 0,
+      "blend": 0,
+      "opacity": 255
+    },
+    {
+      "name": "Кнопка 2",
+      "flags": 19,
+      "type": 0,
+      "child": 0,
+      "blend": 0,
+      "opacity": 255
+    },
+    {
+      "name": "Кнопка 3",
+      "flags": 19,
+      "type": 0,
+      "child": 0,
+      "blend": 0,
+      "opacity": 255
+    },
+    {
+      "name": "Кнопка 4",
+      "flags": 19,
+      "type": 0,
+      "child": 0,
+      "blend": 0,
+      "opacity": 255
+    },
+    {
+      "name": "Кнопка 5",
+      "flags": 19,
+      "type": 0,
+      "child": 0,
+      "blend": 0,
+      "opacity": 255
+    },
+    {
+      "name": "Кнопка 6",
+      "flags": 19,
+      "type": 0,
+      "child": 0,
+      "blend": 0,
+      "opacity": 255
+    },
+    {
+      "name": "Кнопка Приготовить",
+      "flags": 19,
+      "type": 0,
+      "child": 0,
+      "blend": 0,
+      "opacity": 255
+    }
+  ],
+  "durationsMs": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
+  ],
+  "atlases": [
+    {
+      "name": "DrinkAnimation",
+      "count": 22,
+      "columns": 5,
+      "cell": [
+        75,
+        65
+      ],
+      "bounds": [
+        235,
+        85,
+        310,
+        150
+      ]
+    },
+    {
+      "name": "RedLevels",
+      "count": 101,
+      "columns": 11,
+      "cell": [
+        40,
+        64
+      ],
+      "bounds": [
+        88,
+        27,
+        121,
+        89
+      ]
+    },
+    {
+      "name": "AmberLevels",
+      "count": 101,
+      "columns": 11,
+      "cell": [
+        40,
+        64
+      ],
+      "bounds": [
+        126,
+        28,
+        163,
+        88
+      ]
+    },
+    {
+      "name": "GreenLevels",
+      "count": 101,
+      "columns": 11,
+      "cell": [
+        40,
+        64
+      ],
+      "bounds": [
+        162,
+        28,
+        200,
+        88
+      ]
+    }
+  ],
+  "buttons": [
+    {
+      "name": "Button_00",
+      "layer": 7,
+      "bounds": [
+        91,
+        121,
+        102,
+        131
+      ]
+    },
+    {
+      "name": "Button_01",
+      "layer": 8,
+      "bounds": [
+        106,
+        121,
+        117,
+        131
+      ]
+    },
+    {
+      "name": "Button_02",
+      "layer": 9,
+      "bounds": [
+        129,
+        121,
+        140,
+        131
+      ]
+    },
+    {
+      "name": "Button_03",
+      "layer": 10,
+      "bounds": [
+        144,
+        121,
+        155,
+        131
+      ]
+    },
+    {
+      "name": "Button_04",
+      "layer": 11,
+      "bounds": [
+        168,
+        121,
+        179,
+        131
+      ]
+    },
+    {
+      "name": "Button_05",
+      "layer": 12,
+      "bounds": [
+        183,
+        121,
+        194,
+        131
+      ]
+    },
+    {
+      "name": "Button_06",
+      "layer": 13,
+      "bounds": [
+        123,
+        143,
+        212,
+        171
+      ]
+    }
+  ],
+  "bayBounds": [
+    235,
+    85,
+    310,
+    150
+  ],
+  "cupBounds": [
+    260,
+    110,
+    287,
+    149
+  ],
+  "syrupLevelMethod": "Authored wave cels shifted down and clipped at each integer consumed percent; 100 is empty",
+  "textReference": "SourceAssets/Art/FastFood/art/guests/01_faceless_man/03_drink/drink_vending.png"
+}

@@ -1,0 +1,2751 @@
+fileFormatVersion: 2
+guid: 725c7b0ed83786042ac569b9714f55a3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4750524006348202538
+    second: RedLevels_0
+  - first:
+      213: -6915413609239622201
+    second: RedLevels_1
+  - first:
+      213: -2577784154954184737
+    second: RedLevels_2
+  - first:
+      213: -2326358554729499931
+    second: RedLevels_3
+  - first:
+      213: -2628005493567880208
+    second: RedLevels_4
+  - first:
+      213: -1991945199967531615
+    second: RedLevels_5
+  - first:
+      213: 8654934619302926371
+    second: RedLevels_6
+  - first:
+      213: -4493054879338372573
+    second: RedLevels_7
+  - first:
+      213: -571503525638217826
+    second: RedLevels_8
+  - first:
+      213: -609234896995088262
+    second: RedLevels_9
+  - first:
+      213: 4468888705707685533
+    second: RedLevels_10
+  - first:
+      213: 8852083760853919725
+    second: RedLevels_11
+  - first:
+      213: 6234347405677261336
+    second: RedLevels_12
+  - first:
+      213: -6295976136343316713
+    second: RedLevels_13
+  - first:
+      213: -2847739397729199398
+    second: RedLevels_14
+  - first:
+      213: -235010800735507962
+    second: RedLevels_15
+  - first:
+      213: 6570583734090678906
+    second: RedLevels_16
+  - first:
+      213: -5791844087788225715
+    second: RedLevels_17
+  - first:
+      213: -3926657686324818341
+    second: RedLevels_18
+  - first:
+      213: 5068459089603261667
+    second: RedLevels_19
+  - first:
+      213: 7032181413999823564
+    second: RedLevels_20
+  - first:
+      213: -1454702725861818997
+    second: RedLevels_21
+  - first:
+      213: -3927206121015618214
+    second: RedLevels_22
+  - first:
+      213: -8209911074701192925
+    second: RedLevels_23
+  - first:
+      213: -7691461688600380819
+    second: RedLevels_24
+  - first:
+      213: -3302121734377887537
+    second: RedLevels_25
+  - first:
+      213: -4717853313279985901
+    second: RedLevels_26
+  - first:
+      213: 6581330080894364067
+    second: RedLevels_27
+  - first:
+      213: -8588367280460080680
+    second: RedLevels_28
+  - first:
+      213: 4666756352002417723
+    second: RedLevels_29
+  - first:
+      213: -6084701084651601494
+    second: RedLevels_30
+  - first:
+      213: 4422920386066569593
+    second: RedLevels_31
+  - first:
+      213: -8296739427516854487
+    second: RedLevels_32
+  - first:
+      213: 6046707240325349713
+    second: RedLevels_33
+  - first:
+      213: -448081944905231373
+    second: RedLevels_34
+  - first:
+      213: -7128849057869582546
+    second: RedLevels_35
+  - first:
+      213: 129766203757379124
+    second: RedLevels_36
+  - first:
+      213: 353063886904673909
+    second: RedLevels_37
+  - first:
+      213: 40972398248621196
+    second: RedLevels_38
+  - first:
+      213: 7940091090795562114
+    second: RedLevels_39
+  - first:
+      213: 9174064865190404945
+    second: RedLevels_40
+  - first:
+      213: -8664782664233356040
+    second: RedLevels_41
+  - first:
+      213: -4800224934886984642
+    second: RedLevels_42
+  - first:
+      213: 4465106637811501947
+    second: RedLevels_43
+  - first:
+      213: -6603340699059353759
+    second: RedLevels_44
+  - first:
+      213: 8619279146763909592
+    second: RedLevels_45
+  - first:
+      213: 4018275865431130577
+    second: RedLevels_46
+  - first:
+      213: -6098067170693014538
+    second: RedLevels_47
+  - first:
+      213: 8650015808102119490
+    second: RedLevels_48
+  - first:
+      213: 2995552116510358713
+    second: RedLevels_49
+  - first:
+      213: -2195938030603260691
+    second: RedLevels_50
+  - first:
+      213: 1712639090972477785
+    second: RedLevels_51
+  - first:
+      213: 137942608438013324
+    second: RedLevels_52
+  - first:
+      213: 1431046555339101600
+    second: RedLevels_53
+  - first:
+      213: 8709466413666402038
+    second: RedLevels_54
+  - first:
+      213: 7636543647950472703
+    second: RedLevels_55
+  - first:
+      213: 7439774458615621692
+    second: RedLevels_56
+  - first:
+      213: -4559844543739107673
+    second: RedLevels_57
+  - first:
+      213: -5322318397973071459
+    second: RedLevels_58
+  - first:
+      213: 2336774687253123739
+    second: RedLevels_59
+  - first:
+      213: 1208851141560767464
+    second: RedLevels_60
+  - first:
+      213: -8229500384726908910
+    second: RedLevels_61
+  - first:
+      213: -309096324570639318
+    second: RedLevels_62
+  - first:
+      213: -5193885905135210497
+    second: RedLevels_63
+  - first:
+      213: -5548012491889383254
+    second: RedLevels_64
+  - first:
+      213: 3209011706393966729
+    second: RedLevels_65
+  - first:
+      213: -1287390472324919421
+    second: RedLevels_66
+  - first:
+      213: -7722776084140455624
+    second: RedLevels_67
+  - first:
+      213: -4585167107237023726
+    second: RedLevels_68
+  - first:
+      213: 5421994618983227459
+    second: RedLevels_69
+  - first:
+      213: -8574663283771346403
+    second: RedLevels_70
+  - first:
+      213: -8820500466879853107
+    second: RedLevels_71
+  - first:
+      213: -2603503324331922941
+    second: RedLevels_72
+  - first:
+      213: -8371419032531681237
+    second: RedLevels_73
+  - first:
+      213: 6526365418329703573
+    second: RedLevels_74
+  - first:
+      213: -6179203754829053906
+    second: RedLevels_75
+  - first:
+      213: 3568402548429254869
+    second: RedLevels_76
+  - first:
+      213: -6719500448206450453
+    second: RedLevels_77
+  - first:
+      213: 1048648869830356067
+    second: RedLevels_78
+  - first:
+      213: -1732760743923437969
+    second: RedLevels_79
+  - first:
+      213: 5236544634285804268
+    second: RedLevels_80
+  - first:
+      213: -7916195159496945544
+    second: RedLevels_81
+  - first:
+      213: 724810799336096844
+    second: RedLevels_82
+  - first:
+      213: 3895232363893951941
+    second: RedLevels_83
+  - first:
+      213: 6763527960485888371
+    second: RedLevels_84
+  - first:
+      213: 3589810177110117077
+    second: RedLevels_85
+  - first:
+      213: -5569521918147126791
+    second: RedLevels_86
+  - first:
+      213: -1287432752405073696
+    second: RedLevels_87
+  - first:
+      213: -2819221319641550877
+    second: RedLevels_88
+  - first:
+      213: 740043098533318525
+    second: RedLevels_89
+  - first:
+      213: -8657724593469226570
+    second: RedLevels_90
+  - first:
+      213: 8846391071926272670
+    second: RedLevels_91
+  - first:
+      213: 6055164688642356324
+    second: RedLevels_92
+  - first:
+      213: 5533119976049253954
+    second: RedLevels_93
+  - first:
+      213: -7198762699170116054
+    second: RedLevels_94
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RedLevels_000
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 578
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 459a2504395425542bb2088974ac49ca
+      internalID: 696432322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_001
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 578
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b3ba1611a7daf64f94cfb427fdfe7e9
+      internalID: -702896659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_002
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 578
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05fa65c5e756bf64fbce4cbc6e5cdb63
+      internalID: 948873843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_003
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 578
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 272170d081622d54688828e883350afe
+      internalID: -1497032188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_004
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 578
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e98f5643bb7b647816b37e0f8cf55b
+      internalID: 1909626842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_005
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 578
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f20f659bd767cda4e8c8171635838d93
+      internalID: 1435399611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_006
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 578
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91b69f9d814257d4fa68d1c5acb5f169
+      internalID: 8333524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_007
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 578
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd17207d71d81014a9d3865a2d290517
+      internalID: 1273582404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_008
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 578
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd594322df43b84b8e167e4c8b60825
+      internalID: -628033673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_009
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 578
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e03b6c2e4ecb69b428ed98e82a916e0a
+      internalID: -1825638358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_010
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 578
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 949c49f7b119bcb4cac832667d799fa8
+      internalID: 1146297957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_011
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 514
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7798c7602927d934aa0fa5566a8649a0
+      internalID: 105007493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_012
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 514
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef99c3c01f04e894dbcb2dde833f5c5c
+      internalID: -1752649690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_013
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 514
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20a02a38ed7b11144888d61163f7a7ba
+      internalID: 604099974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_014
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 514
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dbdc96b715b4844ab36cbcd2640d508
+      internalID: -1420793823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_015
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 514
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40496a1049f76e9428b6b7c9d53fa4a8
+      internalID: 543319655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_016
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 514
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03530c0ada1ed3b4a82c65169419b9da
+      internalID: 926392414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_017
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 514
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce54f423178c7ed45957e9cf3de7ee52
+      internalID: 86804703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_018
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 514
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01b76b5ace35684498c646067fea9d71
+      internalID: 1459095990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_019
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 514
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba1b4e8583b5f654f949c66f8b0f7bbe
+      internalID: -1007810532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_020
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 514
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbc40d2fdfb1bdb47b286e1ca0835558
+      internalID: -894039219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_021
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 514
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5d5ac3d4b51346489c859eca9e173ed
+      internalID: 1812251066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_022
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 450
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39fd67b47e6314d49a26f74deec7c403
+      internalID: 614732107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_023
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 450
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f54bf35ef5a084b843b6144105bca1
+      internalID: -274249223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_024
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 450
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de589de414cb10b4e98605d31e1d7f41
+      internalID: -961389089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_025
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 450
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf21772084cf2b47b50969af28a1898
+      internalID: 781013295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_026
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 450
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a252110cf5639c439fa2be277ac58c1
+      internalID: -744124807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_027
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 450
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28317c6b2b755224db657c4d6e36e5b9
+      internalID: -300996521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_028
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 450
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4059119e9549d42a2770206e8af9e9
+      internalID: 341155267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_029
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 450
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d34985c3324b96a49b93d7cd042b6093
+      internalID: 643622799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_030
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 450
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19b6cbc53c90e494b9517d083ad51976
+      internalID: -1252615078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_031
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 450
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c679fd7614349a43a862151e1811896
+      internalID: 1048982893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_032
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 450
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5396e19b6bc815a40b5092512881bc5e
+      internalID: 1892890093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_033
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 386
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 011d1fd84235f534ca93f0b24a86ef83
+      internalID: 398097292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_034
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 386
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ae50302b1a042d45a67d3a56af0491d
+      internalID: -1308485849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_035
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 386
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10870386715f27144bbacd93a8ed1264
+      internalID: -1703496284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_036
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 386
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53fb4524421c5ae40a8e431aa8046613
+      internalID: 1183111031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_037
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 386
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ace59d646edbc2489421d7796d32035
+      internalID: 74262118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_038
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 386
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ccfcc639cb201640a97303f434504bd
+      internalID: -875284022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_039
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 386
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af87bf6cc5808d5418e742f2c3a2ce32
+      internalID: 231612951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_040
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 386
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68ef540aee7612d45834231d83f4b442
+      internalID: -612909479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_041
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 386
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dbb5837a89c76e47bbb57a2f6c28105
+      internalID: -1745358717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_042
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 386
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c225ed7c480be4086d6bb34817581f
+      internalID: 1069852797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_043
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 386
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f8ee8c2928900345954be5ca50da64b
+      internalID: -2006289774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_044
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 322
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56df20c61521dfd4e8885814882ab257
+      internalID: 417006382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_045
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 322
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261251cbfaa557a42aca9f31db5a9b89
+      internalID: 426817258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_046
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 322
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb135f22dd879ae4eb6f198d164668d6
+      internalID: 725137702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_047
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 322
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c5129b312985064db0cf9407b2cbfbe
+      internalID: 938400813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_048
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 322
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff74e12ce2399324a9e2fa57972912ac
+      internalID: 1478561214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_049
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 322
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b988809f1caf5a548a8e3f7c2e8b2b38
+      internalID: -769290188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_050
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 322
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa9b83455fdfe4845905bb7b64bd6be3
+      internalID: -734764727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_051
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 322
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 655e4436c15323449a9216837b2e0ce4
+      internalID: 705281632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_052
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 322
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfbad1c6617fa7743b6fd1596e774c60
+      internalID: -1406272437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_053
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 322
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f3ae161fae9e30408f0fe9107068686
+      internalID: 1748295658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_054
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 322
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e5364f28251ced46a9f6cbef87e0462
+      internalID: -161494130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_055
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 258
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 325401b0e4c7d2b4e908132330f648d0
+      internalID: 1352187628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_056
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 258
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93577f0d62ee8b44e9b0ded9f215c24f
+      internalID: 1348682122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_057
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 258
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50575e7e486061e4199fee0ec9e1711b
+      internalID: -1974404660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_058
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 258
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca43d119d25c7dc4fb780de66a5287a0
+      internalID: 923474524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_059
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 258
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee9be6d82fa8d2440a246a9ff0a4c81c
+      internalID: 926161323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_060
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 258
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 080ffbcc2f5c2a9498820000718d7c0b
+      internalID: -1635462416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_061
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 258
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3a074f0a9989d9479ea36c968ef4ca8
+      internalID: 1150007452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_062
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 258
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b281c032d578a34ca1ad1bc479ffad7
+      internalID: 1168228669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_063
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 258
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e0834a59b957394f95489b446f16e0b
+      internalID: 1591995072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_064
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 258
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27fc74d3ca1868142a778956f17753aa
+      internalID: 1360616195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_065
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 258
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8062400c1d11324ea0df16d0e8a9a80
+      internalID: -1287434264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_066
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 194
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b4b9e24a0eef004781b8fe383147d15
+      internalID: 616738080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_067
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 194
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a765c0b2e15f67f45841cefcc3f2cafc
+      internalID: 1590901721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_068
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 194
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4756fabf7cfcbc549b86177b5259f033
+      internalID: -235898941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_069
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 194
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c450b547820caa044a2f13a140d4891f
+      internalID: 2025252548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_070
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 194
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be9c19048ba7c22429d14f287d38fa51
+      internalID: 423312626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_071
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 194
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9adf9a26b1ac7094b80d44c13af4cbe7
+      internalID: -629566662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_072
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 194
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7002841d2ff8b1742af05f1b038226f4
+      internalID: -2116054917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_073
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 194
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e8d1902f708774ca45ba8765436c85
+      internalID: -342997243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_074
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 194
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2295aff4c822d4c4c9a8bfc0a955554b
+      internalID: -1990403808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_075
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 194
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b942e842d0a5c0049aa0cbfe802a9072
+      internalID: -610522065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_076
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 194
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02afea5459d5a2743adb847b6a4ba42f
+      internalID: 366368716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_077
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 130
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b5aa4b9d737564e819f9981891810f
+      internalID: 1413563117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_078
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 130
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87324d1926368fd4fbe34d16fa11218a
+      internalID: 22437382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_079
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 130
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e6cb68a6c9e4a442a9c0394bde357eb
+      internalID: 487810718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_080
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 130
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc34cf739a9d6645bbff2c4b2501c79
+      internalID: 1557249765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_081
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 130
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 625cc892506378446a4acbe24e51d16d
+      internalID: 1095803217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_082
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 130
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10bcaa36e61f446458d21cb759bcbe93
+      internalID: -601218545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_083
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 130
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f88465b734167be4f9536649e6695cbb
+      internalID: 2111620477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_084
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 130
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd0db234c7dd30d4aac336562510b762
+      internalID: 611344381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_085
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 130
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e59e2a1ab6d4cc549973b57da0122da2
+      internalID: 935591834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_086
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 130
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e952fcbe4be11264181ccb6dc5f95042
+      internalID: -1398329389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_087
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 130
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af49fc9718b65840b6b0a92290f5139
+      internalID: -1945579470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_088
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 66
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c21d21c311a1d746810932b8b711e97
+      internalID: 1905183022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_089
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 66
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32f505b84c786be40806fb0209c1a7e5
+      internalID: -303041685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_090
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 66
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 253b6c9d46e030443909720f07163906
+      internalID: 303979985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_091
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 66
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 463e8fe69472c174eb0a3a72ac67f74a
+      internalID: 1484945553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_092
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 66
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c64bd431bf4d33045aff958a28e2a2e3
+      internalID: -1155840412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_093
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 66
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0202a47c16dcead4bb3e056c70f4d67e
+      internalID: -1752486279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_094
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 66
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef78745cdad4da548a732ee0a5e3abba
+      internalID: -859426207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_095
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 66
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd9a007281dba448b2ea6e2e763d206
+      internalID: -830214683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_096
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 66
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8938a19982053374e9dca523ab81f0e3
+      internalID: -992822324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_097
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 66
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82434ff650f235c4ba9de76d2a64c338
+      internalID: -1329931464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_098
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 66
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b42e31907e969d49acb78c0f58183e8
+      internalID: 245257013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_099
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30059fcd505ff2441a76156c1f1b9535
+      internalID: -2115960146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLevels_100
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 2
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da6522f61e5c8f94cb39b7099b39c73b
+      internalID: 1049437981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 232918a7908520b4db35478382279e43
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      RedLevels_000: 696432322
+      RedLevels_001: -702896659
+      RedLevels_002: 948873843
+      RedLevels_003: -1497032188
+      RedLevels_004: 1909626842
+      RedLevels_005: 1435399611
+      RedLevels_006: 8333524
+      RedLevels_007: 1273582404
+      RedLevels_008: -628033673
+      RedLevels_009: -1825638358
+      RedLevels_010: 1146297957
+      RedLevels_011: 105007493
+      RedLevels_012: -1752649690
+      RedLevels_013: 604099974
+      RedLevels_014: -1420793823
+      RedLevels_015: 543319655
+      RedLevels_016: 926392414
+      RedLevels_017: 86804703
+      RedLevels_018: 1459095990
+      RedLevels_019: -1007810532
+      RedLevels_020: -894039219
+      RedLevels_021: 1812251066
+      RedLevels_022: 614732107
+      RedLevels_023: -274249223
+      RedLevels_024: -961389089
+      RedLevels_025: 781013295
+      RedLevels_026: -744124807
+      RedLevels_027: -300996521
+      RedLevels_028: 341155267
+      RedLevels_029: 643622799
+      RedLevels_030: -1252615078
+      RedLevels_031: 1048982893
+      RedLevels_032: 1892890093
+      RedLevels_033: 398097292
+      RedLevels_034: -1308485849
+      RedLevels_035: -1703496284
+      RedLevels_036: 1183111031
+      RedLevels_037: 74262118
+      RedLevels_038: -875284022
+      RedLevels_039: 231612951
+      RedLevels_040: -612909479
+      RedLevels_041: -1745358717
+      RedLevels_042: 1069852797
+      RedLevels_043: -2006289774
+      RedLevels_044: 417006382
+      RedLevels_045: 426817258
+      RedLevels_046: 725137702
+      RedLevels_047: 938400813
+      RedLevels_048: 1478561214
+      RedLevels_049: -769290188
+      RedLevels_050: -734764727
+      RedLevels_051: 705281632
+      RedLevels_052: -1406272437
+      RedLevels_053: 1748295658
+      RedLevels_054: -161494130
+      RedLevels_055: 1352187628
+      RedLevels_056: 1348682122
+      RedLevels_057: -1974404660
+      RedLevels_058: 923474524
+      RedLevels_059: 926161323
+      RedLevels_060: -1635462416
+      RedLevels_061: 1150007452
+      RedLevels_062: 1168228669
+      RedLevels_063: 1591995072
+      RedLevels_064: 1360616195
+      RedLevels_065: -1287434264
+      RedLevels_066: 616738080
+      RedLevels_067: 1590901721
+      RedLevels_068: -235898941
+      RedLevels_069: 2025252548
+      RedLevels_070: 423312626
+      RedLevels_071: -629566662
+      RedLevels_072: -2116054917
+      RedLevels_073: -342997243
+      RedLevels_074: -1990403808
+      RedLevels_075: -610522065
+      RedLevels_076: 366368716
+      RedLevels_077: 1413563117
+      RedLevels_078: 22437382
+      RedLevels_079: 487810718
+      RedLevels_080: 1557249765
+      RedLevels_081: 1095803217
+      RedLevels_082: -601218545
+      RedLevels_083: 2111620477
+      RedLevels_084: 611344381
+      RedLevels_085: 935591834
+      RedLevels_086: -1398329389
+      RedLevels_087: -1945579470
+      RedLevels_088: 1905183022
+      RedLevels_089: -303041685
+      RedLevels_090: 303979985
+      RedLevels_091: 1484945553
+      RedLevels_092: -1155840412
+      RedLevels_093: -1752486279
+      RedLevels_094: -859426207
+      RedLevels_095: -830214683
+      RedLevels_096: -992822324
+      RedLevels_097: -1329931464
+      RedLevels_098: 245257013
+      RedLevels_099: -2115960146
+      RedLevels_100: 1049437981
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

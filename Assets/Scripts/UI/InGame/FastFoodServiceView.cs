@@ -11,6 +11,7 @@ public class FastFoodServiceView : MonoBehaviour
     [SerializeField] private InputService _input;
     [SerializeField] private Player _player;
     [SerializeField] private FastFoodFryerCloseUp _fryerCloseUp;
+    [SerializeField] private FastFoodDrinkCloseUp _drinkCloseUp;
     [SerializeField] private GameObject _hud;
     [SerializeField] private GameObject _modal;
     [SerializeField] private TextMeshProUGUI _trayTitle;
@@ -61,7 +62,8 @@ public class FastFoodServiceView : MonoBehaviour
     private FastFoodOrderItem _inspectItem;
     private bool _inspectReward;
     public bool IsOpen => _modal != null && _modal.activeSelf;
-    public bool IsBusy => _busy || (_fryerCloseUp != null && _fryerCloseUp.IsVisible && _fryerCloseUp.IsBusy);
+    public bool IsBusy => _busy || (_fryerCloseUp != null && _fryerCloseUp.IsVisible && _fryerCloseUp.IsBusy) ||
+        (_drinkCloseUp != null && _drinkCloseUp.IsVisible && _drinkCloseUp.IsBusy);
 
     private void Awake()
     {
@@ -115,7 +117,7 @@ public class FastFoodServiceView : MonoBehaviour
     }
 
     private bool CanUseUI => IsOpen && Time.timeScale > 0f && !_busy && _player.IsAlive &&
-        (_fryerCloseUp == null || !_fryerCloseUp.IsVisible);
+        (_fryerCloseUp == null || !_fryerCloseUp.IsVisible) && (_drinkCloseUp == null || !_drinkCloseUp.IsVisible);
     private static string T(string key) => FacelessOrderService.Text(key);
     public FastFoodServiceStation NearestStation()
     {
@@ -171,6 +173,7 @@ public class FastFoodServiceView : MonoBehaviour
         _busy = false;
         _audioPaused = false;
         if (_fryerCloseUp != null) _fryerCloseUp.Hide();
+        if (_drinkCloseUp != null) _drinkCloseUp.Hide();
         _art.transform.parent.gameObject.SetActive(true);
         foreach (var slider in _syrups) if (slider != null) slider.interactable = true;
         if (_audio != null) _audio.Stop();
@@ -228,6 +231,7 @@ public class FastFoodServiceView : MonoBehaviour
         if (IsOpen && !_busy)
         {
             if (_fryerCloseUp != null && _fryerCloseUp.IsVisible) return;
+            if (_drinkCloseUp != null && _drinkCloseUp.IsVisible) return;
             if (_isInspecting) RefreshInspection(); else RefreshStation();
         }
     }
@@ -252,6 +256,12 @@ public class FastFoodServiceView : MonoBehaviour
     private void RefreshStation()
     {
         ResetControls();
+        if (_drinkCloseUp != null && _station == FastFoodStationKind.Dispenser)
+        {
+            _art.transform.parent.gameObject.SetActive(false);
+            _drinkCloseUp.Show();
+            return;
+        }
         if (_fryerCloseUp != null && (_station == FastFoodStationKind.Fryer || _station == FastFoodStationKind.FuseBox))
         {
             _art.transform.parent.gameObject.SetActive(false);
