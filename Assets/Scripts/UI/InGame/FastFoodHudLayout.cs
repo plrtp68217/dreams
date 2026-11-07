@@ -1,6 +1,6 @@
 using UnityEngine;
 
-// Fit compact portrait dialogues between the inventory panels, above them on narrow screens.
+// Keep dialogues centered on screen, above the inventory on narrow screens.
 public class FastFoodHudLayout : MonoBehaviour
 {
     [SerializeField] private RectTransform _canvas;
@@ -29,14 +29,13 @@ public class FastFoodHudLayout : MonoBehaviour
             _lastSize = size;
             _lastDialogueScale = _dialogueScale;
             const float left = 376, right = 232;
-            bool narrow = size.x - left - right < 640 * _dialogueScale;
-            float center = narrow ? 0 : (left - right) * .5f;
+            bool narrow = size.x < 640 * _dialogueScale + 2 * Mathf.Max(left, right);
             float bottom = narrow ? 144 : 24;
             for (int i = 0; i < _dialogueArt.Length; i++)
             {
-                _dialogueArt[i].anchoredPosition = new Vector2(center, bottom);
+                _dialogueArt[i].anchoredPosition = new Vector2(0, bottom);
                 _dialogueArt[i].localScale = Vector3.one * _dialogueScale;
-                _dialogueKeys[i].anchoredPosition = new Vector2(center + 236 * _dialogueScale, bottom + 22);
+                _dialogueKeys[i].anchoredPosition = new Vector2(236 * _dialogueScale, bottom + 22);
             }
         }
         _trayBorder.color = _inventory.IsOrderReady ? new Color(.87f,.67f,.27f) : new Color(.55f,.18f,.16f);
