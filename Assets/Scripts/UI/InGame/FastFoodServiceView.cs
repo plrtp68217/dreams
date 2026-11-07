@@ -336,8 +336,7 @@ public class FastFoodServiceView : MonoBehaviour
                 else Act(0, "service_take_toy", FacelessServiceAction.TakeToy);
                 break;
             case FastFoodStationKind.Guest:
-                _description.text = T(_inventory.IsOrderReady ? "service_deliver_hint" : "service_missing_items");
-                Action(0, "service_deliver", () => _service.BeginServing(), _inventory.IsOrderReady);
+                _description.text = T(_inventory.IsOrderReady ? "service_counter_return_hint" : "service_missing_items");
                 break;
         }
     }

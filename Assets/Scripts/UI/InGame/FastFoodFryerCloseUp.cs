@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 // Coordinates and drag distances use the original 320x180 Aseprite canvas.
 // Progress is owned by FacelessOrderService and survives closing this view.
@@ -13,6 +14,7 @@ public class FastFoodFryerCloseUp : MonoBehaviour
     [SerializeField] private UnityEngine.UI.Image _switchOff;
     [SerializeField] private UnityEngine.UI.Image _switchOutline;
     [SerializeField] private UnityEngine.UI.Image _burger;
+    [SerializeField] private UnityEngine.UI.Image _pickup;
     [SerializeField] private UnityEngine.UI.Image _burgerOutline;
     [SerializeField] private UnityEngine.UI.Image _tumbler;
     [SerializeField] private UnityEngine.UI.Image _tumblerOutline;
@@ -29,15 +31,22 @@ public class FastFoodFryerCloseUp : MonoBehaviour
     [SerializeField, Min(.1f)] private float _flightDuration = .65f;
     [SerializeField, Min(.1f)] private float _drainDuration = 2.1f;
     [SerializeField, Min(.1f)] private float _switchDuration = .3f;
-    [SerializeField, Min(.1f)] private float _burgerFadeDuration = .45f;
+    [FormerlySerializedAs("_burgerFadeDuration")]
+    [SerializeField, Min(.1f)] private float _pickupDuration = .7f;
 
     private readonly Vector2 _origin = new Vector2(285, 108);
     private Vector2 _grabPoint, _offset, _releaseOffset;
     private bool _dragging, _flying, _draining, _switching, _collecting, _audioPaused;
     private float _elapsed, _warningUntil;
     private int _openedFrame;
+    private Vector2 _pickupOrigin;
     public bool IsVisible => _root != null && _root.activeSelf;
     public bool IsBusy => _dragging || _flying || _draining || _switching || _collecting;
+
+    private void Awake()
+    {
+        if (_pickup != null) _pickupOrigin = _pickup.rectTransform.anchoredPosition;
+    }
 
     public void Show()
     {
@@ -59,6 +68,14 @@ public class FastFoodFryerCloseUp : MonoBehaviour
         _offset = Vector2.zero;
         if (_tumbler != null) _tumbler.rectTransform.localRotation = Quaternion.identity;
         if (_burger != null) SetBurgerAlpha(1);
+        if (_pickup != null)
+        {
+            _pickup.enabled = false;
+            _pickup.rectTransform.anchoredPosition = _pickupOrigin;
+            _pickup.rectTransform.localScale = Vector3.one;
+            _pickup.rectTransform.localRotation = Quaternion.identity;
+            _pickup.color = Color.white;
+        }
         if (_audio != null) _audio.Stop();
     }
     private bool CanControl => IsVisible && _service.CanInteract && _player.IsAlive && Time.timeScale > 0;
@@ -150,10 +167,11 @@ public class FastFoodFryerCloseUp : MonoBehaviour
         }
         else if (_collecting)
         {
-            if (_elapsed >= _burgerFadeDuration)
+            if (_elapsed >= _pickupDuration)
             {
+                bool collected = _service.Perform(FacelessServiceAction.TakeBurger);
                 _collecting = false;
-                if (_service.Perform(FacelessServiceAction.TakeBurger)) Play(_pickupSound);
+                if (collected) Play(_pickupSound);
             }
         }
         else if (_flying)
@@ -184,8 +202,21 @@ public class FastFoodFryerCloseUp : MonoBehaviour
                 (int)(_elapsed / _switchDuration * _switchFrames.Length)) : _service.PowerOff ? _switchFrames.Length - 1 : 0;
             _switchOff.sprite = _switchFrames[switchFrame];
         }
-        _burger.enabled = !_service.Inventory.Has(FastFoodOrderItem.Burger);
-        SetBurgerAlpha(_collecting ? 1 - Mathf.SmoothStep(0, 1, Mathf.Clamp01(_elapsed / _burgerFadeDuration)) : 1);
+        _burger.enabled = !_collecting && !_service.Inventory.Has(FastFoodOrderItem.Burger);
+        SetBurgerAlpha(1);
+        if (_pickup != null)
+        {
+            _pickup.enabled = _collecting;
+            if (_collecting)
+            {
+                float t = Mathf.Clamp01(_elapsed / _pickupDuration);
+                float ease = Mathf.SmoothStep(0, 1, t);
+                _pickup.rectTransform.anchoredPosition = _pickupOrigin + new Vector2(130 * ease, 110 * Mathf.Sin(t * Mathf.PI) - 340 * ease);
+                _pickup.rectTransform.localScale = Vector3.one * Mathf.Lerp(1, 1.8f, ease);
+                _pickup.rectTransform.localRotation = Quaternion.Euler(0, 0, 8 * Mathf.Sin(t * Mathf.PI));
+                _pickup.color = new Color(1, 1, 1, 1 - Mathf.SmoothStep(0, 1, Mathf.InverseLerp(.55f, 1, t)));
+            }
+        }
         _tumbler.enabled = !_service.FuseRemoved;
         var position = _origin + _offset;
         _tumbler.rectTransform.anchoredPosition = new Vector2(position.x * 4 - 640, 360 - position.y * 4);

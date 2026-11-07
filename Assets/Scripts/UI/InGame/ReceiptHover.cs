@@ -9,6 +9,7 @@ public class ReceiptHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     [SerializeField, Range(0.2f, 1f)] private float _collapsedScale = 0.55f;
     [SerializeField, Min(0.01f)] private float _animationDuration = 0.35f;
     [SerializeField] private UnityEngine.UI.Shadow _shadow;
+    [SerializeField, Min(.1f)] private float _dismissDuration = .65f;
 
     private RectTransform _rect;
     private UnityEngine.UI.Image _image;
@@ -17,21 +18,65 @@ public class ReceiptHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     private bool _shown;
     private bool _hovered;
     private Coroutine _animation;
+    private CanvasGroup _group;
+    private Vector2 _homePosition;
+    private Quaternion _homeRotation;
+    private bool _dismissed;
+    public bool IsDismissed => _dismissed;
 
     private void Awake()
     {
         _rect = GetComponent<RectTransform>();
         _image = GetComponent<UnityEngine.UI.Image>();
         _expandedScale = _rect.localScale;
+        _homePosition = _rect.anchoredPosition;
+        _homeRotation = _rect.localRotation;
+        _group = GetComponent<CanvasGroup>();
+        if (_group == null) _group = gameObject.AddComponent<CanvasGroup>();
         _image.raycastTarget = false;
     }
 
     public void ShowReceivedOrder()
     {
+        _dismissed = false;
+        _rect.anchoredPosition = _homePosition;
+        _rect.localRotation = _homeRotation;
+        _group.alpha = 1;
         _shown = true;
         _remainingReadTime = _readDuration;
         _image.raycastTarget = true;
         Animate(true);
+    }
+
+    public void DismissServedOrder()
+    {
+        if (_dismissed) return;
+        _dismissed = true;
+        _shown = _hovered = false;
+        _remainingReadTime = 0;
+        _image.raycastTarget = false;
+        if (_animation != null) StopCoroutine(_animation);
+        _animation = StartCoroutine(DismissRoutine());
+    }
+
+    private IEnumerator DismissRoutine()
+    {
+        Vector2 start = _rect.anchoredPosition;
+        float lift = _rect.rect.height * _rect.localScale.y + 48;
+        float elapsed = 0;
+        while (elapsed < _dismissDuration)
+        {
+            elapsed += Time.deltaTime;
+            float t = Mathf.Clamp01(elapsed / _dismissDuration);
+            float eased = t * t * (3 - 2 * t);
+            _rect.anchoredPosition = start + Vector2.up * (lift * eased - 5 * Mathf.Sin(t * Mathf.PI));
+            _rect.localRotation = _homeRotation * Quaternion.Euler(0, 0, -3 * Mathf.Sin(t * Mathf.PI));
+            _group.alpha = 1 - Mathf.SmoothStep(0, 1, Mathf.InverseLerp(.3f, 1, t));
+            yield return null;
+        }
+        _group.alpha = 0;
+        _rect.localRotation = _homeRotation;
+        _animation = null;
     }
 
     private void Update()
@@ -92,6 +137,7 @@ public class ReceiptHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         _animation = null;
         _hovered = false;
         if (_image != null) _image.raycastTarget = false;
+        if (_dismissed && _group != null) _group.alpha = 0;
     }
 
     private void OnEnable()

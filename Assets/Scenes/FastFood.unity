@@ -10423,6 +10423,9 @@ MonoBehaviour:
   _dialogUI: {fileID: 1107453276}
   _briefing: {fileID: 755959480}
   _orderSequence: {fileID: 895084605}
+  _service: {fileID: 1190240099}
+  _serviceView: {fileID: 1190240098}
+  _keyPrompt: {fileID: 1254189519}
   _cashierPoint: {fileID: 1405788046}
   _cashierSortingLayer: Objects
   _cashierSortingOrder: 1
@@ -13902,6 +13905,7 @@ MonoBehaviour:
   _orderSequence: {fileID: 895084605}
   _view: {fileID: 1190240098}
   _player: {fileID: 705474775}
+  _counter: {fileID: 895084604}
   _fridgeCode: 0417
   _recipe: {x: 30, y: 20, z: 50}
 --- !u!114 &1190240100
@@ -13956,7 +13960,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54be31af2e9b9384dae903e9f200509c, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FastFoodFryerCloseUp
   _service: {fileID: 1190240099}
   _player: {fileID: 705474775}
@@ -13966,6 +13970,7 @@ MonoBehaviour:
   _switchOff: {fileID: 1592296751}
   _switchOutline: {fileID: 77049370}
   _burger: {fileID: 1706830503}
+  _pickup: {fileID: 978220911}
   _burgerOutline: {fileID: 93542495}
   _tumbler: {fileID: 2081740332}
   _tumblerOutline: {fileID: 98341579}
@@ -14006,7 +14011,7 @@ MonoBehaviour:
   _flightDuration: 0.65
   _drainDuration: 2.1
   _switchDuration: 0.3
-  _burgerFadeDuration: 0.45
+  _pickupDuration: 0.7
 --- !u!1001 &1205761568
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16913,6 +16918,7 @@ GameObject:
   - component: {fileID: 1431691106}
   - component: {fileID: 1431691108}
   - component: {fileID: 1431691107}
+  - component: {fileID: 1431691109}
   m_Layer: 5
   m_Name: Image_Order
   m_TagString: Untagged
@@ -17009,6 +17015,7 @@ MonoBehaviour:
   _collapsedScale: 0.78
   _animationDuration: 0.35
   _shadow: {fileID: 1431691107}
+  _dismissDuration: 0.65
 --- !u!1 &1435467910
 GameObject:
   m_ObjectHideFlags: 0
@@ -24901,6 +24908,7 @@ RectTransform:
   - {fileID: 93542497}
   - {fileID: 2081740334}
   - {fileID: 98341581}
+  - {fileID: 978220910}
   m_Father: {fileID: 1684051432}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -50487,6 +50495,93 @@ CanvasGroup:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1957519970}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!1 &978220909
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 978220910}
+  - component: {fileID: 978220912}
+  - component: {fileID: 978220911}
+  m_Layer: 0
+  m_Name: BurgerPickup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &978220910
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978220909}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2090141004}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -46, y: -180}
+  m_SizeDelta: {x: 148, y: 104}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &978220911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978220909}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 022dc01192bfbbf4d9bc3b2d1dc63bb0, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &978220912
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978220909}
+  m_CullTransparentMesh: 1
+--- !u!225 &1431691109
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431691103}
   m_Enabled: 1
   m_Alpha: 1
   m_Interactable: 1

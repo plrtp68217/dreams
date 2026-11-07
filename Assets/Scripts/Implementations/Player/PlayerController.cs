@@ -46,6 +46,11 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         if (_player.IsAlive == false) return;
+        if (_inputService.IsBlocked)
+        {
+            _player.Rigidbody.linearVelocityX = 0;
+            return;
+        }
 
         if (_inputService.Direction != 0)
         {

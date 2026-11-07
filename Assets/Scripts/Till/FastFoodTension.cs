@@ -3,7 +3,7 @@ using TMPro;
 using Unity.Cinemachine;
 using UnityEngine;
 
-public enum ClownEncounterKind { None, Watcher, KitchenReturn, Ready, IdleReminder }
+public enum ClownEncounterKind { None, Watcher, KitchenReturn, AfterOrder, IdleReminder }
 
 // One order, three story beats. UI, transitions and other dialogues retain control priority.
 public class FastFoodTension : MonoBehaviour
@@ -37,7 +37,7 @@ public class FastFoodTension : MonoBehaviour
     private ClownEncounterKind _current;
     private int _completedMask;
     private bool _idleDone, _foodSeenInKitchen, _returnPending, _wasInKitchen;
-    private bool _orderStarted, _ownsInput, _speaking, _deliveryFinal;
+    private bool _orderStarted, _ownsInput, _speaking, _postService;
     private bool _ownsCamera, _focusActive;
     private Vector3 _baseCameraOffset;
     private float _cameraShift, _cameraVelocity;
@@ -68,10 +68,8 @@ public class FastFoodTension : MonoBehaviour
     {
         if (Time.timeScale <= 0) return;
         AdvanceCamera(Time.deltaTime);
-        if (_service.IsServing && _current == ClownEncounterKind.Ready && (_completedMask & 4) != 0)
-            _deliveryFinal = true;
-        if (!_player.IsAlive || _service.IsCompleted || (!_service.IsActive && !_deliveryFinal) ||
-            (_service.IsServing && !_deliveryFinal))
+        if (!_player.IsAlive || (_service.IsCompleted && !_postService) || (!_service.IsActive && !_postService) ||
+            (_service.IsServing && !_postService))
         {
             AbortAppearance(false);
             return;
@@ -83,14 +81,14 @@ public class FastFoodTension : MonoBehaviour
         if (_route.IsInKitchen && HasFood) _foodSeenInKitchen = true;
         if (_wasInKitchen && !_route.IsInKitchen && _foodSeenInKitchen) _returnPending = true;
         _wasInKitchen = _route.IsInKitchen;
-        bool busyElsewhere = !InHall || _view.IsOpen || (_input.IsBlocked && !_ownsInput && !_deliveryFinal);
+        bool busyElsewhere = !InHall || _view.IsOpen || (_input.IsBlocked && !_ownsInput && !_postService);
         if (busyElsewhere)
         {
             _quietRemaining = _interactionGrace;
             if (_appearance != null) AbortAppearance(true);
             return;
         }
-        if (_appearance != null) return;
+        if (_postService || _appearance != null) return;
         if (!_till.IsCompleted || (_completedMask & 4) != 0) return;
         _quietRemaining = Mathf.Max(0, _quietRemaining - Time.deltaTime);
         if (_quietRemaining > 0) return;
@@ -101,8 +99,6 @@ public class FastFoodTension : MonoBehaviour
     }
     private ClownEncounterKind NextEncounter()
     {
-        if (_service.Inventory.IsOrderReady && Mathf.Abs(_player.transform.position.x - _finalPoint.position.x) <= 2.4f)
-            return ClownEncounterKind.Ready;
         if (_cooldown > 0) return ClownEncounterKind.None;
         if ((_completedMask & 1) == 0) return ClownEncounterKind.Watcher;
         if (_returnPending && (_completedMask & 2) == 0) return ClownEncounterKind.KitchenReturn;
@@ -111,7 +107,7 @@ public class FastFoodTension : MonoBehaviour
     }
     private Transform ChoosePoint(ClownEncounterKind kind)
     {
-        if (kind == ClownEncounterKind.Ready) return _finalPoint;
+        if (kind == ClownEncounterKind.AfterOrder) return _finalPoint;
         float preferred = kind == ClownEncounterKind.Watcher ? 1.9f : 1.3f;
         Transform selected = null;
         float best = float.PositiveInfinity;
@@ -126,11 +122,17 @@ public class FastFoodTension : MonoBehaviour
     }
     private IEnumerator Appear(ClownEncounterKind kind, Transform point)
     {
+        // This encounter owns movement until the actor has left the screen.
+        // A surrounding sequence may already own input; never release its block.
+        _ownsInput = !_input.IsBlocked;
+        _input.Block();
+        _player.Rigidbody.linearVelocity = Vector2.zero;
         _current = kind;
         float side = Mathf.Sign(point.position.x - _gameCamera.transform.position.x);
         if (side == 0) side = 1;
         Vector3 entry = point.position;
-        entry.x = _gameCamera.transform.position.x + side * (HalfCameraWidth() + .4f);
+        float actorHalfWidth = _clown.sprite != null ? _clown.sprite.bounds.extents.x * Mathf.Abs(_clown.transform.lossyScale.x) : .3f;
+        entry.x = _gameCamera.transform.position.x + side * (HalfCameraWidth() + actorHalfWidth + .2f);
         _clown.transform.position = entry;
         _clown.color = Color.white;
         _clown.enabled = true;
@@ -142,20 +144,16 @@ public class FastFoodTension : MonoBehaviour
             yield return new WaitForSeconds(_silentWatchDuration);
         else
         {
-            _ownsInput = !_input.IsBlocked;
-            _input.Block();
-            _player.Rigidbody.linearVelocity = Vector2.zero;
             _speaking = true;
             string phrase = kind == ClownEncounterKind.KitchenReturn ? "fastfood_clown_waiting" :
-                kind == ClownEncounterKind.Ready ? "fastfood_clown_ready" : "fastfood_clown_forgotten";
+                kind == ClownEncounterKind.AfterOrder ? "fastfood_clown_after_order" : "fastfood_clown_forgotten";
             yield return DialogPhrases.Play(_dialog, _input, new[] { phrase }, _voice);
             _speaking = false;
-            ReleaseInput();
         }
         MarkCompleted(kind);
         _focusActive = false;
         float elapsed = 0;
-        float linger = _deliveryFinal ? .35f : _lingerDuration;
+        float linger = _lingerDuration;
         while (elapsed < linger)
         {
             bool looksAway = (_player.transform.position.x < _clown.transform.position.x) == _player.SpriteRenderer.flipX;
@@ -166,11 +164,10 @@ public class FastFoodTension : MonoBehaviour
         if (Visible())
         {
             Vector3 exit = _clown.transform.position;
-            exit.x = _gameCamera.transform.position.x + side * (HalfCameraWidth() + .65f);
+            exit.x = _gameCamera.transform.position.x + side * (HalfCameraWidth() + _clown.bounds.extents.x + _maxCameraShift + .15f);
             yield return _actor.WalkTo(exit);
         }
         Cleanup(false);
-        _deliveryFinal = false;
         _appearance = null;
         _cooldown = _encounterGap;
         _quietRemaining = _interactionGrace;
@@ -179,19 +176,27 @@ public class FastFoodTension : MonoBehaviour
     {
         if (kind == ClownEncounterKind.Watcher) _completedMask |= 1;
         else if (kind == ClownEncounterKind.KitchenReturn) _completedMask |= 2;
-        else if (kind == ClownEncounterKind.Ready) _completedMask |= 7;
+        else if (kind == ClownEncounterKind.AfterOrder) _completedMask |= 4;
         else if (kind == ClownEncounterKind.IdleReminder) _idleDone = true;
         _idleElapsed = 0;
     }
-    // Fast players still receive the final beat before the guest's completion dialogue.
-    public IEnumerator PlayBeforeServing()
+    // Called only by the counter sequence after the guest's exit coroutine completes.
+    public IEnumerator PlayAfterServing()
     {
-        if (!isActiveAndEnabled || (_completedMask & 4) != 0 || !_service.Inventory.IsOrderReady || !_player.IsAlive) yield break;
+        if (!isActiveAndEnabled || (_completedMask & 4) != 0 || !_service.IsCompleted || !_player.IsAlive) yield break;
         AbortAppearance(true);
-        _deliveryFinal = true;
-        _appearance = StartCoroutine(Appear(ClownEncounterKind.Ready, _finalPoint));
+        _postService = true;
+        yield return new WaitForSeconds(.45f);
+        if (!_postService || !isActiveAndEnabled || !_player.IsAlive) yield break;
+        _appearance = StartCoroutine(Appear(ClownEncounterKind.AfterOrder, _finalPoint));
         while (_appearance != null) yield return null;
-        _deliveryFinal = false;
+        _postService = false;
+    }
+    public void CancelAfterServing()
+    {
+        if (!_postService) return;
+        AbortAppearance(true);
+        _postService = false;
     }
     private float HalfCameraWidth() => (_gameCamera.orthographic ? _gameCamera.orthographicSize :
         Mathf.Tan(_gameCamera.fieldOfView * Mathf.Deg2Rad * .5f) * Mathf.Abs(_gameCamera.transform.position.z - _clown.transform.position.z)) * _gameCamera.aspect;
@@ -233,11 +238,11 @@ public class FastFoodTension : MonoBehaviour
     {
         if (_speaking && _dialog != null) _dialog.Disable();
         _speaking = false;
-        ReleaseInput();
         _focusActive = false;
         if (immediateFocus) RestoreCamera();
         if (_animator != null && _animator.gameObject.activeInHierarchy) _animator.SetBool(nameof(AnimatorBool.IsWalking), false);
         if (_clown != null) _clown.gameObject.SetActive(false);
+        ReleaseInput();
         _current = ClownEncounterKind.None;
     }
     private void AbortAppearance(bool immediateFocus)
@@ -251,6 +256,6 @@ public class FastFoodTension : MonoBehaviour
         _service.Changed -= Progress;
         _till.OrderCompleted -= LeftCounter;
         AbortAppearance(true);
-        _deliveryFinal = false;
+        _postService = false;
     }
 }

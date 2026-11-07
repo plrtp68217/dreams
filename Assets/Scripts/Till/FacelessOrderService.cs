@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using UnityEngine;
 
 public enum FastFoodStationKind { Fryer, FuseBox, Fridge, Dispenser, Mirror, Guest }
@@ -13,6 +12,7 @@ public class FacelessOrderService : MonoBehaviour
     [SerializeField] private GuestOrderSequence _orderSequence;
     [SerializeField] private FastFoodServiceView _view;
     [SerializeField] private Player _player;
+    [SerializeField] private TillTrigger _counter;
     [SerializeField] private string _fridgeCode = "0417";
     [SerializeField] private Vector3 _recipe = new Vector3(30, 20, 50);
 
@@ -30,8 +30,6 @@ public class FacelessOrderService : MonoBehaviour
     public string FridgeCode => _fridgeCode;
     public Vector3 Recipe => _recipe;
     public FastFoodInventory Inventory => _inventory;
-    private Coroutine _serving;
-    private bool _restoreBlocked;
 
     public void AcceptOrder()
     {
@@ -90,31 +88,26 @@ public class FacelessOrderService : MonoBehaviour
         return true;
     }
 
-    public bool BeginServing()
+    // TillTrigger owns the counter visit and its input. A UI panel cannot hand over an order.
+    public bool HandOverAtCounter()
     {
-        if (!CanInteract || !_inventory.IsOrderReady || _player == null || !_player.IsAlive) return false;
+        if (!CanInteract || !_inventory.IsOrderReady || _player == null || !_player.IsAlive ||
+            _counter == null || !_counter.IsBehindCounter) return false;
         _view.Close();
         IsServing = true;
-        _restoreBlocked = _input.IsBlocked;
-        _input.Block();
-        _player.Rigidbody.linearVelocity = Vector2.zero;
-        _serving = StartCoroutine(Serve());
+        if (!_inventory.DeliverOrder())
+        {
+            IsServing = false;
+            return false;
+        }
+        IsCompleted = true;
+        IsActive = false;
+        _orderSequence.DismissReceipt();
+        Notify();
         return true;
     }
 
-    private IEnumerator Serve()
-    {
-        yield return _orderSequence.FinishOrder();
-        if (_inventory.DeliverOrder())
-        {
-            IsCompleted = true;
-            IsActive = false;
-        }
-        IsServing = false;
-        _serving = null;
-        if (!_restoreBlocked) _input.Unblock();
-        Notify();
-    }
+    public void FinishCounterVisit() => IsServing = false;
 
     public string ReceiptText()
     {
@@ -140,12 +133,6 @@ public class FacelessOrderService : MonoBehaviour
 
     private void OnDisable()
     {
-        if (_serving != null)
-        {
-            StopCoroutine(_serving);
-            _serving = null;
-            IsServing = false;
-            if (_input != null && !_restoreBlocked) _input.Unblock();
-        }
+        IsServing = false;
     }
 }

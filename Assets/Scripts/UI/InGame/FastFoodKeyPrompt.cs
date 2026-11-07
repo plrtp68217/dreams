@@ -15,6 +15,7 @@ public class FastFoodKeyPrompt : MonoBehaviour
     [SerializeField] private InputService _input;
     [SerializeField] private bool _routeHint;
     private string _last;
+    public void SetCaptionId(string id) => _captionId = id;
     private void Awake()
     {
         if (_source != null) _source.enabled = false;

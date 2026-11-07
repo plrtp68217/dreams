@@ -651,9 +651,29 @@
       "english": "ORDER READY"
     },
     {
+      "id": "fastfood_clown_after_order",
+      "russian": "Он заказал без прошлого. А оставил тебе твоё.",
+      "english": "He ordered without a past. And left you yours."
+    },
+    {
+      "id": "service_counter_enter",
+      "russian": "Встать за кассу",
+      "english": "Step behind the counter"
+    },
+    {
+      "id": "service_counter_exit",
+      "russian": "Выйти из-за кассы",
+      "english": "Leave the counter"
+    },
+    {
+      "id": "service_counter_return_hint",
+      "russian": "Вернитесь за кассу: заказ будет передан гостю автоматически.",
+      "english": "Return behind the counter: the order will be handed to the guest automatically."
+    },
+    {
       "id": "service_ready_body",
-      "russian": "Отнесите его гостю",
-      "english": "Bring it to the guest"
+      "russian": "Вернитесь за кассу",
+      "english": "Return to the counter"
     },
     {
       "id": "service_item_added",

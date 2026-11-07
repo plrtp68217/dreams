@@ -6,6 +6,8 @@ public class TillTrigger : MonoBehaviour
     public event System.Action OrderCompleted;
 
     public bool IsCompleted => _isCompleted;
+    public bool IsBehindCounter { get; private set; }
+    public bool IsBusy => _isBusy;
 
     [SerializeField] private Player _player;
     [SerializeField] private InputService _inputService;
@@ -14,6 +16,9 @@ public class TillTrigger : MonoBehaviour
     [Tooltip("Необязательно: кто подходит к кассе до посетителя")]
     [SerializeField] private NpcVisit _briefing;
     [SerializeField] private GuestOrderSequence _orderSequence;
+    [SerializeField] private FacelessOrderService _service;
+    [SerializeField] private FastFoodServiceView _serviceView;
+    [SerializeField] private FastFoodKeyPrompt _keyPrompt;
 
     [Header("Место кассира за стойкой")]
     [SerializeField] private Transform _cashierPoint;
@@ -31,22 +36,19 @@ public class TillTrigger : MonoBehaviour
     private Vector3 _positionBeforeCounter;
 
     private Coroutine _workCoroutine;
+    private bool _hintShown, _ownsInput;
+    private bool CanEnter => !_isCompleted || (_service != null && _service.CanInteract && _service.Inventory.IsOrderReady);
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (_isBusy || _isCompleted) return;
-
         if (collider.TryGetComponent(out Player player))
         {
             _isEntered = true;
-            ShowHint();
         }
     }
 
     private void OnTriggerExit2D(Collider2D collider)
     {
-        if (_isBusy || _isCompleted) return;
-
         if (collider.TryGetComponent(out Player _))
         {
             _isEntered = false;
@@ -61,45 +63,62 @@ public class TillTrigger : MonoBehaviour
             StopCoroutine(_workCoroutine);
             _workCoroutine = null;
         }
+        if (_orderSequence != null) _orderSequence.CancelAfterGuestLeft();
+        RestoreCounterState();
+        HideHint();
     }
 
     private void Update()
     {
-        if (_isEntered && _isBusy == false && _isCompleted == false && _inputService.EIsPressed)
+        bool available = _isEntered && !_isBusy && CanEnter && _player.IsAlive &&
+            !_inputService.IsBlocked && Time.timeScale > 0 && (_serviceView == null || !_serviceView.IsOpen);
+        if (!_isBusy)
         {
-            _workCoroutine = StartCoroutine(WorkRoutine());
+            if (available) ShowHint(); else HideHint();
+        }
+        if (available && _inputService.EIsPressed)
+        {
+            _workCoroutine = StartCoroutine(WorkRoutine(_isCompleted));
         }
     }
 
-    private IEnumerator WorkRoutine()
+    private IEnumerator WorkRoutine(bool returningWithOrder)
     {
         _isBusy = true;
-
         HideHint();
+        _ownsInput = !_inputService.IsBlocked;
         _inputService.Block();
+        _player.Rigidbody.linearVelocity = Vector2.zero;
 
         yield return StepBehindCounter();
 
-        if (_briefing != null)
+        if (returningWithOrder)
         {
-            yield return _briefing.Play();
+            if (_service.HandOverAtCounter())
+            {
+                // No interaction prompt or E wait between entering and handing over.
+                yield return _orderSequence.FinishOrder();
+                yield return _orderSequence.AfterGuestLeft();
+            }
+        }
+        else
+        {
+            if (_briefing != null) yield return _briefing.Play();
+            yield return _orderSequence.Play();
+
+            ShowHint();
+            yield return _inputService.WaitForKeyE();
+            HideHint();
         }
 
-        yield return _orderSequence.Play();
-
-        // Подсказка: E — выйти из кассы
-        ShowHint();
-        yield return _inputService.WaitForKeyE();
-        HideHint();
-
         yield return StepOutFromCounter();
-
-        _inputService.Unblock();
-
-        _isCompleted = true;
-        _isBusy = false;
+        RestoreCounterState();
         _workCoroutine = null;
-        OrderCompleted?.Invoke();
+        if (!returningWithOrder)
+        {
+            _isCompleted = true;
+            OrderCompleted?.Invoke();
+        }
     }
 
     private IEnumerator StepBehindCounter()
@@ -119,6 +138,7 @@ public class TillTrigger : MonoBehaviour
         _player.Rigidbody.bodyType = RigidbodyType2D.Kinematic;
 
         MovePlayer(new Vector3(_cashierPoint.position.x, _cashierPoint.position.y, _positionBeforeCounter.z));
+        IsBehindCounter = true;
 
         // Ева смотрит в зал, на посетителя
         spriteRenderer.flipX = false;
@@ -137,6 +157,7 @@ public class TillTrigger : MonoBehaviour
 
         MovePlayer(_positionBeforeCounter);
         _player.Rigidbody.bodyType = _defaultBodyType;
+        IsBehindCounter = false;
 
         yield return FadePlayer(1f);
     }
@@ -172,13 +193,39 @@ public class TillTrigger : MonoBehaviour
 
     private void ShowHint()
     {
+        if (_hintShown) return;
+        _hintShown = true;
+        if (_keyPrompt != null) _keyPrompt.SetCaptionId(_isBusy ? "service_counter_exit" : "service_counter_enter");
         _dialogUI.Enable();
         _player.SetActiveDialog(_dialogUI);
     }
 
     private void HideHint()
     {
-        _dialogUI.Disable();
-        _player.ResetActiveDialog();
+        if (!_hintShown) return;
+        _hintShown = false;
+        if (_dialogUI != null) _dialogUI.Disable();
+        if (_keyPrompt != null) _keyPrompt.SetCaptionId("service_interact");
+        if (_player != null) _player.ResetActiveDialog();
+    }
+
+    private void RestoreCounterState()
+    {
+        if (IsBehindCounter && _player != null && _player.Rigidbody != null)
+        {
+            _player.SpriteRenderer.sortingLayerName = _defaultSortingLayer;
+            _player.SpriteRenderer.sortingOrder = _defaultSortingOrder;
+            MovePlayer(_positionBeforeCounter);
+            _player.Rigidbody.bodyType = _defaultBodyType;
+            IsBehindCounter = false;
+        }
+        if (_isBusy && _player != null && _player.SpriteRenderer != null)
+        {
+            var color = _player.SpriteRenderer.color; color.a = 1; _player.SpriteRenderer.color = color;
+        }
+        if (_service != null) _service.FinishCounterVisit();
+        if (_ownsInput) _inputService.Unblock();
+        _ownsInput = false;
+        _isBusy = false;
     }
 }

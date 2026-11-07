@@ -39,7 +39,8 @@ public class FastFoodServiceStation : MonoBehaviour
             }
         }
     }
-    public bool Available => _service.CanInteract && _player.IsAlive && (!_onlyWhileTaskPending || TaskPending) &&
+    // Delivery belongs to TillTrigger; no competing guest interaction consumes the same E.
+    public bool Available => _kind != FastFoodStationKind.Guest && _service.CanInteract && _player.IsAlive && (!_onlyWhileTaskPending || TaskPending) &&
         Mathf.Abs(_player.transform.position.y - transform.position.y) < 1.2f &&
         Mathf.Abs(_player.transform.position.x - transform.position.x) <= _reach;
     public bool CanHighlight => isActiveAndEnabled && TaskPending && Available &&

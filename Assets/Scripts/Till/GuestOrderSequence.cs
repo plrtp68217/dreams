@@ -48,13 +48,27 @@ public class GuestOrderSequence : MonoBehaviour
 
     public IEnumerator FinishOrder()
     {
-        if (_clownEncounters != null) yield return _clownEncounters.PlayBeforeServing();
         if (_completionVisit != null) yield return _completionVisit.Play();
+    }
+
+    public void DismissReceipt()
+    {
+        if (_receipt != null) _receipt.DismissServedOrder();
+    }
+
+    public IEnumerator AfterGuestLeft()
+    {
+        if (_clownEncounters != null) yield return _clownEncounters.PlayAfterServing();
+    }
+
+    public void CancelAfterGuestLeft()
+    {
+        if (_clownEncounters != null) _clownEncounters.CancelAfterServing();
     }
 
     public void RefreshOrder()
     {
-        if (_hasOrder)
+        if (_hasOrder && (_service == null || !_service.IsCompleted) && (_receipt == null || !_receipt.IsDismissed))
             _orderPanel.Enable(_service != null ? _service.ReceiptText() : LocalizedDialogueSystem.Instance.GetDialogueText(_orderId));
     }
 }
