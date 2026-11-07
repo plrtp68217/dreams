@@ -71,6 +71,7 @@ public class FastFoodNotificationHub : MonoBehaviour
     }
     public void Post(Object owner, string title, string body, float duration, bool warning = false, bool priority = false)
     {
+        if (!isActiveAndEnabled) return;
         var next = new Message { Owner = owner, Title = title, Body = body, Duration = Mathf.Max(.5f, duration), Warning = warning };
         if (_current != null && _phase != 2 && _current.Owner == owner && _current.Title == title && _current.Body == body) return;
         _queue.RemoveAll(m => m.Owner == owner);

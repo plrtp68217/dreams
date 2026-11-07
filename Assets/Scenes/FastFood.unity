@@ -13758,7 +13758,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ef227c7a67176d4796efedc14d7d162, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FastFoodServiceView
   _service: {fileID: 1190240099}
   _inventory: {fileID: 1190240100}
@@ -13889,6 +13889,7 @@ MonoBehaviour:
   _fridgeSound: {fileID: 8300000, guid: 560fcc7b59816154582f562ccfbf80c3, type: 3}
   _pickupSound: {fileID: 8300000, guid: 49e38f748a528014ab0aa7d332c50dd8, type: 3}
   _animationDuration: 2.4
+  _completionCloseDuration: 0.38
 --- !u!114 &1190240099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30037,13 +30038,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 05606ec6400589743b227192be182bd5, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SmoothServiceNotice
   _label: {fileID: 269452599}
   _group: {fileID: 269452602}
   _fadeIn: 0.18
   _fadeOut: 0.16
-  _notification: {fileID: 1190240107}
+  _notification: {fileID: 0}
   _notificationDuration: 3.5
 --- !u!225 &269452602
 CanvasGroup:
@@ -31052,13 +31053,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 05606ec6400589743b227192be182bd5, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SmoothServiceNotice
   _label: {fileID: 806331162}
   _group: {fileID: 926604819}
   _fadeIn: 0.18
   _fadeOut: 0.16
-  _notification: {fileID: 1190240107}
+  _notification: {fileID: 0}
   _notificationDuration: 1.8
 --- !u!1 &950681420
 GameObject:
@@ -32367,13 +32368,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 05606ec6400589743b227192be182bd5, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SmoothServiceNotice
   _label: {fileID: 2040078874}
   _group: {fileID: 1672066153}
   _fadeIn: 0.18
   _fadeOut: 0.16
-  _notification: {fileID: 1190240107}
+  _notification: {fileID: 0}
   _notificationDuration: 2
 --- !u!225 &1672066153
 CanvasGroup:
@@ -41875,7 +41876,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &125843170
 RectTransform:
   m_ObjectHideFlags: 0
@@ -46336,7 +46337,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1190240095}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7840bc1922e148c41a3194cfb38a8493, type: 3}
   m_Name: 

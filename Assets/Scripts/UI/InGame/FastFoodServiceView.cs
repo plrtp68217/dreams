@@ -53,6 +53,7 @@ public class FastFoodServiceView : MonoBehaviour
     [SerializeField] private AudioClip _fridgeSound;
     [SerializeField] private AudioClip _pickupSound;
     [SerializeField, Min(.1f)] private float _animationDuration = 2.4f;
+    [SerializeField, Min(.1f)] private float _completionCloseDuration = .38f;
 
     private FastFoodServiceStation[] _stations;
     private FastFoodStationKind _station;
@@ -64,15 +65,27 @@ public class FastFoodServiceView : MonoBehaviour
     private float _lastPrompt;
     private FastFoodOrderItem _inspectItem;
     private bool _inspectReward;
+    private bool _hadStationItem, _autoClosePending, _isClosing;
+    private CanvasGroup _modalGroup;
+    private RectTransform _modalRect;
+    private Vector2 _modalPosition;
+    private Vector3 _modalScale;
+    private Coroutine _closeAnimation;
     public bool IsOpen => _modal != null && _modal.activeSelf;
+    public bool IsClosing => _isClosing;
     public bool HasPrompt => _prompt != null && _prompt.gameObject.activeSelf;
-    public bool IsBusy => _busy || (_fryerCloseUp != null && _fryerCloseUp.IsVisible && _fryerCloseUp.IsBusy) ||
+    public bool IsBusy => _busy || _isClosing || (_fryerCloseUp != null && _fryerCloseUp.IsVisible && _fryerCloseUp.IsBusy) ||
         (_drinkCloseUp != null && _drinkCloseUp.IsVisible && _drinkCloseUp.IsBusy) ||
         (_fridgeCloseUp != null && _fridgeCloseUp.IsVisible && _fridgeCloseUp.IsBusy) ||
         (_mirrorCloseUp != null && _mirrorCloseUp.IsVisible && _mirrorCloseUp.IsBusy);
 
     private void Awake()
     {
+        _modalRect = (RectTransform)_modal.transform;
+        _modalPosition = _modalRect.anchoredPosition;
+        _modalScale = _modalRect.localScale;
+        _modalGroup = _modal.GetComponent<CanvasGroup>();
+        if (_modalGroup == null) _modalGroup = _modal.AddComponent<CanvasGroup>();
         _modal.SetActive(false);
         _hud.SetActive(false);
         _close.onClick.AddListener(Close);
@@ -106,7 +119,7 @@ public class FastFoodServiceView : MonoBehaviour
     private void OnEnable()
     {
         _service.Changed += Refresh;
-        _inventory.Changed += Refresh;
+        _inventory.Changed += InventoryChanged;
         LocalizedDialogueSystem.LanguageChanged += Refresh;
     }
     private void Start()
@@ -117,12 +130,12 @@ public class FastFoodServiceView : MonoBehaviour
     private void OnDisable()
     {
         _service.Changed -= Refresh;
-        _inventory.Changed -= Refresh;
+        _inventory.Changed -= InventoryChanged;
         LocalizedDialogueSystem.LanguageChanged -= Refresh;
         Close();
     }
 
-    private bool CanUseUI => IsOpen && Time.timeScale > 0f && !_busy && _player.IsAlive &&
+    private bool CanUseUI => IsOpen && Time.timeScale > 0f && !_busy && !_isClosing && _player.IsAlive &&
         (_fryerCloseUp == null || !_fryerCloseUp.IsVisible) && (_drinkCloseUp == null || !_drinkCloseUp.IsVisible) &&
         (_fridgeCloseUp == null || !_fridgeCloseUp.IsVisible) && (_mirrorCloseUp == null || !_mirrorCloseUp.IsVisible);
     private static string T(string key) => FacelessOrderService.Text(key);
@@ -152,6 +165,7 @@ public class FastFoodServiceView : MonoBehaviour
         else if (_audio != null && _audioPaused && Time.timeScale > 0)
         { _audio.UnPause(); _audioPaused = false; }
         if (IsOpen && !_player.IsAlive) Close();
+        if (_autoClosePending && IsOpen && !IsBusy && Time.timeScale > 0) BeginCompletionClose();
     }
     private void Update()
     {
@@ -165,12 +179,18 @@ public class FastFoodServiceView : MonoBehaviour
         if (IsOpen || !_service.CanInteract || _input.IsBlocked || Time.timeScale <= 0) return;
         _station = station.Kind;
         _isInspecting = false;
+        _hadStationItem = TryStationItem(out var item) && _inventory.Has(item);
         BeginModal();
         Message("");
         RefreshStation();
     }
     private void BeginModal()
     {
+        _autoClosePending = _isClosing = false;
+        _modalGroup.alpha = 1;
+        _modalGroup.interactable = _modalGroup.blocksRaycasts = true;
+        _modalRect.anchoredPosition = _modalPosition;
+        _modalRect.localScale = _modalScale;
         _wasBlocked = _input.IsBlocked;
         _input.Block();
         if (_player.Rigidbody != null) _player.Rigidbody.linearVelocity = Vector2.zero;
@@ -180,6 +200,9 @@ public class FastFoodServiceView : MonoBehaviour
     public void Close()
     {
         if (!IsOpen) return;
+        if (_closeAnimation != null) StopCoroutine(_closeAnimation);
+        _closeAnimation = null;
+        _autoClosePending = _isClosing = false;
         if (_animation != null) StopCoroutine(_animation);
         _animation = null;
         _busy = false;
@@ -192,9 +215,54 @@ public class FastFoodServiceView : MonoBehaviour
         foreach (var slider in _syrups) if (slider != null) slider.interactable = true;
         if (_audio != null) _audio.Stop();
         _modal.SetActive(false);
+        _modalGroup.alpha = 1;
+        _modalGroup.interactable = _modalGroup.blocksRaycasts = true;
+        _modalRect.anchoredPosition = _modalPosition;
+        _modalRect.localScale = _modalScale;
         if (!_wasBlocked && _input != null) _input.Unblock();
         if (UnityEngine.EventSystems.EventSystem.current != null)
             UnityEngine.EventSystems.EventSystem.current.SetSelectedGameObject(null);
+    }
+
+    private bool TryStationItem(out FastFoodOrderItem item)
+    {
+        switch (_station)
+        {
+            case FastFoodStationKind.Fryer: item = FastFoodOrderItem.Burger; return true;
+            case FastFoodStationKind.Fridge: item = FastFoodOrderItem.Fries; return true;
+            case FastFoodStationKind.Dispenser: item = FastFoodOrderItem.Drink; return true;
+            case FastFoodStationKind.Mirror: item = FastFoodOrderItem.Toy; return true;
+            default: item = default; return false;
+        }
+    }
+    private void InventoryChanged()
+    {
+        if (IsOpen && !_isInspecting && !_hadStationItem && TryStationItem(out var item) && _inventory.Has(item))
+            _autoClosePending = true;
+        Refresh();
+    }
+    private void BeginCompletionClose()
+    {
+        _autoClosePending = false;
+        _isClosing = true;
+        _modalGroup.interactable = false;
+        _closeAnimation = StartCoroutine(CompletionClose());
+    }
+    private IEnumerator CompletionClose()
+    {
+        float elapsed = 0;
+        while (elapsed < _completionCloseDuration)
+        {
+            elapsed += Time.deltaTime;
+            float t = Mathf.Clamp01(elapsed / _completionCloseDuration);
+            float ease = Mathf.SmoothStep(0, 1, t);
+            _modalGroup.alpha = 1 - ease;
+            _modalRect.localScale = _modalScale * Mathf.Lerp(1, .96f, ease);
+            _modalRect.anchoredPosition = _modalPosition + Vector2.down * (18 * ease);
+            yield return null;
+        }
+        _closeAnimation = null;
+        Close();
     }
 
     public void Inspect(FastFoodOrderItem item)
@@ -230,7 +298,7 @@ public class FastFoodServiceView : MonoBehaviour
         _hud.SetActive(_service.IsActive || _service.IsCompleted);
         _trayTitle.text = T("service_tray") + " · " + _inventory.TrayCount + "/4";
         _pocketTitle.text = T("service_pocket");
-        _ready.text = ""; // Completion is presented once by the notification card.
+        _ready.text = ""; // Readiness is indicated by the tray's gold frame.
         for (int i = 0; i < 4; i++)
         {
             bool has = _inventory.Has((FastFoodOrderItem)i);
@@ -243,7 +311,7 @@ public class FastFoodServiceView : MonoBehaviour
         _pocketIcon.sprite = _inventory.MedicalRecordIcon;
         _pocketIcon.enabled = _inventory.HasMedicalRecord;
         _pocketButton.interactable = _inventory.HasMedicalRecord;
-        if (IsOpen && !_busy)
+        if (IsOpen && !_busy && !_isClosing)
         {
             if (_fryerCloseUp != null && _fryerCloseUp.IsVisible) return;
             if (_drinkCloseUp != null && _drinkCloseUp.IsVisible) return;
