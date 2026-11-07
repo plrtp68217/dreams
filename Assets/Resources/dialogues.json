@@ -396,6 +396,16 @@
       "english": "TAKE TOY"
     },
     {
+      "id": "service_mirror_wake_hint",
+      "russian": "E — Посмотреть в зеркало",
+      "english": "E — Look in the mirror"
+    },
+    {
+      "id": "service_mirror_take_hint",
+      "russian": "E — Забрать игрушку",
+      "english": "E — Take the toy"
+    },
+    {
       "id": "service_deliver_hint",
       "russian": "Все четыре предмета на подносе. Гость всё ещё ждёт.",
       "english": "All four items are on the tray. The guest is still waiting."

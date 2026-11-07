@@ -1,0 +1,65 @@
+{
+  "source": "SourceAssets/Art/FastFood/art/guests/01_faceless_man/04_toy/mirror_toy.aseprite",
+  "sha256": "5426faf9ea68963840d1f044b69a03fb2c2ea0914b339721856305d48e5356e5",
+  "width": 128,
+  "height": 128,
+  "layers": [
+    {
+      "name": "Mirror",
+      "flags": 3,
+      "type": 0,
+      "child": 0,
+      "blend": 0,
+      "opacity": 255
+    },
+    {
+      "name": "Sprite Sheet",
+      "flags": 3,
+      "type": 0,
+      "child": 0,
+      "blend": 0,
+      "opacity": 255
+    }
+  ],
+  "durationsMs": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
+  ],
+  "standingToyBounds": [
+    33,
+    74,
+    51,
+    105
+  ],
+  "worldBounds": [
+    19,
+    14,
+    102,
+    114
+  ],
+  "mirrorLayer": 0,
+  "toyLayer": 1,
+  "worldPadding": 3,
+  "toyScale": 0.5,
+  "footAnchor": [
+    42,
+    106
+  ],
+  "resizeFilter": "Nearest",
+  "sizing": "Toy layer only, scaled around shelf contact; mirror and original world crop unchanged"
+}
