@@ -1,0 +1,341 @@
+{
+  "source": "SourceAssets/GeneratedVFX/falling_leaves",
+  "cell": 16,
+  "columns": 10,
+  "rows": 3,
+  "fps": 8,
+  "method": "8-connected leaves, ordered top to bottom; integer bounding-box centering removes baked translation; original RGBA pixels preserved",
+  "frames": [
+    {
+      "file": "SourceAssets/GeneratedVFX/falling_leaves/frames/frame_000.png",
+      "sha256": "8740b912432f795f3ff116f8054075b80458f4b2b50fc790736a032fe203540c",
+      "leaves": [
+        {
+          "bounds": [
+            10,
+            11,
+            6,
+            11
+          ],
+          "pixels": 40
+        },
+        {
+          "bounds": [
+            34,
+            31,
+            4,
+            7
+          ],
+          "pixels": 20
+        },
+        {
+          "bounds": [
+            23,
+            48,
+            8,
+            6
+          ],
+          "pixels": 28
+        }
+      ]
+    },
+    {
+      "file": "SourceAssets/GeneratedVFX/falling_leaves/frames/frame_001.png",
+      "sha256": "7493048d252a73c353df6e10e72dc935ed569a8812dc840e8120bc37420b2d81",
+      "leaves": [
+        {
+          "bounds": [
+            9,
+            14,
+            8,
+            9
+          ],
+          "pixels": 39
+        },
+        {
+          "bounds": [
+            33,
+            33,
+            6,
+            6
+          ],
+          "pixels": 20
+        },
+        {
+          "bounds": [
+            25,
+            49,
+            6,
+            6
+          ],
+          "pixels": 23
+        }
+      ]
+    },
+    {
+      "file": "SourceAssets/GeneratedVFX/falling_leaves/frames/frame_002.png",
+      "sha256": "7c238d853a656ed061f8e49dbc5594cd37956f2f827e6dc2a4f3df225a386c98",
+      "leaves": [
+        {
+          "bounds": [
+            9,
+            14,
+            10,
+            8
+          ],
+          "pixels": 48
+        },
+        {
+          "bounds": [
+            33,
+            34,
+            8,
+            5
+          ],
+          "pixels": 26
+        },
+        {
+          "bounds": [
+            26,
+            50,
+            4,
+            8
+          ],
+          "pixels": 21
+        }
+      ]
+    },
+    {
+      "file": "SourceAssets/GeneratedVFX/falling_leaves/frames/frame_003.png",
+      "sha256": "afc32139d2a8f11274cb3619ad21c500b9e7e57fdcd52a69593569137b3e76ed",
+      "leaves": [
+        {
+          "bounds": [
+            9,
+            16,
+            10,
+            8
+          ],
+          "pixels": 50
+        },
+        {
+          "bounds": [
+            32,
+            35,
+            7,
+            5
+          ],
+          "pixels": 24
+        },
+        {
+          "bounds": [
+            24,
+            53,
+            7,
+            5
+          ],
+          "pixels": 21
+        }
+      ]
+    },
+    {
+      "file": "SourceAssets/GeneratedVFX/falling_leaves/frames/frame_004.png",
+      "sha256": "c74061b962a278ad4e4b576f8fda4124710dc69a812c7470471f8253c100fc6f",
+      "leaves": [
+        {
+          "bounds": [
+            10,
+            15,
+            7,
+            10
+          ],
+          "pixels": 49
+        },
+        {
+          "bounds": [
+            33,
+            36,
+            6,
+            6
+          ],
+          "pixels": 21
+        },
+        {
+          "bounds": [
+            24,
+            53,
+            8,
+            6
+          ],
+          "pixels": 27
+        }
+      ]
+    },
+    {
+      "file": "SourceAssets/GeneratedVFX/falling_leaves/frames/frame_005.png",
+      "sha256": "10356512ed7a6b86f1ca04484278105e62bbbd9a19d51f11daf3f973b3866a97",
+      "leaves": [
+        {
+          "bounds": [
+            11,
+            15,
+            6,
+            11
+          ],
+          "pixels": 47
+        },
+        {
+          "bounds": [
+            31,
+            37,
+            8,
+            4
+          ],
+          "pixels": 21
+        },
+        {
+          "bounds": [
+            25,
+            53,
+            6,
+            4
+          ],
+          "pixels": 19
+        }
+      ]
+    },
+    {
+      "file": "SourceAssets/GeneratedVFX/falling_leaves/frames/frame_006.png",
+      "sha256": "8ab6679ee1c0d1a2ceb76d8b9debc3334de5465a5052d46cd4b82915d757665e",
+      "leaves": [
+        {
+          "bounds": [
+            11,
+            17,
+            7,
+            10
+          ],
+          "pixels": 41
+        },
+        {
+          "bounds": [
+            31,
+            37,
+            9,
+            5
+          ],
+          "pixels": 28
+        },
+        {
+          "bounds": [
+            23,
+            54,
+            8,
+            5
+          ],
+          "pixels": 24
+        }
+      ]
+    },
+    {
+      "file": "SourceAssets/GeneratedVFX/falling_leaves/frames/frame_007.png",
+      "sha256": "57cb31e95949aa495194defc8f36c75f34d2f9733b2d2cf93d2364de68c2a9e1",
+      "leaves": [
+        {
+          "bounds": [
+            9,
+            19,
+            9,
+            7
+          ],
+          "pixels": 37
+        },
+        {
+          "bounds": [
+            31,
+            38,
+            9,
+            5
+          ],
+          "pixels": 26
+        },
+        {
+          "bounds": [
+            24,
+            55,
+            8,
+            5
+          ],
+          "pixels": 24
+        }
+      ]
+    },
+    {
+      "file": "SourceAssets/GeneratedVFX/falling_leaves/frames/frame_008.png",
+      "sha256": "475a66dfa35da530fb8f0bdfcdb226cb0e9ba3e959be6534ae3d820fca0b1183",
+      "leaves": [
+        {
+          "bounds": [
+            10,
+            20,
+            9,
+            8
+          ],
+          "pixels": 45
+        },
+        {
+          "bounds": [
+            32,
+            38,
+            7,
+            6
+          ],
+          "pixels": 26
+        },
+        {
+          "bounds": [
+            24,
+            55,
+            5,
+            6
+          ],
+          "pixels": 22
+        }
+      ]
+    },
+    {
+      "file": "SourceAssets/GeneratedVFX/falling_leaves/frames/frame_009.png",
+      "sha256": "047d6a0a94b8a4e3ac0ee704a7f0f6412d5f6a6a78da3420d030192b2f244a2e",
+      "leaves": [
+        {
+          "bounds": [
+            8,
+            21,
+            9,
+            7
+          ],
+          "pixels": 43
+        },
+        {
+          "bounds": [
+            35,
+            39,
+            4,
+            7
+          ],
+          "pixels": 24
+        },
+        {
+          "bounds": [
+            24,
+            56,
+            6,
+            7
+          ],
+          "pixels": 23
+        }
+      ]
+    }
+  ],
+  "atlas_sha256": "e55bc173a7edbfb32c8f8e980ad039554fbef2f96227fc12d05b40c8db5736bc"
+}
