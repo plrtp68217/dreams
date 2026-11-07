@@ -9,7 +9,7 @@ public class Npc : MonoBehaviour
 
     private readonly float _arrivalDistance = 0.01f;
 
-    public IEnumerator WalkTo(Vector3 target)
+    public IEnumerator WalkTo(Vector3 target, float speedMultiplier = 1f)
     {
         // Спрайты персонажей смотрят вправо
         _spriteRenderer.flipX = target.x < transform.position.x;
@@ -17,7 +17,7 @@ public class Npc : MonoBehaviour
 
         while (Vector2.Distance(transform.position, target) > _arrivalDistance)
         {
-            transform.position = Vector3.MoveTowards(transform.position, target, _speed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, target, _speed * speedMultiplier * Time.deltaTime);
             yield return null;
         }
 

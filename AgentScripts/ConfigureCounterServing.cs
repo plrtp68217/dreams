@@ -9,6 +9,14 @@ public static class ConfigureCounterServing
 {
     static T Read<T>(UnityEngine.Object o,string field) where T:UnityEngine.Object => (T)new SerializedObject(o).FindProperty(field).objectReferenceValue;
     static void Set(UnityEngine.Object o,string field,UnityEngine.Object value){var s=new SerializedObject(o);s.FindProperty(field).objectReferenceValue=value;s.ApplyModifiedPropertiesWithoutUndo();}
+    public static string RefineDeparture()
+    {
+        var scene=SceneManager.GetActiveScene();if(Application.isPlaying||scene.path!="Assets/Scenes/FastFood.unity")throw new InvalidOperationException("FastFood Edit Mode required.");
+        Directory.CreateDirectory("Logs/ServingRefinement");File.Copy(scene.path,"Logs/ServingRefinement/FastFood.disk-before.unity",true);EditorSceneManager.SaveScene(scene,"Logs/ServingRefinement/FastFood.editor-before.unity",true);
+        var clown=UnityEngine.Object.FindFirstObjectByType<FastFoodTension>();var fields=new SerializedObject(clown);
+        fields.FindProperty("_lingerDuration").floatValue=.25f;fields.FindProperty("_exitSpeedMultiplier").floatValue=2.5f;fields.ApplyModifiedPropertiesWithoutUndo();
+        EditorSceneManager.MarkSceneDirty(scene);EditorSceneManager.SaveScene(scene);return "Departure delay 0.25s; exit movement and walk animation x2.5. Other scene settings preserved.";
+    }
     public static string Apply()
     {
         var scene=SceneManager.GetActiveScene();if(Application.isPlaying||scene.path!="Assets/Scenes/FastFood.unity")throw new InvalidOperationException("Open FastFood in Edit Mode.");

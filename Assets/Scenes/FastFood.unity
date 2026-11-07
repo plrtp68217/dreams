@@ -13646,7 +13646,8 @@ MonoBehaviour:
   _encounterGap: 30
   _idleDelay: 150
   _silentWatchDuration: 3.5
-  _lingerDuration: 7
+  _lingerDuration: 0.25
+  _exitSpeedMultiplier: 2.5
   _cameraBlendTime: 1
   _cameraWeight: 0.32
   _maxCameraShift: 0.55

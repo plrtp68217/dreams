@@ -29,7 +29,8 @@ public class FastFoodTension : MonoBehaviour
     [SerializeField, Min(0)] private float _encounterGap = 30f;
     [SerializeField, Min(1)] private float _idleDelay = 150f;
     [SerializeField, Min(.1f)] private float _silentWatchDuration = 3.5f;
-    [SerializeField, Min(.1f)] private float _lingerDuration = 7f;
+    [SerializeField, Min(.1f)] private float _lingerDuration = .25f;
+    [SerializeField, Min(1)] private float _exitSpeedMultiplier = 2.5f;
     [SerializeField, Min(.1f)] private float _cameraBlendTime = 1f;
     [SerializeField, Range(0, 1)] private float _cameraWeight = .32f;
     [SerializeField, Min(0)] private float _maxCameraShift = .55f;
@@ -42,6 +43,8 @@ public class FastFoodTension : MonoBehaviour
     private Vector3 _baseCameraOffset;
     private float _cameraShift, _cameraVelocity;
     private float _quietRemaining, _cooldown, _idleElapsed;
+    private float _exitAnimatorSpeed;
+    private bool _ownsExitSpeed;
     public bool IsAppearing => _appearance != null;
     public bool IsSpeaking => _speaking;
     public ClownEncounterKind CurrentEncounter => _current;
@@ -165,7 +168,10 @@ public class FastFoodTension : MonoBehaviour
         {
             Vector3 exit = _clown.transform.position;
             exit.x = _gameCamera.transform.position.x + side * (HalfCameraWidth() + _clown.bounds.extents.x + _maxCameraShift + .15f);
-            yield return _actor.WalkTo(exit);
+            _exitAnimatorSpeed = _animator.speed;
+            _ownsExitSpeed = true;
+            _animator.speed = _exitAnimatorSpeed * _exitSpeedMultiplier;
+            yield return _actor.WalkTo(exit, _exitSpeedMultiplier);
         }
         Cleanup(false);
         _appearance = null;
@@ -240,6 +246,8 @@ public class FastFoodTension : MonoBehaviour
         _speaking = false;
         _focusActive = false;
         if (immediateFocus) RestoreCamera();
+        if (_ownsExitSpeed && _animator != null) _animator.speed = _exitAnimatorSpeed;
+        _ownsExitSpeed = false;
         if (_animator != null && _animator.gameObject.activeInHierarchy) _animator.SetBool(nameof(AnimatorBool.IsWalking), false);
         if (_clown != null) _clown.gameObject.SetActive(false);
         ReleaseInput();

@@ -235,7 +235,7 @@ public class FastFoodServiceView : MonoBehaviour
         {
             bool has = _inventory.Has((FastFoodOrderItem)i);
             _trayIcons[i].sprite = _inventory.Icon((FastFoodOrderItem)i);
-            _trayIcons[i].enabled = true;
+            _trayIcons[i].enabled = has || (!_service.IsCompleted && !_inventory.HasMedicalRecord);
             _trayIcons[i].color = has ? Color.white : new Color(.65f, .60f, .55f, .38f);
             _slotLabels[i].text = (i + 1).ToString();
             _trayButtons[i].interactable = has;
