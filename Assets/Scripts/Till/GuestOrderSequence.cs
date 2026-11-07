@@ -12,6 +12,7 @@ public class GuestOrderSequence : MonoBehaviour
     [SerializeField] private ReceiptHover _receipt;
     [SerializeField] private FacelessOrderService _service;
     [SerializeField] private NpcVisit _completionVisit;
+    [SerializeField] private FastFoodTension _clownEncounters;
     public event System.Action OrderReceived;
     public bool HasOrder => _hasOrder;
 
@@ -47,6 +48,7 @@ public class GuestOrderSequence : MonoBehaviour
 
     public IEnumerator FinishOrder()
     {
+        if (_clownEncounters != null) yield return _clownEncounters.PlayBeforeServing();
         if (_completionVisit != null) yield return _completionVisit.Play();
     }
 

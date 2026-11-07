@@ -34,6 +34,10 @@ public class FastFoodKitchenRoute : MonoBehaviour
     private bool _controllerWasEnabled;
     private bool _inputWasBlocked;
 
+    public bool IsInKitchen => _isInKitchen;
+    public bool IsInRestroom => _isInRestroom;
+    public bool IsTransitioning => _isTransitioning;
+
     private void Awake()
     {
         // The route always starts at the counter, even if the kitchen was previewed in the Editor.

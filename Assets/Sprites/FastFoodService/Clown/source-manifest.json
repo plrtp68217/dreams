@@ -1,0 +1,21 @@
+{
+  "source": "SourceAssets/Art/FastFood/animations/characters/clown",
+  "frameSize": [
+    185,
+    185
+  ],
+  "fps": 5,
+  "animations": [
+    {
+      "name": "idle",
+      "frames": 8,
+      "sha256": "cbb82cab393839ea43ffb951bebfc4d812106a3b6dc9b7ff376751c85d9954b4"
+    },
+    {
+      "name": "walk",
+      "frames": 8,
+      "sha256": "0ddb75734796b89f5352c1ee1a877da36a136e0fe962a276d9724b5410441267"
+    }
+  ],
+  "reservedAnimation": "clown_run.png is deliberately not imported or referenced; reserved for the final chase."
+}

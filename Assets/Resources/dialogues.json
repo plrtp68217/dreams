@@ -531,6 +531,21 @@
       "english": "Clown: \"Do not make him remember.\""
     },
     {
+      "id": "fastfood_clown_waiting",
+      "russian": "Гость ждёт.",
+      "english": "Our guest is waiting."
+    },
+    {
+      "id": "fastfood_clown_ready",
+      "russian": "Всё на месте?",
+      "english": "Is everything there?"
+    },
+    {
+      "id": "fastfood_clown_forgotten",
+      "russian": "Кажется, ты кое-что забыла.",
+      "english": "I think you forgot something."
+    },
+    {
       "id": "service_bathroom",
       "russian": "УБОРНАЯ →",
       "english": "RESTROOM →"

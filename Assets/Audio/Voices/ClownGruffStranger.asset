@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6625f5c70b7f82a48a5c0e849f9da003, type: 3}
+  m_Name: ClownGruffStranger
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueVoiceProfile
+  _clips:
+  - {fileID: 8300000, guid: 58918c43e256b184ea31e91c1e8bc584, type: 3}
+  - {fileID: 8300000, guid: 2854926720c80274fb3a9c5fd8d79838, type: 3}
+  - {fileID: 8300000, guid: 455e13b6475858e40a4ca9c4a580e013, type: 3}
+  - {fileID: 8300000, guid: 7247fd83287e83a4f9375c2fba56dd9a, type: 3}
+  - {fileID: 8300000, guid: dc24c516da41b3348a9dba807a14f5f1, type: 3}
+  - {fileID: 8300000, guid: 8150895b3aaa68144abc6b5335bbeee4, type: 3}
+  - {fileID: 8300000, guid: f7589de3294f85b40a5f3900733b5a2c, type: 3}
+  - {fileID: 8300000, guid: aa7d0f11e1471374387b82af3f59f028, type: 3}
+  - {fileID: 8300000, guid: d315b3eb380965d4cbcf0c763c3dffc0, type: 3}
+  - {fileID: 8300000, guid: cf048cb64038949488c37fd7ab83a86e, type: 3}
+  - {fileID: 8300000, guid: c3ace02ad88219247af16520439e17f6, type: 3}
+  - {fileID: 8300000, guid: d6ec8795c06c96e45a128b69059b61a8, type: 3}
+  - {fileID: 8300000, guid: 6df6eafb9dafd85419ae7a0eb7179153, type: 3}
+  - {fileID: 8300000, guid: 5b461828fc73021458692a1048a67ea8, type: 3}
+  - {fileID: 8300000, guid: 804970690dfee724c8436576a0a8287e, type: 3}
+  - {fileID: 8300000, guid: e4e7666d871a07e47b152219a79f2f02, type: 3}
+  - {fileID: 8300000, guid: a9cbf615fe460fa4db18f9d50799ca76, type: 3}
+  - {fileID: 8300000, guid: b6c2a85277d43784ab920e041ebf8643, type: 3}
+  - {fileID: 8300000, guid: ecc6b3e6e2de76041afd6244bf32fe76, type: 3}
+  - {fileID: 8300000, guid: 7a987c520297fea498eca88d37e82df7, type: 3}
+  - {fileID: 8300000, guid: 63d0baab5cc1aa54dafbe8ad70dbf9f8, type: 3}
+  - {fileID: 8300000, guid: ad083376290043449bf60d7e7d27f05d, type: 3}
+  - {fileID: 8300000, guid: eb01df58056161741a6826933b2a8d1c, type: 3}
+  - {fileID: 8300000, guid: cf310e016923d4e4392aefd103db36a9, type: 3}
+  - {fileID: 8300000, guid: e0ac1c1416723084e98ff3b880e94593, type: 3}
+  - {fileID: 8300000, guid: c03527c26c603184c9fd837aa63b160f, type: 3}
+  - {fileID: 8300000, guid: bb82a2adee21610418a0a93f316c3274, type: 3}
+  - {fileID: 8300000, guid: d4924eb08bfebbf45b6e0647107c8eda, type: 3}
+  - {fileID: 8300000, guid: b235a547da5bb554b8db84697178f637, type: 3}
+  _volume: 0.16
+  _fragmentsPerSecond: 3
+  _pauseRange: {x: 0.09, y: 0.2}
+  _pitchRange: {x: 0.95, y: 1.02}
