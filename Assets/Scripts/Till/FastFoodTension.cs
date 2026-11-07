@@ -97,8 +97,7 @@ public class FastFoodTension : MonoBehaviour
         if (_quietRemaining > 0) return;
         ClownEncounterKind next = NextEncounter();
         if (next == ClownEncounterKind.None) return;
-        Transform point = ChoosePoint(next);
-        if (point != null) _appearance = StartCoroutine(Appear(next, point));
+        if (TryChoosePoint(next, out var point)) _appearance = StartCoroutine(Appear(next, point));
     }
     private ClownEncounterKind NextEncounter()
     {
@@ -108,22 +107,60 @@ public class FastFoodTension : MonoBehaviour
         if (!_idleDone && _idleElapsed >= _idleDelay) return ClownEncounterKind.IdleReminder;
         return ClownEncounterKind.None;
     }
-    private Transform ChoosePoint(ClownEncounterKind kind)
+    private bool TryChoosePoint(ClownEncounterKind kind, out Vector3 position)
     {
-        if (kind == ClownEncounterKind.AfterOrder) return _finalPoint;
+        position = _finalPoint.position;
+        if (kind == ClownEncounterKind.AfterOrder && CanStandInView(position)) return true;
         float preferred = kind == ClownEncounterKind.Watcher ? 1.9f : 1.3f;
         Transform selected = null;
         float best = float.PositiveInfinity;
         foreach (var point in _hallPoints)
         {
             float distance = Mathf.Abs(point.position.x - _player.transform.position.x);
-            if (distance < .85f || distance > 2.4f) continue;
+            if (distance < .85f || distance > 2.4f || !CanStandInView(point.position)) continue;
             float score = Mathf.Abs(distance - preferred);
             if (score < best) { selected = point; best = score; }
         }
-        return selected;
+        if (selected != null) { position = selected.position; return true; }
+
+        // A fast turn or a narrow view can leave every authored point outside the shot.
+        // Use the same floor/depth, placing the visitor inside the actual camera projection.
+        Vector3 floor = kind == ClownEncounterKind.AfterOrder || _hallPoints.Length == 0 ? _finalPoint.position : _hallPoints[0].position;
+        Vector3 centerOffset = SpriteCenterOffset();
+        bool found = false;
+        best = float.PositiveInfinity;
+        for (int side = -1; side <= 1; side += 2)
+        {
+            Vector3 candidate = floor;
+            candidate.x = _player.transform.position.x + side * preferred;
+            Vector3 viewport = _gameCamera.WorldToViewportPoint(candidate + centerOffset);
+            if (viewport.z <= 0) continue;
+            var left = _gameCamera.ViewportToWorldPoint(new Vector3(.22f, viewport.y, viewport.z));
+            var right = _gameCamera.ViewportToWorldPoint(new Vector3(.78f, viewport.y, viewport.z));
+            float minimumDistance = Mathf.Min(.6f, Mathf.Abs(right.x - left.x) * .35f);
+            viewport.x = Mathf.Clamp(viewport.x, .22f, .78f);
+            candidate.x = (_gameCamera.ViewportToWorldPoint(viewport) - centerOffset).x;
+            float distance = Mathf.Abs(candidate.x - _player.transform.position.x);
+            if (distance < minimumDistance || distance > 2.4f || !CanStandInView(candidate)) continue;
+            float score = Mathf.Abs(distance - preferred) + (side == (_player.SpriteRenderer.flipX ? -1 : 1) ? 0 : .1f);
+            if (score < best) { position = candidate; best = score; found = true; }
+        }
+        return found;
     }
-    private IEnumerator Appear(ClownEncounterKind kind, Transform point)
+    private Vector3 SpriteCenterOffset()
+    {
+        if (_clown.sprite == null) return Vector3.up * .5f;
+        var center = _clown.sprite.bounds.center;
+        if (_clown.flipX) center.x = -center.x;
+        if (_clown.flipY) center.y = -center.y;
+        return _clown.transform.TransformVector(center);
+    }
+    private bool CanStandInView(Vector3 position)
+    {
+        Vector3 viewport = _gameCamera.WorldToViewportPoint(position + SpriteCenterOffset());
+        return viewport.z > 0 && viewport.x >= .15f && viewport.x <= .85f && viewport.y >= .08f && viewport.y <= .92f;
+    }
+    private IEnumerator Appear(ClownEncounterKind kind, Vector3 point)
     {
         // This encounter owns movement until the actor has left the screen.
         // A surrounding sequence may already own input; never release its block.
@@ -131,9 +168,9 @@ public class FastFoodTension : MonoBehaviour
         _input.Block();
         _player.Rigidbody.linearVelocity = Vector2.zero;
         _current = kind;
-        float side = Mathf.Sign(point.position.x - _gameCamera.transform.position.x);
+        float side = Mathf.Sign(point.x - _gameCamera.transform.position.x);
         if (side == 0) side = 1;
-        Vector3 entry = point.position;
+        Vector3 entry = point;
         float actorHalfWidth = _clown.sprite != null ? _clown.sprite.bounds.extents.x * Mathf.Abs(_clown.transform.lossyScale.x) : .3f;
         entry.x = _gameCamera.transform.position.x + side * (HalfCameraWidth() + actorHalfWidth + .2f);
         _clown.transform.position = entry;
@@ -141,7 +178,22 @@ public class FastFoodTension : MonoBehaviour
         _clown.enabled = true;
         _clown.gameObject.SetActive(true);
         BeginFocus();
-        yield return _actor.WalkTo(point.position);
+        yield return _actor.WalkTo(point);
+        // Camera follow can still be settling after the player's last movement.
+        // Recheck at arrival; never open a dialogue for a visitor outside the shot.
+        while (!CanStandInView(_clown.transform.position))
+        {
+            if (!TryChoosePoint(kind, out point))
+            {
+                _focusActive = false;
+                yield return Depart(side);
+                Cleanup(true);
+                _appearance = null;
+                _quietRemaining = _interactionGrace;
+                yield break;
+            }
+            yield return _actor.WalkTo(point);
+        }
         _clown.flipX = _player.transform.position.x < _clown.transform.position.x;
         if (kind == ClownEncounterKind.Watcher)
             yield return new WaitForSeconds(_silentWatchDuration);
@@ -166,17 +218,23 @@ public class FastFoodTension : MonoBehaviour
         }
         if (Visible())
         {
-            Vector3 exit = _clown.transform.position;
-            exit.x = _gameCamera.transform.position.x + side * (HalfCameraWidth() + _clown.bounds.extents.x + _maxCameraShift + .15f);
-            _exitAnimatorSpeed = _animator.speed;
-            _ownsExitSpeed = true;
-            _animator.speed = _exitAnimatorSpeed * _exitSpeedMultiplier;
-            yield return _actor.WalkTo(exit, _exitSpeedMultiplier);
+            yield return Depart(side);
         }
         Cleanup(false);
         _appearance = null;
         _cooldown = _encounterGap;
         _quietRemaining = _interactionGrace;
+    }
+    private IEnumerator Depart(float fallbackSide)
+    {
+        float side = Mathf.Sign(_clown.transform.position.x - _gameCamera.transform.position.x);
+        if (side == 0) side = fallbackSide;
+        Vector3 exit = _clown.transform.position;
+        exit.x = _gameCamera.transform.position.x + side * (HalfCameraWidth() + _clown.bounds.extents.x + _maxCameraShift + .15f);
+        _exitAnimatorSpeed = _animator.speed;
+        _ownsExitSpeed = true;
+        _animator.speed = _exitAnimatorSpeed * _exitSpeedMultiplier;
+        yield return _actor.WalkTo(exit, _exitSpeedMultiplier);
     }
     private void MarkCompleted(ClownEncounterKind kind)
     {
@@ -194,7 +252,13 @@ public class FastFoodTension : MonoBehaviour
         _postService = true;
         yield return new WaitForSeconds(.45f);
         if (!_postService || !isActiveAndEnabled || !_player.IsAlive) yield break;
-        _appearance = StartCoroutine(Appear(ClownEncounterKind.AfterOrder, _finalPoint));
+        Vector3 point;
+        while (!TryChoosePoint(ClownEncounterKind.AfterOrder, out point))
+        {
+            if (!_postService || !isActiveAndEnabled || !_player.IsAlive) yield break;
+            yield return null;
+        }
+        _appearance = StartCoroutine(Appear(ClownEncounterKind.AfterOrder, point));
         while (_appearance != null) yield return null;
         _postService = false;
     }
