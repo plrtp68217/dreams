@@ -65,6 +65,7 @@ public class FastFoodServiceView : MonoBehaviour
     private FastFoodOrderItem _inspectItem;
     private bool _inspectReward;
     public bool IsOpen => _modal != null && _modal.activeSelf;
+    public bool HasPrompt => _prompt != null && _prompt.gameObject.activeSelf;
     public bool IsBusy => _busy || (_fryerCloseUp != null && _fryerCloseUp.IsVisible && _fryerCloseUp.IsBusy) ||
         (_drinkCloseUp != null && _drinkCloseUp.IsVisible && _drinkCloseUp.IsBusy) ||
         (_fridgeCloseUp != null && _fridgeCloseUp.IsVisible && _fridgeCloseUp.IsBusy) ||
@@ -229,13 +230,14 @@ public class FastFoodServiceView : MonoBehaviour
         _hud.SetActive(_service.IsActive || _service.IsCompleted);
         _trayTitle.text = T("service_tray") + " · " + _inventory.TrayCount + "/4";
         _pocketTitle.text = T("service_pocket");
-        _ready.text = _service.IsCompleted ? T("service_complete") : _inventory.IsOrderReady ? T("service_ready") : "";
+        _ready.text = ""; // Completion is presented once by the notification card.
         for (int i = 0; i < 4; i++)
         {
             bool has = _inventory.Has((FastFoodOrderItem)i);
             _trayIcons[i].sprite = _inventory.Icon((FastFoodOrderItem)i);
-            _trayIcons[i].enabled = has;
-            _slotLabels[i].text = has ? (i + 1).ToString() : (i + 1) + "  ?";
+            _trayIcons[i].enabled = true;
+            _trayIcons[i].color = has ? Color.white : new Color(.65f, .60f, .55f, .38f);
+            _slotLabels[i].text = (i + 1).ToString();
             _trayButtons[i].interactable = has;
         }
         _pocketIcon.sprite = _inventory.MedicalRecordIcon;

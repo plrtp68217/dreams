@@ -75,8 +75,8 @@ public class FastFoodKitchenRoute : MonoBehaviour
     private void UpdateHintText()
     {
         _hintText.text = LocalizedDialogueSystem.CurrentLanguage == Language.Russian
-            ? "На кухню: налево (A)"
-            : "Kitchen: go left (A)";
+            ? "A — На кухню налево"
+            : "A — Go left to the kitchen";
     }
 
     public void TryTravel(Player player, bool toKitchen)

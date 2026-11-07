@@ -582,23 +582,23 @@
     },
     {
       "id": "service_fryer_switch_hint",
-      "russian": "Нажмите на красный выключатель · ЛКМ",
-      "english": "Click the red switch · LMB"
+      "russian": "ЛКМ — Выключить питание",
+      "english": "LMB — Turn off the power"
     },
     {
       "id": "service_fryer_tumbler_hint",
-      "russian": "Зажмите ЛКМ на цветном тумблере и вытяните его из гнезда",
-      "english": "Hold LMB on the coloured tumbler and pull it out of its socket"
+      "russian": "ЛКМ — Удерживайте и вытяните тумблер",
+      "english": "LMB — Hold and pull the tumbler"
     },
     {
       "id": "service_fryer_pull",
-      "russian": "Продолжайте тянуть тумблер с зажатой ЛКМ",
-      "english": "Keep pulling the tumbler while holding LMB"
+      "russian": "ЛКМ — Продолжайте тянуть тумблер",
+      "english": "LMB — Keep pulling the tumbler"
     },
     {
       "id": "service_fryer_release",
-      "russian": "Отпустите ЛКМ, чтобы выбросить тумблер",
-      "english": "Release LMB to throw the tumbler away"
+      "russian": "ЛКМ — Отпустите, чтобы выбросить тумблер",
+      "english": "LMB — Release to throw the tumbler"
     },
     {
       "id": "service_fryer_flying",
@@ -607,8 +607,8 @@
     },
     {
       "id": "service_fryer_drain_hint_new",
-      "russian": "Нажмите E, чтобы слить масло",
-      "english": "Press E to drain the oil"
+      "russian": "E — Слить масло",
+      "english": "E — Drain the oil"
     },
     {
       "id": "service_fryer_draining",
@@ -622,8 +622,8 @@
     },
     {
       "id": "service_fryer_take_hint",
-      "russian": "Нажмите E, чтобы забрать бургер",
-      "english": "Press E to take the burger"
+      "russian": "E — Забрать бургер",
+      "english": "E — Take the burger"
     },
     {
       "id": "service_fryer_collected",
@@ -639,6 +639,41 @@
       "id": "service_fryer_collecting",
       "russian": "Забираем бургер…",
       "english": "Taking the burger…"
+    },
+    {
+      "id": "service_served_title",
+      "russian": "ЗАКАЗ ПЕРЕДАН",
+      "english": "ORDER DELIVERED"
+    },
+    {
+      "id": "service_ready_title",
+      "russian": "ЗАКАЗ ГОТОВ",
+      "english": "ORDER READY"
+    },
+    {
+      "id": "service_ready_body",
+      "russian": "Отнесите его гостю",
+      "english": "Bring it to the guest"
+    },
+    {
+      "id": "service_item_added",
+      "russian": "НА ПОДНОСЕ",
+      "english": "ON THE TRAY"
+    },
+    {
+      "id": "service_notice_title",
+      "russian": "ОБРАТИТЕ ВНИМАНИЕ",
+      "english": "PLEASE NOTE"
+    },
+    {
+      "id": "service_continue",
+      "russian": "Далее",
+      "english": "Continue"
+    },
+    {
+      "id": "service_interact",
+      "russian": "Взаимодействовать",
+      "english": "Interact"
     }
   ]
 }

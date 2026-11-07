@@ -118,12 +118,11 @@ public class FacelessOrderService : MonoBehaviour
 
     public string ReceiptText()
     {
-        string result = Text(IsCompleted ? "service_order_served" : "service_order_title") + "\n\n";
+        string result = Text(IsCompleted ? "service_order_served" : "service_order_title") + "\n";
         for (int i = 0; i < 4; i++)
         {
-            bool known = i < 2 || _inventory.Has((FastFoodOrderItem)i) || IsCompleted;
             string mark = _inventory.Has((FastFoodOrderItem)i) || IsCompleted ? "+ " : "- ";
-            result += mark + (known ? Text("service_item_" + i) : "||||||||||||||||") + "\n";
+            result += mark + Text("service_item_" + i) + "\n";
         }
         return result + "\n" + Text("service_fridge_code") + "\n" + _fridgeCode;
     }

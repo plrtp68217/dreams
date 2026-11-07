@@ -9,12 +9,24 @@ public class SmoothServiceNotice : MonoBehaviour
     [SerializeField] private CanvasGroup _group;
     [SerializeField, Min(.01f)] private float _fadeIn = .18f;
     [SerializeField, Min(.01f)] private float _fadeOut = .16f;
+    [SerializeField] private FastFoodNotificationHub _notification;
+    [SerializeField, Min(.5f)] private float _notificationDuration = 3.5f;
     private string _requested = "";
     private float _progress;
 
-    public void Show(string message) => _requested = message ?? "";
+    public void Show(string message)
+    {
+        message ??= "";
+        if (_notification != null && message != _requested)
+        {
+            if (string.IsNullOrEmpty(message)) _notification.Cancel(this);
+            else _notification.Post(this, "service_notice_title", message, _notificationDuration, true, true);
+        }
+        _requested = message;
+    }
     public void Clear()
     {
+        if (_notification != null) _notification.Cancel(this);
         _requested = "";
         _progress = 0;
         if (_group != null) _group.alpha = 0;
@@ -25,6 +37,8 @@ public class SmoothServiceNotice : MonoBehaviour
     private void Update() => Advance(Time.deltaTime);
     private void Advance(float delta)
     {
+        if (_notification != null) { if (_group != null) _group.alpha = 0; return; }
+        if (_label == null || _group == null) return;
         bool change = _label.text != _requested;
         bool visible = !change && !string.IsNullOrEmpty(_requested);
         _progress = Mathf.MoveTowards(_progress, visible ? 1 : 0, delta / (visible ? _fadeIn : _fadeOut));
